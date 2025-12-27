@@ -1,0 +1,954 @@
+{% doc %}
+  @prompt
+    build a gallery page, it should be 4 column gallery, each image should have an header and description at the top left and should only show on hover
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-gallery-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+  }
+
+  .ai-gallery-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-gallery-header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+    margin-bottom: {{ block.settings.spacing_below_header }}px;
+  }
+
+  .ai-gallery-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 16px;
+    font-weight: 600;
+  }
+
+  .ai-gallery-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .ai-gallery-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-gallery-item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-gallery-item-{{ ai_gen_id }}:hover {
+    {% if block.settings.enable_hover_scale %}
+      transform: scale(1.05);
+    {% endif %}
+  }
+
+  .ai-gallery-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    padding-bottom: {{ block.settings.image_aspect_ratio }}%;
+    overflow: hidden;
+  }
+
+  .ai-gallery-image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-gallery-placeholder-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-gallery-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-gallery-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ block.settings.overlay_color }};
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: {{ block.settings.overlay_padding }}px;
+  }
+
+  .ai-gallery-item-{{ ai_gen_id }}:hover .ai-gallery-overlay-{{ ai_gen_id }} {
+    opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+
+  .ai-gallery-overlay-content-{{ ai_gen_id }} {
+    text-align: left;
+  }
+
+  .ai-gallery-overlay-title-{{ ai_gen_id }} {
+    color: {{ block.settings.overlay_text_color }};
+    font-size: {{ block.settings.overlay_title_size }}px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  .ai-gallery-overlay-caption-{{ ai_gen_id }} {
+    color: {{ block.settings.overlay_text_color }};
+    font-size: {{ block.settings.overlay_caption_size }}px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .ai-gallery-lightbox-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-gallery-lightbox-{{ ai_gen_id }}.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .ai-gallery-lightbox-content-{{ ai_gen_id }} {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-gallery-lightbox-image-{{ ai_gen_id }} {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
+  .ai-gallery-lightbox-close-{{ ai_gen_id }} {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    z-index: 10000;
+  }
+
+  .ai-gallery-lightbox-close-{{ ai_gen_id }}:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .ai-gallery-lightbox-nav-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    z-index: 10000;
+  }
+
+  .ai-gallery-lightbox-nav-{{ ai_gen_id }}:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .ai-gallery-lightbox-prev-{{ ai_gen_id }} {
+    left: 20px;
+  }
+
+  .ai-gallery-lightbox-next-{{ ai_gen_id }} {
+    right: 20px;
+  }
+
+  .ai-gallery-lightbox-caption-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-gallery-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-gallery-grid-{{ ai_gen_id }} {
+      {% if block.settings.columns_mobile == '1' %}
+        grid-template-columns: 1fr;
+      {% else %}
+        grid-template-columns: repeat(2, 1fr);
+      {% endif %}
+    }
+
+    .ai-gallery-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+
+    .ai-gallery-description-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.description_size }}px * 0.9);
+    }
+
+    .ai-gallery-overlay-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.overlay_title_size }}px * 0.85);
+    }
+
+    .ai-gallery-overlay-caption-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.overlay_caption_size }}px * 0.9);
+    }
+
+    .ai-gallery-lightbox-nav-{{ ai_gen_id }} {
+      width: 40px;
+      height: 40px;
+    }
+
+    .ai-gallery-lightbox-close-{{ ai_gen_id }} {
+      width: 35px;
+      height: 35px;
+      top: 10px;
+      right: 10px;
+    }
+  }
+{% endstyle %}
+
+<gallery-block-{{ ai_gen_id }} class="ai-gallery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-gallery-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank or block.settings.description != blank %}
+      <div class="ai-gallery-header-{{ ai_gen_id }}">
+        {% if block.settings.heading != blank %}
+          <h2 class="ai-gallery-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        {% endif %}
+        {% if block.settings.description != blank %}
+          <div class="ai-gallery-description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-gallery-grid-{{ ai_gen_id }}">
+      {% for i in (1..12) %}
+        {% liquid
+          assign image_key = 'image_' | append: i
+          assign title_key = 'image_' | append: i | append: '_title'
+          assign caption_key = 'image_' | append: i | append: '_caption'
+          
+          assign image = block.settings[image_key]
+          assign title = block.settings[title_key]
+          assign caption = block.settings[caption_key]
+        %}
+
+        {% if image != blank %}
+          <div class="ai-gallery-item-{{ ai_gen_id }}" data-index="{{ forloop.index0 }}">
+            <div class="ai-gallery-image-wrapper-{{ ai_gen_id }}">
+              <img
+                src="{{ image | image_url: width: 800 }}"
+                alt="{{ image.alt | escape }}"
+                loading="lazy"
+                width="{{ image.width }}"
+                height="{{ image.height }}"
+                class="ai-gallery-image-{{ ai_gen_id }}"
+              >
+              {% if title != blank or caption != blank %}
+                <div class="ai-gallery-overlay-{{ ai_gen_id }}">
+                  <div class="ai-gallery-overlay-content-{{ ai_gen_id }}">
+                    {% if title != blank %}
+                      <h3 class="ai-gallery-overlay-title-{{ ai_gen_id }}">{{ title }}</h3>
+                    {% endif %}
+                    {% if caption != blank %}
+                      <p class="ai-gallery-overlay-caption-{{ ai_gen_id }}">{{ caption }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {% if block.settings.enable_lightbox %}
+    <div class="ai-gallery-lightbox-{{ ai_gen_id }}">
+      <button class="ai-gallery-lightbox-close-{{ ai_gen_id }}" aria-label="Close lightbox">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="ai-gallery-lightbox-nav-{{ ai_gen_id }} ai-gallery-lightbox-prev-{{ ai_gen_id }}" aria-label="Previous image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="ai-gallery-lightbox-content-{{ ai_gen_id }}">
+        <img src="" alt="" class="ai-gallery-lightbox-image-{{ ai_gen_id }}">
+        <div class="ai-gallery-lightbox-caption-{{ ai_gen_id }}" style="display: none;"></div>
+      </div>
+      <button class="ai-gallery-lightbox-nav-{{ ai_gen_id }} ai-gallery-lightbox-next-{{ ai_gen_id }}" aria-label="Next image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  {% endif %}
+</gallery-block-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GalleryBlock{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.images = [];
+        this.currentIndex = 0;
+      }
+
+      connectedCallback() {
+        this.initGallery();
+      }
+
+      initGallery() {
+        const items = this.querySelectorAll('.ai-gallery-item-{{ ai_gen_id }}');
+        const lightbox = this.querySelector('.ai-gallery-lightbox-{{ ai_gen_id }}');
+        
+        if (!lightbox) return;
+
+        const lightboxImage = lightbox.querySelector('.ai-gallery-lightbox-image-{{ ai_gen_id }}');
+        const lightboxCaption = lightbox.querySelector('.ai-gallery-lightbox-caption-{{ ai_gen_id }}');
+        const closeBtn = lightbox.querySelector('.ai-gallery-lightbox-close-{{ ai_gen_id }}');
+        const prevBtn = lightbox.querySelector('.ai-gallery-lightbox-prev-{{ ai_gen_id }}');
+        const nextBtn = lightbox.querySelector('.ai-gallery-lightbox-next-{{ ai_gen_id }}');
+
+        items.forEach((item, index) => {
+          const img = item.querySelector('.ai-gallery-image-{{ ai_gen_id }}');
+          const title = item.querySelector('.ai-gallery-overlay-title-{{ ai_gen_id }}');
+          const caption = item.querySelector('.ai-gallery-overlay-caption-{{ ai_gen_id }}');
+          
+          this.images.push({
+            src: img.src.replace(/width=\d+/, 'width=2000'),
+            alt: img.alt,
+            title: title ? title.textContent : '',
+            caption: caption ? caption.textContent : ''
+          });
+
+          item.addEventListener('click', () => {
+            this.openLightbox(index);
+          });
+        });
+
+        closeBtn.addEventListener('click', () => this.closeLightbox());
+        prevBtn.addEventListener('click', () => this.showPrevious());
+        nextBtn.addEventListener('click', () => this.showNext());
+
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) {
+            this.closeLightbox();
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (!lightbox.classList.contains('active')) return;
+          
+          if (e.key === 'Escape') {
+            this.closeLightbox();
+          } else if (e.key === 'ArrowLeft') {
+            this.showPrevious();
+          } else if (e.key === 'ArrowRight') {
+            this.showNext();
+          }
+        });
+      }
+
+      openLightbox(index) {
+        this.currentIndex = index;
+        const lightbox = this.querySelector('.ai-gallery-lightbox-{{ ai_gen_id }}');
+        const lightboxImage = lightbox.querySelector('.ai-gallery-lightbox-image-{{ ai_gen_id }}');
+        const lightboxCaption = lightbox.querySelector('.ai-gallery-lightbox-caption-{{ ai_gen_id }}');
+        
+        lightboxImage.src = this.images[index].src;
+        lightboxImage.alt = this.images[index].alt;
+        
+        const captionText = this.images[index].title || this.images[index].caption;
+        if (captionText) {
+          lightboxCaption.textContent = captionText;
+          lightboxCaption.style.display = 'block';
+        } else {
+          lightboxCaption.style.display = 'none';
+        }
+        
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      closeLightbox() {
+        const lightbox = this.querySelector('.ai-gallery-lightbox-{{ ai_gen_id }}');
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      showPrevious() {
+        this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+        this.updateLightboxImage();
+      }
+
+      showNext() {
+        this.currentIndex = (this.currentIndex + 1) % this.images.length;
+        this.updateLightboxImage();
+      }
+
+      updateLightboxImage() {
+        const lightbox = this.querySelector('.ai-gallery-lightbox-{{ ai_gen_id }}');
+        const lightboxImage = lightbox.querySelector('.ai-gallery-lightbox-image-{{ ai_gen_id }}');
+        const lightboxCaption = lightbox.querySelector('.ai-gallery-lightbox-caption-{{ ai_gen_id }}');
+        
+        lightboxImage.src = this.images[this.currentIndex].src;
+        lightboxImage.alt = this.images[this.currentIndex].alt;
+        
+        const captionText = this.images[this.currentIndex].title || this.images[this.currentIndex].caption;
+        if (captionText) {
+          lightboxCaption.textContent = captionText;
+          lightboxCaption.style.display = 'block';
+        } else {
+          lightboxCaption.style.display = 'none';
+        }
+      }
+    }
+
+    customElements.define('gallery-block-{{ ai_gen_id }}', GalleryBlock{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Gallery",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 600,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Gallery"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "spacing_below_header",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Spacing below header",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#757575"
+    },
+    {
+      "type": "header",
+      "content": "Grid"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "range",
+      "id": "image_aspect_ratio",
+      "min": 50,
+      "max": 150,
+      "step": 5,
+      "unit": "%",
+      "label": "Image aspect ratio",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hover_scale",
+      "label": "Enable hover scale",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 10,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "overlay_padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Overlay padding",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "overlay_text_color",
+      "label": "Overlay text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "overlay_title_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Overlay title size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "overlay_caption_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Overlay caption size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Lightbox"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_lightbox",
+      "label": "Enable lightbox",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_1_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_1_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_2_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_2_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_3_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_3_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_4_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_4_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_5_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_5_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_6_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_6_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_7_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_7_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_8_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_8_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_9",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_9_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_9_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_10",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_10_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_10_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 11"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_11",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_11_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_11_caption",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Image 12"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_12",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_12_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "image_12_caption",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery"
+    }
+  ]
+}
+{% endschema %}

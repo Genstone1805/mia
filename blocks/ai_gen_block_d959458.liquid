@@ -1,0 +1,621 @@
+{% doc %}
+  @prompt
+    Design a clean, minimal customer support contact form for a ceramic glaze troubleshooting website.
+    
+    The layout should be elegant, professional, and calm, using a neutral white background with soft grey text and muted green accent buttons.
+    
+    At the top, include a short instructional paragraph explaining that by checking a box, the user will receive a questionnaire that may already solve their enamel/glaze problem. Mention that if the issue remains unresolved, the user can leave their name, email, and a detailed description of the problem.
+    
+    Include the following form elements in a vertical layout with generous spacing:
+    
+    A checkbox with explanatory text
+    
+    Required input fields for First name, Surname, and Email address
+    
+    A large required textarea labeled “Describe your problem”
+    
+    Helper text reminding users to mention:
+    
+    glaze name
+    
+    firing curve and temperature
+    
+    a clear description of the issue
+    
+    Add a media upload section labeled “Add a photo or video” with a muted green “Add” button containing a plus icon.
+    
+    At the bottom, include a wide muted green call-to-action button with white text that reads:
+    “Only click this button if you need additional help.”
+    
+    Style should feel artisan, educational, and trustworthy.
+    Typography should be modern sans-serif, light to medium weight.
+    No decorative illustrations. No clutter. Focus on clarity and usability.
+    Desktop-first layout, responsive for mobile.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .glaze-support-form-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: 60px 40px;
+  }
+
+  .glaze-support-form__container-{{ ai_gen_id }} {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .glaze-support-form__intro-{{ ai_gen_id }} {
+    margin-bottom: 48px;
+    color: {{ block.settings.text_color }};
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .glaze-support-form__checkbox-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 48px;
+    padding: 24px;
+    background-color: {{ block.settings.checkbox_bg_color }};
+    border-radius: 4px;
+  }
+
+  .glaze-support-form__checkbox-{{ ai_gen_id }} {
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+    accent-color: {{ block.settings.accent_color }};
+  }
+
+  .glaze-support-form__checkbox-label-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: 15px;
+    line-height: 1.6;
+    cursor: pointer;
+  }
+
+  .glaze-support-form__field-group-{{ ai_gen_id }} {
+    margin-bottom: 32px;
+  }
+
+  .glaze-support-form__label-{{ ai_gen_id }} {
+    display: block;
+    margin-bottom: 8px;
+    color: {{ block.settings.text_color }};
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .glaze-support-form__required-{{ ai_gen_id }} {
+    color: {{ block.settings.accent_color }};
+    margin-left: 2px;
+  }
+
+  .glaze-support-form__input-{{ ai_gen_id }},
+  .glaze-support-form__textarea-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid {{ block.settings.input_border_color }};
+    border-radius: 2px;
+    font-size: 15px;
+    color: {{ block.settings.text_color }};
+    background-color: {{ block.settings.background_color }};
+    transition: border-color 0.2s ease;
+    font-family: inherit;
+  }
+
+  .glaze-support-form__input-{{ ai_gen_id }}:focus,
+  .glaze-support-form__textarea-{{ ai_gen_id }}:focus {
+    outline: none;
+    border-color: {{ block.settings.accent_color }};
+  }
+
+  .glaze-support-form__input-{{ ai_gen_id }}::placeholder,
+  .glaze-support-form__textarea-{{ ai_gen_id }}::placeholder {
+    color: {{ block.settings.placeholder_color }};
+  }
+
+  .glaze-support-form__textarea-{{ ai_gen_id }} {
+    min-height: 180px;
+    resize: vertical;
+  }
+
+  .glaze-support-form__helper-text-{{ ai_gen_id }} {
+    margin-top: 8px;
+    font-size: 13px;
+    color: {{ block.settings.helper_text_color }};
+    line-height: 1.5;
+  }
+
+  .glaze-support-form__helper-list-{{ ai_gen_id }} {
+    margin: 8px 0 0 20px;
+    padding: 0;
+  }
+
+  .glaze-support-form__helper-list-{{ ai_gen_id }} li {
+    margin-bottom: 4px;
+  }
+
+  .glaze-support-form__upload-section-{{ ai_gen_id }} {
+    margin-bottom: 48px;
+  }
+
+  .glaze-support-form__upload-label-{{ ai_gen_id }} {
+    display: block;
+    margin-bottom: 12px;
+    color: {{ block.settings.text_color }};
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .glaze-support-form__upload-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: {{ block.settings.accent_color }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .glaze-support-form__upload-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.accent_hover_color }};
+  }
+
+  .glaze-support-form__upload-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+  }
+
+  .glaze-support-form__file-input-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .glaze-support-form__file-name-{{ ai_gen_id }} {
+    margin-top: 8px;
+    font-size: 13px;
+    color: {{ block.settings.helper_text_color }};
+  }
+
+  .glaze-support-form__submit-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 18px 32px;
+    background-color: {{ block.settings.accent_color }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    letter-spacing: 0.5px;
+  }
+
+  .glaze-support-form__submit-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.accent_hover_color }};
+  }
+
+  .glaze-support-form__submit-{{ ai_gen_id }}:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .glaze-support-form__success-{{ ai_gen_id }} {
+    padding: 16px;
+    margin-bottom: 24px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  .glaze-support-form__error-{{ ai_gen_id }} {
+    padding: 16px;
+    margin-bottom: 24px;
+    background-color: #ffebee;
+    color: #c62828;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .glaze-support-form-{{ ai_gen_id }} {
+      padding: 40px 20px;
+    }
+
+    .glaze-support-form__intro-{{ ai_gen_id }} {
+      margin-bottom: 32px;
+      font-size: 15px;
+    }
+
+    .glaze-support-form__checkbox-wrapper-{{ ai_gen_id }} {
+      padding: 20px;
+      margin-bottom: 32px;
+    }
+
+    .glaze-support-form__field-group-{{ ai_gen_id }} {
+      margin-bottom: 24px;
+    }
+
+    .glaze-support-form__upload-section-{{ ai_gen_id }} {
+      margin-bottom: 32px;
+    }
+  }
+{% endstyle %}
+
+<glaze-support-form-{{ ai_gen_id }} class="glaze-support-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="glaze-support-form__container-{{ ai_gen_id }}">
+    {% if block.settings.intro_text != blank %}
+      <div class="glaze-support-form__intro-{{ ai_gen_id }}">
+        {{ block.settings.intro_text }}
+      </div>
+    {% endif %}
+
+    {%- form 'contact' -%}
+      {% if form.posted_successfully? %}
+        <div class="glaze-support-form__success-{{ ai_gen_id }}" id="glaze-support-form-success-{{ ai_gen_id }}">
+          {{ block.settings.success_message }}
+        </div>
+      {% endif %}
+
+      {% if form.errors %}
+        <div class="glaze-support-form__error-{{ ai_gen_id }}" id="glaze-support-form-error-{{ ai_gen_id }}">
+          {{ form.errors.messages | first }}
+        </div>
+      {% endif %}
+
+      <div class="glaze-support-form__checkbox-wrapper-{{ ai_gen_id }}">
+        <input
+          type="checkbox"
+          id="questionnaire-checkbox-{{ ai_gen_id }}"
+          class="glaze-support-form__checkbox-{{ ai_gen_id }}"
+        >
+        <label for="questionnaire-checkbox-{{ ai_gen_id }}" class="glaze-support-form__checkbox-label-{{ ai_gen_id }}">
+          {{ block.settings.checkbox_text }}
+        </label>
+      </div>
+
+      <div class="glaze-support-form__field-group-{{ ai_gen_id }}">
+        <label for="first-name-{{ ai_gen_id }}" class="glaze-support-form__label-{{ ai_gen_id }}">
+          {{ block.settings.first_name_label }}<span class="glaze-support-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <input
+          type="text"
+          id="first-name-{{ ai_gen_id }}"
+          name="contact[first_name]"
+          class="glaze-support-form__input-{{ ai_gen_id }}"
+          required
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="glaze-support-form-error-{{ ai_gen_id }}"
+          {% endif %}
+          {% if form.posted_successfully? %}
+            aria-describedby="glaze-support-form-success-{{ ai_gen_id }}"
+          {% endif %}
+        >
+      </div>
+
+      <div class="glaze-support-form__field-group-{{ ai_gen_id }}">
+        <label for="surname-{{ ai_gen_id }}" class="glaze-support-form__label-{{ ai_gen_id }}">
+          {{ block.settings.surname_label }}<span class="glaze-support-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <input
+          type="text"
+          id="surname-{{ ai_gen_id }}"
+          name="contact[surname]"
+          class="glaze-support-form__input-{{ ai_gen_id }}"
+          required
+        >
+      </div>
+
+      <div class="glaze-support-form__field-group-{{ ai_gen_id }}">
+        <label for="email-{{ ai_gen_id }}" class="glaze-support-form__label-{{ ai_gen_id }}">
+          {{ block.settings.email_label }}<span class="glaze-support-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <input
+          type="email"
+          id="email-{{ ai_gen_id }}"
+          name="contact[email]"
+          class="glaze-support-form__input-{{ ai_gen_id }}"
+          autocomplete="email"
+          required
+        >
+      </div>
+
+      <div class="glaze-support-form__field-group-{{ ai_gen_id }}">
+        <label for="problem-{{ ai_gen_id }}" class="glaze-support-form__label-{{ ai_gen_id }}">
+          {{ block.settings.problem_label }}<span class="glaze-support-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <textarea
+          id="problem-{{ ai_gen_id }}"
+          name="contact[body]"
+          class="glaze-support-form__textarea-{{ ai_gen_id }}"
+          placeholder="{{ block.settings.problem_placeholder }}"
+          required
+        ></textarea>
+        {% if block.settings.helper_text != blank %}
+          <div class="glaze-support-form__helper-text-{{ ai_gen_id }}">
+            {{ block.settings.helper_text }}
+            <ul class="glaze-support-form__helper-list-{{ ai_gen_id }}">
+              <li>{{ block.settings.helper_item_1 }}</li>
+              <li>{{ block.settings.helper_item_2 }}</li>
+              <li>{{ block.settings.helper_item_3 }}</li>
+            </ul>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="glaze-support-form__upload-section-{{ ai_gen_id }}">
+        <div class="glaze-support-form__upload-label-{{ ai_gen_id }}">
+          {{ block.settings.upload_label }}
+        </div>
+        <button
+          type="button"
+          class="glaze-support-form__upload-button-{{ ai_gen_id }}"
+          data-upload-trigger
+        >
+          <svg class="glaze-support-form__upload-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          {{ block.settings.upload_button_text }}
+        </button>
+        <input
+          type="file"
+          id="file-upload-{{ ai_gen_id }}"
+          class="glaze-support-form__file-input-{{ ai_gen_id }}"
+          accept="image/*,video/*"
+          data-file-input
+        >
+        <div class="glaze-support-form__file-name-{{ ai_gen_id }}" data-file-name></div>
+      </div>
+
+      <button type="submit" class="glaze-support-form__submit-{{ ai_gen_id }}">
+        {{ block.settings.submit_button_text }}
+      </button>
+    {%- endform -%}
+  </div>
+</glaze-support-form-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GlazeSupportForm{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.uploadTrigger = this.querySelector('[data-upload-trigger]');
+        this.fileInput = this.querySelector('[data-file-input]');
+        this.fileNameDisplay = this.querySelector('[data-file-name]');
+
+        if (this.uploadTrigger && this.fileInput) {
+          this.uploadTrigger.addEventListener('click', () => {
+            this.fileInput.click();
+          });
+
+          this.fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file && this.fileNameDisplay) {
+              this.fileNameDisplay.textContent = 'Selected: ' + file.name;
+            }
+          });
+        }
+      }
+    }
+
+    customElements.define('glaze-support-form-{{ ai_gen_id }}', GlazeSupportForm{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Glaze support form",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Introduction"
+    },
+    {
+      "type": "richtext",
+      "id": "intro_text",
+      "label": "Intro text",
+      "default": "<p>Welcome to our ceramic glaze troubleshooting support. By checking the box below, you'll receive a questionnaire that may already solve your enamel or glaze problem. If the issue remains unresolved after completing the questionnaire, please leave your name, email, and a detailed description of the problem below.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Checkbox section"
+    },
+    {
+      "type": "richtext",
+      "id": "checkbox_text",
+      "label": "Checkbox text",
+      "default": "<p>I would like to receive the troubleshooting questionnaire first, which may help solve my glaze problem before submitting a support request.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Form labels"
+    },
+    {
+      "type": "text",
+      "id": "first_name_label",
+      "label": "First name label",
+      "default": "First name"
+    },
+    {
+      "type": "text",
+      "id": "surname_label",
+      "label": "Surname label",
+      "default": "Surname"
+    },
+    {
+      "type": "text",
+      "id": "email_label",
+      "label": "Email label",
+      "default": "Email address"
+    },
+    {
+      "type": "text",
+      "id": "problem_label",
+      "label": "Problem label",
+      "default": "Describe your problem"
+    },
+    {
+      "type": "text",
+      "id": "problem_placeholder",
+      "label": "Problem placeholder"
+    },
+    {
+      "type": "header",
+      "content": "Helper text"
+    },
+    {
+      "type": "richtext",
+      "id": "helper_text",
+      "label": "Helper text",
+      "default": "<p>Please include the following details:</p>"
+    },
+    {
+      "type": "text",
+      "id": "helper_item_1",
+      "label": "Helper item 1",
+      "default": "Glaze name and manufacturer"
+    },
+    {
+      "type": "text",
+      "id": "helper_item_2",
+      "label": "Helper item 2",
+      "default": "Firing curve and temperature"
+    },
+    {
+      "type": "text",
+      "id": "helper_item_3",
+      "label": "Helper item 3",
+      "default": "A clear description of the issue"
+    },
+    {
+      "type": "header",
+      "content": "Upload section"
+    },
+    {
+      "type": "text",
+      "id": "upload_label",
+      "label": "Upload label",
+      "default": "Add a photo or video"
+    },
+    {
+      "type": "text",
+      "id": "upload_button_text",
+      "label": "Upload button text",
+      "default": "Add"
+    },
+    {
+      "type": "header",
+      "content": "Submit button"
+    },
+    {
+      "type": "text",
+      "id": "submit_button_text",
+      "label": "Submit button text",
+      "default": "Only click this button if you need additional help"
+    },
+    {
+      "type": "header",
+      "content": "Messages"
+    },
+    {
+      "type": "richtext",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "<p>Thank you for your submission. We'll review your glaze issue and get back to you within 24-48 hours.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#7a9b76"
+    },
+    {
+      "type": "color",
+      "id": "accent_hover_color",
+      "label": "Accent hover",
+      "default": "#6a8a66"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "input_border_color",
+      "label": "Input border",
+      "default": "#d4d4d4"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "label": "Placeholder",
+      "default": "#999999"
+    },
+    {
+      "type": "color",
+      "id": "helper_text_color",
+      "label": "Helper text",
+      "default": "#6b6b6b"
+    },
+    {
+      "type": "color",
+      "id": "checkbox_bg_color",
+      "label": "Checkbox background",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Glaze support form"
+    }
+  ]
+}
+{% endschema %}
