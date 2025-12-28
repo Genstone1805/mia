@@ -41,6 +41,7 @@
             "card_title_color": "#000000",
             "card_description_color": "#757575",
             "card_1_enabled": true,
+            "card_1_image": "shopify://shop_images/imgi_143_8d1e89_f6cb5e3ccf274820872b574ce9fc5932_mv2.jpg",
             "card_1_title": "Card Title 1",
             "card_1_description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
             "card_2_enabled": true,
