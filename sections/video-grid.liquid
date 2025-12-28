@@ -305,11 +305,22 @@
               assign video = section.settings[video_key]
             %}
             {% if video != blank %}
-              {% comment %} {{ i }}: {{ video.sources[1].url | json }}, {% endcomment %}
               {{ i }}: {{ video.sources.first.url | json }},
             {% endif %}
           {% endfor %}
         };
+        {% comment %} this.videos = {
+          {% for i in (1..12) %}
+            {% liquid
+              assign video_key = 'video_' | append: i
+              assign video = section.settings[video_key]
+            %}
+            {% if video != blank %}
+              {% comment %} {{ i }}: {{ video.sources[1].url | json }}, {% endcomment %}
+              {{ i }}: {{ video.sources.first.url | json }},
+            {% endif %}
+          {% endfor %}
+        }; {% endcomment %}
       }
 
       connectedCallback() {
