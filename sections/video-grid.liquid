@@ -1,19 +1,19 @@
-{% assign ai_gen_id = section.id | replace: '_', '' | downcase %}
+{% assign section_id = section.id | replace: '_', '' | downcase %}
 
 {% style %}
-  .ai-video-grid-{{ ai_gen_id }} {
+  .custom-video-grid-{{ section_id }} {
     display: block;
     width: 100%;
     padding: 40px 0;
   }
 
-  .ai-video-grid__container-{{ ai_gen_id }} {
+  .custom-video-grid__container-{{ section_id }} {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
-  .ai-video-grid__heading-{{ ai_gen_id }} {
+  .custom-video-grid__heading-{{ section_id }} {
     font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
     font-weight: {{ section.settings.heading_font.weight }};
     font-size: {{ section.settings.heading_size }}px;
@@ -22,40 +22,40 @@
     margin: 0 0 40px;
   }
 
-  .ai-video-grid__grid-{{ ai_gen_id }} {
+  .custom-video-grid__grid-{{ section_id }} {
     display: grid;
     grid-template-columns: repeat({{ section.settings.desktop_columns }}, 1fr);
     gap: {{ section.settings.grid_gap }}px;
   }
 
   @media screen and (max-width: 749px) {
-    .ai-video-grid__grid-{{ ai_gen_id }} {
+    .custom-video-grid__grid-{{ section_id }} {
       grid-template-columns: repeat({{ section.settings.mobile_columns }}, 1fr);
     }
   }
 
-  .ai-video-grid__card-{{ ai_gen_id }} {
+  .custom-video-grid__card-{{ section_id }} {
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease;
     background-color:{{section.settings.card_bg }}
   }
 
-  .ai-video-grid__card-{{ ai_gen_id }}:hover {
+  .custom-video-grid__card-{{ section_id }}:hover {
     transform: translateY(-5px);
   }
 
-  .ai-video-grid__thumbnail-wrapper-{{ ai_gen_id }} {
+  .custom-video-grid__thumbnail-wrapper-{{ section_id }} {
     position: relative;
-    min-height:320px;
     width: 100%;
+    min-height:320px;
     padding-bottom: 56.25%;
     overflow: hidden;
     border-radius: {{ section.settings.thumbnail_border_radius }}px;
     background-color: #f4f4f4;
   }
 
-  .ai-video-grid__thumbnail-{{ ai_gen_id }} {
+  .custom-video-grid__thumbnail-{{ section_id }} {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@
     object-fit: cover;
   }
 
-  .ai-video-grid__thumbnail-placeholder-{{ ai_gen_id }} {
+  .custom-video-grid__thumbnail-placeholder-{{ section_id }} {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,13 +75,13 @@
     justify-content: center;
   }
 
-  .ai-video-grid__thumbnail-placeholder-{{ ai_gen_id }} svg {
+  .custom-video-grid__thumbnail-placeholder-{{ section_id }} svg {
     width: 60%;
     height: 60%;
     opacity: 0.3;
   }
 
-  .ai-video-grid__play-button-{{ ai_gen_id }} {
+  .custom-video-grid__play-button-{{ section_id }} {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,27 +97,27 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
-  .ai-video-grid__card-{{ ai_gen_id }}:hover .ai-video-grid__play-button-{{ ai_gen_id }} {
+  .custom-video-grid__card-{{ section_id }}:hover .custom-video-grid__play-button-{{ section_id }} {
     background-color: {{ section.settings.play_button_bg_hover }};
     transform: translate(-50%, -50%) scale(1.1);
   }
 
-  .ai-video-grid__play-icon-{{ ai_gen_id }} {
+  .custom-video-grid__play-icon-{{ section_id }} {
     width: calc({{ section.settings.play_button_size }}px * 0.4);
     height: calc({{ section.settings.play_button_size }}px * 0.4);
     margin-left: 4px;
   }
 
-  .ai-video-grid__play-icon-{{ ai_gen_id }} polygon {
+  .custom-video-grid__play-icon-{{ section_id }} polygon {
     fill: {{ section.settings.play_button_icon_color }};
     transition: fill 0.3s ease;
   }
 
-  .ai-video-grid__card-{{ ai_gen_id }}:hover .ai-video-grid__play-icon-{{ ai_gen_id }} polygon {
+  .custom-video-grid__card-{{ section_id }}:hover .custom-video-grid__play-icon-{{ section_id }} polygon {
     fill: {{ section.settings.play_button_icon_color_hover }};
   }
 
-  .ai-video-grid__title-{{ ai_gen_id }} {
+  .custom-video-grid__title-{{ section_id }} {
     padding:20px 10px;
     font-size: {{ section.settings.title_size }}px;
     color: {{ section.settings.title_color }};
@@ -128,7 +128,7 @@
     align-items:center;
   }
 
-  .ai-video-grid__modal-{{ ai_gen_id }} {
+  .custom-video-grid__modal-{{ section_id }} {
     position: fixed;
     top: 0;
     left: 0;
@@ -142,11 +142,11 @@
     padding: 20px;
   }
 
-  .ai-video-grid__modal-{{ ai_gen_id }}.active {
+  .custom-video-grid__modal-{{ section_id }}.active {
     display: flex;
   }
 
-  .ai-video-grid__modal-content-{{ ai_gen_id }} {
+  .custom-video-grid__modal-content-{{ section_id }} {
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -155,13 +155,13 @@
     overflow: hidden;
   }
 
-  .ai-video-grid__modal-video-wrapper-{{ ai_gen_id }} {
+  .custom-video-grid__modal-video-wrapper-{{ section_id }} {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
   }
 
-  .ai-video-grid__modal-video-{{ ai_gen_id }} {
+  .custom-video-grid__modal-video-{{ section_id }} {
     position: absolute;
     top: 0;
     left: 0;
@@ -169,7 +169,7 @@
     height: 100%;
   }
 
-  .ai-video-grid__modal-close-{{ ai_gen_id }} {
+  .custom-video-grid__modal-close-{{ section_id }} {
     position: absolute;
     top: -40px;
     right: 0;
@@ -184,18 +184,18 @@
     z-index: 10000;
   }
 
-  .ai-video-grid__modal-close-{{ ai_gen_id }}:hover {
+  .custom-video-grid__modal-close-{{ section_id }}:hover {
     opacity: 0.7;
   }
 
   @media screen and (max-width: 749px) {
-    .ai-video-grid__modal-close-{{ ai_gen_id }} {
+    .custom-video-grid__modal-close-{{ section_id }} {
       top: -50px;
       right: -10px;
     }
   }
 
-  .ai-video-grid__empty-state-{{ ai_gen_id }} {
+  .custom-video-grid__empty-state-{{ section_id }} {
     text-align: center;
     padding: 60px 20px;
     color: #757575;
@@ -203,10 +203,10 @@
   }
 {% endstyle %}
 
-<video-grid-{{ ai_gen_id }} class="ai-video-grid-{{ ai_gen_id }}" {{ section.shopify_attributes }}>
-  <div class="ai-video-grid__container-{{ ai_gen_id }}">
+<video-grid-{{ section_id }} class="custom-video-grid-{{ section_id }}" {{ section.shopify_attributes }}>
+  <div class="custom-video-grid__container-{{ section_id }}">
     {% if section.settings.heading != blank %}
-      <h2 class="ai-video-grid__heading-{{ ai_gen_id }}">{{ section.settings.heading }}</h2>
+      <h2 class="custom-video-grid__heading-{{ section_id }}">{{ section.settings.heading }}</h2>
     {% endif %}
 
     {% assign has_videos = false %}
@@ -215,9 +215,9 @@
         assign video_key = 'video_' | append: i
         assign image_key = 'video_image_' | append: i
         assign title_key = 'video_title_' | append: i
-        
+
         assign video = section.settings[video_key]
-        
+
         if video != blank
           assign has_videos = true
         endif
@@ -225,63 +225,65 @@
     {% endfor %}
 
     {% if has_videos %}
-      <div class="ai-video-grid__grid-{{ ai_gen_id }}">
+      <div class="custom-video-grid__grid-{{ section_id }}">
         {% for i in (1..12) %}
           {% liquid
             assign video_key = 'video_' | append: i
             assign image_key = 'video_image_' | append: i
             assign title_key = 'video_title_' | append: i
-            
+
             assign video = section.settings[video_key]
             assign image = section.settings[image_key]
             assign title = section.settings[title_key]
           %}
 
           {% if video != blank %}
-            <div class="ai-video-grid__card-{{ ai_gen_id }}" data-video-index="{{ i }}">
-              <div class="ai-video-grid__thumbnail-wrapper-{{ ai_gen_id }}">
+            <div class="custom-video-grid__card-{{ section_id }}" data-video-index="{{ i }}">
+              <div class="custom-video-grid__thumbnail-wrapper-{{ section_id }}">
                 {% if image %}
                   <img
                     src="{{ image | image_url: width: 800 }}"
                     alt="{{ title | escape }}"
-                    class="ai-video-grid__thumbnail-{{ ai_gen_id }}"
+                    class="custom-video-grid__thumbnail-{{ section_id }}"
                     loading="lazy"
                     width="800"
                     height="450"
                   >
                 {% else %}
-                  <div class="ai-video-grid__thumbnail-placeholder-{{ ai_gen_id }}">
+                  <div class="custom-video-grid__thumbnail-placeholder-{{ section_id }}">
                     {{ 'image' | placeholder_svg_tag }}
                   </div>
                 {% endif %}
 
-                <div class="ai-video-grid__play-button-{{ ai_gen_id }}">
-                  <svg class="ai-video-grid__play-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="custom-video-grid__play-button-{{ section_id }}">
+                  <svg
+                    class="custom-video-grid__play-icon-{{ section_id }}"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <polygon points="5,3 19,12 5,21"></polygon>
                   </svg>
                 </div>
               </div>
 
               {% if title != blank %}
-                <h3 class="ai-video-grid__title-{{ ai_gen_id }}">{{ title }}</h3>
+                <h3 class="custom-video-grid__title-{{ section_id }}">{{ title }}</h3>
               {% endif %}
             </div>
           {% endif %}
         {% endfor %}
       </div>
     {% else %}
-      <div class="ai-video-grid__empty-state-{{ ai_gen_id }}">
-        Add videos to display your video grid
-      </div>
+      <div class="custom-video-grid__empty-state-{{ section_id }}">Add videos to display your video grid</div>
     {% endif %}
   </div>
 
-  <div class="ai-video-grid__modal-{{ ai_gen_id }}" data-modal>
-    <div class="ai-video-grid__modal-content-{{ ai_gen_id }}">
-      <button class="ai-video-grid__modal-close-{{ ai_gen_id }}" aria-label="Close video">×</button>
-      <div class="ai-video-grid__modal-video-wrapper-{{ ai_gen_id }}">
+  <div class="custom-video-grid__modal-{{ section_id }}" data-modal>
+    <div class="custom-video-grid__modal-content-{{ section_id }}">
+      <button class="custom-video-grid__modal-close-{{ section_id }}" aria-label="Close video">×</button>
+      <div class="custom-video-grid__modal-video-wrapper-{{ section_id }}">
         <video
-          class="ai-video-grid__modal-video-{{ ai_gen_id }}"
+          class="custom-video-grid__modal-video-{{ section_id }}"
           controls
           playsinline
           data-video-player
@@ -289,21 +291,22 @@
       </div>
     </div>
   </div>
-</video-grid-{{ ai_gen_id }}>
+</video-grid-{{ section_id }}>
 
 <script>
   (function() {
-    class VideoGrid{{ ai_gen_id }} extends HTMLElement {
+    class VideoGrid{{ section_id }} extends HTMLElement {
       constructor() {
         super();
         this.videos = {
           {% for i in (1..12) %}
             {% liquid
               assign video_key = 'video_' | append: i
-              assign video = block.settings[video_key]
+              assign video = section.settings[video_key]
             %}
             {% if video != blank %}
-              {{ i }}: {{ video.sources[1].url | json }},
+              {% comment %} {{ i }}: {{ video.sources[1].url | json }}, {% endcomment %}
+              {{ i }}: {{ video.sources.first.url | json }},
             {% endif %}
           {% endfor %}
         };
@@ -312,8 +315,8 @@
       connectedCallback() {
         this.modal = this.querySelector('[data-modal]');
         this.videoPlayer = this.querySelector('[data-video-player]');
-        this.closeButton = this.querySelector('.ai-video-grid__modal-close-{{ ai_gen_id }}');
-        this.cards = this.querySelectorAll('.ai-video-grid__card-{{ ai_gen_id }}');
+        this.closeButton = this.querySelector('.custom-video-grid__modal-close-{{ section_id }}');
+        this.cards = this.querySelectorAll('.custom-video-grid__card-{{ section_id }}');
 
         this.setupEventListeners();
       }
@@ -345,6 +348,20 @@
 
       openModal(videoIndex) {
         const videoUrl = this.videos[videoIndex];
+
+        if (!videoUrl) return;
+
+        this.videoPlayer.src = videoUrl;
+        this.modal.style.display = 'flex';
+        this.modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        this.videoPlayer.load();
+        this.videoPlayer.play();
+      }
+
+      openModal(videoIndex) {
+        const videoUrl = this.videos[videoIndex];
         if (videoUrl) {
           this.videoPlayer.src = videoUrl;
           this.modal.classList.add('active');
@@ -353,21 +370,30 @@
         }
       }
 
-      closeModal() {
+      {% comment %} closeModal() {
         this.modal.classList.remove('active');
         this.videoPlayer.pause();
         this.videoPlayer.src = '';
         document.body.style.overflow = '';
+      } {% endcomment %}
+      
+      closeModal() {
+        this.modal.classList.remove('active');
+        this.videoPlayer.pause();
+        this.videoPlayer.removeAttribute('src');
+        this.videoPlayer.load();
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
       }
     }
 
-    customElements.define('video-grid-{{ ai_gen_id }}', VideoGrid{{ ai_gen_id }});
+    customElements.define('video-grid-{{ section_id }}', VideoGrid{{ section_id }});
   })();
 </script>
 
 {% schema %}
 {
-  "name": "Video grid 2",
+  "name": "Video grid",
   "tag": "section",
   "settings": [
     {
@@ -546,7 +572,7 @@
     {
       "type": "color",
       "id": "card_bg",
-      "label": "Card Background Color",
+      "label": "Color",
       "default": "#87A587"
     },
     {
@@ -812,7 +838,8 @@
   ],
   "presets": [
     {
-      "name": "Video grid 2"
+      "name": "Video grid",
+      "category": "Custom"
     }
   ]
 }
