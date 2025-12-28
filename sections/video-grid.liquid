@@ -348,13 +348,27 @@
 
       openModal(videoIndex) {
         const videoUrl = this.videos[videoIndex];
+
+        if (!videoUrl) return;
+
+        this.videoPlayer.src = videoUrl;
+        this.modal.style.display = 'flex';
+        this.modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        this.videoPlayer.load();
+        this.videoPlayer.play();
+      }
+
+      {% comment %} openModal(videoIndex) {
+        const videoUrl = this.videos[videoIndex];
         if (videoUrl) {
           this.videoPlayer.src = videoUrl;
           this.modal.classList.add('active');
           document.body.style.overflow = 'hidden';
           this.videoPlayer.play();
         }
-      }
+      } {% endcomment %}
 
       {% comment %} closeModal() {
         this.modal.classList.remove('active');
