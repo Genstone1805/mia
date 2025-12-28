@@ -1,3 +1,7 @@
+{% doc %}
+  @prompt
+    generate a video grid card. the card should show lists of videos (that the admin can add) the video should be uploaded. the video block should contain, video, image (that will be displayed on the grid with a play button over it, video title, this will be below the video image. then, when the video image is clicked, there should be a preview modal that pops up to watch the video
+{% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
