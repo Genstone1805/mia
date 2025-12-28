@@ -9,69 +9,6 @@
  */
 {
   "sections": {
-    "banner_FmgHaB": {
-      "type": "banner",
-      "blocks": {
-        "full_width_qet7LN": {
-          "type": "full_width",
-          "settings": {
-            "desktop_image_height": "600px",
-            "mobile_image_height": "350px",
-            "media_type": "image",
-            "label": "",
-            "heading": "",
-            "text": "",
-            "button_text": "",
-            "button_url": "/",
-            "button_aria": "Button label",
-            "make_link_full_media": false,
-            "overlay_opacity": 30,
-            "overlay_color": "#000000",
-            "image_desktop": "shopify://shop_images/8d1e89_d60e2509576b49dab86416a8616573e7_mv2.avif",
-            "image_border_width": 0,
-            "image_border_indent_desktop": 10,
-            "image_border_indent_mobile": 10,
-            "enable_lazy_load": false,
-            "external_video_url_desktop": "",
-            "external_video_url_mobile": "",
-            "content_alignment": "center",
-            "content_alignment_mobile": "center",
-            "block_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "full_width_qet7LN"
-      ],
-      "name": "Banner",
-      "settings": {
-        "section_background": "#222222",
-        "label_color": "#ffffff",
-        "heading_color": "#ffffff",
-        "text_color": "#ffffff",
-        "link_color": "#d33636",
-        "button_background": "#ffffff",
-        "button_color": "#000000",
-        "button_border": "#ffffff",
-        "button_background_hover": "#000000",
-        "button_color_hover": "#ffffff",
-        "button_border_hover": "#ffffff",
-        "image_border_color": "#ffffff",
-        "button_circle_text_color": "#f9f5f0",
-        "button_circle_background_color": "rgba(0,0,0,0)",
-        "button_circle_border_color": "#f9f5f0",
-        "button_circle_outer_border_color": "#8b8885",
-        "button_circle_text_color_hover": "#2c2a28",
-        "button_circle_background_color_hover": "#eab88c",
-        "button_circle_border_color_hover": "#eab88c",
-        "button_circle_outer_border_color_hover": "#8b8885",
-        "full_width": false,
-        "offset_top_desktop": 0,
-        "offset_bottom_desktop": 0,
-        "offset_top_mobile": 0,
-        "offset_bottom_mobile": 0
-      }
-    },
     "default-page": {
       "type": "default-page-template",
       "disabled": true,
@@ -141,7 +78,6 @@
     }
   },
   "order": [
-    "banner_FmgHaB",
     "default-page",
     "video_grid_njc9JF"
   ]
