@@ -304,9 +304,9 @@
               assign video_key = 'video_' | append: i
               assign video = section.settings[video_key]
             %}
-            {% comment %} {% if video != blank %} {% endcomment %}
+            {% if video != blank %}
               {{ i }}: {{ video.sources[1].url | json }},
-            {% comment %} {% endif %} {% endcomment %}
+            {% endif %}
           {% endfor %}
         };
       }
@@ -361,6 +361,14 @@
         this.videoPlayer.src = '';
         document.body.style.overflow = '';
       }
+
+      closeModal() {
+  this.videoPlayer.pause();
+  this.videoPlayer.removeAttribute('src');
+  this.videoPlayer.load();
+  this.modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
     }
 
     customElements.define('video-grid-{{ section_id }}', VideoGrid{{ section_id }});
