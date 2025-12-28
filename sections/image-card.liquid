@@ -1,6 +1,31 @@
 {% assign section_id = section.id | replace: '_', '' | downcase %}
 
 {% style %}
+/* Modal overlay */
+.gaze-modal-{{ section_id }} {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/* Modal image */
+.gaze-modal-{{ section_id }} img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Checkbox-driven state */
+.gaze-modal-toggle-{{ section_id }}:checked + .gaze-modal-{{ section_id }} {
+  display: flex;
+}
+
+
   .gaze-book-card-container-{{ section_id }} {
     display: block;
     width: 100%;
