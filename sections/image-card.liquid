@@ -98,42 +98,6 @@
       width: {{ section.settings.desktop_width_percent }}%;
     }
   }
-
-
-  .gaze-image-modal-{{ section_id }} {
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    }
-
-    .gaze-image-modal-{{ section_id }}.is-open {
-    display: flex;
-    }
-
-    .gaze-image-modal-backdrop {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    cursor:pointer;
-    }
-
-    .gaze-image-modal-content {
-    position: relative;
-    z-index: 1;
-    width:100dvh;
-    padding:0px 20px;
-    }
-
-    .gaze-image-modal-content embed {
-    min-width: 100%;
-    max-height: 90vh;
-    border-radius: 8px;
-    background: #fff;
-    }
-
 {% endstyle %}
 
 <section class="gaze-book-card-container-{{ section_id }}" {{ section.shopify_attributes }}>
@@ -151,6 +115,7 @@
         <a 
             class="gaze-book-card-item-{{ section_id }}" 
             href="{{ block.settings.file }}"
+            target="_blank"
         >
           <div class="gaze-book-card-image-wrapper-{{ section_id }}">
             {% if block.settings.image %}
