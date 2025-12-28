@@ -137,27 +137,55 @@
 
   <div class="gaze-book-card-grid-{{ section_id }}">
     {% for block in section.blocks %}
-        <div class="gaze-book-card-item-{{ section_id }}" data-card-index="{{ i }}">
-          <div class="gaze-book-card-image-wrapper-{{ section_id }}">
-            {% if block.settings.image %}
-              <img
-                src="{{ block.settings.image | image_url: width: 600 }}"
-                loading="lazy"
-                width="600"
-                height="450"
-                class="gaze-book-card-image-{{ section_id }}"
-              >
-            {% endif %}
-          </div>
-          <div class="gaze-book-card-content-{{ section_id }}">
-            {% if block.settings.title != blank %}
-              <h3 class="gaze-book-card-item-title-{{ section_id }}">{{ block.settings.title }}</h3>
-            {% endif %}
-            {% if block.settings.description != blank %}
-              <div class="gaze-book-card-item-description-{{ section_id }}">{{ block.settings.description }}</div>
-            {% endif %}
-          </div>
-        </div>
+        {% assign modal_id = 'modal-' | append: forloop.index %}
+
+<input
+  type="checkbox"
+  id="{{ modal_id }}"
+  class="gaze-modal-toggle-{{ section_id }}"
+  hidden
+>
+
+<label
+  for="{{ modal_id }}"
+  class="gaze-book-card-item-{{ section_id }}"
+>
+  <div class="gaze-book-card-image-wrapper-{{ section_id }}">
+    {% if block.settings.image %}
+      <img
+        src="{{ block.settings.image | image_url: width: 600 }}"
+        loading="lazy"
+        width="600"
+        height="450"
+        class="gaze-book-card-image-{{ section_id }}"
+      >
+    {% endif %}
+  </div>
+
+  <div class="gaze-book-card-content-{{ section_id }}">
+    {% if block.settings.title != blank %}
+      <h3 class="gaze-book-card-item-title-{{ section_id }}">
+        {{ block.settings.title }}
+      </h3>
+    {% endif %}
+    {% if block.settings.description != blank %}
+      <div class="gaze-book-card-item-description-{{ section_id }}">
+        {{ block.settings.description }}
+      </div>
+    {% endif %}
+  </div>
+</label>
+
+<!-- Modal -->
+<label for="{{ modal_id }}" class="gaze-modal-{{ section_id }}">
+  {% if block.settings.image %}
+    <img
+      src="{{ block.settings.image | image_url: width: 1200 }}"
+      loading="lazy"
+    >
+  {% endif %}
+</label>
+
     {% endfor %}
   </div>
 </section>
