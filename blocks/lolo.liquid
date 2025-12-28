@@ -122,11 +122,14 @@
   }
 
   .ai-video-grid__title-{{ ai_gen_id }} {
-    margin-top: 16px;
+    padding:20px 10px;
     font-size: {{ block.settings.title_size }}px;
     color: {{ block.settings.title_color }};
     text-align: {{ block.settings.title_alignment }};
     font-weight: 500;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
 
   .ai-video-grid__modal-{{ ai_gen_id }} {
