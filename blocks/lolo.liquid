@@ -1,19 +1,23 @@
-{% assign block_id = block.id | replace: '_', '' | downcase %}
+{% doc %}
+  @prompt
+    generate a video grid card. the card should show lists of videos (that the admin can add) the video should be uploaded. the video block should contain, video, image (that will be displayed on the grid with a play button over it, video title, this will be below the video image. then, when the video image is clicked, there should be a preview modal that pops up to watch the video
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
-  .custom-block-video-grid-{{ block_id }} {
+  .ai-video-grid-{{ ai_gen_id }} {
     display: block;
     width: 100%;
     padding: 40px 0;
   }
 
-  .custom-block-video-grid__container-{{ block_id }} {
+  .ai-video-grid__container-{{ ai_gen_id }} {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
-  .custom-block-video-grid__heading-{{ block_id }} {
+  .ai-video-grid__heading-{{ ai_gen_id }} {
     font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
     font-weight: {{ block.settings.heading_font.weight }};
     font-size: {{ block.settings.heading_size }}px;
@@ -22,30 +26,30 @@
     margin: 0 0 40px;
   }
 
-  .custom-block-video-grid__grid-{{ block_id }} {
+  .ai-video-grid__grid-{{ ai_gen_id }} {
     display: grid;
     grid-template-columns: repeat({{ block.settings.desktop_columns }}, 1fr);
     gap: {{ block.settings.grid_gap }}px;
   }
 
   @media screen and (max-width: 749px) {
-    .custom-block-video-grid__grid-{{ block_id }} {
+    .ai-video-grid__grid-{{ ai_gen_id }} {
       grid-template-columns: repeat({{ block.settings.mobile_columns }}, 1fr);
     }
   }
 
-  .custom-block-video-grid__card-{{ block_id }} {
+  .ai-video-grid__card-{{ ai_gen_id }} {
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease;
     background-color:{{block.settings.card_bg }}
   }
 
-  .custom-block-video-grid__card-{{ block_id }}:hover {
+  .ai-video-grid__card-{{ ai_gen_id }}:hover {
     transform: translateY(-5px);
   }
 
-  .custom-block-video-grid__thumbnail-wrapper-{{ block_id }} {
+  .ai-video-grid__thumbnail-wrapper-{{ ai_gen_id }} {
     position: relative;
     min-height:320px;
     width: 100%;
@@ -55,7 +59,7 @@
     background-color: #f4f4f4;
   }
 
-  .custom-block-video-grid__thumbnail-{{ block_id }} {
+  .ai-video-grid__thumbnail-{{ ai_gen_id }} {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +68,7 @@
     object-fit: cover;
   }
 
-  .custom-block-video-grid__thumbnail-placeholder-{{ block_id }} {
+  .ai-video-grid__thumbnail-placeholder-{{ ai_gen_id }} {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,13 +79,13 @@
     justify-content: center;
   }
 
-  .custom-block-video-grid__thumbnail-placeholder-{{ block_id }} svg {
+  .ai-video-grid__thumbnail-placeholder-{{ ai_gen_id }} svg {
     width: 60%;
     height: 60%;
     opacity: 0.3;
   }
 
-  .custom-block-video-grid__play-button-{{ block_id }} {
+  .ai-video-grid__play-button-{{ ai_gen_id }} {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,27 +101,27 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
-  .custom-block-video-grid__card-{{ block_id }}:hover .custom-block-video-grid__play-button-{{ block_id }} {
+  .ai-video-grid__card-{{ ai_gen_id }}:hover .ai-video-grid__play-button-{{ ai_gen_id }} {
     background-color: {{ block.settings.play_button_bg_hover }};
     transform: translate(-50%, -50%) scale(1.1);
   }
 
-  .custom-block-video-grid__play-icon-{{ block_id }} {
+  .ai-video-grid__play-icon-{{ ai_gen_id }} {
     width: calc({{ block.settings.play_button_size }}px * 0.4);
     height: calc({{ block.settings.play_button_size }}px * 0.4);
     margin-left: 4px;
   }
 
-  .custom-block-video-grid__play-icon-{{ block_id }} polygon {
+  .ai-video-grid__play-icon-{{ ai_gen_id }} polygon {
     fill: {{ block.settings.play_button_icon_color }};
     transition: fill 0.3s ease;
   }
 
-  .custom-block-video-grid__card-{{ block_id }}:hover .custom-block-video-grid__play-icon-{{ block_id }} polygon {
+  .ai-video-grid__card-{{ ai_gen_id }}:hover .ai-video-grid__play-icon-{{ ai_gen_id }} polygon {
     fill: {{ block.settings.play_button_icon_color_hover }};
   }
 
-  .custom-block-video-grid__title-{{ block_id }} {
+  .ai-video-grid__title-{{ ai_gen_id }} {
     padding:20px 10px;
     font-size: {{ block.settings.title_size }}px;
     color: {{ block.settings.title_color }};
@@ -128,7 +132,7 @@
     align-items:center;
   }
 
-  .custom-block-video-grid__modal-{{ block_id }} {
+  .ai-video-grid__modal-{{ ai_gen_id }} {
     position: fixed;
     top: 0;
     left: 0;
@@ -142,11 +146,11 @@
     padding: 20px;
   }
 
-  .custom-block-video-grid__modal-{{ block_id }}.active {
+  .ai-video-grid__modal-{{ ai_gen_id }}.active {
     display: flex;
   }
 
-  .custom-block-video-grid__modal-content-{{ block_id }} {
+  .ai-video-grid__modal-content-{{ ai_gen_id }} {
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -155,13 +159,13 @@
     overflow: hidden;
   }
 
-  .custom-block-video-grid__modal-video-wrapper-{{ block_id }} {
+  .ai-video-grid__modal-video-wrapper-{{ ai_gen_id }} {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
   }
 
-  .custom-block-video-grid__modal-video-{{ block_id }} {
+  .ai-video-grid__modal-video-{{ ai_gen_id }} {
     position: absolute;
     top: 0;
     left: 0;
@@ -169,7 +173,7 @@
     height: 100%;
   }
 
-  .custom-block-video-grid__modal-close-{{ block_id }} {
+  .ai-video-grid__modal-close-{{ ai_gen_id }} {
     position: absolute;
     top: -40px;
     right: 0;
@@ -184,18 +188,18 @@
     z-index: 10000;
   }
 
-  .custom-block-video-grid__modal-close-{{ block_id }}:hover {
+  .ai-video-grid__modal-close-{{ ai_gen_id }}:hover {
     opacity: 0.7;
   }
 
   @media screen and (max-width: 749px) {
-    .custom-block-video-grid__modal-close-{{ block_id }} {
+    .ai-video-grid__modal-close-{{ ai_gen_id }} {
       top: -50px;
       right: -10px;
     }
   }
 
-  .custom-block-video-grid__empty-state-{{ block_id }} {
+  .ai-video-grid__empty-state-{{ ai_gen_id }} {
     text-align: center;
     padding: 60px 20px;
     color: #757575;
@@ -203,10 +207,10 @@
   }
 {% endstyle %}
 
-<video-grid-{{ block_id }} class="custom-block-video-grid-{{ block_id }}" {{ block.shopify_attributes }}>
-  <div class="custom-block-video-grid__container-{{ block_id }}">
+<video-grid-{{ ai_gen_id }} class="ai-video-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-video-grid__container-{{ ai_gen_id }}">
     {% if block.settings.heading != blank %}
-      <h2 class="custom-block-video-grid__heading-{{ block_id }}">{{ block.settings.heading }}</h2>
+      <h2 class="ai-video-grid__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
     {% endif %}
 
     {% assign has_videos = false %}
@@ -225,7 +229,7 @@
     {% endfor %}
 
     {% if has_videos %}
-      <div class="custom-block-video-grid__grid-{{ block_id }}">
+      <div class="ai-video-grid__grid-{{ ai_gen_id }}">
         {% for i in (1..12) %}
           {% liquid
             assign video_key = 'video_' | append: i
@@ -238,50 +242,50 @@
           %}
 
           {% if video != blank %}
-            <div class="custom-block-video-grid__card-{{ block_id }}" data-video-index="{{ i }}">
-              <div class="custom-block-video-grid__thumbnail-wrapper-{{ block_id }}">
+            <div class="ai-video-grid__card-{{ ai_gen_id }}" data-video-index="{{ i }}">
+              <div class="ai-video-grid__thumbnail-wrapper-{{ ai_gen_id }}">
                 {% if image %}
                   <img
                     src="{{ image | image_url: width: 800 }}"
                     alt="{{ title | escape }}"
-                    class="custom-block-video-grid__thumbnail-{{ block_id }}"
+                    class="ai-video-grid__thumbnail-{{ ai_gen_id }}"
                     loading="lazy"
                     width="800"
                     height="450"
                   >
                 {% else %}
-                  <div class="custom-block-video-grid__thumbnail-placeholder-{{ block_id }}">
+                  <div class="ai-video-grid__thumbnail-placeholder-{{ ai_gen_id }}">
                     {{ 'image' | placeholder_svg_tag }}
                   </div>
                 {% endif %}
 
-                <div class="custom-block-video-grid__play-button-{{ block_id }}">
-                  <svg class="custom-block-video-grid__play-icon-{{ block_id }}" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="ai-video-grid__play-button-{{ ai_gen_id }}">
+                  <svg class="ai-video-grid__play-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <polygon points="5,3 19,12 5,21"></polygon>
                   </svg>
                 </div>
               </div>
 
               {% if title != blank %}
-                <h3 class="custom-block-video-grid__title-{{ block_id }}">{{ title }}</h3>
+                <h3 class="ai-video-grid__title-{{ ai_gen_id }}">{{ title }}</h3>
               {% endif %}
             </div>
           {% endif %}
         {% endfor %}
       </div>
     {% else %}
-      <div class="custom-block-video-grid__empty-state-{{ block_id }}">
+      <div class="ai-video-grid__empty-state-{{ ai_gen_id }}">
         Add videos to display your video grid
       </div>
     {% endif %}
   </div>
 
-  <div class="custom-block-video-grid__modal-{{ block_id }}" data-modal>
-    <div class="custom-block-video-grid__modal-content-{{ block_id }}">
-      <button class="custom-block-video-grid__modal-close-{{ block_id }}" aria-label="Close video">×</button>
-      <div class="custom-block-video-grid__modal-video-wrapper-{{ block_id }}">
+  <div class="ai-video-grid__modal-{{ ai_gen_id }}" data-modal>
+    <div class="ai-video-grid__modal-content-{{ ai_gen_id }}">
+      <button class="ai-video-grid__modal-close-{{ ai_gen_id }}" aria-label="Close video">×</button>
+      <div class="ai-video-grid__modal-video-wrapper-{{ ai_gen_id }}">
         <video
-          class="custom-block-video-grid__modal-video-{{ block_id }}"
+          class="ai-video-grid__modal-video-{{ ai_gen_id }}"
           controls
           playsinline
           data-video-player
@@ -289,11 +293,11 @@
       </div>
     </div>
   </div>
-</video-grid-{{ block_id }}>
+</video-grid-{{ ai_gen_id }}>
 
 <script>
   (function() {
-    class VideoGrid{{ block_id }} extends HTMLElement {
+    class VideoGrid{{ ai_gen_id }} extends HTMLElement {
       constructor() {
         super();
         this.videos = {
@@ -312,8 +316,8 @@
       connectedCallback() {
         this.modal = this.querySelector('[data-modal]');
         this.videoPlayer = this.querySelector('[data-video-player]');
-        this.closeButton = this.querySelector('.custom-block-video-grid__modal-close-{{ block_id }}');
-        this.cards = this.querySelectorAll('.custom-block-video-grid__card-{{ block_id }}');
+        this.closeButton = this.querySelector('.ai-video-grid__modal-close-{{ ai_gen_id }}');
+        this.cards = this.querySelectorAll('.ai-video-grid__card-{{ ai_gen_id }}');
 
         this.setupEventListeners();
       }
@@ -361,13 +365,13 @@
       }
     }
 
-    customElements.define('video-grid-{{ block_id }}', VideoGrid{{ block_id }});
+    customElements.define('video-grid-{{ ai_gen_id }}', VideoGrid{{ ai_gen_id }});
   })();
 </script>
 
 {% schema %}
 {
-  "name": "Custom Video grid",
+  "name": "Video grid 2",
   "tag": null,
   "settings": [
     {
@@ -812,8 +816,7 @@
   ],
   "presets": [
     {
-      "name": "Custom Video grid",
-      "category": "Custom"
+      "name": "Video grid 2"
     }
   ]
 }
