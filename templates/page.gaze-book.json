@@ -9,81 +9,62 @@
  */
 {
   "sections": {
-    "banner_FmgHaB": {
-      "type": "banner",
-      "blocks": {
-        "full_width_qet7LN": {
-          "type": "full_width",
-          "settings": {
-            "desktop_image_height": "600px",
-            "mobile_image_height": "350px",
-            "media_type": "image",
-            "label": "",
-            "heading": "",
-            "text": "",
-            "button_text": "",
-            "button_url": "/",
-            "button_aria": "Button label",
-            "make_link_full_media": false,
-            "overlay_opacity": 30,
-            "overlay_color": "#000000",
-            "image_desktop": "shopify://shop_images/8d1e89_d60e2509576b49dab86416a8616573e7_mv2.avif",
-            "image_border_width": 0,
-            "image_border_indent_desktop": 10,
-            "image_border_indent_mobile": 10,
-            "enable_lazy_load": false,
-            "external_video_url_desktop": "",
-            "external_video_url_mobile": "",
-            "content_alignment": "center",
-            "content_alignment_mobile": "center",
-            "block_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "full_width_qet7LN"
-      ],
-      "name": "Banner",
-      "settings": {
-        "section_background": "#222222",
-        "label_color": "#FFFFFF",
-        "heading_color": "#FFFFFF",
-        "text_color": "#FFFFFF",
-        "link_color": "#D33636",
-        "button_background": "#FFFFFF",
-        "button_color": "#000000",
-        "button_border": "#FFFFFF",
-        "button_background_hover": "#000000",
-        "button_color_hover": "#FFFFFF",
-        "button_border_hover": "#FFFFFF",
-        "image_border_color": "#FFFFFF",
-        "button_circle_text_color": "#F9F5F0",
-        "button_circle_background_color": "transparent",
-        "button_circle_border_color": "#F9F5F0",
-        "button_circle_outer_border_color": "#8B8885",
-        "button_circle_text_color_hover": "#2C2A28",
-        "button_circle_background_color_hover": "#EAB88C",
-        "button_circle_border_color_hover": "#EAB88C",
-        "button_circle_outer_border_color_hover": "#8B8885",
-        "full_width": false,
-        "offset_top_desktop": 0,
-        "offset_bottom_desktop": 0,
-        "offset_top_mobile": 0,
-        "offset_bottom_mobile": 0
-      }
-    },
     "default-page": {
       "type": "default-page-template",
+      "disabled": true,
       "settings": {
         "offset_top_desktop": 10,
         "offset_bottom_desktop": 10,
         "offset_top_mobile": 10,
         "offset_bottom_mobile": 10
       }
+    },
+    "176692704304abecee": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bc3c87f_M3LqUr": {
+          "type": "ai_gen_block_bc3c87f",
+          "settings": {
+            "main_title": "Our Services",
+            "main_description": "Click on any card to view more details",
+            "title_size": 32,
+            "description_size": 16,
+            "title_color": "#000000",
+            "description_color": "#757575",
+            "background_color": "#ffffff",
+            "border_radius": 8,
+            "desktop_width_percent": 100,
+            "card_background_color": "#f4f4f4",
+            "card_border_radius": 8,
+            "card_title_size": 20,
+            "card_description_size": 14,
+            "card_title_color": "#000000",
+            "card_description_color": "#757575",
+            "card_1_enabled": true,
+            "card_1_title": "Card Title 1",
+            "card_1_description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
+            "card_2_enabled": true,
+            "card_2_title": "Card Title 2",
+            "card_2_description": "Brief description of the second card",
+            "card_3_enabled": true,
+            "card_3_title": "Card Title 3",
+            "card_3_description": "Brief description of the third card",
+            "modal_background_color": "#ffffff",
+            "modal_text_color": "#000000",
+            "modal_title_size": 28,
+            "modal_description_size": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bc3c87f_M3LqUr"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "banner_FmgHaB",
-    "default-page"
+    "default-page",
+    "176692704304abecee"
   ]
 }
