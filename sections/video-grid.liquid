@@ -305,6 +305,7 @@
               assign video = section.settings[video_key]
             %}
             {% if video != blank %}
+              {% comment %} {{ i }}: {{ video.sources[1].url | json }}, {% endcomment %}
               {{ i }}: {{ video.sources.first.url | json }},
             {% endif %}
           {% endfor %}
