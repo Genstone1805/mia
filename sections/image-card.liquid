@@ -98,6 +98,39 @@
       width: {{ section.settings.desktop_width_percent }}%;
     }
   }
+
+
+  .gaze-image-modal-{{ section_id }} {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.gaze-image-modal-{{ section_id }}.is-open {
+  display: flex;
+}
+
+.gaze-image-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.gaze-image-modal-content {
+  position: relative;
+  z-index: 1;
+}
+
+.gaze-image-modal-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  background: #fff;
+}
+
 {% endstyle %}
 
 <section class="gaze-book-card-container-{{ section_id }}" {{ section.shopify_attributes }}>
