@@ -21,6 +21,7 @@
     },
     "video_grid_njc9JF": {
       "type": "video-grid",
+      "disabled": true,
       "name": "Video grid",
       "settings": {
         "heading": "Video Gallery",
