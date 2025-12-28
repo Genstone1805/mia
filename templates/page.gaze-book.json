@@ -21,46 +21,6 @@
     },
     "176692704304abecee": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_bc3c87f_yYxgnT": {
-          "type": "ai_gen_block_bc3c87f",
-          "settings": {
-            "main_title": "Our Services",
-            "main_description": "Click on any card to view more details",
-            "title_size": 32,
-            "description_size": 16,
-            "title_color": "#000000",
-            "description_color": "#757575",
-            "background_color": "#ffffff",
-            "border_radius": 8,
-            "desktop_width_percent": 100,
-            "card_background_color": "#f4f4f4",
-            "card_border_radius": 8,
-            "card_title_size": 20,
-            "card_description_size": 14,
-            "card_title_color": "#000000",
-            "card_description_color": "#757575",
-            "card_1_enabled": true,
-            "card_1_image": "shopify://shop_images/imgi_143_8d1e89_f6cb5e3ccf274820872b574ce9fc5932_mv2.jpg",
-            "card_1_title": "Card Title 1",
-            "card_1_description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
-            "card_2_enabled": true,
-            "card_2_title": "Card Title 2",
-            "card_2_description": "Brief description of the second card",
-            "card_3_enabled": true,
-            "card_3_title": "Card Title 3",
-            "card_3_description": "Brief description of the third card",
-            "modal_background_color": "#ffffff",
-            "modal_text_color": "#000000",
-            "modal_title_size": 28,
-            "modal_description_size": 16
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_bc3c87f_yYxgnT"
-      ],
       "disabled": true,
       "settings": {}
     },
@@ -72,7 +32,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 47",
-            "description": "First edition: At the top of page 47, red iron oxide appears twice above the columns with sample photos. This must, of course, be titanium oxide. The percentages are correct."
+            "description": "First edition: At the top of page 47, red iron oxide appears twice above the columns with sample photos. This must, of course, be titanium oxide. The percentages are correct.",
+            "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-P47.pdf?v=1766930899"
           }
         },
         "image_card_maVrzn": {
@@ -80,7 +41,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 101",
-            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert."
+            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
+            "file": ""
           }
         },
         "image_card_gPtwi4": {
@@ -88,7 +50,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 107",
-            "description": "First edition: The text at the top right next to the figure should say 0% chromium oxide, but in the book it was noted as 3% chromium oxide."
+            "description": "First edition: The text at the top right next to the figure should say 0% chromium oxide, but in the book it was noted as 3% chromium oxide.",
+            "file": ""
           }
         },
         "image_card_6YtBFr": {
@@ -96,7 +59,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 122",
-            "description": "First edition: The samples containing A (cobalt oxide) should, of course, be 0.15%, not 0.3% as stated in the list. The explanation and example on page 121 are correct."
+            "description": "First edition: The samples containing A (cobalt oxide) should, of course, be 0.15%, not 0.3% as stated in the list. The explanation and example on page 121 are correct.",
+            "file": ""
           }
         },
         "image_card_nRhVEF": {
@@ -104,7 +68,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 250",
-            "description": "First edition: A typo crept into the chalk quantity: it should be 52.7 instead of 51.7 for the 1 kg column. The 10 kg column is also incorrect because of this. The correct value for 10 kg is 527 instead of 517."
+            "description": "First edition: A typo crept into the chalk quantity: it should be 52.7 instead of 51.7 for the 1 kg column. The 10 kg column is also incorrect because of this. The correct value for 10 kg is 527 instead of 517.",
+            "file": ""
           }
         },
         "image_card_JP87nc": {
@@ -112,7 +77,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 252",
-            "description": "First edition: A typo has crept into the amount of zinc oxide: it should be 16.76 instead of 17.76 for the 100g column. The 1 kg and 10 kg values ​​are also incorrect because of this. The values ​​should be 167.6 and 1676, respectively. In the same recipe, the number 0 is missing from the 10 kg column for nepheline syenite. The correct number is 3510 instead of 351."
+            "description": "First edition: A typo has crept into the amount of zinc oxide: it should be 16.76 instead of 17.76 for the 100g column. The 1 kg and 10 kg values ​​are also incorrect because of this. The values ​​should be 167.6 and 1676, respectively. In the same recipe, the number 0 is missing from the 10 kg column for nepheline syenite. The correct number is 3510 instead of 351.",
+            "file": ""
           }
         },
         "image_card_ACcCH8": {
@@ -120,7 +86,8 @@
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
             "title": "page 120",
-            "description": "First and second editions. \n\nThe order of the samples is not as described. This figure shows the correct letter codes. You can also find the correct figure here."
+            "description": "First and second editions. \n\nThe order of the samples is not as described. This figure shows the correct letter codes. You can also find the correct figure here.",
+            "file": ""
           }
         }
       },
