@@ -56,16 +56,128 @@
             "modal_description_size": 16
           },
           "blocks": {}
+        },
+        "ai_gen_block_bc3c87f_7i4tMh": {
+          "type": "ai_gen_block_bc3c87f",
+          "settings": {
+            "main_title": "Our Services",
+            "main_description": "Click on any card to view more details",
+            "title_size": 32,
+            "description_size": 16,
+            "title_color": "#000000",
+            "description_color": "#757575",
+            "background_color": "#ffffff",
+            "border_radius": 8,
+            "desktop_width_percent": 100,
+            "card_background_color": "#f4f4f4",
+            "card_border_radius": 8,
+            "card_title_size": 20,
+            "card_description_size": 14,
+            "card_title_color": "#000000",
+            "card_description_color": "#757575",
+            "card_1_enabled": true,
+            "card_1_image": "shopify://shop_images/imgi_143_8d1e89_f6cb5e3ccf274820872b574ce9fc5932_mv2.jpg",
+            "card_1_title": "Card Title 1",
+            "card_1_description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
+            "card_2_enabled": true,
+            "card_2_title": "Card Title 2",
+            "card_2_description": "Brief description of the second card",
+            "card_3_enabled": true,
+            "card_3_title": "Card Title 3",
+            "card_3_description": "Brief description of the third card",
+            "modal_background_color": "#ffffff",
+            "modal_text_color": "#000000",
+            "modal_title_size": 28,
+            "modal_description_size": 16
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_bc3c87f_yYxgnT": {
+          "type": "ai_gen_block_bc3c87f",
+          "settings": {
+            "main_title": "Our Services",
+            "main_description": "Click on any card to view more details",
+            "title_size": 32,
+            "description_size": 16,
+            "title_color": "#000000",
+            "description_color": "#757575",
+            "background_color": "#ffffff",
+            "border_radius": 8,
+            "desktop_width_percent": 100,
+            "card_background_color": "#f4f4f4",
+            "card_border_radius": 8,
+            "card_title_size": 20,
+            "card_description_size": 14,
+            "card_title_color": "#000000",
+            "card_description_color": "#757575",
+            "card_1_enabled": true,
+            "card_1_image": "shopify://shop_images/imgi_143_8d1e89_f6cb5e3ccf274820872b574ce9fc5932_mv2.jpg",
+            "card_1_title": "Card Title 1",
+            "card_1_description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
+            "card_2_enabled": true,
+            "card_2_title": "Card Title 2",
+            "card_2_description": "Brief description of the second card",
+            "card_3_enabled": true,
+            "card_3_title": "Card Title 3",
+            "card_3_description": "Brief description of the third card",
+            "modal_background_color": "#ffffff",
+            "modal_text_color": "#000000",
+            "modal_title_size": 28,
+            "modal_description_size": 16
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_bc3c87f_M3LqUr"
+        "ai_gen_block_bc3c87f_M3LqUr",
+        "ai_gen_block_bc3c87f_7i4tMh",
+        "ai_gen_block_bc3c87f_yYxgnT"
       ],
+      "disabled": true,
       "settings": {}
+    },
+    "image_card_M7tCaf": {
+      "type": "image-card",
+      "blocks": {
+        "image_card_ejFwMx": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "title": "Title",
+            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert."
+          }
+        }
+      },
+      "block_order": [
+        "image_card_ejFwMx"
+      ],
+      "name": "Image Card with preview",
+      "settings": {
+        "main_title": "Our Services",
+        "main_description": "Click on any card to view more details",
+        "title_size": 42,
+        "description_size": 24,
+        "title_color": "#000000",
+        "description_color": "#757575",
+        "background_color": "#ffffff",
+        "border_radius": 8,
+        "desktop_width_percent": 100,
+        "card_background_color": "#f4f4f4",
+        "card_border_radius": 8,
+        "card_title_size": 20,
+        "card_description_size": 14,
+        "card_title_color": "#000000",
+        "card_description_color": "#757575",
+        "modal_background_color": "#ffffff",
+        "modal_text_color": "#000000",
+        "modal_title_size": 28,
+        "modal_description_size": 16
+      }
     }
   },
   "order": [
     "default-page",
-    "176692704304abecee"
+    "176692704304abecee",
+    "image_card_M7tCaf"
   ]
 }
