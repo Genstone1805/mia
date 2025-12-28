@@ -145,7 +145,8 @@
 
   <div class="gaze-book-card-grid-{{ section_id }}">
     {% for block in section.blocks %}
-        <div class="gaze-book-card-item-{{ section_id }}" 
+        <div 
+            class="gaze-book-card-item-{{ section_id }}" 
             data-preview-image="{{ block.settings.image | image_url: width: 1200 }}"
         >
           <div class="gaze-book-card-image-wrapper-{{ section_id }}">
@@ -178,6 +179,41 @@
   </div>
 </div>
 </section>
+
+<script>
+  (function () {
+    const section = document.querySelector('.gaze-book-card-container-{{ section_id }}');
+    if (!section) return;
+
+    const modal = section.querySelector('#gazeModal-{{ section_id }}');
+    const modalImg = modal.querySelector('img');
+    const backdrop = modal.querySelector('.gaze-image-modal-backdrop');
+
+    section.querySelectorAll('.gaze-book-card-item-{{ section_id }}').forEach(card => {
+      card.addEventListener('click', () => {
+        const imgSrc = card.dataset.previewImage;
+        if (!imgSrc) return;
+
+        modalImg.src = imgSrc;
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    backdrop.addEventListener('click', closeModal);
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modalImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  })();
+</script>
+
 
 
 {% schema %}
