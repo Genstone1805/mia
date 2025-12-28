@@ -37,7 +37,6 @@
     background-color: {{ section.settings.card_background_color }};
     border-radius: {{ section.settings.card_border_radius }}px;
     overflow: hidden;
-    cursor: pointer;
   }
 
   .gaze-book-card-image-wrapper-{{ section_id }} {
@@ -117,6 +116,7 @@
             class="gaze-book-card-item-{{ section_id }}" 
             href="{{ block.settings.file }}"
             target="_blank"
+            style=""
         >
           <div class="gaze-book-card-image-wrapper-{{ section_id }}">
             {% if block.settings.image %}
