@@ -295,7 +295,7 @@
 
 <script>
   (function() {
-    class VideoGrid{{ section_id }} extends HTMLElement {
+    class VideoGrid{{ ai_gen_id }} extends HTMLElement {
       constructor() {
         super();
         this.videos = {
@@ -305,8 +305,7 @@
               assign video = section.settings[video_key]
             %}
             {% if video != blank %}
-              {% comment %} {{ i }}: {{ video.sources[1].url | json }}, {% endcomment %}
-              {{ i }}: {{ video.sources.first.url | json }},
+              {{ i }}: {{ video.sources[1].url | json }},
             {% endif %}
           {% endfor %}
         };
@@ -315,8 +314,8 @@
       connectedCallback() {
         this.modal = this.querySelector('[data-modal]');
         this.videoPlayer = this.querySelector('[data-video-player]');
-        this.closeButton = this.querySelector('.custom-video-grid__modal-close-{{ section_id }}');
-        this.cards = this.querySelectorAll('.custom-video-grid__card-{{ section_id }}');
+        this.closeButton = this.querySelector('.ai-video-grid__modal-close-{{ ai_gen_id }}');
+        this.cards = this.querySelectorAll('.ai-video-grid__card-{{ ai_gen_id }}');
 
         this.setupEventListeners();
       }
@@ -348,20 +347,6 @@
 
       openModal(videoIndex) {
         const videoUrl = this.videos[videoIndex];
-
-        if (!videoUrl) return;
-
-        this.videoPlayer.src = videoUrl;
-        this.modal.style.display = 'flex';
-        this.modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-
-        this.videoPlayer.load();
-        this.videoPlayer.play();
-      }
-
-      openModal(videoIndex) {
-        const videoUrl = this.videos[videoIndex];
         if (videoUrl) {
           this.videoPlayer.src = videoUrl;
           this.modal.classList.add('active');
@@ -370,24 +355,15 @@
         }
       }
 
-      {% comment %} closeModal() {
+      closeModal() {
         this.modal.classList.remove('active');
         this.videoPlayer.pause();
         this.videoPlayer.src = '';
         document.body.style.overflow = '';
-      } {% endcomment %}
-      
-      closeModal() {
-        this.modal.classList.remove('active');
-        this.videoPlayer.pause();
-        this.videoPlayer.removeAttribute('src');
-        this.videoPlayer.load();
-        this.modal.classList.remove('active');
-        document.body.style.overflow = '';
       }
     }
 
-    customElements.define('video-grid-{{ section_id }}', VideoGrid{{ section_id }});
+    customElements.define('video-grid-{{ ai_gen_id }}', VideoGrid{{ ai_gen_id }});
   })();
 </script>
 
