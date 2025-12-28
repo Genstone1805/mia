@@ -198,15 +198,6 @@
 
   <div class="gaze-book-card-grid-{{ section_id }}">
     {% for block in section.blocks %}
-      {% liquid
-        assign card_image_key = 'card_' | append: i | append: '_image'
-        assign card_title_key = 'card_' | append: i | append: '_title'
-        assign card_description_key = 'card_' | append: i | append: '_description'
-
-        assign card_image = section.settings[card_image_key]
-        assign card_title = section.settings[card_title_key]
-        assign card_description = section.settings[card_description_key]
-      %}
         <div class="gaze-book-card-item-{{ section_id }}" data-card-index="{{ i }}">
           <div class="gaze-book-card-image-wrapper-{{ section_id }}">
             {% if block.settings.image %}
@@ -220,11 +211,11 @@
             {% endif %}
           </div>
           <div class="gaze-book-card-content-{{ section_id }}">
-            {% if card_title != blank %}
-              <h3 class="gaze-book-card-item-title-{{ section_id }}">{{ card_title }}</h3>
+            {% if block.settings.title != blank %}
+              <h3 class="gaze-book-card-item-title-{{ section_id }}">{{ block.settings.title }}</h3>
             {% endif %}
-            {% if card_description != blank %}
-              <div class="gaze-book-card-item-description-{{ section_id }}">{{ card_description }}</div>
+            {% if block.settings.description != blank %}
+              <div class="gaze-book-card-item-description-{{ section_id }}">{{ block.settings.description }}</div>
             {% endif %}
           </div>
         </div>
