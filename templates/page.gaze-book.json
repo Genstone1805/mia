@@ -135,16 +135,12 @@
         "background_color": "#ffffff",
         "border_radius": 8,
         "desktop_width_percent": 100,
-        "card_background_color": "#f4f4f4",
+        "card_background_color": "#ffffff",
         "card_border_radius": 8,
         "card_title_size": 20,
         "card_description_size": 14,
         "card_title_color": "#000000",
-        "card_description_color": "#757575",
-        "modal_background_color": "#ffffff",
-        "modal_text_color": "#000000",
-        "modal_title_size": 28,
-        "modal_description_size": 16
+        "card_description_color": "#000000"
       }
     }
   },
