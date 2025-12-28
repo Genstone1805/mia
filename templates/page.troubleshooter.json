@@ -1,1 +1,101 @@
-{"sections":{"default-page":{"type":"default-page-template","disabled":true,"settings":{"offset_top_desktop":10,"offset_bottom_desktop":10,"offset_top_mobile":10,"offset_bottom_mobile":10}},"text_section_aYcHrc":{"type":"text-section","name":"Rich text","settings":{"heading":"PROBLEM SOLVER","subheading":"","text_content":"","text_alignment":"center","section_alignment":"center","enable_read_more":false,"read_more_text":"Read more","show_less_text":"Show less","full_width":false,"offset_top_desktop":0,"offset_bottom_desktop":0,"offset_top_mobile":60,"offset_bottom_mobile":60}},"1766314635a702c15a":{"type":"_blocks","blocks":{"ai_gen_block_b7861dc_wMdRQd":{"type":"ai_gen_block_b7861dc","settings":{"max_width":800,"padding_desktop":60,"padding_mobile":20,"desktop_width_percent":100,"intro_text":"","checkbox_text":"By checking the box, you'll receive a questionnaire that may already solve your enamel problem. If you haven't found an answer to your question, you can leave your name and email address. Don't forget to describe the problem in detail .","conditional_section_title":"Your problem concerns","radio_option_1":"an unfired SOGO glaze","radio_option_2":"a fired glaze result of a SOGO glaze","radio_option_3":"a non-SOGO glaze","radio_option_4":"something else","first_name_label":"First name","surname_label":"Surname","email_label":"Email address","problem_label":"Describe your problem","helper_text_intro":"Please mention:","helper_item_1":"glaze name","helper_item_2":"firing curve and temperature","helper_item_3":"a clear description of the issue","upload_label":"Add a photo or video","upload_button_text":"Add","submit_button_text":"Only click this button if you need additional help","success_message":"<p>Thank you for your message. We will get back to you as soon as possible.<\/p>","font":"assistant_n4","heading_font":"assistant_n4","intro_text_size":15,"section_title_size":18,"label_text_size":14,"input_text_size":15,"helper_text_size":13,"button_text_size":15,"background_color":"#ffffff","text_color":"#6b6b6b","heading_color":"#2c2c2c","accent_color":"#003d39","accent_color_hover":"#6a8a6e","button_text_color":"#ffffff","required_color":"#d33636","helper_text_color":"#999999","input_background_color":"#ffffff","input_border_color":"#d9d9d9","input_border_radius":4,"button_border_radius":6,"file_item_background":"#f5f5f5","success_background":"#e8f5e9","success_text_color":"#2e7d32","error_background":"#ffebee","error_text_color":"#c62828"},"blocks":{}}},"block_order":["ai_gen_block_b7861dc_wMdRQd"],"settings":{}}},"order":["default-page","text_section_aYcHrc","1766314635a702c15a"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "default-page": {
+      "type": "default-page-template",
+      "disabled": true,
+      "settings": {
+        "offset_top_desktop": 10,
+        "offset_bottom_desktop": 10,
+        "offset_top_mobile": 10,
+        "offset_bottom_mobile": 10
+      }
+    },
+    "text_section_aYcHrc": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "PROBLEM SOLVER",
+        "subheading": "",
+        "text_content": "",
+        "text_alignment": "center",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "problem_solver_form_pyk6f9": {
+      "type": "problem-solver-form",
+      "name": "Problem Solver form",
+      "settings": {
+        "max_width": 800,
+        "padding_desktop": 60,
+        "padding_mobile": 20,
+        "desktop_width_percent": 100,
+        "intro_text": "<p>By checking the box below, you will receive a questionnaire that may already solve your enamel or glaze problem. If the issue remains unresolved after completing the questionnaire, you can leave your name, email address, and a detailed description of the problem, and we will get back to you as soon as possible.</p>",
+        "checkbox_text": "I would like to receive the troubleshooting questionnaire first",
+        "conditional_section_title": "Your problem concerns",
+        "radio_option_1": "an unfired SOGO glaze",
+        "radio_option_2": "a fired glaze result of a SOGO glaze",
+        "radio_option_3": "a non-SOGO glaze",
+        "radio_option_4": "something else",
+        "first_name_label": "First name",
+        "surname_label": "Surname",
+        "email_label": "Email address",
+        "problem_label": "Describe your problem",
+        "helper_text_intro": "Please mention:",
+        "helper_item_1": "glaze name",
+        "helper_item_2": "firing curve and temperature",
+        "helper_item_3": "a clear description of the issue",
+        "upload_label": "Add a photo or video",
+        "upload_button_text": "Add",
+        "submit_button_text": "Only click this button if you need additional help",
+        "success_message": "<p>Thank you for your message. We will get back to you as soon as possible.</p>",
+        "font": "assistant_n4",
+        "heading_font": "assistant_n4",
+        "intro_text_size": 15,
+        "section_title_size": 18,
+        "label_text_size": 14,
+        "input_text_size": 15,
+        "helper_text_size": 13,
+        "button_text_size": 15,
+        "background_color": "#ffffff",
+        "text_color": "#6b6b6b",
+        "heading_color": "#2c2c2c",
+        "accent_color": "#7a9b7e",
+        "accent_color_hover": "#6a8a6e",
+        "button_text_color": "#ffffff",
+        "required_color": "#d33636",
+        "helper_text_color": "#999999",
+        "input_background_color": "#ffffff",
+        "input_border_color": "#d9d9d9",
+        "input_border_radius": 4,
+        "button_border_radius": 6,
+        "file_item_background": "#f5f5f5",
+        "success_background": "#e8f5e9",
+        "success_text_color": "#2e7d32",
+        "error_background": "#ffebee",
+        "error_text_color": "#c62828"
+      }
+    }
+  },
+  "order": [
+    "default-page",
+    "text_section_aYcHrc",
+    "problem_solver_form_pyk6f9"
+  ]
+}
