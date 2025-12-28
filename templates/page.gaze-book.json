@@ -30,7 +30,7 @@
         "image_card_ejFwMx": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-12-29_042502.png",
+            "image": "shopify://shop_images/Titanium.avif",
             "title": "page 47",
             "description": "First edition: At the top of page 47, red iron oxide appears twice above the columns with sample photos. This must, of course, be titanium oxide. The percentages are correct.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-P47.pdf?v=1766930899"
@@ -39,7 +39,7 @@
         "image_card_maVrzn": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-12-29_042956.png",
+            "image": "shopify://shop_images/SOGO_-_Driehoek_1.avif",
             "title": "page 101",
             "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-103-107_101.pdf?v=1766932192"
@@ -48,7 +48,7 @@
         "image_card_gPtwi4": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2025-12-29_043154.png",
+            "image": "shopify://shop_images/SOGO_-_glazuurboek-107.avif",
             "title": "page 107",
             "description": "First edition: The text at the top right next to the figure should say 0% chromium oxide, but in the book it was noted as 3% chromium oxide.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-103-107_107.pdf?v=1766932368"
@@ -57,7 +57,7 @@
         "image_card_6YtBFr": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "image": "shopify://shop_images/pagina_122.avif",
             "title": "page 122",
             "description": "First edition: The samples containing A (cobalt oxide) should, of course, be 0.15%, not 0.3% as stated in the list. The explanation and example on page 121 are correct.",
             "file": ""
@@ -66,7 +66,7 @@
         "image_card_nRhVEF": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "image": "shopify://shop_images/Recept_strontium.avif",
             "title": "page 250",
             "description": "First edition: A typo crept into the chalk quantity: it should be 52.7 instead of 51.7 for the 1 kg column. The 10 kg column is also incorrect because of this. The correct value for 10 kg is 527 instead of 517.",
             "file": ""
@@ -75,7 +75,7 @@
         "image_card_JP87nc": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "image": "shopify://shop_images/Recept_zink.avif",
             "title": "page 252",
             "description": "First edition: A typo has crept into the amount of zinc oxide: it should be 16.76 instead of 17.76 for the 100g column. The 1 kg and 10 kg values ​​are also incorrect because of this. The values ​​should be 167.6 and 1676, respectively. In the same recipe, the number 0 is missing from the 10 kg column for nepheline syenite. The correct number is 3510 instead of 351.",
             "file": ""
@@ -84,7 +84,7 @@
         "image_card_ACcCH8": {
           "type": "image_card",
           "settings": {
-            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "image": "shopify://shop_images/Schermafbeelding_2025-04-09_163407.avif",
             "title": "page 120",
             "description": "First and second editions. \n\nThe order of the samples is not as described. This figure shows the correct letter codes. You can also find the correct figure here.",
             "file": ""
