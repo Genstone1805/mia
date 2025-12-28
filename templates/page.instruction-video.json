@@ -19,6 +19,55 @@
         "offset_bottom_mobile": 10
       }
     },
+    "blocks_6xwqYY": {
+      "type": "_blocks",
+      "blocks": {
+        "lolo_FEbUgN": {
+          "type": "lolo",
+          "settings": {
+            "heading": "Video Gallery",
+            "heading_font": "assistant_n4",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "heading_alignment": "center",
+            "desktop_columns": 3,
+            "mobile_columns": "1",
+            "grid_gap": 30,
+            "desktop_width_percent": 100,
+            "thumbnail_border_radius": 8,
+            "play_button_size": 70,
+            "play_button_bg": "#ffffff",
+            "play_button_bg_hover": "#000000",
+            "play_button_icon_color": "#000000",
+            "play_button_icon_color_hover": "#ffffff",
+            "title_size": 16,
+            "title_color": "#000000",
+            "card_bg": "#87A587",
+            "title_alignment": "left",
+            "video_1": "shopify://files/videos/file (8).mp4",
+            "video_image_1": "shopify://shop_images/Dompelglazuur_aanmaken_stills.avif",
+            "video_title_1": "Video 1",
+            "video_title_2": "Video 2",
+            "video_title_3": "Video 3",
+            "video_title_4": "Video 4",
+            "video_title_5": "Video 5",
+            "video_title_6": "Video 6",
+            "video_title_7": "Video 7",
+            "video_title_8": "Video 8",
+            "video_title_9": "Video 9",
+            "video_title_10": "Video 10",
+            "video_title_11": "Video 11",
+            "video_title_12": "Video 12"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "lolo_FEbUgN"
+      ],
+      "name": "Video grid 2",
+      "settings": {}
+    },
     "video_grid_njc9JF": {
       "type": "video-grid",
       "name": "Video grid",
@@ -79,6 +128,7 @@
   },
   "order": [
     "default-page",
+    "blocks_6xwqYY",
     "video_grid_njc9JF"
   ]
 }
