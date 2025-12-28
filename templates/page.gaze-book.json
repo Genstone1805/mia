@@ -90,12 +90,39 @@
             "title": "Title",
             "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert."
           }
+        },
+        "image_card_6YtBFr": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "title": "Title",
+            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert."
+          }
+        },
+        "image_card_nRhVEF": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "title": "Title",
+            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert."
+          }
+        },
+        "image_card_JP87nc": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "title": "Title",
+            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert."
+          }
         }
       },
       "block_order": [
         "image_card_ejFwMx",
         "image_card_maVrzn",
-        "image_card_gPtwi4"
+        "image_card_gPtwi4",
+        "image_card_6YtBFr",
+        "image_card_nRhVEF",
+        "image_card_JP87nc"
       ],
       "name": "Image Card with preview",
       "settings": {
