@@ -494,23 +494,7 @@
       "label": "Enable card 1",
       "default": true
     },
-    {
-      "type": "image_picker",
-      "id": "card_1_image",
-      "label": "Image"
-    },
-    {
-      "type": "text",
-      "id": "card_1_title",
-      "label": "Title",
-      "default": "Card Title 1"
-    },
-    {
-      "type": "textarea",
-      "id": "card_1_description",
-      "label": "Description",
-      "default": "Brief description of the first card"
-    },
+    
     {
       "type": "header",
       "content": "Card 2"
@@ -600,6 +584,31 @@
       "unit": "px",
       "label": "Modal description size",
       "default": 16
+    }
+  ],
+  "blocks": [
+    {
+        "type": "image_card",
+        "name" : "Image Card",
+        "settings": [
+            {
+      "type": "image_picker",
+      "id": "card_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "card_1_title",
+      "label": "Title",
+      "default": "Card Title 1"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_description",
+      "label": "Description",
+      "default": "Brief description of the first card"
+    },
+        ]
     }
   ],
   "presets": [
