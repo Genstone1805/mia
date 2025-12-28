@@ -131,7 +131,7 @@
         "title_size": 42,
         "description_size": 24,
         "title_color": "#000000",
-        "description_color": "#757575",
+        "description_color": "#000000",
         "background_color": "#ffffff",
         "border_radius": 8,
         "desktop_width_percent": 100,
