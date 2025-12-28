@@ -355,20 +355,21 @@
         }
       }
 
-      closeModal() {
+      {% comment %} closeModal() {
         this.modal.classList.remove('active');
         this.videoPlayer.pause();
         this.videoPlayer.src = '';
         document.body.style.overflow = '';
-      }
-
+      } {% endcomment %}
+      
       closeModal() {
-  this.videoPlayer.pause();
-  this.videoPlayer.removeAttribute('src');
-  this.videoPlayer.load();
-  this.modal.classList.remove('active');
-  document.body.style.overflow = '';
-}
+        this.modal.classList.remove('active');
+        this.videoPlayer.pause();
+        this.videoPlayer.removeAttribute('src');
+        this.videoPlayer.load();
+        this.modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
     }
 
     customElements.define('video-grid-{{ section_id }}', VideoGrid{{ section_id }});
