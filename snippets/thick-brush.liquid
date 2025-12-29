@@ -1,0 +1,26 @@
+{% comment %} unpackedSogoBrushSolute {% endcomment %}
+
+{%
+  render 'radio-fields',
+  title:"Did you prepare the glaze with diluted pehatine according to the instruction on the package?",
+  field_id:"unpackedSogoThickBrushSolute",
+  required: true,
+  field_name:"unbacked_sogo_thick_brush_solute",
+  field_values:"
+  unpackedSogoThickBrushSoluteYes|Yes,
+  unpackedSogoThickBrushSoluteNo|No
+  ",
+  section_id:{{section_id }}
+%}
+{%
+  render 'radio-fields',
+  instruction:"If the brush glaze is too thick to work with easily, feel free to add a dash of diluted pehatine solution until it's fluid enough to brush again. You may need to reassess the number of coats you brush. You might need to apply an additional coat to achieve sufficient coverage and the right color.",
+  field_id:"unpackedSogoThickBrushSoluteYesInstruction",
+  section_id:{{section_id }}
+%}
+{%
+  render 'radio-fields',
+  instruction:"Make your brush glaze according to the instructions on the packaging. Lost the packaging? The label is also available as an image next to the glaze in the webshop. Be sure to check it out.",
+  field_id:"unpackedSogoThickBrushSoluteNoInstruction",
+  section_id:{{section_id }}
+%}

@@ -1,0 +1,45 @@
+<div
+  id="{{- field_id | strip -}}"
+  class="custom-glaze-support-form__conditional-section-{{ section_id }}"
+>
+  {% if title != blank %}
+    <h3 class="custom-glaze-support-form__section-title-{{ section_id }}">
+      {{ title }}
+      {% if required %}* {% endif %}
+    </h3>
+  {% endif %}
+  {% if instruction != blank %}
+    <h3 class="custom-glaze-support-form-instruction-{{ section_id }}">
+      {{ instruction }}
+    </h3>
+  {% endif %}
+
+  {% if field_values != blank %}
+    <div class="custom-glaze-support-form__radio-group-{{ section_id }}">
+      {% assign form_fields = field_values | split: ',' %}
+      {% for field in form_fields %}
+        {% assign parts = field | split: '|' %}
+        {% assign form_field_id = parts[0] %}
+        {% assign field_label = parts[1] %}
+        <div class="custom-glaze-support-form__radio-wrapper-{{ section_id }}">
+          <input
+            type="radio"
+            id="{{-form_field_id | strip-}}"
+            name="contact[{{- field_name | strip -}}]"
+            value="{{field_label}}"
+            {% if required and forloop.index == 1 %}
+              required
+            {% endif %}
+            class="custom-glaze-support-form__radio-{{ section_id }}"
+          >
+          <label
+            for="{{- form_field_id | strip -}}"
+            class="custom-glaze-support-form__radio-label-{{ section_id }}"
+          >
+            {{- field_label | strip -}}
+          </label>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

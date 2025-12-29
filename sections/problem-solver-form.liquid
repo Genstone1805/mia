@@ -7,7 +7,6 @@
     max-width: 100%;
     background-color: {{ section.settings.background_color }};
     padding: {{ section.settings.padding_desktop }}px;
-    font-family: {{ section.settings.font.family }}, sans-serif;
     font-weight: {{ section.settings.font.weight }};
   }
 
@@ -26,6 +25,12 @@
     margin-bottom: 32px;
     color: {{ section.settings.text_color }};
     font-size: {{ section.settings.intro_text_size }}px;
+    line-height: 1.6;
+  }
+
+  .custom-glaze-support-form-instruction-{{ section_id }} {
+    color: {{ section.settings.text_color }};
+    font-size: {{ section.settings.instruction_text_size }}px !important;
     line-height: 1.6;
   }
 
@@ -55,23 +60,22 @@
   .custom-glaze-support-form__conditional-section-{{ section_id }} {
     max-height: 0;
     overflow: hidden;
-    opacity: 0;
+    display:none;
     transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
     margin-bottom: 0;
   }
 
   .custom-glaze-support-form__conditional-section-{{ section_id }}.active {
     max-height: 500px;
-    opacity: 1;
+    display:block;
     margin-bottom: 32px;
   }
 
-  .custom-glaze-support-form__section-title-{{ section_id }} {
-    font-size: {{ section.settings.section_title_size }}px;
+  .custom-glaze-support-form__section-instruction-{{ section_id }} {
+    font-size: {{ section.settings.section_title_size }}px !important;
     font-weight: 500;
     color: {{ section.settings.heading_color }};
     margin-bottom: 20px;
-    font-family: {{ section.settings.heading_font.family }}, sans-serif;
   }
 
   .custom-glaze-support-form__radio-group-{{ section_id }} {
@@ -127,7 +131,6 @@
     font-size: {{ section.settings.input_text_size }}px;
     color: {{ section.settings.text_color }};
     background-color: {{ section.settings.input_background_color }};
-    font-family: {{ section.settings.font.family }}, sans-serif;
     transition: border-color 0.2s ease;
   }
 
@@ -198,7 +201,6 @@
     font-size: {{ section.settings.button_text_size }}px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
-    font-family: {{ section.settings.font.family }}, sans-serif;
   }
 
   .custom-glaze-support-form__upload-button-{{ section_id }}:hover {
@@ -256,7 +258,6 @@
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
-    font-family: {{ section.settings.font.family }}, sans-serif;
   }
 
   .custom-glaze-support-form__submit-button-{{ section_id }}:hover {
@@ -308,9 +309,13 @@
   .custom-glaze-support-form__error-message-{{ section_id }}.active {
     display: block;
   }
+
+  .hidden{
+    dsplay:none !important
+  }
 {% endstyle %}
 
-<glaze-support-form-{{ section_id }}
+<section
   class="custom-glaze-support-form-{{ section_id }}"
   {{ section.shopify_attributes }}
 >
@@ -319,9 +324,9 @@
       {{ section.settings.intro_text }}
     </div>
 
-    {%- form 'contact' -%}
+    {%- form 'contact', id: 'custom-glaze-form' -%}
       <input type="hidden" name="contact[subject]" value="Glaze Troubleshooting Support Request">
-
+      {% comment %} Success Message {% endcomment %}
       <div
         id="custom-glaze-support-form-success-{{ section_id }}"
         class="custom-glaze-support-form__success-message-{{ section_id }} {% if form.posted_successfully? %}active{% endif %}"
@@ -331,7 +336,7 @@
       >
         {{ section.settings.success_message }}
       </div>
-
+      {% comment %} Error Message {% endcomment %}
       <div
         id="custom-glaze-support-form-error-{{ section_id }}"
         class="custom-glaze-support-form__error-message-{{ section_id }} {% if form.errors %}active{% endif %}"
@@ -344,90 +349,75 @@
         {% endif %}
       </div>
 
+      {% comment %} Form Option trigger {% endcomment %}
       <div class="custom-glaze-support-form__checkbox-wrapper-{{ section_id }}">
         <input
           type="checkbox"
-          id="custom-glaze-questionnaire-checkbox-{{ section_id }}"
+          id="questionnaire-checkbox"
           class="custom-glaze-support-form__checkbox-{{ section_id }}"
+          required
         >
         <label
-          for="custom-glaze-questionnaire-checkbox-{{ section_id }}"
+          for="questionnaire-checkbox"
           class="custom-glaze-support-form__checkbox-label-{{ section_id }}"
         >
           {{ section.settings.checkbox_text }}
         </label>
       </div>
 
-      <div
-        id="custom-glaze-conditional-section-{{ section_id }}"
-        class="custom-glaze-support-form__conditional-section-{{ section_id }}"
-      >
-        <h3 class="custom-glaze-support-form__section-title-{{ section_id }}">
-          {{ section.settings.conditional_section_title }}
-        </h3>
-        <div class="custom-glaze-support-form__radio-group-{{ section_id }}">
-          <div class="custom-glaze-support-form__radio-wrapper-{{ section_id }}">
-            <input
-              type="radio"
-              id="custom-glaze-radio-unfired-{{ section_id }}"
-              name="contact[problem_type]"
-              value="An unfired SOGO glaze"
-              class="custom-glaze-support-form__radio-{{ section_id }}"
-            >
-            <label
-              for="custom-glaze-radio-unfired-{{ section_id }}"
-              class="custom-glaze-support-form__radio-label-{{ section_id }}"
-            >
-              {{ section.settings.radio_option_1 }}
-            </label>
-          </div>
-          <div class="custom-glaze-support-form__radio-wrapper-{{ section_id }}">
-            <input
-              type="radio"
-              id="custom-glaze-radio-fired-{{ section_id }}"
-              name="contact[problem_type]"
-              value="A fired glaze result of a SOGO glaze"
-              class="custom-glaze-support-form__radio-{{ section_id }}"
-            >
-            <label
-              for="custom-glaze-radio-fired-{{ section_id }}"
-              class="custom-glaze-support-form__radio-label-{{ section_id }}"
-            >
-              {{ section.settings.radio_option_2 }}
-            </label>
-          </div>
-          <div class="custom-glaze-support-form__radio-wrapper-{{ section_id }}">
-            <input
-              type="radio"
-              id="custom-glaze-radio-nonsogo-{{ section_id }}"
-              name="contact[problem_type]"
-              value="A non-SOGO glaze"
-              class="custom-glaze-support-form__radio-{{ section_id }}"
-            >
-            <label
-              for="custom-glaze-radio-nonsogo-{{ section_id }}"
-              class="custom-glaze-support-form__radio-label-{{ section_id }}"
-            >
-              {{ section.settings.radio_option_3 }}
-            </label>
-          </div>
-          <div class="custom-glaze-support-form__radio-wrapper-{{ section_id }}">
-            <input
-              type="radio"
-              id="custom-glaze-radio-other-{{ section_id }}"
-              name="contact[problem_type]"
-              value="Something else"
-              class="custom-glaze-support-form__radio-{{ section_id }}"
-            >
-            <label
-              for="custom-glaze-radio-other-{{ section_id }}"
-              class="custom-glaze-support-form__radio-label-{{ section_id }}"
-            >
-              {{ section.settings.radio_option_4 }}
-            </label>
-          </div>
-        </div>
-      </div>
+      {% comment %} Option Initialization {% endcomment %}
+      {%
+        render 'radio-fields',
+        title:section.settings.conditional_section_title,
+        field_id:"problemType",
+        required: true,
+        field_name:"problem_type",
+        field_values:"
+        unpackedSogoProblem|An unbacked SOGO glaze,
+        backed_sogo_problem|A backed glaze of a SOGO glaze,
+        non_sogo_problem|A non-SOGO glaze,
+        something_else|Something else'
+        ",
+        section_id:{{section_id }}
+      %}
+
+      {% comment %} unpackedSogoProblem {% endcomment %}
+
+      {%
+        render 'radio-fields',
+        title:"Is it about",
+        field_id:"unpackedSogoProblemType",
+        required: true,
+        field_name:"unbacked_sogo",
+        field_values:"
+        unpackedSogoBrush|A brush glaze,
+        unpacked_sogo_with_water|A glaze mixed with water,
+        unpacked_sogo_powder|A glaze powder,
+        unpacked_sogo_else|Something else
+        ",
+        section_id:{{section_id }}
+      %}
+      {% comment %} unpackedSogoBrushProblem {% endcomment %}
+
+      {%
+        render 'radio-fields',
+        title:"The brush glaze",
+        field_id:"unpackedSogoBrushProblem",
+        required: true,
+        field_name:"unbacked_sogo_brush",
+        field_values:"
+        unpackedSogoBrushProblemThick|Is too thick,
+        unpackedSogoBrushProblemRunny|Is too runny,
+        unpackedSogoBrushProblemHard|Has become rock hard,
+        unpackedSogoBrushProblemPebbles|contains granules/pebbles,
+        unpackedSogoBrushProblemElse|Something else
+        ",
+        section_id:{{section_id }}
+      %}
+
+      {% render 'runny-brush', section_id: section_id %}
+
+      {% render 'thick-brush', section_id: section_id %}
 
       <div class="custom-glaze-support-form__row-{{ section_id }}">
         <div class="custom-glaze-support-form__field-group-{{ section_id }}">
@@ -547,81 +537,63 @@
       </button>
     {%- endform -%}
   </div>
-</glaze-support-form-{{ section_id }}>
+</section>
 
 <script>
-  (function() {
-    class GlazeSupportForm{{ section_id }} extends HTMLElement {
-      constructor() {
-        super();
-      }
+  const form = document.getElementById('custom-glaze-form');
+  {% comment %} triggers {% endcomment %}
+  const checkbox = document.getElementById('questionnaire-checkbox');
+  const unpackedSogoProblem = document.getElementById('unpackedSogoProblem');
+  const unpackedSogoBrush = document.getElementById('unpackedSogoBrush');
+  const unpackedSogoBrushProblemThick = document.getElementById('unpackedSogoBrushProblemThick');
+  const unpackedSogoThickBrushSoluteYes = document.getElementById('unpackedSogoThickBrushSoluteYes');
+  const unpackedSogoThickBrushSoluteNo = document.getElementById('unpackedSogoThickBrushSoluteNo');
+  const unpackedSogoBrushProblemRunny = document.getElementById('unpackedSogoBrushProblemRunny');
+  const unpackedSogoBrushRunnySoluteYes = document.getElementById('unpackedSogoBrushRunnySoluteYes');
+  const unpackedSogoBrushRunnyYesMatchesGravity = document.getElementById('unpackedSogoBrushRunnyYesMatchesGravity');
+  const unpackedSogoBrushRunnyYesLowerGravity = document.getElementById('unpackedSogoBrushRunnyYesLowerGravity');
+  const unpackedSogoBrushRunnyNoGravity = document.getElementById('unpackedSogoBrushRunnyNoGravity');
 
-      connectedCallback() {
-        this.checkbox = this.querySelector('#custom-glaze-questionnaire-checkbox-{{ section_id }}');
-        this.conditionalSection = this.querySelector('#custom-glaze-conditional-section-{{ section_id }}');
-        this.uploadTrigger = this.querySelector('#custom-glaze-upload-trigger-{{ section_id }}');
-        this.fileInput = this.querySelector('#custom-glaze-file-input-{{ section_id }}');
-        this.fileList = this.querySelector('#custom-glaze-file-list-{{ section_id }}');
-        this.files = [];
+  {% comment %} Containers {% endcomment %}
+  const problemType = document.getElementById('problemType');
+  const unpackedSogoProblemType = document.getElementById('unpackedSogoProblemType');
+  const unpackedSogoBrushProblem = document.getElementById('unpackedSogoBrushProblem');
+  const unpackedSogoBrushSolute = document.getElementById('unpackedSogoThickBrushSolute');
+  const unpackedSogoThickBrushSoluteNoInstruction = document.getElementById('unpackedSogoThickBrushSoluteNoInstruction');
+  const unpackedSogoThickBrushSoluteYesInstruction = document.getElementById('unpackedSogoThickBrushSoluteYesInstruction');
+  const unpackedSogoRunnyBrushSolute = document.getElementById('unpackedSogoRunnyBrushSolute');
+  const unpackedSogoRunnyBrushGravityYes = document.getElementById('unpackedSogoRunnyBrushGravityYes');
+  const unpackedSogoRunnyBrushYesGravityMatchesInstruction = document.getElementById('unpackedSogoRunnyBrushYesGravityMatchesInstruction');
+  const unpackedSogoRunnyBrushNoGravityInstruction = document.getElementById('unpackedSogoRunnyBrushNoGravityInstruction');
+  const unpackedSogoBrushRunnySoluteNo = document.getElementById('unpackedSogoBrushRunnySoluteNo');
+  const unpackedSogoRunnyBrushSoluteNoInstruction = document.getElementById('unpackedSogoRunnyBrushSoluteNoInstruction');
 
-        this.setupEventListeners();
-      }
-
-      setupEventListeners() {
-        if (this.checkbox && this.conditionalSection) {
-          this.checkbox.addEventListener('change', () => {
-            if (this.checkbox.checked) {
-              this.conditionalSection.classList.add('active');
-            } else {
-              this.conditionalSection.classList.remove('active');
-            }
-          });
-        }
-
-        if (this.uploadTrigger && this.fileInput) {
-          this.uploadTrigger.addEventListener('click', () => {
-            this.fileInput.click();
-          });
-
-          this.fileInput.addEventListener('change', (e) => {
-            const newFiles = Array.from(e.target.files);
-            this.files = this.files.concat(newFiles);
-            this.renderFileList();
-          });
-        }
-      }
-
-      renderFileList() {
-        if (!this.fileList) return;
-
-        this.fileList.innerHTML = '';
-
-        this.files.forEach((file, index) => {
-          const fileItem = document.createElement('div');
-          fileItem.className = 'custom-glaze-support-form__file-item-{{ section_id }}';
-
-          const fileName = document.createElement('span');
-          fileName.textContent = file.name;
-
-          const removeButton = document.createElement('button');
-          removeButton.type = 'button';
-          removeButton.className = 'custom-glaze-support-form__file-remove-{{ section_id }}';
-          removeButton.textContent = '×';
-          removeButton.setAttribute('aria-label', 'Remove ' + file.name);
-          removeButton.addEventListener('click', () => {
-            this.files.splice(index, 1);
-            this.renderFileList();
-          });
-
-          fileItem.appendChild(fileName);
-          fileItem.appendChild(removeButton);
-          this.fileList.appendChild(fileItem);
-        });
-      }
+  function formHandler(trigger, container) {
+    if (trigger.checked) {
+      container.classList.add('active');
+    } else {
+      container.classList.remove('active');
     }
 
-    customElements.define('glaze-support-form-{{ section_id }}', GlazeSupportForm{{ section_id }});
-  })();
+    if (trigger.checked && !container.classList.contains('active')) {
+    trigger.checked = false;
+  }
+  }
+
+  form.addEventListener('change', () => {
+    formHandler(checkbox, problemType);
+    formHandler(unpackedSogoProblem, unpackedSogoProblemType);
+    formHandler(unpackedSogoBrush, unpackedSogoBrushProblem);
+    formHandler(unpackedSogoBrushProblemThick, unpackedSogoBrushSolute);
+    formHandler(unpackedSogoThickBrushSoluteYes, unpackedSogoThickBrushSoluteYesInstruction);
+    formHandler(unpackedSogoThickBrushSoluteNo, unpackedSogoThickBrushSoluteNoInstruction);
+    formHandler(unpackedSogoBrushProblemRunny, unpackedSogoRunnyBrushSolute);
+    formHandler(unpackedSogoBrushRunnySoluteYes, unpackedSogoRunnyBrushGravityYes);
+    formHandler(unpackedSogoBrushRunnyYesMatchesGravity, unpackedSogoRunnyBrushYesGravityMatchesInstruction);
+    formHandler(unpackedSogoBrushRunnyYesLowerGravity, unpackedSogoRunnyBrushYesGravityLowerInstruction);
+    formHandler(unpackedSogoBrushRunnyNoGravity, unpackedSogoRunnyBrushNoGravityInstruction);
+    formHandler(unpackedSogoBrushRunnyNoGravity, unpackedSogoRunnyBrushSoluteNoInstruction);
+  });
 </script>
 
 {% schema %}
@@ -815,18 +787,7 @@
       "type": "header",
       "content": "Typography"
     },
-    {
-      "type": "font_picker",
-      "id": "font",
-      "label": "Body font",
-      "default": "assistant_n4"
-    },
-    {
-      "type": "font_picker",
-      "id": "heading_font",
-      "label": "Heading font",
-      "default": "assistant_n4"
-    },
+
     {
       "type": "range",
       "id": "intro_text_size",
@@ -836,6 +797,16 @@
       "unit": "px",
       "label": "Introduction text size",
       "default": 15
+    },
+    {
+      "type": "range",
+      "id": "instruction_text_size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Form Instruction text size",
+      "default": 20
     },
     {
       "type": "range",
