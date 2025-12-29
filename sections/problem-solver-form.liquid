@@ -354,6 +354,7 @@
         <input
           type="checkbox"
           id="questionnaire-checkbox"
+          data-container="problemType"
           class="custom-glaze-support-form__checkbox-{{ section_id }}"
           required
         >
@@ -373,7 +374,7 @@
         required: true,
         field_name:"problem_type",
         field_values:"
-        unpackedSogoProblem|An unbacked SOGO glaze,
+        unpackedSogoProblem|An unbacked SOGO glaze | unpackedSogoProblemType,
         backed_sogo_problem|A backed glaze of a SOGO glaze,
         non_sogo_problem|A non-SOGO glaze,
         something_else|Something else'
@@ -390,34 +391,16 @@
         required: true,
         field_name:"unbacked_sogo",
         field_values:"
-        unpackedSogoBrush|A brush glaze,
-        unpacked_sogo_with_water|A glaze mixed with water,
+        unpackedSogoBrush|A brush glaze|unpackedSogoBrushProblem,
+        unpackedSogoWithWater|A glaze mixed with water for pouring and dipping|unpackedSogoWithWaterProblem,
         unpacked_sogo_powder|A glaze powder,
         unpacked_sogo_else|Something else
         ",
         section_id:{{section_id }}
       %}
-      {% comment %} unpackedSogoBrushProblem {% endcomment %}
 
-      {%
-        render 'radio-fields',
-        title:"The brush glaze",
-        field_id:"unpackedSogoBrushProblem",
-        required: true,
-        field_name:"unbacked_sogo_brush",
-        field_values:"
-        unpackedSogoBrushProblemThick|Is too thick,
-        unpackedSogoBrushProblemRunny|Is too runny,
-        unpackedSogoBrushProblemHard|Has become rock hard,
-        unpackedSogoBrushProblemPebbles|contains granules/pebbles,
-        unpackedSogoBrushProblemElse|Something else
-        ",
-        section_id:{{section_id }}
-      %}
-
-      {% render 'runny-brush', section_id: section_id %}
-
-      {% render 'thick-brush', section_id: section_id %}
+      {% render 'mixed-problem', section_id:{{section_id }} %}
+      {% render 'brush-problem', section_id:{{section_id }} %}
 
       <div class="custom-glaze-support-form__row-{{ section_id }}">
         <div class="custom-glaze-support-form__field-group-{{ section_id }}">
@@ -541,32 +524,8 @@
 
 <script>
   const form = document.getElementById('custom-glaze-form');
-  {% comment %} triggers {% endcomment %}
   const checkbox = document.getElementById('questionnaire-checkbox');
-  const unpackedSogoProblem = document.getElementById('unpackedSogoProblem');
-  const unpackedSogoBrush = document.getElementById('unpackedSogoBrush');
-  const unpackedSogoBrushProblemThick = document.getElementById('unpackedSogoBrushProblemThick');
-  const unpackedSogoThickBrushSoluteYes = document.getElementById('unpackedSogoThickBrushSoluteYes');
-  const unpackedSogoThickBrushSoluteNo = document.getElementById('unpackedSogoThickBrushSoluteNo');
-  const unpackedSogoBrushProblemRunny = document.getElementById('unpackedSogoBrushProblemRunny');
-  const unpackedSogoBrushRunnySoluteYes = document.getElementById('unpackedSogoBrushRunnySoluteYes');
-  const unpackedSogoBrushRunnyYesMatchesGravity = document.getElementById('unpackedSogoBrushRunnyYesMatchesGravity');
-  const unpackedSogoBrushRunnyYesLowerGravity = document.getElementById('unpackedSogoBrushRunnyYesLowerGravity');
-  const unpackedSogoBrushRunnyNoGravity = document.getElementById('unpackedSogoBrushRunnyNoGravity');
-
-  {% comment %} Containers {% endcomment %}
   const problemType = document.getElementById('problemType');
-  const unpackedSogoProblemType = document.getElementById('unpackedSogoProblemType');
-  const unpackedSogoBrushProblem = document.getElementById('unpackedSogoBrushProblem');
-  const unpackedSogoBrushSolute = document.getElementById('unpackedSogoThickBrushSolute');
-  const unpackedSogoThickBrushSoluteNoInstruction = document.getElementById('unpackedSogoThickBrushSoluteNoInstruction');
-  const unpackedSogoThickBrushSoluteYesInstruction = document.getElementById('unpackedSogoThickBrushSoluteYesInstruction');
-  const unpackedSogoRunnyBrushSolute = document.getElementById('unpackedSogoRunnyBrushSolute');
-  const unpackedSogoRunnyBrushGravityYes = document.getElementById('unpackedSogoRunnyBrushGravityYes');
-  const unpackedSogoRunnyBrushYesGravityMatchesInstruction = document.getElementById('unpackedSogoRunnyBrushYesGravityMatchesInstruction');
-  const unpackedSogoRunnyBrushNoGravityInstruction = document.getElementById('unpackedSogoRunnyBrushNoGravityInstruction');
-  const unpackedSogoBrushRunnySoluteNo = document.getElementById('unpackedSogoBrushRunnySoluteNo');
-  const unpackedSogoRunnyBrushSoluteNoInstruction = document.getElementById('unpackedSogoRunnyBrushSoluteNoInstruction');
 
   function formHandler(trigger, container) {
     if (trigger.checked) {
@@ -575,24 +534,43 @@
       container.classList.remove('active');
     }
 
-    if (trigger.checked && !container.classList.contains('active')) {
-    trigger.checked = false;
+    const allElements = document.querySelectorAll('.custom-glaze-support-form__conditional-section-{{ section_id }}');
+
+    allElements.forEach((el) => {
+      if (!el.classList.contains('active')) {
+        const radios = el.querySelectorAll('input[type="radio"]');
+
+        radios.forEach((radio) => {
+          radio.checked = false;
+        });
+      }
+    });
   }
+
+  function toggleHandler(trigger, container) {
+    if (trigger.checked) {
+      container.classList.add('active');
+    } else {
+      const allElements = document.querySelectorAll('.custom-glaze-support-form__conditional-section-{{ section_id }}');
+
+      allElements.forEach((el) => {
+        el.classList.remove('active');
+        el.querySelectorAll('input[type="radio"]').forEach((radio) => {
+          radio.checked = false;
+        });
+      });
+    }
   }
 
   form.addEventListener('change', () => {
-    formHandler(checkbox, problemType);
-    formHandler(unpackedSogoProblem, unpackedSogoProblemType);
-    formHandler(unpackedSogoBrush, unpackedSogoBrushProblem);
-    formHandler(unpackedSogoBrushProblemThick, unpackedSogoBrushSolute);
-    formHandler(unpackedSogoThickBrushSoluteYes, unpackedSogoThickBrushSoluteYesInstruction);
-    formHandler(unpackedSogoThickBrushSoluteNo, unpackedSogoThickBrushSoluteNoInstruction);
-    formHandler(unpackedSogoBrushProblemRunny, unpackedSogoRunnyBrushSolute);
-    formHandler(unpackedSogoBrushRunnySoluteYes, unpackedSogoRunnyBrushGravityYes);
-    formHandler(unpackedSogoBrushRunnyYesMatchesGravity, unpackedSogoRunnyBrushYesGravityMatchesInstruction);
-    formHandler(unpackedSogoBrushRunnyYesLowerGravity, unpackedSogoRunnyBrushYesGravityLowerInstruction);
-    formHandler(unpackedSogoBrushRunnyNoGravity, unpackedSogoRunnyBrushNoGravityInstruction);
-    formHandler(unpackedSogoBrushRunnyNoGravity, unpackedSogoRunnyBrushSoluteNoInstruction);
+    const formRadios = form.querySelectorAll('input[type="radio"]');
+    formRadios.forEach((fm) => {
+      const container = document.getElementById(fm.dataset.container);
+      if (container) {
+        formHandler(fm, container);
+      }
+    });
+    toggleHandler(checkbox, problemType);
   });
 </script>
 

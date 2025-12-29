@@ -21,12 +21,17 @@
         {% assign parts = field | split: '|' %}
         {% assign form_field_id = parts[0] %}
         {% assign field_label = parts[1] %}
+        {% assign field_container = parts[2] %}
         <div class="custom-glaze-support-form__radio-wrapper-{{ section_id }}">
           <input
             type="radio"
+
             id="{{-form_field_id | strip-}}"
             name="contact[{{- field_name | strip -}}]"
             value="{{field_label}}"
+            {% if field_container %}
+              data-container="{{- field_container | strip -}}"
+            {% endif %}
             {% if required and forloop.index == 1 %}
               required
             {% endif %}

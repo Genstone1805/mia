@@ -1,0 +1,23 @@
+{%
+  render 'radio-fields',
+  title:"The brush glaze",
+  field_id:"unpackedSogoBrushProblem",
+  required: true,
+  field_name:"unbacked_sogo_brush",
+  field_values:"
+  unpackedSogoBrushProblemThick|Is too thick|unpackedSogoThickBrushSolute,
+  unpackedSogoBrushProblemRunny|Is too runny|unpackedSogoRunnyBrushSolute,
+  unpackedSogoBrushProblemHard|Has become rock hard|unpackedSogoHardBrushSolute,
+  unpackedSogoBrushProblemPebbles|contains granules/pebbles|unpackedSogoPebbleBrushSoluteNoInstruction,
+  unpackedSogoBrushProblemElse|Something else
+  ",
+  section_id:{{section_id }}
+%}
+
+{% render 'pebble-brush', section_id: section_id %}
+
+{% render 'hard-brush', section_id: section_id %}
+
+{% render 'runny-brush', section_id: section_id %}
+
+{% render 'thick-brush', section_id: section_id %}

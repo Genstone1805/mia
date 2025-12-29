@@ -7,8 +7,8 @@
   required: true,
   field_name:"unbacked_sogo_runny_brush_solute",
   field_values:"
-  unpackedSogoBrushRunnySoluteYes|Yes,
-  unpackedSogoBrushRunnySoluteNo|No
+  unpackedSogoBrushRunnySoluteYes|Yes|unpackedSogoRunnyBrushGravityYes,
+  unpackedSogoBrushRunnySoluteNo|No|unpackedSogoRunnyBrushSoluteNoInstruction
   ",
   section_id:{{section_id }}
 %}
@@ -20,16 +20,16 @@
   required: true,
   field_name:"unbacked_sogo_runny_brush_gravity",
   field_values:"
-  unpackedSogoBrushRunnyYesMatchesGravity|Yes it matches the packaging,
-  unpackedSogoBrushRunnyYesLowerGravity|Yes but it is lower on the packaging,
-  unpackedSogoBrushRunnyNoGravity|No
+  unpackedSogoBrushRunnyYesMatchesGravity|Yes it matches the packaging|unpackedSogoRunnyBrushYesGravityMatchesInstruction,
+  unpackedSogoBrushRunnyYesLowerGravity|Yes but it is lower on the packaging|unpackedSogoRunnyBrushYesGravityLowerInstruction,
+  unpackedSogoBrushRunnyNoGravity|No|unpackedSogoRunnyBrushNoGravityInstruction
   ",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
-  instruction:"Diluted pehatine has a limited shelf life. It can lose its effectiveness if left for too long. Your glaze may have become too runny because the pehatine has spoiled. Add a dash of undiluted pehatine to the glaze to thicken it again.",
+  instruction:"Make your brush glaze according to the instructions on the packaging. Lost the packaging? The label is also available as an image next to the glaze in the webshop. Be sure to check it out.",
   field_id:"unpackedSogoRunnyBrushSoluteNoInstruction",
   section_id:{{section_id }}
 %}
