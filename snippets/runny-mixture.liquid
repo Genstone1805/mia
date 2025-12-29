@@ -1,0 +1,37 @@
+{%
+  render 'radio-fields',
+  title:"Did you prepare the glaze with diluted pehatine according to the instruction on the package?",
+  field_id:"unpackedSogoRunnyMixtureSolute",
+  required: true,
+  field_name:"unbacked_sogo_Runny_brush_solute",
+  field_values:"
+  unpackedSogoRunnyMixtureSoluteYes|Yes|unpackedSogoThickMixtureSoluteViscosity3,
+  unpackedSogoRunnyMixtureSoluteNo|No|unpackedSogoRunnyMixtureSoluteNoInstruction
+  ",
+  section_id:{{section_id }}
+%}
+
+{% comment %} Viscosity {% endcomment %}
+{% render 'viscosity-mixture3', section_id:{{section_id }} %}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoRunnyMixtureSoluteNoInstruction",
+  instruction:"Measure the specific gravity of the glaze. If it's too low compared to the label, wait at least 24 hours for the glaze to settle. Carefully remove the water with a syringe and measure again. Add or remove more water until the specific gravity is correct.
+
+  Is the specific gravity too high? Carefully add water until the specific gravity matches that stated on the label.
+
+  An image of the label and all the information can also be found with the correct glaze in the webshop.",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoRunnyMixtureSoluteGravityNoInstruction",
+  instruction:"Measure the specific gravity of the glaze. If it's too low compared to the label, wait at least 24 hours for the glaze to settle. Carefully remove the water with a syringe and measure again. Add or remove more water until the specific gravity is correct.
+
+  Is the specific gravity too high? Carefully add water until the specific gravity matches that stated on the label.
+
+  An image of the label and all the information can also be found with the correct glaze in the webshop.",
+  section_id:{{section_id }}
+%}

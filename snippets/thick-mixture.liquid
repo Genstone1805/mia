@@ -18,7 +18,7 @@
   field_name:"unbacked_sogo_thick_brush_solute_usage",
   field_values:"
   unpackedSogoThickMixtureSoluteYesLong|Yes It has been there for a while and/or it has been used a lot|unpackedSogoThickMixtureSoluteGravity,
-  unpackedSogoThickMixtureSoluteYesShort|No It has hardly or not been used and was created only recently|unpackedSogoThickMixtureSoluteViscosity
+  unpackedSogoThickMixtureSoluteYesShort|No It has hardly or not been used and was created only recently|unpackedSogoThickMixtureSoluteViscosity1
   ",
   section_id:{{section_id }}
 %}
@@ -31,35 +31,34 @@
   required: true,
   field_name:"unbacked_sogo_thick_brush_solute_gravity",
   field_values:"
-  unpackedSogoThickMixtureSoluteGravityYes|Yes|unpackedSogoThickMixtureSoluteViscosity,
-  unpackedSogoThickMixtureSoluteGravityNo|No|unpackedSogoThickMixtureSoluteNoInstruction
+  unpackedSogoThickMixtureSoluteGravityYes|Yes|unpackedSogoThickMixtureSoluteViscosity2,
+  unpackedSogoThickMixtureSoluteGravityNo|No|unpackedSogoThickMixtureSoluteGravityNoInstruction
   ",
   section_id:{{section_id }}
 %}
 
 {% comment %} Viscosity {% endcomment %}
-{%
-  render 'radio-fields',
-  title:"Have you checked the viscosity?",
-  field_id:"unpackedSogoThickMixtureSoluteViscosity",
-  required: true,
-  field_name:"unbacked_sogo_thick_brush_solute_viscosity",
-  field_values:"
-  unpackedSogoThickMixtureSoluteViscosityYesMatches|Yes with a viscosity meter and it matches the packaging,
-  unpackedSogoThickMixtureSoluteViscosityYesHigher|Yes with a viscosity meter and it higher than what is stated on the packaging,
-  unpackedSogoThickMixtureSoluteViscosityesDip|Yes with with a finger dip meter,
-  unpackedSogoThickMixtureSoluteViscosityNo|No
-  ",
-  section_id:{{section_id }}
-%}
+{% render 'viscosity-mixture1', section_id:{{section_id }} %}
+{% render 'viscosity-mixture2', section_id:{{section_id }} %}
 
 {%
   render 'radio-fields',
+  field_id:"unpackedSogoThickMixtureSoluteNoInstruction",
   instruction:"Measure the specific gravity of the glaze. If it's too low compared to the label, wait at least 24 hours for the glaze to settle. Carefully remove the water with a syringe and measure again. Add or remove more water until the specific gravity is correct.
 
   Is the specific gravity too high? Carefully add water until the specific gravity matches that stated on the label.
 
   An image of the label and all the information can also be found with the correct glaze in the webshop.",
-  field_id:"unpackedSogoThickMixtureSoluteNoInstruction",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoThickMixtureSoluteGravityNoInstruction",
+  instruction:"Measure the specific gravity of the glaze. If it's too low compared to the label, wait at least 24 hours for the glaze to settle. Carefully remove the water with a syringe and measure again. Add or remove more water until the specific gravity is correct.
+
+  Is the specific gravity too high? Carefully add water until the specific gravity matches that stated on the label.
+
+  An image of the label and all the information can also be found with the correct glaze in the webshop.",
   section_id:{{section_id }}
 %}

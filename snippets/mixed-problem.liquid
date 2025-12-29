@@ -6,21 +6,16 @@
   field_name:"mixed_sogo",
   field_values:"
   unpackedSogoMixedProblemThick|Is too thick|unpackedSogoThickMixtureSolute,
-  unpackedSogoMixedProblemRunny|Is too runny,
-  unpackedSogoMixedProblemHard|Has become rock hard,
-  unpackedSogoMixedProblemPebbles|contains granules/pebbles,
-  unpackedSogoMixedProblemPebbles|Is very powdery after glazing,
-  unpackedSogoMixedProblemPebbles|There is nothing else wrong,
+  unpackedSogoMixedProblemRunny|Is too runny|unpackedSogoRunnyMixtureSolute,
+  unpackedSogoMixedProblemHard|Has become rock hard|unpackedSogoRunnyMixtureSoluteHardInstruction,
+  unpackedSogoMixedProblemPebbles|contains granules/pebbles|unpackedSogoRunnyMixtureSolutePebbleInstruction,
+  unpackedSogoMixedProblemSurface|Is very powdery after glazing|unpackedSogoRunnyMixtureSoluteSurfaceInstruction,
+  unpackedSogoMixedProblemGlazing|There is nothing else wrong|unpackedSogoRunnyMixtureSoluteglazingInstruction,
   unpackedSogoMixedProblemElse|Something else
   ",
   section_id:{{section_id }}
 %}
 
 {% render 'thick-mixture', section_id: section_id %}
-{% comment %}
-  {% render 'pebble-brush', section_id: section_id %}
-
-  {% render 'hard-brush', section_id: section_id %}
-
-  {% render 'runny-brush', section_id: section_id %}
-{% endcomment %}
+{% render 'runny-mixture', section_id: section_id %}
+{% render 'instructions', section_id: section_id %}

@@ -1,0 +1,46 @@
+{%
+  render 'radio-fields',
+  title:"Have you checked the viscosity?",
+  field_id:"unpackedSogoThickMixtureSoluteViscosity3",
+  required: true,
+  field_name:"unbacked_sogo_thick_brush_solute_viscosity",
+  field_values:"
+  unpackedSogoThickMixtureSoluteViscosityYesMatches3|Yes with a viscosity meter and it matches the packaging|unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3,
+  unpackedSogoThickMixtureSoluteViscosityYesHigher3|Yes with a viscosity meter and it higher than what is stated on the packaging|unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3,
+  unpackedSogoThickMixtureSoluteViscosityesDip3|Yes with with a finger dip meter|unpackedSogoThickMixtureSoluteViscosityesDipInstruction3,
+  unpackedSogoThickMixtureSoluteViscosityNo3|No|unpackedSogoThickMixtureSoluteViscosityNoInstruction3
+  ",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3",
+  instruction:"If you've checked the viscosity and the flow time matches the package, the glaze is the right consistency. The glaze may be quite runny, but this consistency will give you the desired results. Try using the glaze this way. If you're still not satisfied and the result looks too thin, try increasing the contact time with the shard.",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3",
+  instruction:"If your glaze has a longer flow time than stated on the package, it's too viscous. It needs to be deflocculated with Dolapix until you reach the correct value.",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoThickMixtureSoluteViscosityesDipInstruction3",
+  instruction:"The finger-dip method provides an initial indication of viscosity but requires considerable experience. Moreover, subtle differences cannot be detected with this method. Furthermore, some SOGO glazes perform better when thicker, while others perform better when thinned.
+
+  So measure the viscosity with a flow cup (available in the webshop) to be sure of the correct thickness.
+
+  You can always deflocculate the glaze slightly with Dolapix to thin it out. Note: some SOGO glazes need to be quite viscous (syrupy) to achieve beautiful, deep colors.",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"unpackedSogoThickMixtureSoluteViscosityNoInstruction3",
+  instruction:"Measure the viscosity with a flow-through cup (viscometer) and deflocculate the glaze with Dolapix if necessary. This will ensure you achieve the correct viscosity and obtain good, reproducible results.",
+  section_id:{{section_id }}
+%}
