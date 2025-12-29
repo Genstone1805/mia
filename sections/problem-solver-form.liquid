@@ -375,8 +375,8 @@
         field_name:"problem_type",
         field_values:"
         unpackedSogoProblem|An unbacked SOGO glaze | unpackedSogoProblemType,
-        backed_sogo_problem|A backed glaze of a SOGO glaze,
-        non_sogo_problem|A non-SOGO glaze,
+        backedSogoProblem|A backed glaze of a SOGO glaze|backedSogoProblemType,
+        nonSogoProblem|A non-SOGO glaze|nonSogoProblemInstruction,
         something_else|Something else'
         ",
         section_id:{{section_id }}
@@ -393,14 +393,32 @@
         field_values:"
         unpackedSogoBrush|A brush glaze|unpackedSogoBrushProblem,
         unpackedSogoWithWater|A glaze mixed with water for pouring and dipping|unpackedSogoWithWaterProblem,
-        unpacked_sogo_powder|A glaze powder,
-        unpacked_sogo_else|Something else
+        unpackedSogoPowder|A glaze powder (not yet mixed)|unpackedSogoPowderInstruction,
+        unpackedSogoElse|Something else
         ",
         section_id:{{section_id }}
       %}
 
+      {%
+        render 'radio-fields',
+        title:"The glaze",
+        field_id:"backedSogoProblemType",
+        required: true,
+        field_name:"backed_sogo",
+        field_values:"
+        backedDropped|Has dripped off|backedDroppedInstruction,
+        backedNotColored|Does not have the expected color|backedNotColoredInstruction,
+        backedMatte|Is matte while it should be glossy|backedMatteInstruction,
+        backedCrawled|Has crawled away in certain places|backedCrawledInstruction,
+        backedShowsPinpricks|Shows pinpricks and sharp holes/craters in the surface|backedShowsPinpricksProblem
+        ",
+        section_id:{{section_id }}
+      %}
+
+      {% render 'powder-problem', section_id:{{section_id }} %}
       {% render 'mixed-problem', section_id:{{section_id }} %}
       {% render 'brush-problem', section_id:{{section_id }} %}
+      {% render 'instructions', section_id:{{section_id }} %}
 
       <div class="custom-glaze-support-form__row-{{ section_id }}">
         <div class="custom-glaze-support-form__field-group-{{ section_id }}">

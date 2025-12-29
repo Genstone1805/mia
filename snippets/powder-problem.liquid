@@ -1,0 +1,54 @@
+{%
+  render 'radio-fields',
+  title:"Your used clay is",
+  field_id:"backedShowsPinpricksProblem",
+  required: true,
+  field_name:"backed_shows_pinpricks",
+  field_values:"
+  backedWhite|Whitewashing|backedShowsPinpricksWhiteProblem,
+  backedColored|Colored (Black gray red brown)|backedColoredInstruction
+  ",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  title:"Does your clay contain chamotte?",
+  field_id:"backedShowsPinpricksWhiteProblem",
+  required: true,
+  field_name:"backed_shows_pinpricks_white",
+  field_values:"
+  backedWhiteYes|Yes|backedWhiteYesInstruction,
+  backedColoredNo|No|backedColoredNoInstruction
+  ",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"backedWhiteYesInstruction",
+  instruction:"
+  Chamotte in clay can cause pinpricks. A viscous glaze doesn't always adhere well to the small holes and crevices present in chamotte-containing clay. Air gets trapped in these grooves, sometimes leaving a hole in the glaze surface. Be careful not to sponge too much when turning and to smooth the clay surface with a rubber lumber. This will significantly help prevent chamotte-related pinpricks.
+  ",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"backedColoredNoInstruction",
+  instruction:"
+  If it's just a single pinprick, an unevenness in the clay surface could be the cause. Is the entire area covered in pinpricks? Contact me, and we'll investigate the cause. Pinpricks are a very complex problem.
+  ",
+  section_id:{{section_id }}
+%}
+
+{%
+  render 'radio-fields',
+  field_id:"backedColoredInstruction",
+  instruction:"
+  Colored clay contains coloring oxides such as iron oxide, manganese oxide, and/or cobalt oxide. These lose oxygen atoms when fired at high enough temperatures. This creates gas in a glaze. If the stoneware glaze is already solidifying (due to cooling), these gas bubbles can leave pinpricks and craters.
+
+  One solution might be to bake the biscuit slowly and high enough (at least 950°C but higher might be beneficial).
+  ",
+  section_id:{{section_id }}
+%}
