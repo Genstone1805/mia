@@ -31,8 +31,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/Titanium.avif",
-            "title": "page 47",
-            "description": "First edition: At the top of page 47, red iron oxide appears twice above the columns with sample photos. This must, of course, be titanium oxide. The percentages are correct.",
+            "title": "pagina 47",
+            "description": "Eerste druk: Bovenaan pagina 47 staat twee keer rood ijzeroxide boven de kolommen met stalenfoto's. Dat moet natuurlijk titaniumoxide zijn. De percentages zijn wel correct.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-P47.pdf?v=1766930899"
           }
         },
@@ -40,8 +40,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/SOGO_-_Driehoek_1.avif",
-            "title": "page 101",
-            "description": "First edition: In the figure, the indicated volumes for sample 2 and sample 3 are incorrect. For sample 2, there should be a 0 in the dark green section where there is a 4 in the book. For sample 3, there should be a 4 in the dark green section where there is a 0 in the book. The same figure (including the error) also appears on page 264 and as an insert.",
+            "title": "pagina 101",
+            "description": "Eerste druk: In de figuur zijn de aangeduide volumes voor staal 2 en staal 3 niet correct. Voor staal 2 moet er in het donkergroene deel een 0 staan op de plek waar in het boek een 4 staat. Voor staal 3 moest er in het donkergroene deel een 4 staan op de plek waar in het boek een 0 staat. Dezelfde figuur (inclusief fout) staat ook op pagina 264 en als insert.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-103-107_101.pdf?v=1766932192"
           }
         },
@@ -49,8 +49,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/SOGO_-_glazuurboek-107.avif",
-            "title": "page 107",
-            "description": "First edition: The text at the top right next to the figure should say 0% chromium oxide, but in the book it was noted as 3% chromium oxide.",
+            "title": "pagina 107",
+            "description": "Eerste druk: In de tekst rechts bovenaan naast de figuur moet 0% chroomoxide staan maar in het boek werd 3% chroomoxide genoteerd.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/SOGO_-_glazuurboek-103-107_107.pdf?v=1766932368"
           }
         },
@@ -58,8 +58,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/pagina_122.avif",
-            "title": "page 122",
-            "description": "First edition: The samples containing A (cobalt oxide) should, of course, be 0.15%, not 0.3% as stated in the list. The explanation and example on page 121 are correct.",
+            "title": "pagina 122",
+            "description": "Eerste druk: De stalen met A (kobaltoxide) moeten natuurlijk 0,15% zijn en niet 0,3% zoals in de lijst vermeld. De uitleg en het voorbeeld op pagina 121 zijn wel correct.",
             "file": ""
           }
         },
@@ -67,8 +67,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/Recept_strontium.avif",
-            "title": "page 250",
-            "description": "First edition: A typo crept into the chalk quantity: it should be 52.7 instead of 51.7 for the 1 kg column. The 10 kg column is also incorrect because of this. The correct value for 10 kg is 527 instead of 517.",
+            "title": "pagina 250",
+            "description": "Eerste druk: Er is een typo geslopen in de hoeveelheid krijt: die moet 52,7 i.p.v. 51,7 zijn voor de 1 kg kolom. Ook de 10kg kolom is hierdoor verkeerd. De juiste waarde voor 10 kg is 527 i.p.v. 517.",
             "file": ""
           }
         },
@@ -76,8 +76,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/Recept_zink.avif",
-            "title": "page 252",
-            "description": "First edition: A typo has crept into the amount of zinc oxide: it should be 16.76 instead of 17.76 for the 100g column. The 1 kg and 10 kg values ​​are also incorrect because of this. The values ​​should be 167.6 and 1676, respectively. In the same recipe, the number 0 is missing from the 10 kg column for nepheline syenite. The correct number is 3510 instead of 351.",
+            "title": "pagina 252",
+            "description": "Eerste druk: Er is een typo geslopen in de hoeveelheid zinkoxide: die moet 16,76 zijn i.p.v. 17,76 voor de 100 g kolom. Ook de 1 kg en de 10 kg zijn hierdoor verkeerd. De waarden moeten respectievelijk 167,6 en 1676 zijn. In hetzelfde recept ontbreekt het cijfer 0 in de kolom van 10 kg voor nefelien syeniet. Het juiste getal is 3510 i.p.v. 351.",
             "file": ""
           }
         },
@@ -85,8 +85,8 @@
           "type": "image_card",
           "settings": {
             "image": "shopify://shop_images/Schermafbeelding_2025-04-09_163407.avif",
-            "title": "page 120",
-            "description": "First and second editions. \n\nThe order of the samples is not as described. This figure shows the correct letter codes. You can also find the correct figure here.",
+            "title": "pagina 120",
+            "description": "Eerste én tweede druk. \n\nDe volgorde van de stalen is niet zoals beschreven. Deze figuur geeft de juiste lettercodes weer. De correcte figuur kan je hier ook terugvinden.",
             "file": "https://cdn.shopify.com/s/files/1/0994/6116/9498/files/Correctie_driehoek.pdf?v=1766932876"
           }
         }
@@ -102,8 +102,8 @@
       ],
       "name": "Image Card with preview",
       "settings": {
-        "main_title": "Crystal clear over glaze",
-        "main_description": "Thanks to a number of attentive readers, a few design errors were noticed in my glaze book \"Glashelder over glazing.\" This is difficult to prevent entirely, but naturally very annoying. On this page, I'd like to share these imperfections so you have the correct information and figures. Please take note. Most errata appear only in the first edition.",
+        "main_title": "Glashelder over glazuur",
+        "main_description": "Dankzij een aantal aandachtige lezers werden er in mijn glazuurboek \"Glashelder over glazuur\" enkele vormgevingsfoutjes opgemerkt. Dat is moeilijk om helemaal te voorkomen maar natuurlijk erg vervelend. Op deze pagina deel ik graag deze onvolmaaktheden zodat jullie over de juiste informatie en figuren beschikken. Let goed op. De meeste errata komen uitsluitend voor in de eerste druk.",
         "title_size": 46,
         "description_size": 24,
         "title_color": "#000000",
