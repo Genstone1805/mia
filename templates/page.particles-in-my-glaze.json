@@ -1,1 +1,118 @@
-{"sections":{"blocks_aqExdF":{"type":"_blocks","blocks":{"ai_gen_block_b5ea581_yVctGj":{"type":"ai_gen_block_b5ea581","settings":{"heading":"SOS, there are particles in my glaze!","text":"<p>Have you ever experienced this? You thoroughly stir a favorite dipping glaze before use and suddenly notice: \"SOS, there are particles in my glaze!\" Strange, because they certainly weren’t present when you first used the glaze. What are they? Where do they come from, and most importantly, how do you resolve this issue?<\/p>","banner_height":400,"banner_height_mobile":300,"desktop_width_percent":100,"content_vertical_alignment":"center","content_horizontal_alignment":"center","text_alignment":"center","content_max_width":800,"background_image":"shopify:\/\/shop_images\/imgi_4_8d1e89_21fcb47a149e45cdaef2839a3a82b847_mv2.jpg","background_color":"#f5f5f5","show_overlay":false,"overlay_color":"#000000","overlay_opacity":30,"heading_size":48,"heading_spacing":16,"heading_color":"#000000","text_size":18,"text_color":"#000000"},"blocks":{}}},"block_order":["ai_gen_block_b5ea581_yVctGj"],"name":"Banner","settings":{}},"default-page":{"type":"default-page-template","settings":{"offset_top_desktop":10,"offset_bottom_desktop":10,"offset_top_mobile":10,"offset_bottom_mobile":10}},"blocks_4qzmen":{"type":"_blocks","blocks":{"ai_gen_block_6fa4285_zTAYfB":{"type":"ai_gen_block_6fa4285","settings":{"button_text":"Book a spot","button_link":"shopify:\/\/pages\/advice","alignment":"center","desktop_top_spacing":10,"desktop_bottom_spacing":10,"mobile_top_spacing":30,"mobile_bottom_spacing":30,"button_padding_vertical":15,"button_padding_horizontal":30,"button_font_size":16,"button_font_weight":"500","button_border_radius":4,"button_border_width":1,"button_background_color":"#D29E72","button_text_color":"#ffffff","button_border_color":"#000000","button_background_color_hover":"#000000","button_text_color_hover":"#ffffff","button_border_color_hover":"#000000"},"blocks":{}}},"block_order":["ai_gen_block_6fa4285_zTAYfB"],"name":"Button with spacer","settings":{}}},"order":["blocks_aqExdF","default-page","blocks_4qzmen"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blocks_aqExdF": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b5ea581_yVctGj": {
+          "type": "ai_gen_block_b5ea581",
+          "settings": {
+            "heading": "Help, er zitten steentjes in mijn glazuur!",
+            "text": "<p>Heb je het al eens meegemaakt? Je roert een favoriet dompelglazuur eens goed door voor gebruik. Plots merk je op: \"Help, er zitten steentjes in mijn glazuur\"! Vreemd want die waren zeker niet aanwezig toen je het glazuur in gebruik nam. Wat zijn ze? Waar komen ze vandaan en vooral, hoe los je dit probleem op? </p>",
+            "banner_height": 400,
+            "banner_height_mobile": 300,
+            "desktop_width_percent": 100,
+            "content_vertical_alignment": "center",
+            "content_horizontal_alignment": "center",
+            "text_alignment": "center",
+            "content_max_width": 800,
+            "background_image": "shopify://shop_images/imgi_4_8d1e89_21fcb47a149e45cdaef2839a3a82b847_mv2.jpg",
+            "background_color": "#f5f5f5",
+            "show_overlay": false,
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "heading_size": 48,
+            "heading_spacing": 16,
+            "heading_color": "#000000",
+            "text_size": 18,
+            "text_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b5ea581_yVctGj"
+      ],
+      "name": "Banner",
+      "settings": {}
+    },
+    "default-page": {
+      "type": "default-page-template",
+      "disabled": true,
+      "settings": {
+        "offset_top_desktop": 10,
+        "offset_bottom_desktop": 10,
+        "offset_top_mobile": 10,
+        "offset_bottom_mobile": 10
+      }
+    },
+    "text_section_Uab83m": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h2>Geen steentjes maar kristallen</h2><p>In sommige glazuren kunnen na een tijdje kleine steentjes ontstaan. Het zijn eigenlijk geen echte steentjes maar uitgekristalliseerde glazuurbestanddelen. Ze kunnen klein zijn, van enkele millimeters groot, tot ettelijke centimeters. Sommige zijn glad en rond, andere ruw en hoekig. </p><h2>Wateroplosbaarheid</h2><p>De kristallen ontstaan door (deels) wateroplosbare grondstoffen in het glazuur. Dit zijn de smeltpuntverlagende oxiden zoals lithium oxide, natrium oxide of calcium oxide. Ze zijn o.a. afkomstig van de volgende grondstoffen: </p><ul><li>nefelien syeniet</li><li>sommige frittes</li><li>natrium carbonaat</li><li>lithium carbonaat</li></ul><p>Het is niet omdat je deze grondstoffen gebruikt in jouw glazuur dat je sowieso kristalvorming zal krijgen in de suspensie. Daarnaast bestaan er wellicht nog andere grondstoffen die kristalvorming veroorzaken.</p><p>De omstandigheden, zowel chemisch als fysisch, moeten juist zijn. Bij mij komt het vooral voor na een koude periode in het atelier en uitsluitend in bepaalde glazuren. Een glazuur dat je snel en veel gebruikt zal er minder last van hebben dan een glazuur dat lang blijft staan in wisselende temperaturen.</p><h2>Zijn die kristallen een probleem? </h2><p>Het lijkt wel een beetje vervelend maar zijn die kristallen echt een probleem? </p><p>Het antwoord is simpel: ja! </p><ul><li>de kristallen blijven als harde brokjes kleven aan de geglazuurde potten en smelten totaal anders uit. Dit kan vreemde (maar soms interessante) kleuren en patronen geven in een glazuur. </li><li>de samenstelling van het glazuur in de emmer is niet meer hetzelfde. Logisch, de kristallen bestaan uit (een deel van de) smeltpuntverlagende oxiden. Van die laatste is dus minder aanwezig in het glazuur. Het glazuur gaat zich dus anders gedragen in de oven en wellicht minder goed smelten. </li></ul><h2>Hoe los je het dan op? </h2><p>Hoe los je het dan op? Simpel. Je moet het oplossen. Letterlijk! De kristallen bestaan uit wateroplosbare grondstoffen. Je moet ze dus letterlijk opnieuw oplossen in een weinig water en ze dan terug in de glazuur suspensie toevoegen en omroeren. </p><h4>Mag je ze niet gewoon weggooien? </h4><p>Je mag de kristallen absoluut niet gewoon weggooien. Indien je dit toch doet gooi je belangrijke glazuurgrondstoffen weg en verander je het recept. Het glazuur zal zich dus anders gedragen en wellicht niet meer goed uitsmelten. Mogelijk verandert ook de kleur en zelfs de textuur. </p><h4>Praktische aanpak</h4><ol><li>Zeef het glazuur met een glazuurzeef (60-100 mesh)</li><li>Schraap zoveel mogelijk kristallen uit de zeef</li><li>Plaats ze allemaal in een glas of een microgolfbestendig potje</li><li>Voeg een heel klein beetje water toe zodat ze net onder staan</li><li>Plaats het potje met kristallen enkele minuten in de microgolfoven</li><li>Herhaal stap 5 indien niet alle kristallen opgelost zijn, voeg eventueel een beetje meer water toe</li><li>Voeg de vloeistof met de opgeloste kristallen terug in het glazuur en roer goed</li><li>Herhaal deze stappen indien er zich na een tijdje opnieuw kristallen vormen. </li></ol><p>​</p><p>Indien je niet graag glazuurgrondstoffen opwarmt in de microgolfoven kan je er ook voor kiezen om heet water toe te voegen aan de kristallen. Je zal dan veel meer geduld moeten hebben maar de kristallen zullen na een tijdje en regelmatig roeren oplossen. </p><h2>Toch nog vragen? </h2><p>Heb je toch nog vragen na het lezen van dit artikel? Vragen over dit onderwerp of over een ander klei/glazuur/oven probleem waar je mee zit? Je kan bij mij een adviesmomentje online boeken van 15, 30 of 60 minuten. Wees welkom! </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "blocks_4qzmen": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6fa4285_zTAYfB": {
+          "type": "ai_gen_block_6fa4285",
+          "settings": {
+            "button_text": "Boek een plekje",
+            "button_link": "shopify://pages/advice",
+            "alignment": "center",
+            "desktop_top_spacing": 10,
+            "desktop_bottom_spacing": 10,
+            "mobile_top_spacing": 30,
+            "mobile_bottom_spacing": 30,
+            "button_padding_vertical": 15,
+            "button_padding_horizontal": 30,
+            "button_font_size": 16,
+            "button_font_weight": "500",
+            "button_border_radius": 4,
+            "button_border_width": 1,
+            "button_background_color": "#d29e72",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_background_color_hover": "#000000",
+            "button_text_color_hover": "#ffffff",
+            "button_border_color_hover": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6fa4285_zTAYfB"
+      ],
+      "name": "Button with spacer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "blocks_aqExdF",
+    "default-page",
+    "text_section_Uab83m",
+    "blocks_4qzmen"
+  ]
+}
