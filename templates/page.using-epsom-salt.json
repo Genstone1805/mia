@@ -1,1 +1,118 @@
-{"sections":{"blocks_nF9P6g":{"type":"_blocks","blocks":{"ai_gen_block_b5ea581_zXcFa4":{"type":"ai_gen_block_b5ea581","settings":{"heading":"Here's how to use Epsom salt","text":"<p>You bought a SOGO glaze at Colpaert and see that Epsom salt needs to be added? No idea what that is? Don’t worry, I'll explain it in this article. Using Epsom salt is actually very easy and, on top of that, it's extremely cheap.<\/p>","banner_height":350,"banner_height_mobile":300,"desktop_width_percent":100,"content_vertical_alignment":"center","content_horizontal_alignment":"center","text_alignment":"center","content_max_width":800,"background_image":"shopify:\/\/shop_images\/imgi_40_8d1e89_c82bbb5967bb42879cb8774dabc20f61_mv2.jpg","background_color":"#f5f5f5","show_overlay":true,"overlay_color":"#000000","overlay_opacity":10,"heading_size":48,"heading_spacing":16,"heading_color":"#000000","text_size":18,"text_color":"#000000"},"blocks":{}}},"block_order":["ai_gen_block_b5ea581_zXcFa4"],"name":"Banner","settings":{}},"default-page":{"type":"default-page-template","settings":{"offset_top_desktop":10,"offset_bottom_desktop":10,"offset_top_mobile":10,"offset_bottom_mobile":10}},"blocks_UjCkkz":{"type":"_blocks","blocks":{"ai_gen_block_6fa4285_zYFtEc":{"type":"ai_gen_block_6fa4285","settings":{"button_text":"Sign me up for the waiting list!","button_link":"shopify:\/\/pages\/advice","alignment":"center","desktop_top_spacing":10,"desktop_bottom_spacing":10,"mobile_top_spacing":30,"mobile_bottom_spacing":30,"button_padding_vertical":15,"button_padding_horizontal":30,"button_font_size":16,"button_font_weight":"500","button_border_radius":4,"button_border_width":1,"button_background_color":"#d29e72","button_text_color":"#ffffff","button_border_color":"#000000","button_background_color_hover":"#000000","button_text_color_hover":"#ffffff","button_border_color_hover":"#000000"},"blocks":{}}},"block_order":["ai_gen_block_6fa4285_zYFtEc"],"name":"Button with spacer","settings":{}}},"order":["blocks_nF9P6g","default-page","blocks_UjCkkz"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blocks_nF9P6g": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b5ea581_zXcFa4": {
+          "type": "ai_gen_block_b5ea581",
+          "settings": {
+            "heading": "Epsom zout gebruiken doe je zo",
+            "text": "<p>Je kocht een SOGO glazuur bij Colpaert en je ziet dat er epsom zout toegvoegd moet worden? Geen idee wat dat is? Geen paniek, ik leg het je graag uit in dit artikel. Epsom zout gebruiken is helemaal niet moeilijk en bovendien is het spotgoedkoop. </p>",
+            "banner_height": 350,
+            "banner_height_mobile": 300,
+            "desktop_width_percent": 100,
+            "content_vertical_alignment": "center",
+            "content_horizontal_alignment": "center",
+            "text_alignment": "center",
+            "content_max_width": 800,
+            "background_image": "shopify://shop_images/imgi_40_8d1e89_c82bbb5967bb42879cb8774dabc20f61_mv2.jpg",
+            "background_color": "#f5f5f5",
+            "show_overlay": true,
+            "overlay_color": "#000000",
+            "overlay_opacity": 10,
+            "heading_size": 48,
+            "heading_spacing": 16,
+            "heading_color": "#000000",
+            "text_size": 18,
+            "text_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b5ea581_zXcFa4"
+      ],
+      "name": "Banner",
+      "settings": {}
+    },
+    "default-page": {
+      "type": "default-page-template",
+      "disabled": true,
+      "settings": {
+        "offset_top_desktop": 10,
+        "offset_bottom_desktop": 10,
+        "offset_top_mobile": 10,
+        "offset_bottom_mobile": 10
+      }
+    },
+    "text_section_BnECgX": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h2>Epsom watte?  </h2><p>Epsom zout, ofwel magnesium sulfaat is eigenlijk gewoon badzout. Het zou pijn in gewrichten en spieren verlichten door het toe te voegen in je bad. Het zou ook laxerende eigenschappen hebben maar ik kan je aanraden om het niet op te drinken. Epsom zout wordt ook wel bitterzout genoemd en die naam is ZEER terecht gekozen. </p><h2>Waarom moet je epsom zout gebruiken? </h2><p>Epsom zout is een goedkoop en zeer goed flocculant. Een flocculant is een indikker. Vergelijk het met maïzena in een saus. </p><p>Epsom zout werkt in op de kleideeltjes in een glazuur. Die kleideeltjes, afkomstig van kaolien of ball clay bijvoorbeeld, worden tot elkaar aangetrokken bij toevoeging van epsom zout. Op die manier vormen ze ze een netwerk van kleideeltjes waartussen de andere bestanddelen in het glazuur blijven zweven. Hierdoor blijft alles beter in suspensie en vormt het glazuur geen harde koek onderaan de emmer. Het glazuren zelf wordt er ook makkelijker door. Het glazuur geeft een goede dekking en vloeit mooi uit. </p><h3>Wanneer moet je epsom zout gebruiken? </h3><p>Je moet enkel epsom zout gebruiken als het nodig is. De volgende glazuurkenmerken kunnen een aanwijzing zijn:</p><ul><li>het glazuur is zeer dun en je hebt echt niet te veel water toegevoegd</li><li>het glazuur droogt extreem snel op bij het glazuren van een werkstuk</li><li>op de bodem van de emmer kleeft een aangekoekte glazuurlaag die amper los te maken is</li></ul><h3>Hoe moet je epsom zout klaarmaken voor gebruik? </h3><p>Epsom zout koop je (bv. bij Colpaert) in de vorm van kristallen. Je moet deze kristallen oplossen maar niet zomaar. Je maakt een gesatureerde oplossing van epsom zout. Ik leg je graag uit hoe je dat doet. </p><h4>Benodigdheden</h4><p>Zet volgende zaken klaar:</p><ul><li>klein recipiënt met goed sluitend deksel (bijvoorbeeld een yoghurt pot van 500ml) </li><li>epsom zout, minstens 100 g</li><li>heet water van de kraan </li></ul><h4>Werkwijze</h4><p>Weeg 100 g (of een veelvoud daarvan) af in het potje. Voeg daaraan 75g (of een veelvoud daarvan) heet water toe en roer goed. Het water zal de kristallen oplossen maar niet helemaal. 75g water is namelijk te weinig om alle kristallen te kunnen oplossen en dat is exact wat je wilt. Een niet volledig opgeloste oplossing heet een gesatureerde oplossing. Zet het deksel op je potje en schrijf duidelijk op de pot en deksel wat erin zit. In mijn testen tot nu toe blijft epsom zout onbeperkt houdbaar. </p><h3>Hoe moet ik epsom zout gebruiken?</h3><p>Voeg de vloeistof (niet de kristallen op de bodem) toe aan het glazuur. Ik gebruik hiervoor liefst een spuitje zodat ik kan noteren hoeveel milliliter ik toevoeg. </p><p>Hoeveel je moet gebruiken hangt helemaal af van het glazuur in kwestie. Sommige glazuren hebben slechts een kleine hoeveelheid (minder dan 1 ml nodig op 1kg glazuurpoeder) en sommige vereisen meer. Voor de SOGO glazuren staat de hoeveelheid aangegeven op het etiket. </p><h4>Begin altijd voorzichtig</h4><p>Begin altijd voorzichtig met enkele druppels. Roer goed in je glazuur na toevoegen. Je zal zien dat het glazuur langzaam aan begint in te dikken. Zorg ervoor dat je glazuur niet te dik wordt! Een dik glazuur geeft andere resultaten dan een dun glazuur.</p><h3>Moet ik altijd epsom zout gebruiken? </h3><p>Neen! In glazuren zonder of met heel weinig kleideeltjes (bv. kristalglazuren) zal epsom zout niet werken. Het werkt namelijk in op de kleideeltjes. Als die er niet zijn gebeurt er niets. </p><p>Andere glazuren zijn van nature al sterk geflocculeerd. Ze zijn al redelijk dik en smeuïg zonder toevoeging van een additief. In zo'n geval moet je uiteraard ook geen epsom zout gebruiken. Het zou dat glazuur enkel dikker maken en onmogelijk om mee te werken. In tegendeel, in zo'n geval moet je misschien het tegenovergestelde doen en het glazuur deflocculeren. Meer daarover in mijn workshop \"Glazuurconsistentie, viscositeit en soortelijk gewicht\". </p><h3>Meer weten? </h3><p>Epsom zout is één zaak maar er komt heel wat meer kijken bij het verkrijgen van consistente glazuurresultaten. Ik geef een boeiende workshop over het thema \"Glazuurconsistentie, viscositeit en soortelijk gewicht\" waarin ik veel meer uitleg over flocculeren en deflocculeren, soortelijk gewicht, viscositeit en thixotropie. Absoluut een aandrader als je graag poederglazuren aanmaakt en/of gebruikt en al wel eens tegen problemen aanloopt in je studio!  </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "blocks_UjCkkz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6fa4285_zYFtEc": {
+          "type": "ai_gen_block_6fa4285",
+          "settings": {
+            "button_text": "Sign me up for the waiting list!",
+            "button_link": "shopify://pages/advice",
+            "alignment": "center",
+            "desktop_top_spacing": 10,
+            "desktop_bottom_spacing": 10,
+            "mobile_top_spacing": 30,
+            "mobile_bottom_spacing": 30,
+            "button_padding_vertical": 15,
+            "button_padding_horizontal": 30,
+            "button_font_size": 16,
+            "button_font_weight": "500",
+            "button_border_radius": 4,
+            "button_border_width": 1,
+            "button_background_color": "#d29e72",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_background_color_hover": "#000000",
+            "button_text_color_hover": "#ffffff",
+            "button_border_color_hover": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6fa4285_zYFtEc"
+      ],
+      "name": "Button with spacer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "blocks_nF9P6g",
+    "default-page",
+    "text_section_BnECgX",
+    "blocks_UjCkkz"
+  ]
+}
