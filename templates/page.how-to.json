@@ -1,1 +1,107 @@
-{"sections":{"default-page":{"type":"default-page-template","settings":{"offset_top_desktop":10,"offset_bottom_desktop":10,"offset_top_mobile":10,"offset_bottom_mobile":10}},"cards_grid_xpxif6":{"type":"cards-grid","blocks":{"card_tHhHcb":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/imgi_14_8d1e89_720e39d3832846208d66f40a0da29328_mv2.jpg","title":"Making Your Own Powder Glazes","text":"<p>Make your own powder glazes, you can do it too with these tips!<\/p>","link_url":"shopify:\/\/pages\/creating-powder-glazes"}},"card_FPJP8d":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/imgi_20_8d1e89_1bbea8f7b4b24723b7e1d32db783357f_mv2_1.jpg","title":"How To Use Epsom Salt","text":"<p>Preparation and use of epsom salt is simple and super cheap<\/p>","link_url":"shopify:\/\/pages\/using-epsom-salt"}},"card_PY7xyr":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/imgi_21_8d1e89_2c8ba415bb914274beaf8b115759665b_mv2.jpg","title":"10 Tips for Production Throwing","text":"<p>10 top tips for production throwing. You'll improve if you follow these do's and don'ts. Read and try<\/p>","link_url":"shopify:\/\/pages\/tips-for-serial-production"}},"card_N9EmRG":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/imgi_22_8d1e89_9795b9d643f04e8b9bf4ce9268162bb0_mv2.jpg","title":"How do Orton cones work?","text":"<p>What Are Orton cones? How do they work? What Is heatwork? I set my kiln to 1240º C, but it still seems to get much hotter. SOGO karamiek explain how it works!<\/p>","link_url":"shopify:\/\/pages\/how-do-orton-cones-work"}},"card_thCbwP":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/imgi_23_8d1e89_ce21ad46901a47148e6c9ac1ad9b3c29_mv2.jpg","title":"SOS, there are particles in my glaze!","text":"<p>Have you ever discovered particlesin your glaze? Find out what they are and how to solve the issue.<\/p>","link_url":"shopify:\/\/pages\/help-there-are-pebbles-in-my-glaze"}},"card_NbFaJa":{"type":"card","settings":{"image":"shopify:\/\/shop_images\/imgi_24_8d1e89_78e4df3822f84df4b6968ad709ff7d33_mv2.png","title":"Hate trimming? Use SOGO tungsten carbide trimming tools and make it fun again!","text":"<p>Trimming is fun with the right tools. SOGO keramiek sells tungsten carbide trimming tools. Durable, high-quality, and made in Belgium!<\/p>","link_url":"shopify:\/\/pages\/turnung-is-boring-use-the-right-tools"}}},"block_order":["card_tHhHcb","card_FPJP8d","card_PY7xyr","card_N9EmRG","card_thCbwP","card_NbFaJa"],"name":"Cards grid","settings":{"subtitle":"","title":"","text":"","cards_per_row":"2","aspect_ratio":"square","center_cards_on_desktop":false,"full_width":false,"offset_top_desktop":50,"offset_bottom_desktop":50,"offset_top_mobile":25,"offset_bottom_mobile":25}}},"order":["default-page","cards_grid_xpxif6"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "default-page": {
+      "type": "default-page-template",
+      "settings": {
+        "offset_top_desktop": 10,
+        "offset_bottom_desktop": 10,
+        "offset_top_mobile": 10,
+        "offset_bottom_mobile": 10
+      }
+    },
+    "cards_grid_xpxif6": {
+      "type": "cards-grid",
+      "blocks": {
+        "card_tHhHcb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/imgi_14_8d1e89_720e39d3832846208d66f40a0da29328_mv2.jpg",
+            "title": "Zelf poederglazuren aanmaken",
+            "text": "<p>Make your own powder glazes, you can do it too with these tips!</p>",
+            "link_url": "shopify://pages/creating-powder-glazes"
+          }
+        },
+        "card_FPJP8d": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/imgi_20_8d1e89_1bbea8f7b4b24723b7e1d32db783357f_mv2_1.jpg",
+            "title": "How To Use Epsom Salt",
+            "text": "<p>Preparation and use of epsom salt is simple and super cheap</p>",
+            "link_url": "shopify://pages/using-epsom-salt"
+          }
+        },
+        "card_PY7xyr": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/imgi_21_8d1e89_2c8ba415bb914274beaf8b115759665b_mv2.jpg",
+            "title": "10 Tips for Production Throwing",
+            "text": "<p>10 top tips for production throwing. You'll improve if you follow these do's and don'ts. Read and try</p>",
+            "link_url": "shopify://pages/tips-for-serial-production"
+          }
+        },
+        "card_N9EmRG": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/imgi_22_8d1e89_9795b9d643f04e8b9bf4ce9268162bb0_mv2.jpg",
+            "title": "How do Orton cones work?",
+            "text": "<p>What Are Orton cones? How do they work? What Is heatwork? I set my kiln to 1240º C, but it still seems to get much hotter. SOGO karamiek explain how it works!</p>",
+            "link_url": "shopify://pages/how-do-orton-cones-work"
+          }
+        },
+        "card_thCbwP": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/imgi_23_8d1e89_ce21ad46901a47148e6c9ac1ad9b3c29_mv2.jpg",
+            "title": "SOS, there are particles in my glaze!",
+            "text": "<p>Have you ever discovered particlesin your glaze? Find out what they are and how to solve the issue.</p>",
+            "link_url": "shopify://pages/help-there-are-pebbles-in-my-glaze"
+          }
+        },
+        "card_NbFaJa": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/imgi_24_8d1e89_78e4df3822f84df4b6968ad709ff7d33_mv2.png",
+            "title": "Hate trimming? Use SOGO tungsten carbide trimming tools and make it fun again!",
+            "text": "<p>Trimming is fun with the right tools. SOGO keramiek sells tungsten carbide trimming tools. Durable, high-quality, and made in Belgium!</p>",
+            "link_url": "shopify://pages/turnung-is-boring-use-the-right-tools"
+          }
+        }
+      },
+      "block_order": [
+        "card_tHhHcb",
+        "card_FPJP8d",
+        "card_PY7xyr",
+        "card_N9EmRG",
+        "card_thCbwP",
+        "card_NbFaJa"
+      ],
+      "name": "Cards grid",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "cards_per_row": "2",
+        "aspect_ratio": "square",
+        "center_cards_on_desktop": false,
+        "full_width": false,
+        "offset_top_desktop": 50,
+        "offset_bottom_desktop": 50,
+        "offset_top_mobile": 25,
+        "offset_bottom_mobile": 25
+      }
+    }
+  },
+  "order": [
+    "default-page",
+    "cards_grid_xpxif6"
+  ]
+}
