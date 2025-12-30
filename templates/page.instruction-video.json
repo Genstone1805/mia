@@ -19,76 +19,64 @@
         "offset_bottom_mobile": 10
       }
     },
-    // "blocks_9K9d8B": {
-    //   "type": "_blocks",
-    //   "blocks": {
-    //     "video_grid_zT4y7d": {
-    //       "type": "video-grid",
-    //       "settings": {
-    //         "heading": "Video Gallery",
-    //         "heading_font": "assistant_n4",
-    //         "heading_size": 32,
-    //         "heading_color": "#000000",
-    //         "heading_alignment": "center",
-    //         "desktop_columns": 3,
-    //         "mobile_columns": "1",
-    //         "grid_gap": 30,
-    //         "desktop_width_percent": 100,
-    //         "thumbnail_border_radius": 8,
-    //         "play_button_size": 70,
-    //         "play_button_bg": "#ffffff",
-    //         "play_button_bg_hover": "#000000",
-    //         "play_button_icon_color": "#000000",
-    //         "play_button_icon_color_hover": "#ffffff",
-    //         "title_size": 16,
-    //         "title_color": "#000000",
-    //         "card_bg": "#87A587",
-    //         "title_alignment": "left",
-    //         "video_1": "shopify://files/videos/file (8).mp4",
-    //         "video_image_1": "shopify://shop_images/Dompelglazuur_aanmaken_stills.avif",
-    //         "video_title_1": "MAKING DIPPING GLAZE",
-    //         "video_2": "shopify://files/videos/file (14).mp4",
-    //         "video_image_2": "shopify://shop_images/Schermafbeelding_2025-05-07_175551.avif",
-    //         "video_title_2": "MAKING BRUSH GLAZE",
-    //         "video_3": "shopify://files/videos/file (12).mp4",
-    //         "video_image_3": "shopify://shop_images/Schermafbeelding_2025-05-07_175759.avif",
-    //         "video_title_3": "MEASURING SPECIFIC GRAVITY",
-    //         "video_4": "shopify://files/videos/file (10).mp4",
-    //         "video_image_4": "shopify://shop_images/Schermafbeelding_2025-05-07_180018.avif",
-    //         "video_title_4": "VISCOSITY - FLOW-THROUGH CUP",
-    //         "video_5": "shopify://files/videos/file (13).mp4",
-    //         "video_image_5": "shopify://shop_images/Schermafbeelding_2025-05-07_180152.avif",
-    //         "video_title_5": "VISCOSITY - FINGER DIP",
-    //         "video_6": "shopify://files/videos/file (15).mp4",
-    //         "video_image_6": "shopify://shop_images/Schermafbeelding_2025-05-07_180604.avif",
-    //         "video_title_6": "FLOCCULATE",
-    //         "video_7": "shopify://files/videos/file (17).mp4",
-    //         "video_image_7": "shopify://shop_images/Schermafbeelding_2025-05-07_180951.avif",
-    //         "video_title_7": "DEFLOCCULATE",
-    //         "video_8": "shopify://files/videos/file (11).mp4",
-    //         "video_image_8": "shopify://shop_images/Schermafbeelding_2025-05-07_181153.avif",
-    //         "video_title_8": "Casting and Dipping",
-    //         "video_9": "shopify://files/videos/file (11).mp4",
-    //         "video_image_9": "shopify://shop_images/Schermafbeelding_2025-05-07_181336.avif",
-    //         "video_title_9": "BRUSHES",
-    //         "video_10": "shopify://files/videos/file (8)_8916f558-9ddf-4c9f-9ce2-b1b6f4108d91.mp4",
-    //         "video_image_10": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
-    //         "video_title_10": "TEMPERATURE AND HEATING",
-    //         "video_title_11": "Video 11",
-    //         "video_title_12": "Video 12"
-    //       },
-    //       "blocks": {}
-    //     }
-    //   },
-    //   "block_order": [
-    //     "video_grid_zT4y7d"
-    //   ],
-    //   "name": "Custom Video grid",
-    //   "settings": {}
-    // }
+    "blocks_R7NE6d": {
+      "type": "_blocks",
+      "blocks": {
+        "video_grid_jeR8Md": {
+          "type": "video-grid",
+          "settings": {
+            "heading": "Video Galerij",
+            "heading_font": "assistant_n4",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "heading_alignment": "center",
+            "desktop_columns": 3,
+            "mobile_columns": "1",
+            "grid_gap": 30,
+            "desktop_width_percent": 100,
+            "thumbnail_border_radius": 8,
+            "play_button_size": 70,
+            "play_button_bg": "#ffffff",
+            "play_button_bg_hover": "#000000",
+            "play_button_icon_color": "#000000",
+            "play_button_icon_color_hover": "#ffffff",
+            "title_size": 16,
+            "title_color": "#000000",
+            "card_bg": "#87A587",
+            "title_alignment": "left",
+            "video_1": "shopify://files/videos/file (8).mp4",
+            "video_image_1": "shopify://shop_images/Dompelglazuur_aanmaken_stills.avif",
+            "video_title_1": "AANMAKEN DOMPELGLAZUUR",
+            "video_2": "shopify://files/videos/file (14).mp4",
+            "video_image_2": "shopify://shop_images/Schermafbeelding_2025-05-07_175551.avif",
+            "video_title_2": "AANMAKEN KWASTGLAZUUR",
+            "video_3": "shopify://files/videos/file (12).mp4",
+            "video_image_3": "shopify://shop_images/Schermafbeelding_2025-05-07_175759.avif",
+            "video_title_3": "SOORTELIJK GEWICHT METEN",
+            "video_4": "shopify://files/videos/file (10).mp4",
+            "video_image_4": "shopify://shop_images/Schermafbeelding_2025-05-07_180018.avif",
+            "video_title_4": "VISCOSITEIT - DOORSTROOMBEKER",
+            "video_title_5": "Video 5",
+            "video_title_6": "Video 6",
+            "video_title_7": "Video 7",
+            "video_title_8": "Video 8",
+            "video_title_9": "Video 9",
+            "video_title_10": "Video 10",
+            "video_title_11": "Video 11",
+            "video_title_12": "Video 12"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "video_grid_jeR8Md"
+      ],
+      "name": "Custom Video grid",
+      "settings": {}
+    }
   },
   "order": [
     "default-page",
-    // "blocks_9K9d8B"
+    "blocks_R7NE6d"
   ]
 }
