@@ -1,1 +1,118 @@
-{"sections":{"blocks_xe3bK7":{"type":"_blocks","blocks":{"ai_gen_block_b5ea581_8jUBhQ":{"type":"ai_gen_block_b5ea581","settings":{"heading":"Tips for throwing in series","text":"<p>I love throwing in series. Creating and repeating the same shapes until they are ingrained in your muscle memory is wonderful. It’s amazing when they come effortlessly on the wheel. Want to learn how to do it too? Check out my 10 golden tips for series throwing and become a pro!<\/p>","banner_height":400,"banner_height_mobile":300,"desktop_width_percent":100,"content_vertical_alignment":"center","content_horizontal_alignment":"center","text_alignment":"center","content_max_width":800,"background_image":"shopify:\/\/shop_images\/imgi_4_8d1e89_27fe46be9ed74c2f9fe4a80f6e5eb3cc_mv2_d_3872_2592_s_4_2.jpg","background_color":"#f5f5f5","show_overlay":true,"overlay_color":"#000000","overlay_opacity":50,"heading_size":48,"heading_spacing":16,"heading_color":"#ffffff","text_size":18,"text_color":"#ffffff"},"blocks":{}}},"block_order":["ai_gen_block_b5ea581_8jUBhQ"],"name":"Banner","settings":{}},"default-page":{"type":"default-page-template","settings":{"offset_top_desktop":10,"offset_bottom_desktop":10,"offset_top_mobile":10,"offset_bottom_mobile":10}},"blocks_jfWFwp":{"type":"_blocks","blocks":{"ai_gen_block_6fa4285_hgaa8g":{"type":"ai_gen_block_6fa4285","settings":{"button_text":"Teach me production throwing","button_link":"shopify:\/\/products\/seriedraaien-driedaagse","alignment":"center","desktop_top_spacing":10,"desktop_bottom_spacing":10,"mobile_top_spacing":30,"mobile_bottom_spacing":30,"button_padding_vertical":15,"button_padding_horizontal":30,"button_font_size":16,"button_font_weight":"500","button_border_radius":4,"button_border_width":1,"button_background_color":"#D29E72","button_text_color":"#ffffff","button_border_color":"#000000","button_background_color_hover":"#000000","button_text_color_hover":"#ffffff","button_border_color_hover":"#000000"},"blocks":{}}},"block_order":["ai_gen_block_6fa4285_hgaa8g"],"name":"Button with spacer","settings":{}}},"order":["blocks_xe3bK7","default-page","blocks_jfWFwp"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blocks_xe3bK7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b5ea581_8jUBhQ": {
+          "type": "ai_gen_block_b5ea581",
+          "settings": {
+            "heading": "Tips voor seriedraaien",
+            "text": "<p>Ik hou van seriedraaien. Dezelfde vormen maken en herhalen tot ze in je spiergeheugen zitten. Heerlijk als ze als vanzelf tevoorschijn komen op de draaischijf. Wil jij het ook leren? Lees mijn 10 gouden tips voor seriedraaien en word een pro!</p>",
+            "banner_height": 400,
+            "banner_height_mobile": 300,
+            "desktop_width_percent": 100,
+            "content_vertical_alignment": "center",
+            "content_horizontal_alignment": "center",
+            "text_alignment": "center",
+            "content_max_width": 800,
+            "background_image": "shopify://shop_images/imgi_4_8d1e89_27fe46be9ed74c2f9fe4a80f6e5eb3cc_mv2_d_3872_2592_s_4_2.jpg",
+            "background_color": "#f5f5f5",
+            "show_overlay": true,
+            "overlay_color": "#000000",
+            "overlay_opacity": 50,
+            "heading_size": 48,
+            "heading_spacing": 16,
+            "heading_color": "#ffffff",
+            "text_size": 18,
+            "text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b5ea581_8jUBhQ"
+      ],
+      "name": "Banner",
+      "settings": {}
+    },
+    "default-page": {
+      "type": "default-page-template",
+      "disabled": true,
+      "settings": {
+        "offset_top_desktop": 10,
+        "offset_bottom_desktop": 10,
+        "offset_top_mobile": 10,
+        "offset_bottom_mobile": 10
+      }
+    },
+    "text_section_9bddkD": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h2>Niet tussen de soep en de patatten</h2><p>Neem je tijd voor seriedraaien. Minstens 2-3 uur uittrekken is noodzakelijk. Als je weinig tijd hebt of je voelt je opgejaagd, begin er dan beter niet aan. Kies een rustiger moment waarin je niet gestoord wordt.</p><h2>Weeg af</h2><p>Alle kleibollen secuur afwegen is een belangrijke basis! Noteer alle gewichten per vorm in een schriftje. Schrijf daar ook meteen alle afmetingen bij en voeg een tekening of een foto toe. Dat is handig voor later.</p><h3>Eentje is geentje!</h3><p>Als je 4 gelijkvormige tassen nodig hebt kneed je niet 4 maar minstens 8 bolletjes klei. Je verliest al eens iets tijdens het draaien, afdraaien en glazuurbak. Als je nog niet veel ervaring hebt is het verstandig om nog wat meer bolletjes klaar te leggen. Tijdens het seriedraaien moeten stoppen om extra bollen te kneden brengt je uit je concentratie.</p><p>Door voldoende extra stukken te maken kies je uiteindelijk de best bijeen passende vormen. Je bakt er enkele extra als reserve en de rest recycleer je opnieuw.</p><h3>Meten is weten</h3><p>Meet veel gedurende het draaien en noteer die maten. Gebruik een meetmaatje, liefst eentje met een verplaatsbare punt (<a href=\"http://www.juliushandmade.be/\" target=\"_blank\"><span style=\"text-decoration:underline\">bijvoorbeeld eentje van Julius handmade</span></a>). Voor vormen van de mast kan je een kruis maken met twee stokjes of latjes waarmee je de hoogte en de diameter kan inschatten. Een gewone lat is ideaal voor lage borden.</p><p>Meet niet alleen de finale vorm maar ook tussenstappen; de gecentreerde schijf bijvoorbeeld. Op die manier kan je alle handelingen van het seriedraaien beter reproduceren.</p><h3>Pottenbakker, blijf bij uw vorm</h3><p>Bijt je vast in een vorm. Draai er veel stuks van. Enkel op die manier kan die vorm in je spiergeheugen terecht komen. Draai liefst een tijd lang hetzelfde, liefst over verschillende draaisessies. Verander zeker niet van vorm gedurende één draaimoment.</p><h3>Hou de randjes gelijk</h3><p>Besteed een beetje aandacht aan de rand van de pot. Door die gelijkmatig te houden lijkt de serie beter op elkaar. Let op dikte en vorm (rond, plat, …).</p><h3>Van slak naar luipaard</h3><p>Als je echt goed wilt worden in seriedraaien: vermijd onnodige bewegingen en werk eerder snel. Seriedraaien gaat beter als je enkel de essentiële handelingen uitvoert. Herhaal die handelingen consequent zonder extra onnodige tussenstappen. Beperk je tot een minimum. Zo draai je sneller en efficiënt.</p><h3>Klein naar groot</h3><p>Voor je gaat afdraaien bekijk je de vorm en hoogte van al je potten. Zet ze op een rijtje van klein naar groot. Meet de hoogte van de kleinste en de grootste pot en vergelijk het hoogteverschil tussen beide.</p><p>Begin met het kleinste stuk en neem die als standaardmaat. Vergelijk snel de hoogte van de volgende pot door die naast de afgewerkte te zetten. Zo schat je vlot in hoeveel je moet afdraaien van de bodem om dezelfde hoogte te bereiken.</p><h3>Corrigeer kleine hoogteverschillen tijdens het afdraaien</h3><p>Aan de diameter van een pot kan je niet veel meer aanpassen. De hoogte kan je echter nog wel veranderen door af te draaien. Neem net iets meer of minder weg van de bodem van de pot om zo kleine hoogteverschillen op te vangen. Bij grote hoogte verschillen kan je eventueel de bovenkant van de pot, aan het randje, inkorten. Zet de pot goed vast voor je dat doet en doe dat liefst vooraleer je de onderkant afwerkt!</p><h3>Gelijke voetjes, standringen, glazuurrandjes en curves</h3><p>De serie lijkt veel meer op elkaar als je de voetjes en standringen even breed maakt. Gewoon goed meten vooraleer je begint en een groefje in de klei zetten helpt daar ontzettend bij. Ook de dikte van de voet of standring hou je best zo gelijk mogelijk.</p><p>Let ook op een glazuurrandje. Je hebt het sowieso nodig om eenvoudig te kunnen glazuren en om wat schaduw onder je pot te krijgen. Maak die zeker ook even breed, lang en hetzelfde qua hoek en vorm.</p><p>Curves kan je ook een beetje aanpassen tijdens het afdraaien om de vormen gelijkmatiger te krijgen. Je hebt niet veel speling: de binnenvorm bepaalt de buitenvorm maar een beetje foefelen kan altijd. </p><h3>De aanhouder wint!</h3><p>Pottendraaien is oefenen. Liefst zoveel mogelijk. Door dezelfde vorm veel te herhalen bouw je spiergeheugen op. Je handen maken de bewegingen zonder dat je hoeft na te denken. Volhouden is de boodschap. Toch graag wat extra begeleiding? Dat kan! Ik geef workshops seriedraaien. Check even onderstaande link voor alle informatie en inschrijvingen.  </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "blocks_jfWFwp": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6fa4285_hgaa8g": {
+          "type": "ai_gen_block_6fa4285",
+          "settings": {
+            "button_text": "Leer me seriedraaien",
+            "button_link": "shopify://products/seriedraaien-driedaagse",
+            "alignment": "center",
+            "desktop_top_spacing": 10,
+            "desktop_bottom_spacing": 10,
+            "mobile_top_spacing": 30,
+            "mobile_bottom_spacing": 30,
+            "button_padding_vertical": 15,
+            "button_padding_horizontal": 30,
+            "button_font_size": 16,
+            "button_font_weight": "500",
+            "button_border_radius": 4,
+            "button_border_width": 1,
+            "button_background_color": "#d29e72",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_background_color_hover": "#000000",
+            "button_text_color_hover": "#ffffff",
+            "button_border_color_hover": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6fa4285_hgaa8g"
+      ],
+      "name": "Button with spacer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "blocks_xe3bK7",
+    "default-page",
+    "text_section_9bddkD",
+    "blocks_jfWFwp"
+  ]
+}
