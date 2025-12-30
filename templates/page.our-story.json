@@ -1,1 +1,87 @@
-{"sections":{"image-with-text-first":{"type":"image-with-text","settings":{"image_position":"left","text_alignment":"left","first_desktop_image":"shopify:\/\/shop_images\/SK_SOGO_OKT22_27_1.jpg","heading":"ABOUT ME","subheading":"","text_content":"<p>Hi, I'm Sofie, the woman behind SOGO keramiek. Born in 1985, happily married with two fantastic children.<\/p><p>My pottery journey began quite by chance in early 2016. On a whim, I signed up for a wheel-throwing course with Jan Welffens, a distant cousin of my mother.<\/p><p>It was during this course that I first encountered the tranquility (and sometimes the frustration) that clay can bring. By the end of that year, throwing on the wheel had become a mild obsession. It was no longer enough to attend a few classes a year, so I decided to set up my own wheel and glazing studio in our basement.<\/p><p>Since 2021, I have been working full-time as a ceramist. I love being at my wheel, primarily creating custom tableware for both private clients and B2B customers. My great passion is series throwing and glaze chemistry. In my workshops, I enjoy sharing my knowledge of clay and glaze with both beginners and advanced potters.<\/p>","button_label":"","button_aria_label":"","button_url":"\/","button_style":"primary","is_show_border_top":false,"is_show_border_bottom":false,"border_color":"#e6e6e6","full_width":true,"offset_top_desktop":0,"offset_bottom_desktop":0,"offset_top_mobile":0,"offset_bottom_mobile":60}},"our-team":{"type":"our-team","settings":{"heading":"Our team","label":"","image_crop":"center","cards_alignment":"flex-start","show_border":true,"border_color":"#e6e6e6","full_width":true,"offset_top_desktop":60,"offset_bottom_desktop":60,"offset_top_mobile":30,"offset_bottom_mobile":30}},"banner":{"type":"banner","settings":{"section_background":"#222222","label_color":"#ffffff","heading_color":"#ffffff","text_color":"#ffffff","link_color":"#d33636","button_background":"#ffffff","button_color":"#000000","button_border":"#ffffff","button_background_hover":"#000000","button_color_hover":"#ffffff","button_border_hover":"#ffffff","image_border_color":"#ffffff","button_circle_text_color":"#f9f5f0","button_circle_background_color":"rgba(0,0,0,0)","button_circle_border_color":"#f9f5f0","button_circle_outer_border_color":"#8b8885","button_circle_text_color_hover":"#2c2a28","button_circle_background_color_hover":"#eab88c","button_circle_border_color_hover":"#eab88c","button_circle_outer_border_color_hover":"#8b8885","full_width":false,"offset_top_desktop":0,"offset_bottom_desktop":0,"offset_top_mobile":0,"offset_bottom_mobile":0}}},"order":["image-with-text-first","our-team","banner"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image-with-text-first": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left",
+        "first_desktop_image": "shopify://shop_images/SK_SOGO_OKT22_27_1.jpg",
+        "heading": "OVER MEZELF",
+        "subheading": "",
+        "text_content": "<p>Ik ben Sofie, de vrouw achter SOGO keramiek. Geboren in 1985, gelukkig getrouwd met twee fantastische kinderen. </p><p>Mijn pottenbak avontuur begon volledig per toeval begin 2016. Ik schreef me in een impulsieve bui in voor een draaicursus bij Jan Welffens, een achterneef van mijn mama. </p><p>Daar kwam ik voor de eerste keer in aanraking met de rust (en soms de frustratie) die klei kan brengen. Op het einde van dat jaar groeide het draaien op de schijf uit tot een lichte vorm van verslaving. Het was niet meer genoeg om enkele lessen op een jaar te volgen dus besloot ik in onze kelder een eigen draai- en glazuur atelier in te richten. </p><p>Sinds 2021 werk ik voltijds als keramist. Ik zit graag achter mijn draaischijf en maak dan vooral serviezen op bestelling voor zowel particuliere als B2B klanten. Mijn grote passie is seriedraaien en glazuurchemie. In mijn workshops deel ik mijn kennis over klei en glazuur graag met zowel beginners als gevorderden. </p>",
+        "button_label": "",
+        "button_aria_label": "",
+        "button_url": "/",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "our-team": {
+      "type": "our-team",
+      "settings": {
+        "heading": "Our team",
+        "label": "",
+        "image_crop": "center",
+        "cards_alignment": "flex-start",
+        "show_border": true,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 60,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 30,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "section_background": "#222222",
+        "label_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "link_color": "#d33636",
+        "button_background": "#ffffff",
+        "button_color": "#000000",
+        "button_border": "#ffffff",
+        "button_background_hover": "#000000",
+        "button_color_hover": "#ffffff",
+        "button_border_hover": "#ffffff",
+        "image_border_color": "#ffffff",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "full_width": false,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image-with-text-first",
+    "our-team",
+    "banner"
+  ]
+}
