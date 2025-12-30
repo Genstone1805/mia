@@ -1,4 +1,5 @@
 {% assign section_id = section.id | replace: '_', '' | downcase %}
+{% assign safe_section_id = section_id | replace: '-', '' %}
 
 {% style %}
   .custom-glaze-support-form-{{ section_id }} {
@@ -590,6 +591,76 @@
     });
     toggleHandler(checkbox, problemType);
   });
+</script>
+
+<script>
+  (function () {
+    const uploadTrigger = document.getElementById('custom-glaze-upload-trigger-{{ section_id }}');
+    const fileInput = document.getElementById('custom-glaze-file-input-{{ section_id }}');
+    const fileList = document.getElementById('custom-glaze-file-list-{{ section_id }}');
+
+    let files = [];
+
+    if (!uploadTrigger || !fileInput || !fileList) return;
+
+    uploadTrigger.addEventListener('click', () => {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      const selectedFiles = Array.from(e.target.files);
+      files = files.concat(selectedFiles);
+      renderFiles();
+      fileInput.value = ''; // allow re-selecting same file
+    });
+
+    function renderFiles() {
+      fileList.innerHTML = '';
+
+      files.forEach((file, index) => {
+        const item = document.createElement('div');
+        item.className = 'custom-glaze-support-form__file-item-{{ section_id }}';
+
+        let preview;
+
+        if (file.type.startsWith('image/')) {
+          preview = document.createElement('img');
+          preview.src = URL.createObjectURL(file);
+          preview.style.maxWidth = '80px';
+          preview.style.borderRadius = '4px';
+        } else if (file.type.startsWith('video/')) {
+          preview = document.createElement('video');
+          preview.src = URL.createObjectURL(file);
+          preview.controls = true;
+          preview.style.maxWidth = '120px';
+        }
+
+        const name = document.createElement('span');
+        name.textContent = file.name;
+
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'custom-glaze-support-form__file-remove-{{ section_id }}';
+        remove.textContent = '×';
+        remove.addEventListener('click', () => {
+          files.splice(index, 1);
+          renderFiles();
+        });
+
+        const left = document.createElement('div');
+        left.style.display = 'flex';
+        left.style.alignItems = 'center';
+        left.style.gap = '10px';
+
+        if (preview) left.appendChild(preview);
+        left.appendChild(name);
+
+        item.appendChild(left);
+        item.appendChild(remove);
+        fileList.appendChild(item);
+      });
+    }
+  })();
 </script>
 
 {% schema %}
