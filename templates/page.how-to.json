@@ -44,7 +44,7 @@
           "settings": {
             "image": "shopify://shop_images/imgi_21_8d1e89_2c8ba415bb914274beaf8b115759665b_mv2.jpg",
             "title": "10 gouden tips voor seriedraaien!",
-            "text": "<p>10 top tips for production throwing. You'll improve if you follow these do's and don'ts. Read and try</p>",
+            "text": "<p>10 gouden tips voor seriedraaien. Jij wordt er beter in als je deze do's and don'ts volgt. Lezen en proberen.</p>",
             "link_url": "shopify://pages/tips-for-serial-production"
           }
         },
@@ -52,8 +52,8 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/imgi_22_8d1e89_9795b9d643f04e8b9bf4ce9268162bb0_mv2.jpg",
-            "title": "How do Orton cones work?",
-            "text": "<p>What Are Orton cones? How do they work? What Is heatwork? I set my kiln to 1240º C, but it still seems to get much hotter. SOGO karamiek explain how it works!</p>",
+            "title": "Hoe werken Orton kegels?",
+            "text": "<p>Hoe werken Orton kegels?<br/>Wat zijn Orton kegels? Hoe werken ze? Wat is heatwork? Ik stel mijn oven in op 1240°C maar toch lijkt hij veel warmer te worden. SOGO keramiek legt je uit hoe het zit!</p>",
             "link_url": "shopify://pages/how-do-orton-cones-work"
           }
         },
@@ -61,8 +61,8 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/imgi_23_8d1e89_ce21ad46901a47148e6c9ac1ad9b3c29_mv2.jpg",
-            "title": "SOS, there are particles in my glaze!",
-            "text": "<p>Have you ever discovered particlesin your glaze? Find out what they are and how to solve the issue.</p>",
+            "title": "Help, er zitten steentjes in mijn glazuur!",
+            "text": "<p>Ontdekte je al eens harde brokjes in jouw glazuur? Lees wat ze zijn en hoe je het probleem oplost.</p>",
             "link_url": "shopify://pages/help-there-are-pebbles-in-my-glaze"
           }
         },
@@ -70,8 +70,8 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/imgi_24_8d1e89_78e4df3822f84df4b6968ad709ff7d33_mv2.png",
-            "title": "Hate trimming? Use SOGO tungsten carbide trimming tools and make it fun again!",
-            "text": "<p>Trimming is fun with the right tools. SOGO keramiek sells tungsten carbide trimming tools. Durable, high-quality, and made in Belgium!</p>",
+            "title": "Afdraaien stom? Gebruik SOGO wolfraam carbide afdraaigereedschap en het wordt terug fun!",
+            "text": "<p>Afdraaien is leuk met goed afdraaigereedschap. SOGO keramiek verkoopt wolfraam carbide afdraaigereedschap. Duurzaam, kwalitatief en geproduceerd in België!</p>",
             "link_url": "shopify://pages/turnung-is-boring-use-the-right-tools"
           }
         }
