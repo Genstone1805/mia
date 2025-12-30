@@ -1,1 +1,268 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"image-1":{"type":"image","settings":{"image_desktop":"shopify:\/\/shop_images\/imgi_4_8d1e89_8e5849f29ee146b08f7b63ca4e682a55_mv2.jpg","label":"","heading":"SOGO KERAMIEK","description":"<p>We creates sleek and contemporary functional pieces. All products are handmade by Sofie on the pottery wheel. The glazes are also developed entirely by Sofie, making each piece unique. In addition to beautiful, handmade products, SOGO keramiek offers pottery and glazing workshops for both beginners and advanced students.<\/p>","button_text":"Shop All","button_aria_label":"","button_link":"shopify:\/\/collections\/all","open_in_new_tab":false,"make_link_full_slide":false,"second_button_text":"","second_button_aria_label":"","second_button_link":"shopify:\/\/collections\/all","second_open_in_new_tab":false,"text_alignment_inside_block":"left","content_alignment":"slideshow__slide-content--left","background_color":"#000000","background_content":"","label_color":"#ffffff","heading_color":"#ffffff","description_color":"#ffffff","button_text_color":"#003c38","button_background_color":"#ffffff","button_border_color":"rgba(0,0,0,0)","button_text_color_hover":"#ffffff","button_background_color_hover":"#ac8a57","button_border_color_hover":"rgba(0,0,0,0)","second_button_text_color":"#ffffff","second_button_background_color":"#ac8a57","second_button_border_color":"rgba(0,0,0,0)","second_button_text_color_hover":"#ffffff","second_button_background_color_hover":"#86a487","second_button_border_color_hover":"rgba(0,0,0,0)","overlay_color":"radial-gradient(rgba(219, 149, 250, 0.13), rgba(0, 60, 56, 1) 100%)"}}},"block_order":["image-1"],"settings":{"desktop_slide_per_view":"1","height_desktop":80,"height_mobile":50,"subtract_header_height":true,"offset_top_desktop":0,"offset_bottom_desktop":0,"offset_top_mobile":0,"offset_bottom_mobile":0,"show_arrows":true,"show_pagination":true,"show_progress_bar":false,"enable_loop":true,"enable_autoplay":true,"autoplay_speed":7,"animation_speed":0.5,"animation_type":"slide","enable_lazy_load":false,"background_color":"#e4feff","progress_bar_color":"#ffffff","arrows_color":"#ffffff","pagination_color":"#ffffff","play_color":"#003c38","play_background_color":"#f9f9f9","play_hover_color":"#f9f9f9","play_background_hover_color":"#2c2a28"}},"collection_list_1":{"type":"collection-list","blocks":{"collection_list_1":{"type":"collection","settings":{"collection":"workshops","image":"shopify:\/\/shop_images\/8bee3d5c-8d1e89_84632f11486643aca46f272891fe87f7_mv2.jpg"}},"collection_list_2":{"type":"collection","settings":{"collection":"ceramics","image":"shopify:\/\/shop_images\/ceadb75e-8d1e89_291869eb653c48249b53e1390c628cd5_mv2.jpg"}},"collection_list_3":{"type":"collection","settings":{"collection":"tools-for-potters","image":"shopify:\/\/shop_images\/7193c69f-8d1e89_65b4979c2e174f388caea785afa0628b_mv2.jpg"}},"collection_list_4":{"type":"collection","settings":{"collection":"glazuren","image":"shopify:\/\/shop_images\/53ac41c4-8d1e89_1d888e9eec3543ea8c1b450b18ddfe3b_mv2.jpg"}}},"block_order":["collection_list_1","collection_list_2","collection_list_3","collection_list_4"],"settings":{"label":"","heading":"SHOP","link_url":"shopify:\/\/collections","link_text":"Shop all","link_aria_label_text":"Shop all","text_alignment":"center","button_style":"primary","aspect_ratio":"portrait","text_position":"inside_the_image","image_crop":"center","show_products_count":false,"color_overlay":"#2c2a28","inside_the_image_text":"#f7f2ec","inside_the_image_text_hover":"#000000","full_width":false,"offset_top_desktop":30,"offset_bottom_desktop":30,"offset_top_mobile":60,"offset_bottom_mobile":0}},"featured-collection":{"type":"featured-collection","settings":{"collection":"frontpage","label":"","heading":"OUR BEST SELLERS","link_url":"","link_text":"","link_aria_label_text":"","button_style":"circle","layout":"5","enable_cards_indent":true,"full_width":true,"offset_top_desktop":30,"offset_bottom_desktop":30,"offset_top_mobile":60,"offset_bottom_mobile":0}},"image_with_text_1":{"type":"image-with-text","settings":{"image_position":"right","text_alignment":"left","first_desktop_image":"shopify:\/\/shop_images\/087e0c52-8d1e89_2ee3f5d4172741099ca9541351a7328e_mv2.jpg","heading":"SOGO KERAMIEK","subheading":"","text_content":"<p>creates sleek and contemporary functional pieces. All products are handmade by Sofie on the pottery wheel. The glazes are also developed entirely by Sofie, making each piece unique. In addition to beautiful, handmade products, SOGO keramiek offers pottery and glazing workshops for both beginners and advanced students.<\/p>","button_label":"Shop All","button_aria_label":"","button_url":"shopify:\/\/collections\/all","button_style":"primary","is_show_border_top":true,"is_show_border_bottom":true,"border_color":"#e6e6e6","full_width":false,"offset_top_desktop":20,"offset_bottom_desktop":20,"offset_top_mobile":0,"offset_bottom_mobile":100}},"story_telling":{"type":"story-telling","blocks":{"story_telling_0":{"type":"content","settings":{"tab_heading":"SOGO KERAMIEK","image_desktop":"shopify:\/\/shop_images\/SK_SOGO_OKT22_27.avif","image_position":"right","text_alignment":"left","heading":"SOGO KERAMIEK","subheading":"About","text":"<p>Hi, I'm Sofie, the woman behind SOGO keramiek. Born in 1985, happily married with two fantastic children.<\/p><p>My pottery journey began quite by chance in early 2016. On a whim, I signed up for a wheel-throwing course with Jan Welffens, a distant cousin of my mother.<\/p><p>It was during this course that I first encountered the tranquility (and sometimes the frustration) that clay can bring. By the end of that year, throwing on the wheel had become a mild obsession. It was no longer enough to attend a few classes a year, so I decided to set up my own wheel and glazing studio in our basement.<\/p><p>Since 2021, I have been working full-time as a ceramist. I love being at my wheel, primarily creating custom tableware for both private clients and B2B customers. My great passion is series throwing and glaze chemistry. In my workshops, I enjoy sharing my knowledge of clay and glaze with both beginners and advanced potters.<\/p>","button_text":"Know More","button_aria_label":"","button_link":"\/","background_color":"#ffffff","text_color":"#000000","button_label_color":"#ffffff","button_background_color":"#000000","button_border_color":"#000000","button_label_hover_color":"#000000","button_background_hover_color":"#ffffff","button_border_hover_color":"#000000"}}},"block_order":["story_telling_0"],"settings":{"overlay":40,"full_width":true,"offset_top_desktop":100,"offset_bottom_desktop":10,"offset_top_mobile":0,"offset_bottom_mobile":30}},"newsletter":{"type":"newsletter","settings":{"full_width":false,"layout":"two_column","heading":"Newsletter","subheading":"The Latest products & Offers","success_message":"Thanks for subscribing","text":"<p>Be the first to know about new collections and exclusive offers<\/p>","image_position":"left","email_placeholder":"Your email","button_aria_label":"Submit","section_background":"#ac8a57","heading_color":"#ffffff","text_color":"#ffffff","content_color":"#c1bdb9","input_label_color":"#ffffff","input_color":"#ffffff","input_border_color":"#ffffff","button_circle_text_color":"#f9f5f0","button_circle_background_color":"rgba(0,0,0,0)","button_circle_border_color":"#f9f5f0","button_circle_outer_border_color":"#8b8885","button_circle_text_color_hover":"#2c2a28","button_circle_background_color_hover":"#eab88c","button_circle_border_color_hover":"#eab88c","button_circle_outer_border_color_hover":"#8b8885","offset_top_desktop":0,"offset_bottom_desktop":0,"offset_top_mobile":0,"offset_bottom_mobile":0}}},"order":["slideshow","collection_list_1","featured-collection","image_with_text_1","story_telling","newsletter"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify://shop_images/imgi_4_8d1e89_8e5849f29ee146b08f7b63ca4e682a55_mv2.jpg",
+            "label": "",
+            "heading": "SOGO KERAMIEK",
+            "description": "<p>SOGO keramiek maakt strak en eigentijds gebruiksgoed. Alle producten zijn door Sofie met de hand gemaakt op de draaischijf. Ook alle glazuren zijn volledig zelf ontwikkeld en daardoor altijd uniek. Naast mooie, handgemaakte producten biedt SOGO keramiek ook workshops pottenbakken en glazuren aan voor zowel beginners als gevorderden. </p>",
+            "button_text": "Shop Al",
+            "button_aria_label": "",
+            "button_link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "make_link_full_slide": false,
+            "second_button_text": "",
+            "second_button_aria_label": "",
+            "second_button_link": "shopify://collections/all",
+            "second_open_in_new_tab": false,
+            "text_alignment_inside_block": "left",
+            "content_alignment": "slideshow__slide-content--left",
+            "background_color": "#000000",
+            "background_content": "",
+            "label_color": "#ffffff",
+            "heading_color": "#ffffff",
+            "description_color": "#ffffff",
+            "button_text_color": "#003c38",
+            "button_background_color": "#ffffff",
+            "button_border_color": "rgba(0,0,0,0)",
+            "button_text_color_hover": "#ffffff",
+            "button_background_color_hover": "#ac8a57",
+            "button_border_color_hover": "rgba(0,0,0,0)",
+            "second_button_text_color": "#ffffff",
+            "second_button_background_color": "#ac8a57",
+            "second_button_border_color": "rgba(0,0,0,0)",
+            "second_button_text_color_hover": "#ffffff",
+            "second_button_background_color_hover": "#86a487",
+            "second_button_border_color_hover": "rgba(0,0,0,0)",
+            "overlay_color": "radial-gradient(rgba(219, 149, 250, 0.13), rgba(0, 60, 56, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image-1"
+      ],
+      "settings": {
+        "desktop_slide_per_view": "1",
+        "height_desktop": 80,
+        "height_mobile": 50,
+        "subtract_header_height": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0,
+        "show_arrows": true,
+        "show_pagination": true,
+        "show_progress_bar": false,
+        "enable_loop": true,
+        "enable_autoplay": true,
+        "autoplay_speed": 7,
+        "animation_speed": 0.5,
+        "animation_type": "slide",
+        "enable_lazy_load": false,
+        "background_color": "#e4feff",
+        "progress_bar_color": "#ffffff",
+        "arrows_color": "#ffffff",
+        "pagination_color": "#ffffff",
+        "play_color": "#003c38",
+        "play_background_color": "#f9f9f9",
+        "play_hover_color": "#f9f9f9",
+        "play_background_hover_color": "#2c2a28"
+      }
+    },
+    "collection_list_1": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_list_1": {
+          "type": "collection",
+          "settings": {
+            "collection": "workshops",
+            "image": "shopify://shop_images/8bee3d5c-8d1e89_84632f11486643aca46f272891fe87f7_mv2.jpg"
+          }
+        },
+        "collection_list_2": {
+          "type": "collection",
+          "settings": {
+            "collection": "ceramics",
+            "image": "shopify://shop_images/ceadb75e-8d1e89_291869eb653c48249b53e1390c628cd5_mv2.jpg"
+          }
+        },
+        "collection_list_3": {
+          "type": "collection",
+          "settings": {
+            "collection": "tools-for-potters",
+            "image": "shopify://shop_images/7193c69f-8d1e89_65b4979c2e174f388caea785afa0628b_mv2.jpg"
+          }
+        },
+        "collection_list_4": {
+          "type": "collection",
+          "settings": {
+            "collection": "glazuren",
+            "image": "shopify://shop_images/53ac41c4-8d1e89_1d888e9eec3543ea8c1b450b18ddfe3b_mv2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_list_1",
+        "collection_list_2",
+        "collection_list_3",
+        "collection_list_4"
+      ],
+      "settings": {
+        "label": "",
+        "heading": "SHOP",
+        "link_url": "shopify://collections",
+        "link_text": "Shop all",
+        "link_aria_label_text": "Shop all",
+        "text_alignment": "center",
+        "button_style": "primary",
+        "aspect_ratio": "portrait",
+        "text_position": "inside_the_image",
+        "image_crop": "center",
+        "show_products_count": false,
+        "color_overlay": "#2c2a28",
+        "inside_the_image_text": "#f7f2ec",
+        "inside_the_image_text_hover": "#000000",
+        "full_width": false,
+        "offset_top_desktop": 30,
+        "offset_bottom_desktop": 30,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "frontpage",
+        "label": "",
+        "heading": "OUR BEST SELLERS",
+        "link_url": "",
+        "link_text": "",
+        "link_aria_label_text": "",
+        "button_style": "circle",
+        "layout": "5",
+        "enable_cards_indent": true,
+        "full_width": true,
+        "offset_top_desktop": 30,
+        "offset_bottom_desktop": 30,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "image_with_text_1": {
+      "type": "image-with-text",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "first_desktop_image": "shopify://shop_images/087e0c52-8d1e89_2ee3f5d4172741099ca9541351a7328e_mv2.jpg",
+        "heading": "SOGO KERAMIEK",
+        "subheading": "",
+        "text_content": "<p>creates sleek and contemporary functional pieces. All products are handmade by Sofie on the pottery wheel. The glazes are also developed entirely by Sofie, making each piece unique. In addition to beautiful, handmade products, SOGO keramiek offers pottery and glazing workshops for both beginners and advanced students.</p>",
+        "button_label": "Shop All",
+        "button_aria_label": "",
+        "button_url": "shopify://collections/all",
+        "button_style": "primary",
+        "is_show_border_top": true,
+        "is_show_border_bottom": true,
+        "border_color": "#e6e6e6",
+        "full_width": false,
+        "offset_top_desktop": 20,
+        "offset_bottom_desktop": 20,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 100
+      }
+    },
+    "story_telling": {
+      "type": "story-telling",
+      "blocks": {
+        "story_telling_0": {
+          "type": "content",
+          "settings": {
+            "tab_heading": "SOGO KERAMIEK",
+            "image_desktop": "shopify://shop_images/SK_SOGO_OKT22_27.avif",
+            "image_position": "right",
+            "text_alignment": "left",
+            "heading": "SOGO KERAMIEK",
+            "subheading": "About",
+            "text": "<p>Hi, I'm Sofie, the woman behind SOGO keramiek. Born in 1985, happily married with two fantastic children.</p><p>My pottery journey began quite by chance in early 2016. On a whim, I signed up for a wheel-throwing course with Jan Welffens, a distant cousin of my mother.</p><p>It was during this course that I first encountered the tranquility (and sometimes the frustration) that clay can bring. By the end of that year, throwing on the wheel had become a mild obsession. It was no longer enough to attend a few classes a year, so I decided to set up my own wheel and glazing studio in our basement.</p><p>Since 2021, I have been working full-time as a ceramist. I love being at my wheel, primarily creating custom tableware for both private clients and B2B customers. My great passion is series throwing and glaze chemistry. In my workshops, I enjoy sharing my knowledge of clay and glaze with both beginners and advanced potters.</p>",
+            "button_text": "Know More",
+            "button_aria_label": "",
+            "button_link": "/",
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "button_label_color": "#ffffff",
+            "button_background_color": "#000000",
+            "button_border_color": "#000000",
+            "button_label_hover_color": "#000000",
+            "button_background_hover_color": "#ffffff",
+            "button_border_hover_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "story_telling_0"
+      ],
+      "settings": {
+        "overlay": 40,
+        "full_width": true,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 10,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 30
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "full_width": false,
+        "layout": "two_column",
+        "heading": "Newsletter",
+        "subheading": "The Latest products & Offers",
+        "success_message": "Thanks for subscribing",
+        "text": "<p>Be the first to know about new collections and exclusive offers</p>",
+        "image_position": "left",
+        "email_placeholder": "Your email",
+        "button_aria_label": "Submit",
+        "section_background": "#ac8a57",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "content_color": "#c1bdb9",
+        "input_label_color": "#ffffff",
+        "input_color": "#ffffff",
+        "input_border_color": "#ffffff",
+        "button_circle_text_color": "#f9f5f0",
+        "button_circle_background_color": "rgba(0,0,0,0)",
+        "button_circle_border_color": "#f9f5f0",
+        "button_circle_outer_border_color": "#8b8885",
+        "button_circle_text_color_hover": "#2c2a28",
+        "button_circle_background_color_hover": "#eab88c",
+        "button_circle_border_color_hover": "#eab88c",
+        "button_circle_outer_border_color_hover": "#8b8885",
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "collection_list_1",
+    "featured-collection",
+    "image_with_text_1",
+    "story_telling",
+    "newsletter"
+  ]
+}
