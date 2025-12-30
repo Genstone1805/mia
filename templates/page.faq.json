@@ -115,36 +115,36 @@
         "faq_item_zRHyxG": {
           "type": "faq_item",
           "settings": {
-            "heading": "Can I use the glazes right away?",
-            "text": "<p>That depends a bit.</p><p>Brush glazes can be used immediately after mixing.</p><p>It's best to let immersion glazes rest for at least 24 hours. After this rest period, check two important parameters: the specific gravity and the viscosity. Be sure to consult the instruction booklet and the <a href=\"/pages/instructional-videos\" target=\"_blank\" title=\"Instructional Videos\"><span style=\"text-decoration:underline\">instructional videos</span></a> to see how.</p>"
-          }
-        },
-        "faq_item_wCV4rY": {
-          "type": "faq_item",
-          "settings": {
-            "heading": "What is specific gravity and should I measure it?",
-            "text": "<p>The specific gravity of a glaze indicates the amount of water and solids in the glaze. It increases over time due to evaporation of water from the glaze, but also through the glazing process itself. Specific gravity is an important parameter that should always be measured before dipping and pouring. With brush glazes, the specific gravity will remain much more constant and requires less frequent measurement.</p><p><a href=\"https://video.wixstatic.com/video/8d1e89_77137c1841aa48ccab40bb1bb83b203b/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">Learn how to measure specific gravity here.</span></a> You'll also find this explanation in the instruction booklet.</p><p>Compare the obtained specific gravity with the instructions on the SOGO glaze package. Is it higher? Add water and re-measure until you reach the ideal specific gravity. Be careful not to add too much water! Is the specific gravity lower? Then your glaze contains too much water. Wait until the glaze has settled and carefully remove the water with a syringe. Re-measure the specific gravity until you reach the correct value. Always measure the specific gravity of a dip glaze before a glazing session.</p>"
+            "heading": "Kan ik de glazuren meteen gebruiken?",
+            "text": "<p>Dat hangt er wat van af. </p><p>Kwastglazuren zijn na aanmaken meteen bruikbaar. </p><p>Dompelglazuren laat je best minimum 24 uur rusten. Na die rustperiode controleer je twee belangrijke parameters: het soortelijk gewicht en de viscositeit. Bekijk zeker het instructieboekje en de <a href=\"https://www.sogokeramiek.com/instructievideo\" target=\"_blank\"><span style=\"text-decoration:underline\">instructievideo's</span></a> om te kijken hoe je dat doet. </p>"
           }
         },
         "faq_item_JFeCV4": {
           "type": "faq_item",
           "settings": {
-            "heading": "What is the viscosity of a glaze? Should I measure it?",
-            "text": "<p>Viscosity is the consistency of the glaze in the bucket or pot. A glaze that is too thin or too thick can alter the glaze color or even cause it to run. Checking the viscosity of brush-applied glazes is less important. The number of brushed layers plays a significant role in achieving the correct color.</p><p>You check the viscosity of glazes before pouring or dipping. This changes over time due to environmental factors such as the temperature in the studio. You measure the viscosity immediately after checking and adjusting the specific gravity.</p><p><a href=\"https://video.wixstatic.com/video/8d1e89_e8810faa254747db8ce434cd366bd435/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">You can find out how to measure viscosity here.</span></a> This is also explained in the instruction manual.</p><p>A simple viscosity meter (also called a flow cup) is an indispensable tool for reproducible glaze results. <a href=\"/products/viscositeitsmeter\" target=\"_blank\" title=\"Viscositeitsmeter\"><span style=\"text-decoration:underline\">You can purchase one here.</span></a></p>"
+            "heading": "Wat is het soortelijk gewicht en moet ik het meten?",
+            "text": "<p>Het soortelijk gewicht van een glazuur geeft een indicatie over de  hoeveelheid water en de vaste stoffen in het glazuur. Het wordt  mettertijd hoger door verdamping van water uit het glazuur, maar  ook door het proces van glazuren zelf. Het soortelijk gewicht  is een belangrijke parameter die best steeds gemeten wordt,   alvorens je gaat dompelen en gieten. Bij kwastglazuren zal het  soortelijk gewicht veel constanter blijven en moet je het minder  frequent nameten. </p><p><a href=\"https://video.wixstatic.com/video/8d1e89_77137c1841aa48ccab40bb1bb83b203b/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">Bekijk hier hoe je het soortelijk gewicht kan meten.</span></a> Je vindt deze uitleg ook in het instructieboekje. </p><p>Vergelijk het verkregen soortelijk gewicht met de instructie op  de verpakking van het SOGO glazuur.  Is het hoger? Voeg water  toe en meet opnieuw tot je het ideale soortelijk gewicht bereikt.  Wees voorzichtig en voeg niet te veel water toe! Is het soortelijk  gewicht lager? Dan bevat jouw glazuur te veel water. Wacht tot  het glazuur bezonken is en haal voorzichtig water weg met een  spuit. Meet het soortelijk gewicht opnieuw tot je de juiste waarde  bereikt. Meet het soortelijk gewicht van een dompelglazuur altijd  voor een glazuursessie. </p>"
           }
         },
         "faq_item_8gCWcq": {
           "type": "faq_item",
           "settings": {
-            "heading": "I use the finger dip method for viscosity. Is that okay?",
-            "text": "<p>The <a href=\"https://video.wixstatic.com/video/8d1e89_98dca0af1d4a4bb4ac757350a247f0b0/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">finger-dip method</span></a> , where you dip a gloved finger into a glaze to test its thickness, provides an indication of viscosity. However, it's a bit of a guessing game. You need a fair amount of experience. Furthermore, not every SOGO glaze needs to be the same thickness to achieve good results.</p><p>It is best to check the viscosity with a <a href=\"/products/viscositeitsmeter\" target=\"_blank\" title=\"Viscositeitsmeter\"><span style=\"text-decoration:underline\">flow cup</span></a> to achieve good results.</p>"
+            "heading": "Wat is de viscositeit van een glazuur? Moet ik het meten?",
+            "text": "<p> De  viscositeit is de stroperigheid van het glazuur in de emmer of pot. Een glazuur dat te dun  of te dik is, kan de glazuurkleur veranderen of het glazuur zelfs  doen afdruipen. De viscositeit controleren van kwastglazuren is  minder belangrijk. Hier speelt vooral het aantal gekwaste lagen  een grote rol in de ontwikkeling van de juiste kleur. </p><p>Je controleert de viscositeit van glazuren vooraleer je gaat gieten  of dompelen. Deze verandert in de tijd door omgevingsfactoren  zoals de temperatuur in de studio.  Je meet de viscositeit meteen  nadat je het soortelijk gewicht nagekeken en aangepast hebt.</p><p><a href=\"https://video.wixstatic.com/video/8d1e89_e8810faa254747db8ce434cd366bd435/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">Hoe je de viscositeit meet, bekijk je hier.</span></a> Dit staat ook neergeschreven in het instructieboekje. </p><p>Een simpele viscositeitsmeter (ook wel doorstroombeker genoemd) is een onmisbare tool voor reproduceerbare glazuurresultaten. <a href=\"https://www.sogokeramiek.com/product-page/viscositeitsmeter\" target=\"_blank\"><span style=\"text-decoration:underline\">Je kan er hier eentje aankopen.</span></a></p>"
           }
         },
         "faq_item_bANMDT": {
           "type": "faq_item",
           "settings": {
-            "heading": "Do I need to re-sieve my glaze regularly?",
-            "text": "<p>Sifting a glaze with a <a href=\"/products/glazuurzeef-60-mesh\" target=\"_blank\" title=\"Glazuurzeef 60 mesh\"><span style=\"text-decoration:underline\">glaze sieve</span></a> (minimum 60 mesh) is necessary at the following times:</p><ol><li>After mixing the powder glaze with water or brush.</li><li>If there are a lot of chunks hanging from the edge of the bucket that have fallen into the glaze.</li><li>If grains or small stones appear to be forming in the enamel.</li></ol><p>In this last situation, crystals have formed in the glaze. These crystals are caused by certain components of the glaze, especially after a long period of rest with temperature fluctuations. These small stones are important components of the glaze and should not simply be discarded. After all, you are throwing away important raw materials if you do so.</p><p>After sifting, scrape the sieve clean and add the granules/pebbles to a small jar. Add a little hot water. Stir well, and you'll see them dissolve quickly. Add this back to the glaze. <a href=\"https://video.wixstatic.com/video/8d1e89_77137c1841aa48ccab40bb1bb83b203b/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">You may need to re-measure the specific gravity of your glaze</span></a><span style=\"text-decoration:underline\"> .</span></p>"
+            "heading": "Ik gebruik de vingerdipmethode voor de viscositeit. Is dat ok?",
+            "text": "<p>De <a href=\"https://video.wixstatic.com/video/8d1e89_98dca0af1d4a4bb4ac757350a247f0b0/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">vingerdipmethode</span></a> waarbij je een gehandschoende vinger in een glazuur steekt om te kijken hoe dik het glazuur is, geeft een indicatie van de viscositeit. Het is echter wel een beetje nattevingerwerk. Je hebt best wat ervaring nodig. Bovendien moet niet elk SOGO glazuur even dik zijn om goede resultaten te behalen. </p><p>Je controleert de viscositeit toch best met een <a href=\"https://www.sogokeramiek.com/product-page/viscositeitsmeter\" target=\"_blank\"><span style=\"text-decoration:underline\">doorstroombeker</span></a> om goede resultaten te behalen. </p>"
+          }
+        },
+        "faq_item_wCV4rY": {
+          "type": "faq_item",
+          "settings": {
+            "heading": "Moet ik mijn glazuur regelmatig opnieuw zeven?",
+            "text": "<p>Een glazuur zeven met een <a href=\"https://www.sogokeramiek.com/product-page/glazuurzeef-60-mesh\" target=\"_blank\"><span style=\"text-decoration:underline\">glazuurzeef</span></a> (minimum 60 mesh) is noodzakelijk op de volgende momenten:</p><ol><li>Na het aanmaken van het poederglazuur met water of kwastmiddel. </li><li>Als er heel veel brokjes die aan de rand van de emmer hangen in het glazuur gevallen zijn. </li><li>Als er korreltjes of kleine steentjes in het glazuur lijken te ontstaan. </li></ol><p>In deze laatste situatie hebben er zich kristallen gevormd in het glazuur. Deze ontstaan door bepaalde grondstoffen in het glazuur en vooral na een lange rustperiode met temperatuurschommelingen. De kleine steentjes zijn belangrijk in het glazuur en ze mogen niet zomaar weggegooid worden. Je gooit immers belangrijke grondstoffen weg mocht je dit doen. </p><p>Na het zeven schraap je de zeef uit en voeg je de korreltjes/steentjes toe in een potje. Hier giet je een klein beetje heet water bij. Roer goed en je zal zien dat ze snel oplossen. Voeg dit terug toe aan het glazuur. <a href=\"https://video.wixstatic.com/video/8d1e89_77137c1841aa48ccab40bb1bb83b203b/1080p/mp4/file.mp4\" target=\"_blank\"><span style=\"text-decoration:underline\">Wellicht moet je het soortelijk gewicht van jouw glazuur opnieuw meten</span></a><span style=\"text-decoration:underline\">.</span></p>"
           }
         },
         "category_VH7X4x": {
@@ -188,10 +188,10 @@
         "faq_item_Cg7WYm",
         "category_4kgfGm",
         "faq_item_zRHyxG",
-        "faq_item_wCV4rY",
         "faq_item_JFeCV4",
         "faq_item_8gCWcq",
         "faq_item_bANMDT",
+        "faq_item_wCV4rY",
         "category_VH7X4x",
         "faq_item_fnxwaB",
         "category_8LiP6e",
