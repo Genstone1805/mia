@@ -190,7 +190,7 @@
           "settings": {
             "grid": 4,
             "heading": "Ik heb een glazuurprobleem. Waar kan ik terecht?",
-            "text": "<p>Heb je de <a href=\"https://www.sogokeramiek.com/probleemoplosser\" target=\"_blank\"><span style=\"text-decoration:underline\">probleemoplosser</span></a> al gebruikt? Via een invulformulier vind je het antwoord op vele glazuurproblemen. Toch niet gevonden wat je zocht? Je kan me via de probleemoplosser ook contacteren als je niet vindt wat je zoekt. <a href=\"https://www.sogokeramiek.com/probleemoplosser\" target=\"_blank\"><span style=\"text-decoration:underline\">Klik hier om de probleemoplosser te openen.</span></a></p>"
+            "text": "<p>Heb je de <a href=\"/pages/troubleshooter\" target=\"_blank\" title=\"/pages/troubleshooter\"><span style=\"text-decoration:underline\">probleemoplosser</span></a> al gebruikt? Via een invulformulier vind je het antwoord op vele glazuurproblemen. Toch niet gevonden wat je zocht? Je kan me via de probleemoplosser ook contacteren als je niet vindt wat je zoekt. <a href=\"/pages/troubleshooter\" target=\"_blank\" title=\"/pages/troubleshooter\"><span style=\"text-decoration:underline\">Klik hier om de probleemoplosser te openen.</span></a></p>"
           }
         }
       },
