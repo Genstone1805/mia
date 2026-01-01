@@ -1,6 +1,183 @@
+{% doc %}
+  @prompt
+    create a video section. The video should be centered and the size should be width:480px and height:270px 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-video-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-video-container-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ai-video-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 480px;
+    height: 270px;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-video-wrapper-{{ ai_gen_id }} iframe,
+  .ai-video-wrapper-{{ ai_gen_id }} video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .ai-video-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #666;
+    gap: 12px;
+  }
+
+  .ai-video-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  .ai-video-empty-state-{{ ai_gen_id }} {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-video-wrapper-{{ ai_gen_id }} {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+{% endstyle %}
+
+<video-section-{{ ai_gen_id }}
+  class="ai-video-section-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-container-{{ ai_gen_id }}">
+    <div class="ai-video-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.video_url != blank %}
+        {% if block.settings.video_url contains 'youtube.com' or block.settings.video_url contains 'youtu.be' %}
+          {% assign video_id = block.settings.video_url | split: 'v=' | last | split: '&' | first %}
+          {% if block.settings.video_url contains 'youtu.be' %}
+            {% assign video_id = block.settings.video_url | split: 'youtu.be/' | last | split: '?' | first %}
+          {% endif %}
+          <iframe
+            src="https://www.youtube.com/embed/{{ video_id }}?rel=0&showinfo=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        {% elsif block.settings.video_url contains 'vimeo.com' %}
+          {% assign video_id = block.settings.video_url | split: 'vimeo.com/' | last | split: '?' | first %}
+          <iframe
+            src="https://player.vimeo.com/video/{{ video_id }}?title=0&byline=0&portrait=0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        {% else %}
+          <video controls>
+            <source src="{{ block.settings.video_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% endif %}
+      {% else %}
+        <div class="ai-video-placeholder-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div class="ai-video-empty-state-{{ ai_gen_id }}">
+            Next, add a video URL
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</video-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        const iframe = this.querySelector('iframe');
+        if (iframe) {
+          iframe.setAttribute('title', 'Embedded video');
+        }
+      }
+    }
+
+    customElements.define('video-section-{{ ai_gen_id }}', VideoSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Video section",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL",
+      "info": "Supports YouTube, Vimeo, or direct video file URLs"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video section"
+    }
+  ]
+}
 {% endschema %}
