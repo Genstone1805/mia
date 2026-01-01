@@ -14,13 +14,13 @@
             aria-labelledby="control-{{- block.id -}}"
           >
             <div
-              style="display:grid; padding:20px 0px; grid-template-columns:repeat({{section.settings.grid}}, 1fr); gap:10px"
+              style="display:grid; justify-content-center; align-items:center; grid-template-columns:repeat({{section.settings.grid}}, 1fr); gap:10px"
             >
               {% if block.settings.image != blank %}
-                <div style="max-height:200px overflow:hidden">
+                <div style="max-height:400px; max-width:400px; overflow:hidden">
                   <img
                     style="width:100%; height:100%; object-fit:contain"
-                    src="{{ block.settings.imageimage_1 | image_url}}"
+                    src="{{ block.settings.image | image_url}}"
                     height=""
                     width=""
                   >
