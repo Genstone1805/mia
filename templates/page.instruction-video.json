@@ -25,7 +25,7 @@
         "video_grid_mn6LA7": {
           "type": "video-grid",
           "settings": {
-            "heading": "Video Gallery",
+            "heading": "",
             "heading_font": "assistant_n4",
             "heading_size": 32,
             "heading_color": "#000000",
