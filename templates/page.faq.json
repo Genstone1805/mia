@@ -69,7 +69,7 @@
           "settings": {
             "grid": 4,
             "heading": "Zijn er SDS (VIB) fiches beschikbaar?",
-            "text": "<p>SDS (Safety Data Sheets) of VIB (Veiligheidsinformatiebladen) zijn beschikbaar voor alle SOGO glazuren. Dit is wettelijk verplicht. Ben je een professionele gebruiker of wil je SOGO glazuren verdelen? <a href=\"/pages/contact\" target=\"_blank\" title=\"/pages/contact\"><span style=\"text-decoration:underline\">Vraag naar de SDS-fiches.</span> </a></p><p>Consumenten worden voldoende geïnformeerd over de mogelijke risico's door de veiligheidslabels op elke verpakking. Wil je toch een SDS ontvangen? <a href=\"https://www.sogokeramiek.com/contact\" target=\"_blank\"><span style=\"text-decoration:underline\">Geen probleem, vraag ernaar.</span></a></p>"
+            "text": "<p>SDS (Safety Data Sheets) of VIB (Veiligheidsinformatiebladen) zijn beschikbaar voor alle SOGO glazuren. Dit is wettelijk verplicht. Ben je een professionele gebruiker of wil je SOGO glazuren verdelen? <a href=\"/pages/contact\" target=\"_blank\" title=\"/pages/contact\"><span style=\"text-decoration:underline\">Vraag naar de SDS-fiches.</span> </a></p><p>Consumenten worden voldoende geïnformeerd over de mogelijke risico's door de veiligheidslabels op elke verpakking. Wil je toch een SDS ontvangen?<a href=\"/pages/contact\" target=\"_blank\" title=\"/pages/contact\"> <span style=\"text-decoration:underline\">Geen probleem, vraag ernaar.</span></a></p>"
           }
         },
         "category-1": {
@@ -91,7 +91,7 @@
           "settings": {
             "grid": 4,
             "heading": "Hoe maak ik een dompel/gietglazuur?",
-            "text": "<p>Draag steeds handschoenen, een FFP3 stofmasker en eventueel  een veiligheidsbril als je glazuren aanmaakt.</p><p>1. Weeg water af volgens de instructies op het etiket van het  SOGO glazuur.  Giet het in een emmer met een volume van  minstens 3 liter voor 2 kg glazuurpoeder en 10 liter voor 7  kg glazuurpoeder.</p><p>2. Voeg nu voorzichtig de volledige inhoud van de zak  poederglazuur toe.</p><p>3. Mix het mengsel met een staafmixer (kleine hoeveelheden),  een verfmixer (grote hoeveelheden) of meng krachtig met  een borstel.</p><p>4. Zeef het glazuur door een glazuurzeef van 60 of 80 mesh  voor een perfect homogeen resultaat.</p><p>5. Laat het glazuur minstens 24 uur rusten voor gebruik.</p><p>6. Roer het glazuur na de rustperiode opnieuw zeer goed op en  controleer het soortelijk gewicht en de viscositeit (zie instructieboekje, <a href=\"https://www.sogokeramiek.com/instructievideo\" target=\"_blank\"><span style=\"text-decoration:underline\">instructievideo's</span></a> of deze FAQ).</p><p>7. Pas deze parameters aan indien nodig.</p><p>8. Het glazuur is nu klaar voor gebruik.</p>"
+            "text": "<p>Draag steeds handschoenen, een FFP3 stofmasker en eventueel  een veiligheidsbril als je glazuren aanmaakt.</p><p>1. Weeg water af volgens de instructies op het etiket van het  SOGO glazuur.  Giet het in een emmer met een volume van  minstens 3 liter voor 2 kg glazuurpoeder en 10 liter voor 7  kg glazuurpoeder.</p><p>2. Voeg nu voorzichtig de volledige inhoud van de zak  poederglazuur toe.</p><p>3. Mix het mengsel met een staafmixer (kleine hoeveelheden),  een verfmixer (grote hoeveelheden) of meng krachtig met  een borstel.</p><p>4. Zeef het glazuur door een glazuurzeef van 60 of 80 mesh  voor een perfect homogeen resultaat.</p><p>5. Laat het glazuur minstens 24 uur rusten voor gebruik.</p><p>6. Roer het glazuur na de rustperiode opnieuw zeer goed op en  controleer het soortelijk gewicht en de viscositeit (zie instructieboekje,<a href=\"/pages/instructional-videos\" target=\"_blank\" title=\"/pages/instructional-videos\"> <span style=\"text-decoration:underline\">instructievideo's</span></a> of deze FAQ).</p><p>7. Pas deze parameters aan indien nodig.</p><p>8. Het glazuur is nu klaar voor gebruik.</p>"
           }
         },
         "faq_item_YrCRCL": {
@@ -130,7 +130,7 @@
           "settings": {
             "grid": 4,
             "heading": "Kan ik de glazuren meteen gebruiken?",
-            "text": "<p>Dat hangt er wat van af. </p><p>Kwastglazuren zijn na aanmaken meteen bruikbaar. </p><p>Dompelglazuren laat je best minimum 24 uur rusten. Na die rustperiode controleer je twee belangrijke parameters: het soortelijk gewicht en de viscositeit. Bekijk zeker het instructieboekje en de <a href=\"https://www.sogokeramiek.com/instructievideo\" target=\"_blank\"><span style=\"text-decoration:underline\">instructievideo's</span></a> om te kijken hoe je dat doet. </p>"
+            "text": "<p>Dat hangt er wat van af. </p><p>Kwastglazuren zijn na aanmaken meteen bruikbaar. </p><p>Dompelglazuren laat je best minimum 24 uur rusten. Na die rustperiode controleer je twee belangrijke parameters: het soortelijk gewicht en de viscositeit. Bekijk zeker het instructieboekje en de<a href=\"/pages/instructional-videos\" target=\"_blank\" title=\"/pages/instructional-videos\"> <span style=\"text-decoration:underline\">instructievideo's</span></a> om te kijken hoe je dat doet. </p>"
           }
         },
         "faq_item_JFeCV4": {
