@@ -2,52 +2,52 @@
 
 {%
   render 'radio-fields',
-  title:"Did you prepare the glaze with diluted pehatine according to the instruction on the package?",
+  title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
   field_id:"unpackedSogoRunnyBrushSolute",
   required: true,
   field_name:"unbacked_sogo_runny_brush_solute",
   field_values:"
-  unpackedSogoBrushRunnySoluteYes|Yes|unpackedSogoRunnyBrushGravityYes,
-  unpackedSogoBrushRunnySoluteNo|No|unpackedSogoRunnyBrushSoluteNoInstruction
+  unpackedSogoBrushRunnySoluteYes|Ja|unpackedSogoRunnyBrushGravityYes,
+  unpackedSogoBrushRunnySoluteNo|Neen|unpackedSogoRunnyBrushSoluteNoInstruction
   ",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
-  title:"Have you ever measured the specific gravity",
+  title:"Heb je het soortelijk gewicht al eens gemeten?",
   field_id:"unpackedSogoRunnyBrushGravityYes",
   required: true,
   field_name:"unbacked_sogo_runny_brush_gravity",
   field_values:"
-  unpackedSogoBrushRunnyYesMatchesGravity|Yes it matches the packaging|unpackedSogoRunnyBrushYesGravityMatchesInstruction,
-  unpackedSogoBrushRunnyYesLowerGravity|Yes but it is lower on the packaging|unpackedSogoRunnyBrushYesGravityLowerInstruction,
-  unpackedSogoBrushRunnyNoGravity|No|unpackedSogoRunnyBrushNoGravityInstruction
+  unpackedSogoBrushRunnyYesMatchesGravity|Ja, het komt overeen met de verpakking|unpackedSogoRunnyBrushYesGravityMatchesInstruction,
+  unpackedSogoBrushRunnyYesLowerGravity|Ja, maar het is lager dan op de verpakking|unpackedSogoRunnyBrushYesGravityLowerInstruction,
+  unpackedSogoBrushRunnyNoGravity|Neen|unpackedSogoRunnyBrushNoGravityInstruction
   ",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
-  instruction:"Make your brush glaze according to the instructions on the packaging. Lost the packaging? The label is also available as an image next to the glaze in the webshop. Be sure to check it out.",
+  instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
   field_id:"unpackedSogoRunnyBrushSoluteNoInstruction",
   section_id:{{section_id }}
 %}
 {%
   render 'radio-fields',
-  instruction:"Diluted pehatine has a limited shelf life. It can lose its effectiveness if left for too long. Your glaze may have become too runny because the pehatine has spoiled. Add a dash of undiluted pehatine to the glaze to thicken it again.",
+  instruction:"Verdunde pehatine is slechts beperkt houdbaar. Het kan zijn werking verliezen als het lang staat. Jouw glazuur kan te lopend geworden zijn omdat de pehatine bedorven is. Voeg een scheutje onverdunde pehatine toe aan het glazuur om het opnieuw dikker te maken.",
   field_id:"unpackedSogoRunnyBrushYesGravityMatchesInstruction",
   section_id:{{section_id }}
 %}
 {%
   render 'radio-fields',
-  instruction:"If the specific gravity of your brush glaze is lower than the one indicated on the package, there is too much diluted pehatine solution in the glaze. You'll need to remove some of the pehatine water from the glaze (using a syringe, for example). Stir the glaze again and check the specific gravity until it matches the one on the package.",
+  instruction:"Als het soortelijk gewicht van jouw kwastglazuur lager is dan die aangegeven op de verpakking zit er te veel verdunde pehatineoplossing bij het glazuur. Je moet dan een beetje pehatinewater wegnemen van het glazuur (met een spuitje bijvoorbeeld). Roer het glazuur opnieuw op en controleer het soortelijk gewicht tot het overeenkomt met dat op de verpakking.",
   field_id:"unpackedSogoRunnyBrushYesGravityLowerInstruction",
   section_id:{{section_id }}
 %}
 {%
   render 'radio-fields',
-  instruction:"Measure the specific gravity and compare it to the specific gravity on the packaging. Go to the previous question and adjust your answer accordingly.",
+  instruction:"Meet het soortelijk gewicht en vergelijk het met dat op de verpakking. Ga naar de vorige vraag en pas jouw antwoord aan.",
   field_id:"unpackedSogoRunnyBrushNoGravityInstruction",
   section_id:{{section_id }}
 %}

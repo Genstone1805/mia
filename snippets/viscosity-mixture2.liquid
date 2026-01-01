@@ -1,14 +1,14 @@
 {%
   render 'radio-fields',
-  title:"Have you checked the viscosity?",
+  title:"Heb je de viscositeit gecontroleerd?",
   field_id:"unpackedSogoThickMixtureSoluteViscosity2",
   required: true,
   field_name:"unbacked_sogo_thick_brush_solute_viscosity",
   field_values:"
-  unpackedSogoThickMixtureSoluteViscosityYesMatches2|Yes with a viscosity meter and it matches the packaging|unpackedSogoThickMixtureSoluteViscosityMeter2,
-  unpackedSogoThickMixtureSoluteViscosityYesHigher2|Yes with a viscosity meter and it higher than what is stated on the packaging|unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction2,
-  unpackedSogoThickMixtureSoluteViscosityesDip2|Yes with with a finger dip meter|unpackedSogoThickMixtureSoluteViscosityesDipInstruction2,
-  unpackedSogoThickMixtureSoluteViscosityNo2|No|unpackedSogoThickMixtureSoluteViscosityNoInstruction2
+  unpackedSogoThickMixtureSoluteViscosityYesMatches2|Ja, met een viscositeitsmeter en deze komt overeen met de verpakking.|unpackedSogoThickMixtureSoluteViscosityMeter2,
+  unpackedSogoThickMixtureSoluteViscosityYesHigher2|Ja, met een viscositeitsmeter en deze is hoger dan wat op de verpakking staat|unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction2,
+  unpackedSogoThickMixtureSoluteViscosityesDip2|Ja, met de vingerdipmethode|unpackedSogoThickMixtureSoluteViscosityesDipInstruction2,
+  unpackedSogoThickMixtureSoluteViscosityNo2|Neen|unpackedSogoThickMixtureSoluteViscosityNoInstruction2
   ",
   section_id:{{section_id }}
 %}
@@ -16,38 +16,38 @@
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction2",
-  instruction:"If your glaze has a longer flow time than stated on the package, it's too viscous. It needs to be deflocculated with Dolapix until you reach the correct value.",
+  instruction:"Als jouw glazuur een hogere doorlooptijd heeft dan die op de verpakking, is het te viskeus. Het moet gedeflocculeerd worden met Dolapix tot je de juiste waarde bereikt. ",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteViscosityesDipInstruction2",
-  instruction:"The finger-dip method provides an initial indication of viscosity but requires considerable experience. Moreover, subtle differences cannot be detected with this method. Furthermore, some SOGO glazes perform better when thicker, while others perform better when thinned.
+  instruction:"De vingerdipmethode geeft een eerste indicatie over de viscositeit maar vereist veel ervaring. Bovendien kunnen subtiele verschillen niet met deze methode opgespoord worden. Daarnaast zijn sommige SOGO glazuren beter als ze wat dikker zijn, andere zijn beter als ze dunner gemaakt worden.
 
-  So measure the viscosity with a flow cup (available in the webshop) to be sure of the correct thickness.
+  Meet de viscositeit dus met een doorstroombeker (te koop via de webshop) om zeker te zijn over de juiste dikte.
 
-  You can always deflocculate the glaze slightly with Dolapix to thin it out. Note: some SOGO glazes need to be quite viscous (syrupy) to achieve beautiful, deep colors.",
+  Je kan het glazuur altijd wat deflocculeren met Dolapix om het dunner te maken. Let op: sommige SOGO glazuren moeten redelijk viskeus (stroperig) zijn om mooie, diepe kleuren te bekomen.",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteViscosityNoInstruction2",
-  instruction:"Measure the viscosity with a flow-through cup (viscometer) and deflocculate the glaze with Dolapix if necessary. This will ensure you achieve the correct viscosity and obtain good, reproducible results.",
+  instruction:"Meet de viscositeit met een doorstroombeker (viscositeitsmeter) en deflocculeer het glazuur met Dolapix indien nodig. Op deze manier bereik je de juiste viscositeit en zal je goede, reproduceerbare resultaten bekomen.",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
-  title:"Which viscosity meter do you have?",
+  title:"Welke visocsiteitsmeter heb je?",
   field_id:"unpackedSogoThickMixtureSoluteViscosityMeter2",
   required: true,
   field_name:"unbacked_sogo_thick_brush_solute_viscosity_meter",
   field_values:"
-  unpackedSogoThickMixtureSoluteViscosityMeterYellowYesMatches2|A Yellow one purchased through SOGO|unpackedSogoThickMixtureSoluteViscosityMeterYellowYesMatchesInstruction2,
-  unpackedSogoThickMixtureSoluteViscosityMeterMetal2|A metal one purchased from Colpaert|unpackedSogoThickMixtureSoluteViscosityMeterMetalInstruction2,
-  unpackedSogoThickMixtureSoluteViscosityMeterAnother2|Yet another one|unpackedSogoThickMixtureSoluteViscosityMeterAnotherInstruction2
+  unpackedSogoThickMixtureSoluteViscosityMeterYellowYesMatches2|Een gele, aangekocht via SOGO|unpackedSogoThickMixtureSoluteViscosityMeterYellowYesMatchesInstruction2,
+  unpackedSogoThickMixtureSoluteViscosityMeterMetal2|Een metalen, aangekocht bij Colpaert|unpackedSogoThickMixtureSoluteViscosityMeterMetalInstruction2,
+  unpackedSogoThickMixtureSoluteViscosityMeterAnother2|Nog een andere|unpackedSogoThickMixtureSoluteViscosityMeterAnotherInstruction2
   ",
   section_id:{{section_id }}
 %}
@@ -55,22 +55,22 @@
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteViscosityMeterYellowYesMatchesInstruction2",
-  instruction:"If you've checked the specific gravity and viscosity and they match the package exactly, the glaze should be ready to use. Still find it too thick? Try working a bit faster to ensure short contact time and prevent the glaze from becoming too thick. Some SOGO glazes need to be quite viscous (syrupy) to achieve beautiful, deep colors.",
+  instruction:"Als je het soortelijk gewicht en de viscositeit gecontroleerd hebt en deze waarden komen perfect overeen met de verpakking, dan zou het glazuur klaar moeten zijn voor gebruik. Vind je het toch te dik? Probeer wat sneller te werken zodat de contacttijd kort genoeg is en de opgebouwde glazuurlaag niet te dik wordt. Sommige SOGO glazuren moeten redelijk viskeus (stroperig) zijn om mooie, diepe kleuren te bekomen.",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteViscosityMeterMetalInstruction2",
-  instruction:"Some viscosity meters are slightly off. It's possible that the glaze is still a bit too thick, even though the flow time matches the one stated on the packaging. In that case, try deflocculating the glaze a little with Dolapix and test it again.
-  Please note: some SOGO glazes need to be quite viscous (syrupy) to achieve nice, deep colours.",
+  instruction:"Sommige viscositeitsmeters wijken een beetje af. Het zou dus kunnen dat het glazuur toch nog een beetje te dik is, hoewel de doorlooptijd overeenkomt met die op de verpakking. Probeer in dat geval het glazuur een beetje te deflocculeren met Dolapix en test het opnieuw.
+  Let op: sommige SOGO glazuren moeten redelijk viskeus (stroperig) zijn om mooie, diepe kleuren te bekomen. ",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteViscosityMeterAnotherInstruction2",
-  instruction:"Some viscosity meters are slightly off. It's possible that the glaze is still a bit too thick, even though the flow time matches the one stated on the packaging. In that case, try deflocculating the glaze a little with Dolapix and test it again.
-  Please note: some SOGO glazes need to be quite viscous (syrupy) to achieve nice, deep colours.",
+  instruction:"Sommige viscositeitsmeters wijken een beetje af. Het zou dus kunnen dat het glazuur toch nog een beetje te dik is, hoewel de doorlooptijd overeenkomt met die op de verpakking. Probeer in dat geval het glazuur een beetje te deflocculeren met Dolapix en test het opnieuw.
+  Let op: sommige SOGO glazuren moeten redelijk viskeus (stroperig) zijn om mooie, diepe kleuren te bekomen. ",
   section_id:{{section_id }}
 %}

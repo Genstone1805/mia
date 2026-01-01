@@ -1,25 +1,24 @@
 {%
   render 'radio-fields',
-  title:"Your used clay is",
+  title:"Jouw gebruikte klei is",
   field_id:"backedShowsPinpricksProblem",
   required: true,
   field_name:"backed_shows_pinpricks",
   field_values:"
-  backedWhite|Whitewashing|backedShowsPinpricksWhiteProblem,
-  backedColored|Colored (Black gray red brown)|backedColoredInstruction
-  ",
+  backedWhite|witbakkend|backedShowsPinpricksWhiteProblem,
+  backedColored|gekleurd (zwart grijs rood bruin ...)|backedColoredInstruction",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
-  title:"Does your clay contain chamotte?",
+  title:"Bevat jouw klei chamotte?",
   field_id:"backedShowsPinpricksWhiteProblem",
   required: true,
   field_name:"backed_shows_pinpricks_white",
   field_values:"
-  backedWhiteYes|Yes|backedWhiteYesInstruction,
-  backedColoredNo|No|backedColoredNoInstruction
+  backedWhiteYes|Ja|backedWhiteYesInstruction,
+  backedColoredNo|Neen|backedColoredNoInstruction
   ",
   section_id:{{section_id }}
 %}
@@ -28,7 +27,7 @@
   render 'radio-fields',
   field_id:"backedWhiteYesInstruction",
   instruction:"
-  Chamotte in clay can cause pinpricks. A viscous glaze doesn't always adhere well to the small holes and crevices present in chamotte-containing clay. Air gets trapped in these grooves, sometimes leaving a hole in the glaze surface. Be careful not to sponge too much when turning and to smooth the clay surface with a rubber lumber. This will significantly help prevent chamotte-related pinpricks.
+  Chamotte in klei kan aanleiding geven tot speldenprikken. Een viskeus glazuur kan niet altijd goed in de kleine gaatjes en spleetjes hechten die aanwezig zijn in chamottehoudende klei. Er zit dan lucht verstopt in die groefjes en deze laat in sommige gevallen een gaatje achter in het glazuuroppervlak. Zorg ervoor dat je niet te veel sponst bij het afdraaien en het kleioppervlak mooi glad maakt met een rubberen lomer. Dit helpt aanzienlijk om chamottegerelateerde speldenprikken te voorkomen.
   ",
   section_id:{{section_id }}
 %}
@@ -37,7 +36,7 @@
   render 'radio-fields',
   field_id:"backedColoredNoInstruction",
   instruction:"
-  If it's just a single pinprick, an unevenness in the clay surface could be the cause. Is the entire area covered in pinpricks? Contact me, and we'll investigate the cause. Pinpricks are a very complex problem.
+  Als het om een enkele speldenprik gaat zou een oneffenheid in het kleioppervlak aan de oorzaak kunnen liggen. Zit het ganse stuk onder de speldenprikken? Contacteer me, dan zoeken we naar de oorzaak. Speldenprikken zijn een zeer complex probleem.
   ",
   section_id:{{section_id }}
 %}
@@ -46,9 +45,9 @@
   render 'radio-fields',
   field_id:"backedColoredInstruction",
   instruction:"
-  Colored clay contains coloring oxides such as iron oxide, manganese oxide, and/or cobalt oxide. These lose oxygen atoms when fired at high enough temperatures. This creates gas in a glaze. If the stoneware glaze is already solidifying (due to cooling), these gas bubbles can leave pinpricks and craters.
+  Gekleurde klei bevat kleurende oxiden zoals onder andere ijzeroxide, mangaanoxide en/of kobaltoxide. Deze verliezen zuurstofatomen als ze hoog genoeg gestookt worden. Dit geeft gasvorming in een glazuur. Als het steengoedglazuur op dat moment al aan het stollen is (door afkoeling), kunnen deze gasbellen speldenprikken en kraters achterlaten.
 
-  One solution might be to bake the biscuit slowly and high enough (at least 950°C but higher might be beneficial).
+  Een oplossing kan zijn om de biscuitbak traag en hoog genoeg (minstens 950°C maar hoger kan voordeel bieden) te doen.
   ",
   section_id:{{section_id }}
 %}

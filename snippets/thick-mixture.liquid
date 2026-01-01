@@ -1,24 +1,24 @@
 {%
   render 'radio-fields',
-  title:"Did you prepare the glaze with diluted pehatine according to the instruction on the package?",
+  title:"Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?",
   field_id:"unpackedSogoThickMixtureSolute",
   required: true,
   field_name:"unbacked_sogo_thick_brush_solute",
   field_values:"
-  unpackedSogoThickMixtureSoluteYes|Yes|unpackedSogoThickMixtureSoluteYesUsage,
-  unpackedSogoThickMixtureSoluteNo|No|unpackedSogoThickMixtureSoluteNoInstruction
+  unpackedSogoThickMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteYesUsage,
+  unpackedSogoThickMixtureSoluteNo|Neen|unpackedSogoThickMixtureSoluteNoInstruction
   ",
   section_id:{{section_id }}
 %}
 {%
   render 'radio-fields',
-  title:"Did you make the glaze a while ago and/or have you used it a lot?",
+  title:"Heb je het glazuur al een tijd geleden aangemaakt en/of al veel gebruikt?",
   field_id:"unpackedSogoThickMixtureSoluteYesUsage",
   required: true,
   field_name:"unbacked_sogo_thick_brush_solute_usage",
   field_values:"
-  unpackedSogoThickMixtureSoluteYesLong|Yes It has been there for a while and/or it has been used a lot|unpackedSogoThickMixtureSoluteGravity,
-  unpackedSogoThickMixtureSoluteYesShort|No It has hardly or not been used and was created only recently|unpackedSogoThickMixtureSoluteViscosity1
+  unpackedSogoThickMixtureSoluteYesLong|Ja, het staat er al wel een tijdje en/of het is al veel gebruikt|unpackedSogoThickMixtureSoluteGravity,
+  unpackedSogoThickMixtureSoluteYesShort|Neen, het is amper of niet gebruikt en nog niet lang geleden aangemaakt.|unpackedSogoThickMixtureSoluteViscosity1
   ",
   section_id:{{section_id }}
 %}
@@ -26,13 +26,13 @@
 {% comment %} Gravity {% endcomment %}
 {%
   render 'radio-fields',
-  title:"Have you measured the specific gravity?",
+  title:"Heb je het soortelijk gewicht nog eens opnieuw gemeten?",
   field_id:"unpackedSogoThickMixtureSoluteGravity",
   required: true,
   field_name:"unbacked_sogo_thick_brush_solute_gravity",
   field_values:"
-  unpackedSogoThickMixtureSoluteGravityYes|Yes|unpackedSogoThickMixtureSoluteViscosity2,
-  unpackedSogoThickMixtureSoluteGravityNo|No|unpackedSogoThickMixtureSoluteGravityNoInstruction
+  unpackedSogoThickMixtureSoluteGravityYes|Ja, het is in orde|unpackedSogoThickMixtureSoluteViscosity2,
+  unpackedSogoThickMixtureSoluteGravityNo|Neen|unpackedSogoThickMixtureSoluteGravityNoInstruction
   ",
   section_id:{{section_id }}
 %}
@@ -44,21 +44,21 @@
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteNoInstruction",
-  instruction:"Measure the specific gravity of the glaze. If it's too low compared to the label, wait at least 24 hours for the glaze to settle. Carefully remove the water with a syringe and measure again. Add or remove more water until the specific gravity is correct.
+  instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
 
-  Is the specific gravity too high? Carefully add water until the specific gravity matches that stated on the label.
+  Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
 
-  An image of the label and all the information can also be found with the correct glaze in the webshop.",
+  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
   section_id:{{section_id }}
 %}
 
 {%
   render 'radio-fields',
   field_id:"unpackedSogoThickMixtureSoluteGravityNoInstruction",
-  instruction:"Measure the specific gravity of the glaze. If it's too low compared to the label, wait at least 24 hours for the glaze to settle. Carefully remove the water with a syringe and measure again. Add or remove more water until the specific gravity is correct.
+  instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
 
-  Is the specific gravity too high? Carefully add water until the specific gravity matches that stated on the label.
+  Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
 
-  An image of the label and all the information can also be found with the correct glaze in the webshop.",
+  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop.",
   section_id:{{section_id }}
 %}

@@ -375,10 +375,10 @@
         required: true,
         field_name:"problem_type",
         field_values:"
-        unpackedSogoProblem|An unbacked SOGO glaze | unpackedSogoProblemType,
-        backedSogoProblem|A backed glaze of a SOGO glaze|backedSogoProblemType,
-        nonSogoProblem|A non-SOGO glaze|nonSogoProblemInstruction,
-        something_else|Something else'
+        unpackedSogoProblem|een nog niet gebakken SOGO glazuur|unpackedSogoProblemType,
+        backedSogoProblem|een gebakken glazuurresultaat van een SOGO glazuur|backedSogoProblemType,
+        nonSogoProblem|een niet-SOGO glazuur|nonSogoProblemInstruction,
+        something_else|iets anders'
         ",
         section_id:{{section_id }}
       %}
@@ -387,31 +387,31 @@
 
       {%
         render 'radio-fields',
-        title:"Is it about",
+        title:"Gaat het over",
         field_id:"unpackedSogoProblemType",
         required: true,
         field_name:"unbacked_sogo",
         field_values:"
-        unpackedSogoBrush|A brush glaze|unpackedSogoBrushProblem,
-        unpackedSogoWithWater|A glaze mixed with water for pouring and dipping|unpackedSogoWithWaterProblem,
-        unpackedSogoPowder|A glaze powder (not yet mixed)|unpackedSogoPowderInstruction,
-        unpackedSogoElse|Something else
+        unpackedSogoBrush|een kwastglazuur|unpackedSogoBrushProblem,
+        unpackedSogoWithWater|een glazuur aangemaakt met water om te gieten en te dompelen|unpackedSogoWithWaterProblem,
+        unpackedSogoPowder|een glazuurpoeder (nog niet gemengd),
+        unpackedSogoElse|iets anders
         ",
         section_id:{{section_id }}
       %}
 
       {%
         render 'radio-fields',
-        title:"The glaze",
+        title:"Het glazuur",
         field_id:"backedSogoProblemType",
         required: true,
         field_name:"backed_sogo",
         field_values:"
-        backedDropped|Has dripped off|backedDroppedInstruction,
-        backedNotColored|Does not have the expected color|backedNotColoredInstruction,
-        backedMatte|Is matte while it should be glossy|backedMatteInstruction,
-        backedCrawled|Has crawled away in certain places|backedCrawledInstruction,
-        backedShowsPinpricks|Shows pinpricks and sharp holes/craters in the surface|backedShowsPinpricksProblem
+        backedDropped|is afgedropen|backedDroppedInstruction,
+        backedNotColored|heeft niet de verwachte kleur|backedNotColoredInstruction,
+        backedMatte|is mat terwijl het glanzend moest zijn|backedMatteInstruction,
+        backedCrawled|is op bepaalde plaatsen weggekropen (crawling)|backedCrawledInstruction,
+        backedShowsPinpricks|vertoont speldenprikken en scherpe gaatjes/kratertjes in het oppervlak|backedShowsPinpricksProblem
         ",
         section_id:{{section_id }}
       %}
