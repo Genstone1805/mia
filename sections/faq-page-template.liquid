@@ -77,6 +77,10 @@
 			{%- assign item_heading     = block.settings.heading -%}
 			{%- assign text             = block.settings.text -%}
 			{%- assign heading_icon     = block.settings.heading_icon -%}
+			{%- assign image_1     = block.settings.image_1 -%}
+			{%- assign image_2     = block.settings.image_2 -%}
+			{%- assign image_3     = block.settings.image_3 -%}
+			{%- assign image_4     = block.settings.image_4 -%}
 			{%- capture img_focal -%}{%- endcapture -%}
 
 			{%- if item_heading == blank or text == blank -%}
@@ -153,6 +157,20 @@
 					>
 						<div class="faq-page__item-inner js-accordion-inner section-rte">
 							{{- text -}}
+						</div>
+						<div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:10px">
+							<div style="max-height:200px overflow:hidden">
+								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_1 | image_url}}" height="" width="">
+							</div>
+							<div style="max-height:200px overflow:hidden">
+								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_2 | image_url}}" height="" width="">
+							</div>
+							<div style="max-height:200px overflow:hidden">
+								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_3 | image_url}}" height="" width="">
+							</div>
+							<div style="max-height:200px overflow:hidden">
+								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_4 | image_url}}" height="" width="">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -316,7 +334,27 @@
 					"id": "heading_icon",
 					"label": "Icon",
 					"info": "40 x 40px recommended"
-				}
+				},
+				{
+					"type": "image_picker",
+					"id": "image_1",
+					"label": "Image 1",
+				},
+				{
+					"type": "image_picker",
+					"id": "image_2",
+					"label": "Image 2",
+				},
+				{
+					"type": "image_picker",
+					"id": "image_3",
+					"label": "Image 3",
+				},
+				{
+					"type": "image_picker",
+					"id": "image_4",
+					"label": "Image 4",
+				},
 			]
 		}
 	]
