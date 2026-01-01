@@ -147,7 +147,66 @@
         "offset_bottom_mobile": 60
       }
     },
+    "1767287224a47f2409": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_52151f4_9bzQEb": {
+          "type": "ai_gen_block_52151f4",
+          "settings": {
+            "video": "shopify://files/videos/8d1e89_c38438cabfd1407aaa899942ed7d3f7d.mp4",
+            "show_controls": true,
+            "autoplay": false,
+            "loop": false,
+            "muted": false,
+            "background_color": "#ffffff",
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_52151f4_9bzQEb"
+      ],
+      "settings": {}
+    },
     "text_section_Cjc3m9": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Hoeveel kegels? </h3><p>Als je een eerste meting doet is het nuttig om verschillende kegels rond je vermoedelijke stooktemperatuur te gebruiken. Stel je de computer in op 1220°C met een traag stooktraject van 60°C/u de laatste 100°C van de stook; dan kies je in theorie voor kegel 5 1/2, kegel 6 en kegel 7. Theoretisch zou kegel 6 perfect gebogen moeten zijn bij die temperatuur. De realiteit leert me echter dat veel ovens \"warmer\" worden, meer heatwork genereren. Daarom adviseer ik om ook kegel 8 en kegel 9 zeker mee te nemen bij een eerste test! </p><h3>Waar plaatsen? </h3><p>Ideaal zet je zo'n cone pack op elke gebruikte ovenplaat van je stook. Zeker bij een eerste meting. Ovens hebben meestal een temperatuur gradiënt. Zo zijn sommige plaatsen heter dan andere. Door kegels op verschillende hoogtes of plaatsen te zetten breng je dat vlot in kaart. In bovenladers is het midden van de ovenplaat meestal kouder dan de zijkant. Probeer de kegels op elk niveau ongeveer op dezelfde plek te zetten. </p><h3>Resultaten interpreteren</h3><p>Je hebt een stook gedaan, je kegels zijn mee gestookt en omgebogen. En nu? Hoe interpreteer je zo'n resultaat? Dat is niet zo moeilijk.</p><p>Je kijkt naar de ombuiging van de kegels. Beeld je in dat de kegel projecteert op een klok. Staat de klok op 1 uur? Dan is de kegel niet omgebogen (linker kegel op foto onderaan). Staat de klok op 5 of 6 uur dan raakt de tip van kegel de ovenplaat of de basis van de zelf rechtstaande kegel (zie kegel 3 en 4 op foto onderaan)? De kegel zelf staat in een mooie boog zonder door te hangen. De stook staat dan equivalent aan dat kegelnummer. Kegels die helemaal plat liggen zijn dus te warm geworden, kegels die nog netjes op een 1 uur positie staan hebben niet genoeg warmte gekregen.  Dat kegelnummer is dus niet gehaald. </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_yqHgnV": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_c9QiM3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20210405_074820514_edited.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_c9QiM3"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_qHaNLR": {
       "type": "text-section",
       "name": "Rich text",
       "settings": {
@@ -165,27 +224,6 @@
         "offset_top_mobile": 60,
         "offset_bottom_mobile": 60
       }
-    },
-    "1767287224a47f2409": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_52151f4_9bzQEb": {
-          "type": "ai_gen_block_52151f4",
-          "settings": {
-            "show_controls": true,
-            "autoplay": false,
-            "loop": false,
-            "muted": false,
-            "background_color": "#ffffff",
-            "border_radius": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_52151f4_9bzQEb"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -196,7 +234,9 @@
     "text_section_qjRmJB",
     "picture_grid_R3R9rr",
     "text_section_gaMfwL",
+    "1767287224a47f2409",
     "text_section_Cjc3m9",
-    "1767287224a47f2409"
+    "picture_grid_yqHgnV",
+    "text_section_qHaNLR"
   ]
 }
