@@ -81,6 +81,7 @@
 			{%- assign image_2     = block.settings.image_2 -%}
 			{%- assign image_3     = block.settings.image_3 -%}
 			{%- assign image_4     = block.settings.image_4 -%}
+			{%- assign grid     = block.settings.grid -%}
 			{%- capture img_focal -%}{%- endcapture -%}
 
 			{%- if item_heading == blank or text == blank -%}
@@ -158,19 +159,28 @@
 						<div class="faq-page__item-inner js-accordion-inner section-rte">
 							{{- text -}}
 						</div>
-						<div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:10px">
-							<div style="max-height:200px overflow:hidden">
-								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_1 | image_url}}" height="" width="">
-							</div>
-							<div style="max-height:200px overflow:hidden">
-								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_2 | image_url}}" height="" width="">
-							</div>
-							<div style="max-height:200px overflow:hidden">
-								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_3 | image_url}}" height="" width="">
-							</div>
-							<div style="max-height:200px overflow:hidden">
-								<img style="width:100%; height:100%; object-fit:contain" src="{{ image_4 | image_url}}" height="" width="">
-							</div>
+						<div style="
+							display:grid; grid-template-columns:repeat({{grid}}, 1fr); gap:10px">
+							{% if image_1 != blank %}
+								<div style="max-height:200px overflow:hidden">
+									<img style="width:100%; height:100%; object-fit:contain" src="{{ image_1 | image_url}}" height="" width="">
+								</div>
+							{% endif %}
+							{% if image_2 != blank %}
+								<div style="max-height:200px overflow:hidden">
+									<img style="width:100%; height:100%; object-fit:contain" src="{{ image_2 | image_url}}" height="" width="">
+								</div>
+							{% endif %}
+							{% if image_3 != blank %}
+								<div style="max-height:200px overflow:hidden">
+									<img style="width:100%; height:100%; object-fit:contain" src="{{ image_3 | image_url}}" height="" width="">
+								</div>
+							{% endif %}
+							{% if image_4 != blank %}
+								<div style="max-height:200px overflow:hidden">
+									<img style="width:100%; height:100%; object-fit:contain" src="{{ image_4 | image_url}}" height="" width="">
+								</div>
+							{% endif %}
 						</div>
 					</div>
 				</div>
@@ -319,6 +329,12 @@
 			"name": "Question and answer",
 			"type": "faq_item",
 			"settings": [
+				{
+					"type": "number",
+					"id": "grid",
+					"label": "Image Grid",
+					"default":4
+				},
 				{
 					"type": "inline_richtext",
 					"id": "heading",
