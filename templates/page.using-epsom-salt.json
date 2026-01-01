@@ -60,6 +60,62 @@
       "settings": {
         "heading": "",
         "subheading": "",
+        "text_content": "<h2>Epsom watte?  </h2><p>Epsom zout, ofwel magnesium sulfaat is eigenlijk gewoon badzout. Het zou pijn in gewrichten en spieren verlichten door het toe te voegen in je bad. Het zou ook laxerende eigenschappen hebben maar ik kan je aanraden om het niet op te drinken. Epsom zout wordt ook wel bitterzout genoemd en die naam is ZEER terecht gekozen. </p><h2>Waarom moet je epsom zout gebruiken? </h2><p>Epsom zout is een goedkoop en zeer goed flocculant. Een flocculant is een indikker. Vergelijk het met maïzena in een saus. </p><p>Epsom zout werkt in op de kleideeltjes in een glazuur. Die kleideeltjes, afkomstig van kaolien of ball clay bijvoorbeeld, worden tot elkaar aangetrokken bij toevoeging van epsom zout. Op die manier vormen ze ze een netwerk van kleideeltjes waartussen de andere bestanddelen in het glazuur blijven zweven. Hierdoor blijft alles beter in suspensie en vormt het glazuur geen harde koek onderaan de emmer. Het glazuren zelf wordt er ook makkelijker door. Het glazuur geeft een goede dekking en vloeit mooi uit. </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_FP6cMX": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_WkLH6P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20210925_074211041_PORTRAIT.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_WkLH6P"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 4
+      }
+    },
+    "text_section_UK3kpC": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Wanneer moet je epsom zout gebruiken? </h3><p>Je moet enkel epsom zout gebruiken als het nodig is. De volgende glazuurkenmerken kunnen een aanwijzing zijn:</p><ul><li>het glazuur is zeer dun en je hebt echt niet te veel water toegevoegd</li><li>het glazuur droogt extreem snel op bij het glazuren van een werkstuk</li><li>op de bodem van de emmer kleeft een aangekoekte glazuurlaag die amper los te maken is</li></ul><h3>Hoe moet je epsom zout klaarmaken voor gebruik? </h3><p>Epsom zout koop je (bv. bij Colpaert) in de vorm van kristallen. Je moet deze kristallen oplossen maar niet zomaar. Je maakt een gesatureerde oplossing van epsom zout. Ik leg je graag uit hoe je dat doet. </p><h4>Benodigdheden</h4><p>Zet volgende zaken klaar:</p><ul><li>klein recipiënt met goed sluitend deksel (bijvoorbeeld een yoghurt pot van 500ml) </li><li>epsom zout, minstens 100 g</li><li>heet water van de kraan </li></ul><h4>Werkwijze</h4><p>Weeg 100 g (of een veelvoud daarvan) af in het potje. Voeg daaraan 75g (of een veelvoud daarvan) heet water toe en roer goed. Het water zal de kristallen oplossen maar niet helemaal. 75g water is namelijk te weinig om alle kristallen te kunnen oplossen en dat is exact wat je wilt. Een niet volledig opgeloste oplossing heet een gesatureerde oplossing. Zet het deksel op je potje en schrijf duidelijk op de pot en deksel wat erin zit. In mijn testen tot nu toe blijft epsom zout onbeperkt houdbaar. </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "text_section_my9chY": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
         "text_content": "<h2>Epsom watte?  </h2><p>Epsom zout, ofwel magnesium sulfaat is eigenlijk gewoon badzout. Het zou pijn in gewrichten en spieren verlichten door het toe te voegen in je bad. Het zou ook laxerende eigenschappen hebben maar ik kan je aanraden om het niet op te drinken. Epsom zout wordt ook wel bitterzout genoemd en die naam is ZEER terecht gekozen. </p><h2>Waarom moet je epsom zout gebruiken? </h2><p>Epsom zout is een goedkoop en zeer goed flocculant. Een flocculant is een indikker. Vergelijk het met maïzena in een saus. </p><p>Epsom zout werkt in op de kleideeltjes in een glazuur. Die kleideeltjes, afkomstig van kaolien of ball clay bijvoorbeeld, worden tot elkaar aangetrokken bij toevoeging van epsom zout. Op die manier vormen ze ze een netwerk van kleideeltjes waartussen de andere bestanddelen in het glazuur blijven zweven. Hierdoor blijft alles beter in suspensie en vormt het glazuur geen harde koek onderaan de emmer. Het glazuren zelf wordt er ook makkelijker door. Het glazuur geeft een goede dekking en vloeit mooi uit. </p><h3>Wanneer moet je epsom zout gebruiken? </h3><p>Je moet enkel epsom zout gebruiken als het nodig is. De volgende glazuurkenmerken kunnen een aanwijzing zijn:</p><ul><li>het glazuur is zeer dun en je hebt echt niet te veel water toegevoegd</li><li>het glazuur droogt extreem snel op bij het glazuren van een werkstuk</li><li>op de bodem van de emmer kleeft een aangekoekte glazuurlaag die amper los te maken is</li></ul><h3>Hoe moet je epsom zout klaarmaken voor gebruik? </h3><p>Epsom zout koop je (bv. bij Colpaert) in de vorm van kristallen. Je moet deze kristallen oplossen maar niet zomaar. Je maakt een gesatureerde oplossing van epsom zout. Ik leg je graag uit hoe je dat doet. </p><h4>Benodigdheden</h4><p>Zet volgende zaken klaar:</p><ul><li>klein recipiënt met goed sluitend deksel (bijvoorbeeld een yoghurt pot van 500ml) </li><li>epsom zout, minstens 100 g</li><li>heet water van de kraan </li></ul><h4>Werkwijze</h4><p>Weeg 100 g (of een veelvoud daarvan) af in het potje. Voeg daaraan 75g (of een veelvoud daarvan) heet water toe en roer goed. Het water zal de kristallen oplossen maar niet helemaal. 75g water is namelijk te weinig om alle kristallen te kunnen oplossen en dat is exact wat je wilt. Een niet volledig opgeloste oplossing heet een gesatureerde oplossing. Zet het deksel op je potje en schrijf duidelijk op de pot en deksel wat erin zit. In mijn testen tot nu toe blijft epsom zout onbeperkt houdbaar. </p><h3>Hoe moet ik epsom zout gebruiken?</h3><p>Voeg de vloeistof (niet de kristallen op de bodem) toe aan het glazuur. Ik gebruik hiervoor liefst een spuitje zodat ik kan noteren hoeveel milliliter ik toevoeg. </p><p>Hoeveel je moet gebruiken hangt helemaal af van het glazuur in kwestie. Sommige glazuren hebben slechts een kleine hoeveelheid (minder dan 1 ml nodig op 1kg glazuurpoeder) en sommige vereisen meer. Voor de SOGO glazuren staat de hoeveelheid aangegeven op het etiket. </p><h4>Begin altijd voorzichtig</h4><p>Begin altijd voorzichtig met enkele druppels. Roer goed in je glazuur na toevoegen. Je zal zien dat het glazuur langzaam aan begint in te dikken. Zorg ervoor dat je glazuur niet te dik wordt! Een dik glazuur geeft andere resultaten dan een dun glazuur.</p><h3>Moet ik altijd epsom zout gebruiken? </h3><p>Neen! In glazuren zonder of met heel weinig kleideeltjes (bv. kristalglazuren) zal epsom zout niet werken. Het werkt namelijk in op de kleideeltjes. Als die er niet zijn gebeurt er niets. </p><p>Andere glazuren zijn van nature al sterk geflocculeerd. Ze zijn al redelijk dik en smeuïg zonder toevoeging van een additief. In zo'n geval moet je uiteraard ook geen epsom zout gebruiken. Het zou dat glazuur enkel dikker maken en onmogelijk om mee te werken. In tegendeel, in zo'n geval moet je misschien het tegenovergestelde doen en het glazuur deflocculeren. Meer daarover in mijn workshop \"Glazuurconsistentie, viscositeit en soortelijk gewicht\". </p><h3>Meer weten? </h3><p>Epsom zout is één zaak maar er komt heel wat meer kijken bij het verkrijgen van consistente glazuurresultaten. Ik geef een boeiende workshop over het thema \"Glazuurconsistentie, viscositeit en soortelijk gewicht\" waarin ik veel meer uitleg over flocculeren en deflocculeren, soortelijk gewicht, viscositeit en thixotropie. Absoluut een aandrader als je graag poederglazuren aanmaakt en/of gebruikt en al wel eens tegen problemen aanloopt in je studio!  </p>",
         "text_alignment": "left",
         "section_alignment": "center",
@@ -113,6 +169,9 @@
     "blocks_nF9P6g",
     "default-page",
     "text_section_BnECgX",
+    "picture_grid_FP6cMX",
+    "text_section_UK3kpC",
+    "text_section_my9chY",
     "blocks_UjCkkz"
   ]
 }
