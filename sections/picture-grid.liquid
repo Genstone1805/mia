@@ -4,14 +4,14 @@
 >
   <div class="faq-page__container">
     <div class="faq-page__main">
-        <div
-          class="accordion__content accordion__content--animate faq-page__item-content js-accordion-content"
-          style="display:flex; justify-content-center; align-items-center;"
-        >
+      <div class="accordion faq-page__content js-accordion-container js-animate">
+        {% for block in section.blocks %}
           <div
-            style="display:grid; justify-content-center; align-items:center; grid-template-columns:repeat({{section.settings.grid}}, 1fr); gap:10px;"
+            class="accordion__content accordion__content--animate faq-page__item-content js-accordion-content"
           >
-            {% for block in section.blocks %}
+            <div
+              style="display:grid; justify-content-center; align-items:center; grid-template-columns:repeat({{section.settings.grid}}, 1fr); gap:10px"
+            >
                 <div style="max-height:400px; max-width:400px;">
                   <img
                     style="width:100%; height:100%; object-fit:contain"
@@ -20,10 +20,11 @@
                     width=""
                   >
                 </div>
-              {% endfor %}
             </div>
           </div>
+        {% endfor %}
       </div>
+    </div>
   </div>
 </section>
 
