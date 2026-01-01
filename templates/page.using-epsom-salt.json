@@ -88,7 +88,7 @@
       ],
       "name": "Page Image Grid",
       "settings": {
-        "grid": 4
+        "grid": 1
       }
     },
     "text_section_UK3kpC": {
@@ -108,6 +108,24 @@
         "offset_bottom_desktop": 100,
         "offset_top_mobile": 60,
         "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_RitMem": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_z8UPRr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20210925_074337486.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_z8UPRr"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
       }
     },
     "text_section_my9chY": {
@@ -171,6 +189,7 @@
     "text_section_BnECgX",
     "picture_grid_FP6cMX",
     "text_section_UK3kpC",
+    "picture_grid_RitMem",
     "text_section_my9chY",
     "blocks_UjCkkz"
   ]
