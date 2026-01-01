@@ -166,7 +166,7 @@
   },
   "products": {
     "product": {
-      "sold_out": "Sold out"
+      "sold_out": "uitverkocht"
     },
     "quick_view": {
       "visit_product_page": "Bezoek de productpagina",
