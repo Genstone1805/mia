@@ -19,76 +19,76 @@
         "offset_bottom_mobile": 10
       }
     },
-    // "blocks_R7NE6d": {
-    //   "type": "_blocks",
-    //   "blocks": {
-    //     "video_grid_jeR8Md": {
-    //       "type": "video-grid",
-    //       "settings": {
-    //         "heading": "Video Galerij",
-    //         "heading_font": "assistant_n4",
-    //         "heading_size": 32,
-    //         "heading_color": "#000000",
-    //         "heading_alignment": "center",
-    //         "desktop_columns": 3,
-    //         "mobile_columns": "1",
-    //         "grid_gap": 30,
-    //         "desktop_width_percent": 100,
-    //         "thumbnail_border_radius": 8,
-    //         "play_button_size": 70,
-    //         "play_button_bg": "#ffffff",
-    //         "play_button_bg_hover": "#000000",
-    //         "play_button_icon_color": "#000000",
-    //         "play_button_icon_color_hover": "#ffffff",
-    //         "title_size": 16,
-    //         "title_color": "#000000",
-    //         "card_bg": "#87A587",
-    //         "title_alignment": "left",
-    //         "video_1": "shopify://files/videos/file (8).mp4",
-    //         "video_image_1": "shopify://shop_images/Dompelglazuur_aanmaken_stills.avif",
-    //         "video_title_1": "AANMAKEN DOMPELGLAZUUR",
-    //         "video_2": "shopify://files/videos/file (14).mp4",
-    //         "video_image_2": "shopify://shop_images/Schermafbeelding_2025-05-07_175551.avif",
-    //         "video_title_2": "AANMAKEN KWASTGLAZUUR",
-    //         "video_3": "shopify://files/videos/file (12).mp4",
-    //         "video_image_3": "shopify://shop_images/Schermafbeelding_2025-05-07_175759.avif",
-    //         "video_title_3": "SOORTELIJK GEWICHT METEN",
-    //         "video_4": "shopify://files/videos/file (10).mp4",
-    //         "video_image_4": "shopify://shop_images/Schermafbeelding_2025-05-07_180018.avif",
-    //         "video_title_4": "VISCOSITEIT - DOORSTROOMBEKER",
-    //         "video_5": "shopify://files/videos/file (13).mp4",
-    //         "video_image_5": "shopify://shop_images/Schermafbeelding_2025-05-07_180152.avif",
-    //         "video_title_5": "VISCOSITEIT - VINGERDIP",
-    //         "video_6": "shopify://files/videos/file (15).mp4",
-    //         "video_image_6": "shopify://shop_images/Schermafbeelding_2025-05-07_180604.avif",
-    //         "video_title_6": "FLOCCULEREN",
-    //         "video_7": "shopify://files/videos/file (17).mp4",
-    //         "video_image_7": "shopify://shop_images/Schermafbeelding_2025-05-07_180951.avif",
-    //         "video_title_7": "DEFLOCCULEREN",
-    //         "video_8": "shopify://files/videos/file (11).mp4",
-    //         "video_image_8": "shopify://shop_images/Schermafbeelding_2025-05-07_181153.avif",
-    //         "video_title_8": "GIETEN EN DOMPELEN",
-    //         "video_9": "shopify://files/videos/file (8)_8916f558-9ddf-4c9f-9ce2-b1b6f4108d91.mp4",
-    //         "video_image_9": "shopify://shop_images/Schermafbeelding_2025-05-07_181336.avif",
-    //         "video_title_9": "KWASTEN",
-    //         "video_10": "shopify://files/videos/file (16).mp4",
-    //         "video_image_10": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
-    //         "video_title_10": "TEMPERATUUR EN STOKEN",
-    //         "video_title_11": "Video 11",
-    //         "video_title_12": "Video 12"
-    //       },
-    //       "blocks": {}
-    //     }
-    //   },
-    //   "block_order": [
-    //     "video_grid_jeR8Md"
-    //   ],
-    //   "name": "Custom Video grid",
-    //   "settings": {}
-    // }
+    "blocks_eFtUTa": {
+      "type": "_blocks",
+      "blocks": {
+        "video_grid_mn6LA7": {
+          "type": "video-grid",
+          "settings": {
+            "heading": "Video Gallery",
+            "heading_font": "assistant_n4",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "heading_alignment": "center",
+            "desktop_columns": 3,
+            "mobile_columns": "1",
+            "grid_gap": 30,
+            "desktop_width_percent": 100,
+            "thumbnail_border_radius": 8,
+            "play_button_size": 70,
+            "play_button_bg": "#ffffff",
+            "play_button_bg_hover": "#000000",
+            "play_button_icon_color": "#000000",
+            "play_button_icon_color_hover": "#ffffff",
+            "title_size": 16,
+            "title_color": "#000000",
+            "card_bg": "#87A587",
+            "title_alignment": "left",
+            "video_1": "shopify://files/videos/8d1e89_fc30fcd1f86c4a16a6185417c01260f1.mp4",
+            "video_image_1": "shopify://shop_images/Dompelglazuur_aanmaken_stills.avif",
+            "video_title_1": "AANMAKEN DOMPELGLAZUUR",
+            "video_2": "shopify://files/videos/8d1e89_882c6e63e26941cc924668c0a8355fc2.mp4",
+            "video_image_2": "shopify://shop_images/Schermafbeelding_2025-05-07_175551.avif",
+            "video_title_2": "AANMAKEN KWASTGLAZUUR",
+            "video_3": "shopify://files/videos/8d1e89_77137c1841aa48ccab40bb1bb83b203b.mp4",
+            "video_image_3": "shopify://shop_images/Schermafbeelding_2025-05-07_175759.avif",
+            "video_title_3": "SOORTELIJK GEWICHT METEN",
+            "video_4": "shopify://files/videos/8d1e89_e8810faa254747db8ce434cd366bd435.mp4",
+            "video_image_4": "shopify://shop_images/Schermafbeelding_2025-05-07_180018.avif",
+            "video_title_4": "VISCOSITEIT - DOORSTROOMBEKER",
+            "video_5": "shopify://files/videos/8d1e89_98dca0af1d4a4bb4ac757350a247f0b01080p.mp4",
+            "video_image_5": "shopify://shop_images/Schermafbeelding_2025-05-07_180152.avif",
+            "video_title_5": "VISCOSITEIT - VINGERDIP",
+            "video_6": "shopify://files/videos/8d1e89_cc1770548d054a42a11fe941d30da778.mp4",
+            "video_image_6": "shopify://shop_images/Schermafbeelding_2025-05-07_180604.avif",
+            "video_title_6": "FLOCCULEREN",
+            "video_7": "shopify://files/videos/8d1e89_c9cd1445a0544c1a96146485dbfdd9c0.mp4",
+            "video_image_7": "shopify://shop_images/Schermafbeelding_2025-05-07_180951.avif",
+            "video_title_7": "DEFLOCCULEREN",
+            "video_8": "shopify://files/videos/8d1e89_967be79dcb664525b993988c48f81500.mp4",
+            "video_image_8": "shopify://shop_images/Schermafbeelding_2025-05-07_181153.avif",
+            "video_title_8": "GIETEN EN DOMPELEN",
+            "video_9": "shopify://files/videos/8d1e89_3307c4583b6244b39230390ffdcdcd9d.mp4",
+            "video_image_9": "shopify://shop_images/Schermafbeelding_2025-05-07_181336.avif",
+            "video_title_9": "KWASTEN",
+            "video_10": "shopify://files/videos/8d1e89_fc30fcd1f86c4a16a6185417c01260f1.mp4",
+            "video_image_10": "shopify://shop_images/Schermafbeelding_2025-05-07_181607.avif",
+            "video_title_10": "TEMPERATUUR EN STOKEN",
+            "video_title_11": "Video 11",
+            "video_title_12": "Video 12"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "video_grid_mn6LA7"
+      ],
+      "name": "Custom Video grid",
+      "settings": {}
+    }
   },
   "order": [
     "default-page",
-    // "blocks_R7NE6d"
+    "blocks_eFtUTa"
   ]
 }
