@@ -7,11 +7,7 @@
       <div class="accordion faq-page__content js-accordion-container js-animate">
         {% for block in section.blocks %}
           <div
-            id="content-{{- block.id -}}"
             class="accordion__content accordion__content--animate faq-page__item-content js-accordion-content"
-            style="height: 0;"
-            role="region"
-            aria-labelledby="control-{{- block.id -}}"
           >
             <div
               style="display:grid; justify-content-center; align-items:center; grid-template-columns:repeat({{section.settings.grid}}, 1fr); gap:10px"
