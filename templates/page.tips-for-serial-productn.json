@@ -60,7 +60,118 @@
       "settings": {
         "heading": "",
         "subheading": "",
-        "text_content": "<h2>Niet tussen de soep en de patatten</h2><p>Neem je tijd voor seriedraaien. Minstens 2-3 uur uittrekken is noodzakelijk. Als je weinig tijd hebt of je voelt je opgejaagd, begin er dan beter niet aan. Kies een rustiger moment waarin je niet gestoord wordt.</p><h2>Weeg af</h2><p>Alle kleibollen secuur afwegen is een belangrijke basis! Noteer alle gewichten per vorm in een schriftje. Schrijf daar ook meteen alle afmetingen bij en voeg een tekening of een foto toe. Dat is handig voor later.</p><h3>Eentje is geentje!</h3><p>Als je 4 gelijkvormige tassen nodig hebt kneed je niet 4 maar minstens 8 bolletjes klei. Je verliest al eens iets tijdens het draaien, afdraaien en glazuurbak. Als je nog niet veel ervaring hebt is het verstandig om nog wat meer bolletjes klaar te leggen. Tijdens het seriedraaien moeten stoppen om extra bollen te kneden brengt je uit je concentratie.</p><p>Door voldoende extra stukken te maken kies je uiteindelijk de best bijeen passende vormen. Je bakt er enkele extra als reserve en de rest recycleer je opnieuw.</p><h3>Meten is weten</h3><p>Meet veel gedurende het draaien en noteer die maten. Gebruik een meetmaatje, liefst eentje met een verplaatsbare punt (<a href=\"http://www.juliushandmade.be/\" target=\"_blank\"><span style=\"text-decoration:underline\">bijvoorbeeld eentje van Julius handmade</span></a>). Voor vormen van de mast kan je een kruis maken met twee stokjes of latjes waarmee je de hoogte en de diameter kan inschatten. Een gewone lat is ideaal voor lage borden.</p><p>Meet niet alleen de finale vorm maar ook tussenstappen; de gecentreerde schijf bijvoorbeeld. Op die manier kan je alle handelingen van het seriedraaien beter reproduceren.</p><h3>Pottenbakker, blijf bij uw vorm</h3><p>Bijt je vast in een vorm. Draai er veel stuks van. Enkel op die manier kan die vorm in je spiergeheugen terecht komen. Draai liefst een tijd lang hetzelfde, liefst over verschillende draaisessies. Verander zeker niet van vorm gedurende één draaimoment.</p><h3>Hou de randjes gelijk</h3><p>Besteed een beetje aandacht aan de rand van de pot. Door die gelijkmatig te houden lijkt de serie beter op elkaar. Let op dikte en vorm (rond, plat, …).</p><h3>Van slak naar luipaard</h3><p>Als je echt goed wilt worden in seriedraaien: vermijd onnodige bewegingen en werk eerder snel. Seriedraaien gaat beter als je enkel de essentiële handelingen uitvoert. Herhaal die handelingen consequent zonder extra onnodige tussenstappen. Beperk je tot een minimum. Zo draai je sneller en efficiënt.</p><h3>Klein naar groot</h3><p>Voor je gaat afdraaien bekijk je de vorm en hoogte van al je potten. Zet ze op een rijtje van klein naar groot. Meet de hoogte van de kleinste en de grootste pot en vergelijk het hoogteverschil tussen beide.</p><p>Begin met het kleinste stuk en neem die als standaardmaat. Vergelijk snel de hoogte van de volgende pot door die naast de afgewerkte te zetten. Zo schat je vlot in hoeveel je moet afdraaien van de bodem om dezelfde hoogte te bereiken.</p><h3>Corrigeer kleine hoogteverschillen tijdens het afdraaien</h3><p>Aan de diameter van een pot kan je niet veel meer aanpassen. De hoogte kan je echter nog wel veranderen door af te draaien. Neem net iets meer of minder weg van de bodem van de pot om zo kleine hoogteverschillen op te vangen. Bij grote hoogte verschillen kan je eventueel de bovenkant van de pot, aan het randje, inkorten. Zet de pot goed vast voor je dat doet en doe dat liefst vooraleer je de onderkant afwerkt!</p><h3>Gelijke voetjes, standringen, glazuurrandjes en curves</h3><p>De serie lijkt veel meer op elkaar als je de voetjes en standringen even breed maakt. Gewoon goed meten vooraleer je begint en een groefje in de klei zetten helpt daar ontzettend bij. Ook de dikte van de voet of standring hou je best zo gelijk mogelijk.</p><p>Let ook op een glazuurrandje. Je hebt het sowieso nodig om eenvoudig te kunnen glazuren en om wat schaduw onder je pot te krijgen. Maak die zeker ook even breed, lang en hetzelfde qua hoek en vorm.</p><p>Curves kan je ook een beetje aanpassen tijdens het afdraaien om de vormen gelijkmatiger te krijgen. Je hebt niet veel speling: de binnenvorm bepaalt de buitenvorm maar een beetje foefelen kan altijd. </p><h3>De aanhouder wint!</h3><p>Pottendraaien is oefenen. Liefst zoveel mogelijk. Door dezelfde vorm veel te herhalen bouw je spiergeheugen op. Je handen maken de bewegingen zonder dat je hoeft na te denken. Volhouden is de boodschap. Toch graag wat extra begeleiding? Dat kan! Ik geef workshops seriedraaien. Check even onderstaande link voor alle informatie en inschrijvingen.  </p>",
+        "text_content": "<h2>Niet tussen de soep en de patatten</h2><p>Neem je tijd voor seriedraaien. Minstens 2-3 uur uittrekken is noodzakelijk. Als je weinig tijd hebt of je voelt je opgejaagd, begin er dan beter niet aan. Kies een rustiger moment waarin je niet gestoord wordt.</p><h2>Weeg af</h2><p>Alle kleibollen secuur afwegen is een belangrijke basis! Noteer alle gewichten per vorm in een schriftje. Schrijf daar ook meteen alle afmetingen bij en voeg een tekening of een foto toe. Dat is handig voor later.</p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_9tyCdJ": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_4eP4Jd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/00100lrPORTRAIT_00100_BURST20200108091314788_COVER.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_4eP4Jd"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_kaTy7c": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Eentje is geentje!</h3><p>Als je 4 gelijkvormige tassen nodig hebt kneed je niet 4 maar minstens 8 bolletjes klei. Je verliest al eens iets tijdens het draaien, afdraaien en glazuurbak. Als je nog niet veel ervaring hebt is het verstandig om nog wat meer bolletjes klaar te leggen. Tijdens het seriedraaien moeten stoppen om extra bollen te kneden brengt je uit je concentratie.</p><p>Door voldoende extra stukken te maken kies je uiteindelijk de best bijeen passende vormen. Je bakt er enkele extra als reserve en de rest recycleer je opnieuw.</p><h3>Meten is weten</h3><p>Meet veel gedurende het draaien en noteer die maten. Gebruik een meetmaatje, liefst eentje met een verplaatsbare punt (<a href=\"http://www.juliushandmade.be/\" target=\"_blank\"><span style=\"text-decoration:underline\">bijvoorbeeld eentje van Julius handmade</span></a>). Voor vormen van de mast kan je een kruis maken met twee stokjes of latjes waarmee je de hoogte en de diameter kan inschatten. Een gewone lat is ideaal voor lage borden.</p><p>Meet niet alleen de finale vorm maar ook tussenstappen; de gecentreerde schijf bijvoorbeeld. Op die manier kan je alle handelingen van het seriedraaien beter reproduceren.</p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_erTprV": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_CcGgFV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/00100lrPORTRAIT_00100_BURST20200108095657538_COVER.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_CcGgFV"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_KngdBM": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Pottenbakker, blijf bij uw vorm</h3><p>Bijt je vast in een vorm. Draai er veel stuks van. Enkel op die manier kan die vorm in je spiergeheugen terecht komen. Draai liefst een tijd lang hetzelfde, liefst over verschillende draaisessies. Verander zeker niet van vorm gedurende één draaimoment.</p><h3>Hou de randjes gelijk</h3><p>Besteed een beetje aandacht aan de rand van de pot. Door die gelijkmatig te houden lijkt de serie beter op elkaar. Let op dikte en vorm (rond, plat, …).</p><h3>Van slak naar luipaard</h3><p>Als je echt goed wilt worden in seriedraaien: vermijd onnodige bewegingen en werk eerder snel. Seriedraaien gaat beter als je enkel de essentiële handelingen uitvoert. Herhaal die handelingen consequent zonder extra onnodige tussenstappen. Beperk je tot een minimum. Zo draai je sneller en efficiënt.</p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_YcRPBi": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_GXTth9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC_8347.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_GXTth9"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_B9hKbx": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Klein naar groot</h3><p>Voor je gaat afdraaien bekijk je de vorm en hoogte van al je potten. Zet ze op een rijtje van klein naar groot. Meet de hoogte van de kleinste en de grootste pot en vergelijk het hoogteverschil tussen beide.</p><p>Begin met het kleinste stuk en neem die als standaardmaat. Vergelijk snel de hoogte van de volgende pot door die naast de afgewerkte te zetten. Zo schat je vlot in hoeveel je moet afdraaien van de bodem om dezelfde hoogte te bereiken.</p><h3>Corrigeer kleine hoogteverschillen tijdens het afdraaien</h3><p>Aan de diameter van een pot kan je niet veel meer aanpassen. De hoogte kan je echter nog wel veranderen door af te draaien. Neem net iets meer of minder weg van de bodem van de pot om zo kleine hoogteverschillen op te vangen. Bij grote hoogte verschillen kan je eventueel de bovenkant van de pot, aan het randje, inkorten. Zet de pot goed vast voor je dat doet en doe dat liefst vooraleer je de onderkant afwerkt!</p><h3>Gelijke voetjes, standringen, glazuurrandjes en curves</h3><p>De serie lijkt veel meer op elkaar als je de voetjes en standringen even breed maakt. Gewoon goed meten vooraleer je begint en een groefje in de klei zetten helpt daar ontzettend bij. Ook de dikte van de voet of standring hou je best zo gelijk mogelijk.</p><p>Let ook op een glazuurrandje. Je hebt het sowieso nodig om eenvoudig te kunnen glazuren en om wat schaduw onder je pot te krijgen. Maak die zeker ook even breed, lang en hetzelfde qua hoek en vorm.</p><p>Curves kan je ook een beetje aanpassen tijdens het afdraaien om de vormen gelijkmatiger te krijgen. Je hebt niet veel speling: de binnenvorm bepaalt de buitenvorm maar een beetje foefelen kan altijd. </p><h3>De aanhouder wint!</h3><p>Pottendraaien is oefenen. Liefst zoveel mogelijk. Door dezelfde vorm veel te herhalen bouw je spiergeheugen op. Je handen maken de bewegingen zonder dat je hoeft na te denken. Volhouden is de boodschap. Toch graag wat extra begeleiding? Dat kan! Ik geef workshops seriedraaien. Check even onderstaande link voor alle informatie en inschrijvingen.  </p>",
         "text_alignment": "left",
         "section_alignment": "center",
         "enable_read_more": false,
@@ -113,6 +224,12 @@
     "blocks_xe3bK7",
     "default-page",
     "text_section_9bddkD",
+    "picture_grid_9tyCdJ",
+    "text_section_kaTy7c",
+    "picture_grid_erTprV",
+    "text_section_KngdBM",
+    "picture_grid_YcRPBi",
+    "text_section_B9hKbx",
     "blocks_jfWFwp"
   ]
 }
