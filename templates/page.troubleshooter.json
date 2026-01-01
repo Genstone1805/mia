@@ -47,7 +47,7 @@
         "padding_mobile": 20,
         "desktop_width_percent": 100,
         "intro_text": "<p>Bij het aanvinken van de checkbox krijg je een vragenlijst die je glazuurprobleem mogelijk al oplost. Indien je geen antwoord gevonden hebt op jouw vraag kan je jouw naam en e-mailadres achterlaten. Vergeet het probleem ook niet uitvoerig te beschrijven. </p>",
-        "checkbox_text": "I would like to receive the troubleshooting questionnaire first",
+        "checkbox_text": "Jouw probleem gaat over",
         "conditional_section_title": "Your problem concerns",
         "radio_option_1": "an unfired SOGO glaze",
         "radio_option_2": "a fired glaze result of a SOGO glaze",
