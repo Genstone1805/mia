@@ -60,6 +60,99 @@
       "settings": {
         "heading": "",
         "subheading": "",
+        "text_content": "<h2>Wat zijn kegels?</h2><p>Kegels, in het Engels \"cones\" genoemd, ontlenen hun naam aan de vorm. Het zijn kleine kegelvormige samengeperste blokjes glazuurgrondstoffen met een goed gekende samenstelling. Ze worden vandaag de dag gemaakt door het Amerikaanse bedrijf Orton, vandaar de naam Orton kegels. <a href=\"https://www.colpaertonline.be/nl/483-orton-cones\" target=\"_blank\"><span style=\"text-decoration:underline\">Je kan ze kopen in de keramiekwinkel, bijvoorbeeld bij Colpaert. </span></a></p><p>Je plaatst ze in een keramiekoven waar ze buigen onder invloed van warmte en tijd, een concept dat \"heatwork\" noemt. De mate waarin de kegel ombuigt bepaalt hoeveel heatwork die kreeg. Je kan met kegels het heatwork in jouw oven meten en nakijken. Je ontdekt met kegels waar de warmere en de koelere plekjes in jouw oven zitten.</p><p>Moeilijk? Toch een beetje. We beginnen bij het begin. Na het lezen van dit artikel spreek jij nooit meer van \"ik bak op 1250°C\" maar zeg je \"Ik stook op cone 7\". </p><h2>Verschillende soorten kegels</h2><h4>Nummering</h4><p>Op elke kegel staat een nummer gestempeld. Die nummers gaan van 022 tot 42. De nul vooraan een cijfer is erg belangrijk. Zo is kegel 06 helemaal niet hetzelfde als kegel 6! </p><p>De cijfers geven een temperatuurbereik weer. Voor een glazuurstook op steengoedtemperaturen gebruik je kegels tussen 5 en 12. Voor een bisquitbak heb je tussen kegel 08 en 04 nodig. </p><p>De kegel correspondeert met een temperatuur equivalent. Die kan je terugvinden op een <a href=\"https://secure.build111.com/files/2676/File/Orton-Cone-Chart-C-022-14-2016.pdf\" target=\"_blank\"><span style=\"text-decoration:underline\">\"conechart\" of een kegeltabel.</span></a> Dat is een tabel die de omzetting weergeeft tussen de kegel, de stookcurve en de corresponderende temperatuur. </p><h4>Small, large en self-supporting cones</h4><p>Kegels bestaan in verschillende soorten. Je hebt kleine, grote en op zichzelf rechtstaande kegels. De kleintjes (small) gebruik je in ovens die niet computer gestuurd zijn. Ze doen een oven met een \"kiln-sitter\" afslaan wanneer die de correcte temperatuur (cone) bereikt heeft.</p><p>De grote (large) kegels en de op zichzelf rechtstaande (self-supporting) kegels hebben hetzelfde doel. Tijdens of na de stook een indicatie geven van het heatwork dat in de oven gegeneerd werd.</p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_RYMDtx": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_V9LYjV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20210331_072546915_PORTRAIT.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_V9LYjV"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_qjRmJB": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Heatwork? Wat is dat? </h3><p>Het concept \"heatwork\" omvat warmte <strong>EN</strong> tijd. Heatwork vertaald is \"warmtearbeid\" maar dat ligt niet zo goed in de mond. Ik hou het dus liever bij de Engelse term. </p><p>Hoewel je het woord heatwork misschien niet kent is het concept je zeker niet vreemd. </p><p>Een voorbeeld uit de keuken om het uit te leggen. Een kip garen in de oven kan op 220°C gedurende 30 - 45 minuten. Zo'n kip is ook gaar na 4 tot 6 uur op 80°C. Over de smaak kunnen we discussiëren maar beide versies zullen perfect eetbaar zijn.</p><p>Hetzelfde geldt voor glazuren: je kan heel snel opstoken tot een hele hoge temperatuur of heel traag tot een lagere temperatuur en toch hetzelfde gebakken resultaat bekomen. Dat is heatwork. Temperatuur in functie van de tijd.</p><h3>Kegels meten heatwork</h3><p>Kegels buigen onder invloed van warmte en tijd, heatwork dus. </p><p>Kegel 6 kan perfect omgebogen zijn indien die gestookt wordt tot 1220°C aan een snelheid van 60°C per uur de laatste 100°C van het stooktraject. Diezelfde kegel 6 zal er hetzelfde uitzien als je hem stookt op 1241° aan een snelheid van 150°C per uur. Ondanks dat er 21°C verschil zit tussen beide stookcurves gaat de ene trager dan de andere. Dat levert uiteindelijk hetzelfde heatwork op.  </p><p>Zeg dus nooit aan iemand hoe hoog je stookt. Leg meteen ook uit hoe je stookcurve eruit ziet en hoe lang je eventueel pendelt. Nog beter, zeg op welke kegel je stookt. Dan heeft die ander meteen alle informatie! </p><h3>Kegelkeuze</h3><p>Je kiest kegels afhankelijk van de toepassing. Bak je glazuren op een hoge steengoedtemperatuur dan kies je wellicht voor cone 10. Werk je met aardewerk dan zal dat eerder cone 03 zijn. Werk je met commerciële glazuren? Kijk zeker eens op de verpakking, meestal staat de cone daarop aangegeven. </p><p>Enkele richtlijnen (voor meer details kan je de kegeltabel raadplegen):</p><ul><li>Aardewerk: cone 08 - cone 05 (942°C - 1044°C)</li><li>Mid-range steengoed: cone 5 1/2 - cone 7 (1203°C - 1257°C)</li><li>Hoge temperatuur steengoed: cone 9 - cone 11 (1260°C - 1315°C)</li></ul><p>Let op, afhankelijk van je opstooksnelheid, de laatste 100°C van de stook varieert de eindtemperatuur. Cone 6 kan dus zowel een theoretische top temperatuur van 1220°C als van 1241°C hebben! Alles hangt af van de snelheid van opwarmen. </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_R3R9rr": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_gxzaqg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20210409_155130400_edited.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_gxzaqg"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_gaMfwL": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>Kegels voorbereiden voor gebruik</h3><p>De op zichzelf rechtstaande kegels '(self-supporting cones) zijn het gemakkelijkste in gebruik. Zoals de naam al doet vermoeden staan ze vanzelf recht door een brede basis. Op die manier staan ze in de perfecte hoek en zet je ze gewoon neer op de ovenplaat. Makkelijk! </p><p>​</p><p>Grote kegels vallen om als je ze probeert recht te zetten. Dat komt omdat ze lichtjes schuin moeten staan. Je moet ze daarom monteren in een plakje klei. Zo'n plak klei met kegels noemt men een bootje of een \"cone pack\". </p><p>​</p><p>Het is erg belangrijk om de kegels in de juiste hoek in de klei te drukken. Die hoek kan je nabootsen door een losse kegel achter je klei boot op een vlakke ondergrond te zetten. Ga voor je bootje zitten en druk de kegel in diezelfde hoek in de klei. Zet de verschillende kegels niet te dicht bij elkaar. Hou er rekening mee dat ze (in verschillende mate) zullen ombuigen. Ze mogen niet op elkaar vallen want anders kan je het resultaat niet goed aflezen. In onderstaande video kan je zien hoe het moet. </p><p>​</p><p>Nog een tip: laat je bootje volledig drogen voor gebruik. Als je het meteen na het monteren in een glazuurstook zet heb je kans dat er een klei explosie plaatsvindt in de oven. Niet goed! </p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "Read more",
+        "show_less_text": "Show less",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "text_section_Cjc3m9": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
         "text_content": "<h2>Wat zijn kegels?</h2><p>Kegels, in het Engels \"cones\" genoemd, ontlenen hun naam aan de vorm. Het zijn kleine kegelvormige samengeperste blokjes glazuurgrondstoffen met een goed gekende samenstelling. Ze worden vandaag de dag gemaakt door het Amerikaanse bedrijf Orton, vandaar de naam Orton kegels. <a href=\"https://www.colpaertonline.be/nl/483-orton-cones\" target=\"_blank\"><span style=\"text-decoration:underline\">Je kan ze kopen in de keramiekwinkel, bijvoorbeeld bij Colpaert. </span></a></p><p>Je plaatst ze in een keramiekoven waar ze buigen onder invloed van warmte en tijd, een concept dat \"heatwork\" noemt. De mate waarin de kegel ombuigt bepaalt hoeveel heatwork die kreeg. Je kan met kegels het heatwork in jouw oven meten en nakijken. Je ontdekt met kegels waar de warmere en de koelere plekjes in jouw oven zitten.</p><p>Moeilijk? Toch een beetje. We beginnen bij het begin. Na het lezen van dit artikel spreek jij nooit meer van \"ik bak op 1250°C\" maar zeg je \"Ik stook op cone 7\". </p><h2>Verschillende soorten kegels</h2><h4>Nummering</h4><p>Op elke kegel staat een nummer gestempeld. Die nummers gaan van 022 tot 42. De nul vooraan een cijfer is erg belangrijk. Zo is kegel 06 helemaal niet hetzelfde als kegel 6! </p><p>De cijfers geven een temperatuurbereik weer. Voor een glazuurstook op steengoedtemperaturen gebruik je kegels tussen 5 en 12. Voor een bisquitbak heb je tussen kegel 08 en 04 nodig. </p><p>De kegel correspondeert met een temperatuur equivalent. Die kan je terugvinden op een <a href=\"https://secure.build111.com/files/2676/File/Orton-Cone-Chart-C-022-14-2016.pdf\" target=\"_blank\"><span style=\"text-decoration:underline\">\"conechart\" of een kegeltabel.</span></a> Dat is een tabel die de omzetting weergeeft tussen de kegel, de stookcurve en de corresponderende temperatuur. </p><h4>Small, large en self-supporting cones</h4><p>Kegels bestaan in verschillende soorten. Je hebt kleine, grote en op zichzelf rechtstaande kegels. De kleintjes (small) gebruik je in ovens die niet computer gestuurd zijn. Ze doen een oven met een \"kiln-sitter\" afslaan wanneer die de correcte temperatuur (cone) bereikt heeft.</p><p>De grote (large) kegels en de op zichzelf rechtstaande (self-supporting) kegels hebben hetzelfde doel. Tijdens of na de stook een indicatie geven van het heatwork dat in de oven gegeneerd werd. </p><h3>Heatwork? Wat is dat? </h3><p>Het concept \"heatwork\" omvat warmte <strong>EN</strong> tijd. Heatwork vertaald is \"warmtearbeid\" maar dat ligt niet zo goed in de mond. Ik hou het dus liever bij de Engelse term. </p><p>Hoewel je het woord heatwork misschien niet kent is het concept je zeker niet vreemd. </p><p>Een voorbeeld uit de keuken om het uit te leggen. Een kip garen in de oven kan op 220°C gedurende 30 - 45 minuten. Zo'n kip is ook gaar na 4 tot 6 uur op 80°C. Over de smaak kunnen we discussiëren maar beide versies zullen perfect eetbaar zijn.</p><p>Hetzelfde geldt voor glazuren: je kan heel snel opstoken tot een hele hoge temperatuur of heel traag tot een lagere temperatuur en toch hetzelfde gebakken resultaat bekomen. Dat is heatwork. Temperatuur in functie van de tijd.</p><h3>Kegels meten heatwork</h3><p>Kegels buigen onder invloed van warmte en tijd, heatwork dus. </p><p>Kegel 6 kan perfect omgebogen zijn indien die gestookt wordt tot 1220°C aan een snelheid van 60°C per uur de laatste 100°C van het stooktraject. Diezelfde kegel 6 zal er hetzelfde uitzien als je hem stookt op 1241° aan een snelheid van 150°C per uur. Ondanks dat er 21°C verschil zit tussen beide stookcurves gaat de ene trager dan de andere. Dat levert uiteindelijk hetzelfde heatwork op.  </p><p>Zeg dus nooit aan iemand hoe hoog je stookt. Leg meteen ook uit hoe je stookcurve eruit ziet en hoe lang je eventueel pendelt. Nog beter, zeg op welke kegel je stookt. Dan heeft die ander meteen alle informatie! </p><h3>Kegelkeuze</h3><p>Je kiest kegels afhankelijk van de toepassing. Bak je glazuren op een hoge steengoedtemperatuur dan kies je wellicht voor cone 10. Werk je met aardewerk dan zal dat eerder cone 03 zijn. Werk je met commerciële glazuren? Kijk zeker eens op de verpakking, meestal staat de cone daarop aangegeven. </p><p>Enkele richtlijnen (voor meer details kan je de kegeltabel raadplegen):</p><ul><li>Aardewerk: cone 08 - cone 05 (942°C - 1044°C)</li><li>Mid-range steengoed: cone 5 1/2 - cone 7 (1203°C - 1257°C)</li><li>Hoge temperatuur steengoed: cone 9 - cone 11 (1260°C - 1315°C)</li></ul><p>Let op, afhankelijk van je opstooksnelheid, de laatste 100°C van de stook varieert de eindtemperatuur. Cone 6 kan dus zowel een theoretische top temperatuur van 1220°C als van 1241°C hebben! Alles hangt af van de snelheid van opwarmen. </p><h3>Kegels voorbereiden voor gebruik</h3><p>De op zichzelf rechtstaande kegels '(self-supporting cones) zijn het gemakkelijkste in gebruik. Zoals de naam al doet vermoeden staan ze vanzelf recht door een brede basis. Op die manier staan ze in de perfecte hoek en zet je ze gewoon neer op de ovenplaat. Makkelijk! </p><p>​</p><p>Grote kegels vallen om als je ze probeert recht te zetten. Dat komt omdat ze lichtjes schuin moeten staan. Je moet ze daarom monteren in een plakje klei. Zo'n plak klei met kegels noemt men een bootje of een \"cone pack\". </p><p>​</p><p>Het is erg belangrijk om de kegels in de juiste hoek in de klei te drukken. Die hoek kan je nabootsen door een losse kegel achter je klei boot op een vlakke ondergrond te zetten. Ga voor je bootje zitten en druk de kegel in diezelfde hoek in de klei. Zet de verschillende kegels niet te dicht bij elkaar. Hou er rekening mee dat ze (in verschillende mate) zullen ombuigen. Ze mogen niet op elkaar vallen want anders kan je het resultaat niet goed aflezen. In onderstaande video kan je zien hoe het moet. </p><p>​</p><p>Nog een tip: laat je bootje volledig drogen voor gebruik. Als je het meteen na het monteren in een glazuurstook zet heb je kans dat er een klei explosie plaatsvindt in de oven. Niet goed! </p><h3>Hoeveel kegels? </h3><p>Als je een eerste meting doet is het nuttig om verschillende kegels rond je vermoedelijke stooktemperatuur te gebruiken. Stel je de computer in op 1220°C met een traag stooktraject van 60°C/u de laatste 100°C van de stook; dan kies je in theorie voor kegel 5 1/2, kegel 6 en kegel 7. Theoretisch zou kegel 6 perfect gebogen moeten zijn bij die temperatuur. De realiteit leert me echter dat veel ovens \"warmer\" worden, meer heatwork genereren. Daarom adviseer ik om ook kegel 8 en kegel 9 zeker mee te nemen bij een eerste test! </p><h3>Waar plaatsen? </h3><p>Ideaal zet je zo'n cone pack op elke gebruikte ovenplaat van je stook. Zeker bij een eerste meting. Ovens hebben meestal een temperatuur gradiënt. Zo zijn sommige plaatsen heter dan andere. Door kegels op verschillende hoogtes of plaatsen te zetten breng je dat vlot in kaart. In bovenladers is het midden van de ovenplaat meestal kouder dan de zijkant. Probeer de kegels op elk niveau ongeveer op dezelfde plek te zetten. </p><h3>Resultaten interpreteren</h3><p>Je hebt een stook gedaan, je kegels zijn mee gestookt en omgebogen. En nu? Hoe interpreteer je zo'n resultaat? Dat is niet zo moeilijk.</p><p>Je kijkt naar de ombuiging van de kegels. Beeld je in dat de kegel projecteert op een klok. Staat de klok op 1 uur? Dan is de kegel niet omgebogen (linker kegel op foto onderaan). Staat de klok op 5 of 6 uur dan raakt de tip van kegel de ovenplaat of de basis van de zelf rechtstaande kegel (zie kegel 3 en 4 op foto onderaan)? De kegel zelf staat in een mooie boog zonder door te hangen. De stook staat dan equivalent aan dat kegelnummer. Kegels die helemaal plat liggen zijn dus te warm geworden, kegels die nog netjes op een 1 uur positie staan hebben niet genoeg warmte gekregen.  Dat kegelnummer is dus niet gehaald. </p><h3>Oei, dit is niet wat ik verwacht!</h3><p>Je stookte de kegels mee en tot je grote verbazing buigen jouw kegels niet zoals jij verwachtte. De theoretische kegeltabel komt niet overeen met jouw ingestelde temperatuur en opwarmsnelheid. Wat is er aan de hand? </p><p>​</p><p>Je genereert mogelijk meer heatwork waardoor de kegels (allemaal) plat liggen. De ingestelde oven temperatuur klopt dus niet met wat de kegels aangeven. Dit kan verschillende oorzaken hebben maar de meest voorkomend is dit:</p><ul><li>De opwarmsnelheid van jouw oven is in werkelijkheid veel trager dan jij instelt en denkt. Veel ovens geven pas foutmeldingen als ze minder dan 20°C per uur opwarmen. Als jij denkt dat je oven aan 150°C per uur stijgt maar in werkelijkheid gaat hij maar aan 25°C per uur heeft dat een heel groot effect op het gegeneerde heatwork! Dit kan verschillende redenen hebben, onder andere:de oven is te groot voor wat de spiralen en/of stroomtoevoer aankan ​de spiralen zijn versleten of (deels) kapot</li></ul><p>Een oplossing kan zijn om je eindtemperatuur te verlagen en/of niet of korter te pendelen. Dat laatste heeft immers ook effect op het heatwork. Het is ook een goed idee om een trage opwarmsnelheid te gebruiken (60°C per uur bijvoorbeeld) voor minstens die laatste 100°C. Ik gebruik een trage opwarmsnelheid voor de laatste 200°C van de stook. </p><p>​</p><p>Misschien gebeurde het omgekeerde van wat hierboven beschreven staat. De kegels zijn niet of amper omgebogen. Jouw oven haalt zijn temperatuur niet. ​​</p><p>Een oplossing kan zijn om de eindtemperatuur hoger in te stellen en/of langer te pendelen. ​</p><p>Als jouw oven systematisch zijn temperatuur niet haalt is het een goed idee om die even te laten nakijken. </p><p>​</p><p>Let op: maak enkel aanpassingen aan de stookcurve of eindtemperatuur als er problemen zijn met niet uitgesmolten of druipende glazuren. Als jouw glazuren prachtig uit de oven komen, doe dan vooral <strong>NIETS</strong>. Noteer wel op welke cone je stookt en of er verschillen zijn in heatwork doorheen de oven. Dat is belangrijke informatie voor de toekomst.</p>",
         "text_alignment": "left",
         "section_alignment": "center",
@@ -72,11 +165,38 @@
         "offset_top_mobile": 60,
         "offset_bottom_mobile": 60
       }
+    },
+    "1767287224a47f2409": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_52151f4_9bzQEb": {
+          "type": "ai_gen_block_52151f4",
+          "settings": {
+            "show_controls": true,
+            "autoplay": false,
+            "loop": false,
+            "muted": false,
+            "background_color": "#ffffff",
+            "border_radius": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_52151f4_9bzQEb"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "blocks_HKjBV4",
     "default-page",
-    "text_section_AD4dqG"
+    "text_section_AD4dqG",
+    "picture_grid_RYMDtx",
+    "text_section_qjRmJB",
+    "picture_grid_R3R9rr",
+    "text_section_gaMfwL",
+    "text_section_Cjc3m9",
+    "1767287224a47f2409"
   ]
 }
