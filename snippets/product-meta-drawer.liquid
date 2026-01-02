@@ -47,17 +47,6 @@
 		-%}
 	{%- endcapture -%}
 
-	{%- capture shipping_and_returns -%}
-		{% assign toggle_id = 'shippingAndReturnsDrawer-' | append: section.id %}
-
-		{%- include 'product-form-drawer',
-			title: shipping_and_returns_drawer_title,
-			content: shipping_and_returns.content,
-			toggle_id: toggle_id,
-			class_container: 'product-shipping-and-returns-drawer',
-			class_body: 'rte-product-drawer'
-		-%}
-	{%- endcapture -%}
 
 	{% capture custom_drawer_1 %}
 		{% assign toggle_id = 'CustomDrawer-1-' | append: section.id %}
