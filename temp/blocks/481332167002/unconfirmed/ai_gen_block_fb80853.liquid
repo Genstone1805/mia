@@ -1,6 +1,420 @@
+{% doc %}
+  @prompt
+    generate a section triggers a product metafield content. the admin will write the name of the metafield and it will create a botton with the metafield name. when i click on the toggle, it should show metafield content. the content should slide from the right and there should be a black overlay over the whole page when the content is showing and a cancel button the hide the content.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-metafield-toggle-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-metafield-toggle__button-{{ ai_gen_id }} {
+    padding: 15px 30px;
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    border: 1px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ai-metafield-toggle__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+  }
+
+  .ai-metafield-toggle__overlay-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ block.settings.overlay_color }};
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+
+  .ai-metafield-toggle__overlay-{{ ai_gen_id }}.active {
+    opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+    visibility: visible;
+  }
+
+  .ai-metafield-toggle__panel-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: {{ block.settings.panel_width }}%;
+    max-width: 600px;
+    height: 100%;
+    background-color: {{ block.settings.panel_background_color }};
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 40px 30px;
+  }
+
+  .ai-metafield-toggle__panel-{{ ai_gen_id }}.active {
+    transform: translateX(0);
+  }
+
+  .ai-metafield-toggle__panel-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .ai-metafield-toggle__panel-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.panel_title_font_size }}px;
+    color: {{ block.settings.panel_text_color }};
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .ai-metafield-toggle__close-button-{{ ai_gen_id }} {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ block.settings.panel_text_color }};
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-metafield-toggle__close-button-{{ ai_gen_id }}:hover {
+    opacity: 0.7;
+  }
+
+  .ai-metafield-toggle__close-button-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ai-metafield-toggle__content-{{ ai_gen_id }} {
+    color: {{ block.settings.panel_text_color }};
+    font-size: {{ block.settings.panel_content_font_size }}px;
+    line-height: 1.6;
+  }
+
+  .ai-metafield-toggle__empty-state-{{ ai_gen_id }} {
+    color: {{ block.settings.panel_text_color }};
+    opacity: 0.6;
+    font-style: italic;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-metafield-toggle__panel-{{ ai_gen_id }} {
+      width: 90%;
+      max-width: none;
+      padding: 30px 20px;
+    }
+
+    .ai-metafield-toggle__button-{{ ai_gen_id }} {
+      font-size: {{ block.settings.button_font_size | times: 0.9 }}px;
+      padding: 12px 24px;
+    }
+
+    .ai-metafield-toggle__panel-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.panel_title_font_size | times: 0.9 }}px;
+    }
+
+    .ai-metafield-toggle__content-{{ ai_gen_id }} {
+      font-size: {{ block.settings.panel_content_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<metafield-toggle-{{ ai_gen_id }}
+  class="ai-metafield-toggle-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <button
+    class="ai-metafield-toggle__button-{{ ai_gen_id }}"
+    aria-label="Open {{ block.settings.metafield_namespace }}.{{ block.settings.metafield_key }}"
+    aria-expanded="false"
+  >
+    {% if block.settings.button_text != blank %}
+      {{ block.settings.button_text }}
+    {% else %}
+      {{ block.settings.metafield_namespace }}.{{ block.settings.metafield_key }}
+    {% endif %}
+  </button>
+
+  <div class="ai-metafield-toggle__overlay-{{ ai_gen_id }}"></div>
+
+  <div class="ai-metafield-toggle__panel-{{ ai_gen_id }}">
+    <div class="ai-metafield-toggle__panel-header-{{ ai_gen_id }}">
+      <h2 class="ai-metafield-toggle__panel-title-{{ ai_gen_id }}">
+        {% if block.settings.panel_title != blank %}
+          {{ block.settings.panel_title }}
+        {% else %}
+          {{ block.settings.metafield_namespace }}.{{ block.settings.metafield_key }}
+        {% endif %}
+      </h2>
+      <button
+        class="ai-metafield-toggle__close-button-{{ ai_gen_id }}"
+        aria-label="Close panel"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ai-metafield-toggle__content-{{ ai_gen_id }}">
+      {% if product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] != blank %}
+        {{ product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] }}
+      {% else %}
+        <div class="ai-metafield-toggle__empty-state-{{ ai_gen_id }}">
+          No content available. Please add content to the metafield: {{ block.settings.metafield_namespace }}.{{ block.settings.metafield_key }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</metafield-toggle-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class MetafieldToggle{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.button = this.querySelector('.ai-metafield-toggle__button-{{ ai_gen_id }}');
+        this.overlay = this.querySelector('.ai-metafield-toggle__overlay-{{ ai_gen_id }}');
+        this.panel = this.querySelector('.ai-metafield-toggle__panel-{{ ai_gen_id }}');
+        this.closeButton = this.querySelector('.ai-metafield-toggle__close-button-{{ ai_gen_id }}');
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.button.addEventListener('click', () => this.openPanel());
+        this.closeButton.addEventListener('click', () => this.closePanel());
+        this.overlay.addEventListener('click', () => this.closePanel());
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && this.panel.classList.contains('active')) {
+            this.closePanel();
+          }
+        });
+      }
+
+      openPanel() {
+        this.overlay.classList.add('active');
+        this.panel.classList.add('active');
+        this.button.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      closePanel() {
+        this.overlay.classList.remove('active');
+        this.panel.classList.remove('active');
+        this.button.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    }
+
+    customElements.define('metafield-toggle-{{ ai_gen_id }}', MetafieldToggle{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Product metafield toggle",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Metafield"
+    },
+    {
+      "type": "text",
+      "id": "metafield_namespace",
+      "label": "Metafield namespace",
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "metafield_key",
+      "label": "Metafield key",
+      "default": "description"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Panel"
+    },
+    {
+      "type": "text",
+      "id": "panel_title",
+      "label": "Panel title"
+    },
+    {
+      "type": "range",
+      "id": "panel_width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Panel width",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "panel_title_font_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Title font size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "panel_content_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Content font size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "panel_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "panel_text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 10,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product metafield toggle"
+    }
+  ]
+}
 {% endschema %}
