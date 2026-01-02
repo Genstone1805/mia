@@ -1,26 +1,183 @@
-{% comment %}
-------------------------------------------------------------------------------
-  Snippet: Product Drawers Content
-------------------------------------------------------------------------------
-{% endcomment %}
+{% assign block_id = section.id | replace: '_', '' | downcase %}
 
-{%- assign drawers = blocks | where: 'type', 'meta_drawers' | first -%}
+{% style %}
+  .block-slide-panel-{{ block_id }} {
+    display: block;
+    width: 100%;
+  }
 
-{%- if drawers != nil -%}
-	{%- assign size_guide_page = product.metafields.size_guide.page.value -%}
+  .block-slide-panel-toggle-{{ block_id }} {
+    padding: 15px 30px;
+    background-color: {{ section.settings.button_background_color }};
+    color: {{ section.settings.button_text_color }};
+    border: 1px solid {{ section.settings.button_border_color }};
+    border-radius: {{ section.settings.button_border_radius }}px;
+    font-size: {{ section.settings.button_font_size }}px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 
-	{%- if size_guide_page != blank and size_guide_page.content != blank -%}
-		{% assign toggle_id = 'productSizeGuideDrawer-' | append: section.id %}
-		{% assign size_guide_page_content = size_guide_page.content | replace: '<img', '<img loading="lazy"'%}
+  .block-slide-panel-toggle-{{ block_id }}:hover {
+    background-color: {{ section.settings.button_hover_background_color }};
+    color: {{ section.settings.button_hover_text_color }};
+    border-color: {{ section.settings.button_hover_border_color }};
+  }
 
-		{% include 'product-form-drawer',
-			title: options.settings.size_guide_title,
-			content: size_guide_page_content,
-			toggle_id: toggle_id,
-			class_container: 'product-size-guide-drawer',
-			tab_general_name: options.settings.size_guide_tab_general_name,
-			tab_model_name: options.settings.size_guide_tab_model_name,
-			full_width_mode: true
-		%}
-	{%- endif -%}
-{%- endif -%}
+  .block-slide-panel-overlay-{{ block_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ section.settings.overlay_color }};
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+
+  .block-slide-panel-overlay-{{ block_id }}.active {
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    visibility: visible;
+  }
+
+  .block-slide-panel-content-{{ block_id }} {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: {{ section.settings.panel_width }}px;
+    max-width: 90%;
+    height: 100%;
+    background-color: {{ section.settings.panel_background_color }};
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .block-slide-panel-content-{{ block_id }}.active {
+    transform: translateX(0);
+  }
+
+  .block-slide-panel-header-{{ block_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid {{ section.settings.panel_border_color }};
+  }
+
+  .block-slide-panel-title-{{ block_id }} {
+    font-size: {{ section.settings.panel_title_size }}px;
+    color: {{ section.settings.panel_text_color }};
+    margin: 0;
+  }
+
+  .block-slide-panel-close-{{ block_id }} {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ section.settings.panel_text_color }};
+    transition: opacity 0.3s ease;
+  }
+
+  .block-slide-panel-close-{{ block_id }}:hover {
+    opacity: 0.7;
+  }
+
+  .block-slide-panel-close-{{ block_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .block-slide-panel-body-{{ block_id }} {
+    padding: 20px;
+    color: {{ section.settings.panel_text_color }};
+  }
+
+  .block-slide-panel-body-{{ block_id }} p {
+    margin: 0 0 15px;
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 749px) {
+    .block-slide-panel-content-{{ block_id }} {
+      width: {{ section.settings.panel_width_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<slide-panel-{{ block_id }} class="block-slide-panel-{{ block_id }}" {{ section.shopify_attributes }}>
+  <button class="block-slide-panel-toggle-{{ block_id }}" aria-label="Open panel" aria-expanded="false">
+    {{ section.settings.button_text }}
+  </button>
+
+  <div class="block-slide-panel-overlay-{{ block_id }}"></div>
+
+  <div class="block-slide-panel-content-{{ block_id }}">
+    <div class="block-slide-panel-header-{{ block_id }}">
+      <h2 class="block-slide-panel-title-{{ block_id }}">{{ section.settings.panel_title }}</h2>
+      <button class="block-slide-panel-close-{{ block_id }}" aria-label="Close panel">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="block-slide-panel-body-{{ block_id }}">
+      {{ section.settings.panel_content }}
+    </div>
+  </div>
+</slide-panel-{{ block_id }}>
+
+<script>
+  (function() {
+    class SlidePanel{{ block_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.toggleButton = this.querySelector('.block-slide-panel-toggle-{{ block_id }}');
+        this.overlay = this.querySelector('.block-slide-panel-overlay-{{ block_id }}');
+        this.panel = this.querySelector('.block-slide-panel-content-{{ block_id }}');
+        this.closeButton = this.querySelector('.block-slide-panel-close-{{ block_id }}');
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.toggleButton.addEventListener('click', () => this.openPanel());
+        this.closeButton.addEventListener('click', () => this.closePanel());
+        this.overlay.addEventListener('click', () => this.closePanel());
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.panel.classList.contains('active')) {
+            this.closePanel();
+          }
+        });
+      }
+
+      openPanel() {
+        this.overlay.classList.add('active');
+        this.panel.classList.add('active');
+        this.toggleButton.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      closePanel() {
+        this.overlay.classList.remove('active');
+        this.panel.classList.remove('active');
+        this.toggleButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    }
+
+    customElements.define('slide-panel-{{ block_id }}', SlidePanel{{ block_id }});
+  })();
+</script>
