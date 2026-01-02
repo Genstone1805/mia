@@ -115,7 +115,7 @@
 			"title": "Breadcrumbs",
 			"home": "Home"
 		},
-		"localization":  {
+		"localization": {
 			"update_language": "Update language",
 			"update_country": "Update country/region"
 		}

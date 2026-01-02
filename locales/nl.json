@@ -166,10 +166,83 @@
   },
   "products": {
     "product": {
-      "sold_out": "uitverkocht",
-      "share_label": "deel",
+      "sold_out": "Uitverkocht",
+      "share_label": "Deel",
+      "regular_price": "Normale prijs",
+      "sale": "Serkoop",
+      "unavailable": "Unavailable",
+      "sale_price": "Verkoopprijs",
+      "quantity": "Hoeveelheid",
+      "quantity_in_cart": "(In cart: {{quantity}})",
+      "increments_of": "Increments of {{number}}",
+      "minimum_of": "Minimum of {{number}}",
+      "maximum_of": "Maximum of {{number}}",
+      "add_to_cart": "Add to cart",
+      "pre_order": "Pre-order",
+      "choose_an_option": "Choose an option",
+      "pickup_availability": {
+        "view_store_info": "View store information",
+        "check_other_stores": "Check availability at other stores",
+        "pick_up_available": "Pickup available",
+        "pick_up_unavailable": "Pickup currently unavailable",
+        "pick_up_available_at_html": "Pickup available at <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Pickup currently unavailable at <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "Couldn't load pickup availability",
+        "refresh": "Refresh"
+      },
+      "volume_pricing": {
+        "title": "Volume Pricing",
+        "note": "Volume pricing available",
+        "price_range": "{{ minimum }} - {{ maximum }}",
+        "price_at_each": "at {{ price }}/ea",
+        "each": "{{ price }}/ea",
+        "show_more": "Show more"
+      },
+      "custom_fields_errors": {
+        "input_error": "The field must not be blank",
+        "checkbox_error": "Checkbox must be checked"
+      },
       "price": {
         "taxes_included": "inclusief belasting",
+        "from_price_html": "From {{ price }}",
+        "regular_price": "Regular price",
+        "sale_price": "Sale price",
+        "unit_price": "Unit price",
+        "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      },
+      "product_labels": "Product labels",
+      "product_label": "Product label",
+      "product_variants": "Product variants",
+      "option_swatch_select": "Choose {{name}}:",
+      "option_select": "Choose {{name}}",
+      "timer": {
+        "timer_days_label": "Days",
+        "timer_hours_label": "Hours",
+        "timer_minutes_label": "Minutes",
+        "timer_seconds_label": "Seconds"
+      },
+      "ar_button": "View AR model",
+      "xr_button": "View in your space",
+      "xr_button_label": "View in your space, loads item in augmented reality window",
+      "product_notify_me_message": "Please notify me when {{ product_title }} becomes available",
+      "recipient": {
+        "form": {
+          "checkbox": "I want to send this as a gift",
+          "email_label": "Recipient email",
+          "email_label_optional_for_no_js_behavior": "Recipient email (optional)",
+          "email": "Email",
+          "name_label": "Recipient name (optional)",
+          "name": "Name",
+          "message_label": "Message (optional)",
+          "message": "Message",
+          "max_characters": "{{ max_chars }} characters max",
+          "send_on": "YYYY-MM-DD",
+          "send_on_label": "Send on (optional)"
+        }
+      },
+      "ask_question_form": {
+        "email": "Email",
+        "name": "Name"
       }
     },
     "quick_view": {
