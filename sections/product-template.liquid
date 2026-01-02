@@ -63,53 +63,6 @@
 <script src="{{- 'component-video.build.min.js' | asset_url -}}" defer></script>
 <script src="{{- 'section-product.build.min.js' | asset_url -}}" defer></script>
 
-<script>
-  (function() {
-    class SlidePanel{{ section.id }} extends HTMLElement {
-      constructor() {
-        super();
-      }
-
-      connectedCallback() {
-        this.toggleButton = this.querySelector('.block-slide-panel-toggle-{{ section.id }}');
-        this.overlay = this.querySelector('.block-slide-panel-overlay-{{ section.id }}');
-        this.panel = this.querySelector('.block-slide-panel-content-{{ section.id }}');
-        this.closeButton = this.querySelector('.block-slide-panel-close-{{ section.id }}');
-
-        this.setupEventListeners();
-      }
-
-      setupEventListeners() {
-        this.toggleButton.addEventListener('click', () => this.openPanel());
-        this.closeButton.addEventListener('click', () => this.closePanel());
-        this.overlay.addEventListener('click', () => this.closePanel());
-
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape' && this.panel.classList.contains('active')) {
-            this.closePanel();
-          }
-        });
-      }
-
-      openPanel() {
-        this.overlay.classList.add('active');
-        this.panel.classList.add('active');
-        this.toggleButton.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
-      }
-
-      closePanel() {
-        this.overlay.classList.remove('active');
-        this.panel.classList.remove('active');
-        this.toggleButton.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      }
-    }
-
-    customElements.define('slide-panel-{{ section.id }}', SlidePanel{{ section.id }});
-  })();
-</script>
-
 {%- liquid
 	if product.selected_or_first_available_variant.featured_media
 	assign seo_media = product.selected_or_first_available_variant.featured_media
