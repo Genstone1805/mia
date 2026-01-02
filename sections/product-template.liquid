@@ -46,8 +46,8 @@
 >
 	{%- include 'product-header-mobile', blocks: section.blocks -%}
 	{%- include 'product-media', media_height: section.settings.media_height -%}
-	{% comment %} {%- include 'product-form', blocks: section.blocks, enable_history_state: true, product_template: true -%} {% endcomment %}
-	{% comment %} {%- include 'product-drawers-content', blocks: section.blocks -%} {% endcomment %}
+	{%- include 'product-form', blocks: section.blocks, enable_history_state: true, product_template: true -%}
+	{%- include 'product-drawers-content', blocks: section.blocks -%}
 	
 
 	{%- for block in section.blocks -%}
