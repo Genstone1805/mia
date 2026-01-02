@@ -116,7 +116,7 @@
 {% endstyle %}
 
 {% if show_meta %}
-<section class="block-slide-panel-{{ drawers.id }}" {{ drawers.shopify_attributes }}>
+{% comment %} <section class="block-slide-panel-{{ drawers.id }}" {{ drawers.shopify_attributes }}> {% endcomment %}
   <button class="block-slide-panel-toggle-{{ drawers.id }}" aria-label="Open panel" aria-expanded="false">
     {{ drawers.settings.button_text }}
   </button>
@@ -137,9 +137,9 @@
       {{ drawers.settings.panel_content }}
     </div>
   </div>
-</section>
+{% comment %} </section> {% endcomment %}
 {% endif %}
-
+{% comment %} 
 
 <script>
   (function() {
@@ -186,5 +186,4 @@
 
     customElements.define('slide-panel-{{ drawers.id }}', SlidePanel{{ drawers.id }});
   })();
-</script>
-
+</script> {% endcomment %}
