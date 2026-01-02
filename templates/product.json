@@ -84,7 +84,7 @@
         "drawers_GffVyW": {
           "type": "drawers",
           "settings": {
-            "show_description": true,
+            "show_description": false,
             "description_toggle_text": "DESCRIPTION",
             "description_drawer_title": "Description",
             "shipping_and_returns": "about",
