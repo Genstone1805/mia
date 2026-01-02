@@ -1,6 +1,360 @@
+{% doc %}
+  @prompt
+    generate a section that has a toggle button, when i click on the toggle, it should show the content. the content should slide from the right and there should be a black overlay over the whole page when the content is showing and a cancil button the hide the content
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-slide-panel-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-slide-panel-toggle-{{ ai_gen_id }} {
+    padding: 15px 30px;
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    border: 1px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-slide-panel-toggle-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+  }
+
+  .ai-slide-panel-overlay-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {{ block.settings.overlay_color }};
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+
+  .ai-slide-panel-overlay-{{ ai_gen_id }}.active {
+    opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+    visibility: visible;
+  }
+
+  .ai-slide-panel-content-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: {{ block.settings.panel_width }}px;
+    max-width: 90%;
+    height: 100%;
+    background-color: {{ block.settings.panel_background_color }};
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-slide-panel-content-{{ ai_gen_id }}.active {
+    transform: translateX(0);
+  }
+
+  .ai-slide-panel-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid {{ block.settings.panel_border_color }};
+  }
+
+  .ai-slide-panel-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.panel_title_size }}px;
+    color: {{ block.settings.panel_text_color }};
+    margin: 0;
+  }
+
+  .ai-slide-panel-close-{{ ai_gen_id }} {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ block.settings.panel_text_color }};
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-slide-panel-close-{{ ai_gen_id }}:hover {
+    opacity: 0.7;
+  }
+
+  .ai-slide-panel-close-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ai-slide-panel-body-{{ ai_gen_id }} {
+    padding: 20px;
+    color: {{ block.settings.panel_text_color }};
+  }
+
+  .ai-slide-panel-body-{{ ai_gen_id }} p {
+    margin: 0 0 15px;
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-slide-panel-content-{{ ai_gen_id }} {
+      width: {{ block.settings.panel_width_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<slide-panel-{{ ai_gen_id }} class="ai-slide-panel-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <button class="ai-slide-panel-toggle-{{ ai_gen_id }}" aria-label="Open panel" aria-expanded="false">
+    {{ block.settings.button_text }}
+  </button>
+
+  <div class="ai-slide-panel-overlay-{{ ai_gen_id }}"></div>
+
+  <div class="ai-slide-panel-content-{{ ai_gen_id }}">
+    <div class="ai-slide-panel-header-{{ ai_gen_id }}">
+      <h2 class="ai-slide-panel-title-{{ ai_gen_id }}">{{ block.settings.panel_title }}</h2>
+      <button class="ai-slide-panel-close-{{ ai_gen_id }}" aria-label="Close panel">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="ai-slide-panel-body-{{ ai_gen_id }}">
+      {{ block.settings.panel_content }}
+    </div>
+  </div>
+</slide-panel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class SlidePanel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.toggleButton = this.querySelector('.ai-slide-panel-toggle-{{ ai_gen_id }}');
+        this.overlay = this.querySelector('.ai-slide-panel-overlay-{{ ai_gen_id }}');
+        this.panel = this.querySelector('.ai-slide-panel-content-{{ ai_gen_id }}');
+        this.closeButton = this.querySelector('.ai-slide-panel-close-{{ ai_gen_id }}');
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.toggleButton.addEventListener('click', () => this.openPanel());
+        this.closeButton.addEventListener('click', () => this.closePanel());
+        this.overlay.addEventListener('click', () => this.closePanel());
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.panel.classList.contains('active')) {
+            this.closePanel();
+          }
+        });
+      }
+
+      openPanel() {
+        this.overlay.classList.add('active');
+        this.panel.classList.add('active');
+        this.toggleButton.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      closePanel() {
+        this.overlay.classList.remove('active');
+        this.panel.classList.remove('active');
+        this.toggleButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    }
+
+    customElements.define('slide-panel-{{ ai_gen_id }}', SlidePanel{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Slide panel",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Toggle button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Open panel"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Hover background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Panel"
+    },
+    {
+      "type": "text",
+      "id": "panel_title",
+      "label": "Panel title",
+      "default": "Panel title"
+    },
+    {
+      "type": "richtext",
+      "id": "panel_content",
+      "label": "Panel content",
+      "default": "<p>Add your content here. This panel slides in from the right when you click the toggle button.</p>"
+    },
+    {
+      "type": "range",
+      "id": "panel_width",
+      "min": 300,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "label": "Panel width",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "panel_width_mobile",
+      "min": 250,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Panel width on mobile",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "panel_title_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "panel_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "panel_text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "panel_border_color",
+      "label": "Border color",
+      "default": "#E6E6E6"
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 10,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slide panel"
+    }
+  ]
+}
 {% endschema %}
