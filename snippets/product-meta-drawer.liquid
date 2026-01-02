@@ -1,12 +1,12 @@
 {% assign block_id = block_id | replace: '_', '' | downcase %}
 
 {% style %}
-  .block-slide-panel-{{ block_id }} {
+  .block-slide-panel {
     display: block;
     width: 100%;
   }
 
-  .block-slide-panel-toggle-{{ block_id }} {
+  .block-slide-panel-toggle {
     padding: 15px 30px;
     background-color: {{ section.settings.button_background_color }};
     color: {{ section.settings.button_text_color }};
@@ -17,13 +17,13 @@
     transition: all 0.3s ease;
   }
 
-  .block-slide-panel-toggle-{{ block_id }}:hover {
+  .block-slide-panel-toggle:hover {
     background-color: {{ section.settings.button_hover_background_color }};
     color: {{ section.settings.button_hover_text_color }};
     border-color: {{ section.settings.button_hover_border_color }};
   }
 
-  .block-slide-panel-overlay-{{ block_id }} {
+  .block-slide-panel-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -36,12 +36,12 @@
     z-index: 999;
   }
 
-  .block-slide-panel-overlay-{{ block_id }}.active {
+  .block-slide-panel-overlay.active {
     opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
     visibility: visible;
   }
 
-  .block-slide-panel-content-{{ block_id }} {
+  .block-slide-panel-content {
     position: fixed;
     top: 0;
     right: 0;
@@ -56,11 +56,11 @@
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .block-slide-panel-content-{{ block_id }}.active {
+  .block-slide-panel-content.active {
     transform: translateX(0);
   }
 
-  .block-slide-panel-header-{{ block_id }} {
+  .block-slide-panel-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,13 +68,13 @@
     border-bottom: 1px solid {{ section.settings.panel_border_color }};
   }
 
-  .block-slide-panel-title-{{ block_id }} {
+  .block-slide-panel-title {
     font-size: {{ section.settings.panel_title_size }}px;
     color: {{ section.settings.panel_text_color }};
     margin: 0;
   }
 
-  .block-slide-panel-close-{{ block_id }} {
+  .block-slide-panel-close {
     background: none;
     border: none;
     cursor: pointer;
@@ -86,51 +86,51 @@
     transition: opacity 0.3s ease;
   }
 
-  .block-slide-panel-close-{{ block_id }}:hover {
+  .block-slide-panel-close:hover {
     opacity: 0.7;
   }
 
-  .block-slide-panel-close-{{ block_id }} svg {
+  .block-slide-panel-close svg {
     width: 24px;
     height: 24px;
   }
 
-  .block-slide-panel-body-{{ block_id }} {
+  .block-slide-panel-body {
     padding: 20px;
     color: {{ section.settings.panel_text_color }};
   }
 
-  .block-slide-panel-body-{{ block_id }} p {
+  .block-slide-panel-body p {
     margin: 0 0 15px;
     line-height: 1.6;
   }
 
   @media screen and (max-width: 749px) {
-    .block-slide-panel-content-{{ block_id }} {
+    .block-slide-panel-content {
       width: {{ section.settings.panel_width_mobile }}px;
     }
   }
 {% endstyle %}
 
-<slide-panel-{{ block_id }} class="block-slide-panel-{{ block_id }}" {{ section.shopify_attributes }}>
-  <button class="block-slide-panel-toggle-{{ block_id }}" aria-label="Open panel" aria-expanded="false">
+<slide-panel class="block-slide-panel" {{ section.shopify_attributes }}>
+  <button class="block-slide-panel-toggle" aria-label="Open panel" aria-expanded="false">
     {{ section.settings.button_text }}
   </button>
 
-  <div class="block-slide-panel-overlay-{{ block_id }}"></div>
+  <div class="block-slide-panel-overlay"></div>
 
-  <div class="block-slide-panel-content-{{ block_id }}">
-    <div class="block-slide-panel-header-{{ block_id }}">
-      <h2 class="block-slide-panel-title-{{ block_id }}">{{ section.settings.panel_title }}</h2>
-      <button class="block-slide-panel-close-{{ block_id }}" aria-label="Close panel">
+  <div class="block-slide-panel-content">
+    <div class="block-slide-panel-header">
+      <h2 class="block-slide-panel-title">{{ section.settings.panel_title }}</h2>
+      <button class="block-slide-panel-close" aria-label="Close panel">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
     </div>
-    <div class="block-slide-panel-body-{{ block_id }}">
+    <div class="block-slide-panel-body">
       {{ section.settings.panel_content }}
     </div>
   </div>
-</slide-panel-{{ block_id }}>
+</slide-panel>
