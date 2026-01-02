@@ -30,16 +30,6 @@
 		{%- assign show_shipping_and_returns = true -%}
 	{%- endif -%}
 
-	{%- comment -%}
-		Custom drawer 1 variables
-	{%- endcomment -%}
-	{%- assign custom_drawer_title_1 = drawers.settings.custom_drawer_title_1 -%}
-	{%- assign custom_drawer_text_1 = drawers.settings.custom_drawer_text_1 -%}
-	{%- assign show_custom_drawer_1 = false -%}
-
-	{% if custom_drawer_title_1 != blank and custom_drawer_text_1 != blank %}
-		{%- assign show_custom_drawer_1 = true -%}
-	{% endif %}
 
 	{%- capture description -%}
 		{% assign toggle_id = 'descriptionDrawer-' | append: section.id %}
