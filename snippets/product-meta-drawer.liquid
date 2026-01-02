@@ -13,7 +13,14 @@
 	{%- assign description_show = drawers.settings.show_field -%}
 	{%- assign description_toggle_text = drawers.settings.field_toggle_text -%}
 	{%- assign description_drawer_title = drawers.settings.field_drawer_title -%}
-
+	{%- assign show_description = false -%}
+	{%- if description_show
+		and description_toggle_text != blank
+		and product.description != blank
+		and description_drawer_title != blank
+	-%}
+		{%- assign show_description = true -%}
+	{%- endif -%}
 
 	{%- comment -%}
 		Shipping & Returns variables
@@ -30,6 +37,16 @@
 		{%- assign show_shipping_and_returns = true -%}
 	{%- endif -%}
 
+	{%- comment -%}
+		Custom drawer 1 variables
+	{%- endcomment -%}
+	{%- assign custom_drawer_title_1 = drawers.settings.custom_drawer_title_1 -%}
+	{%- assign custom_drawer_text_1 = drawers.settings.custom_drawer_text_1 -%}
+	{%- assign show_custom_drawer_1 = false -%}
+
+	{% if custom_drawer_title_1 != blank and custom_drawer_text_1 != blank %}
+		{%- assign show_custom_drawer_1 = true -%}
+	{% endif %}
 
 	{%- capture description -%}
 		{% assign toggle_id = 'descriptionDrawer-' | append: section.id %}
@@ -56,7 +73,7 @@
 		-%}
 	{%- endcapture -%}
 
-	{% comment %} {% capture custom_drawer_1 %} {% endcomment %}
+	{% capture custom_drawer_1 %}
 		{% assign toggle_id = 'CustomDrawer-1-' | append: section.id %}
 
 		{%- include 'product-form-drawer',
@@ -66,10 +83,20 @@
 			class_container: '',
 			class_body: 'rte-product-drawer'
 		-%}
-	{% comment %} {% endcapture %} {% endcomment %}
+	{% endcapture %}
 
-	{%- if show_description -%}
-		{{- description -}}
+	{%- if show_description or show_shipping_and_returns or show_custom_drawer_1 -%}
+		{%- if show_description -%}
+			{{- description -}}
+		{%- endif -%}
+
+		{%- if show_shipping_and_returns -%}
+			{{- shipping_and_returns -}}
+		{%- endif -%}
+
+		{%- if show_custom_drawer_1 -%}
+			{{- custom_drawer_1 -}}
+		{%- endif -%}
 	{%- endif -%}
 {%- endif -%}
 
