@@ -135,7 +135,7 @@
 				{% endcase %}
 			{% endfor %}
 			
-			{% render "product-meta-drawer", blocks:blocks %}
+			{%- include 'product-meta-drawer', blocks: section.blocks, section_id:section.id -%}
 
 			{% if section.settings.show_share_buttons %}
 				{% include 'share-buttons', design: design %}
