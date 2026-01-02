@@ -166,7 +166,9 @@
   },
   "products": {
     "product": {
-      "sold_out": "uitverkocht"
+      "sold_out": "uitverkocht",
+      "share_label": "deel",
+      "taxes_included": "inclusief belasting"
     },
     "quick_view": {
       "visit_product_page": "Bezoek de productpagina",
