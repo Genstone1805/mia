@@ -48,6 +48,7 @@
 	{%- include 'product-media', media_height: section.settings.media_height -%}
 	{%- include 'product-form', blocks: section.blocks, enable_history_state: true, product_template: true -%}
 	{%- include 'product-drawers-content', blocks: section.blocks -%}
+	{%- include 'product-meta-drawer', blocks: section.blocks, section_id:section.id -%}
 
 	{%- for block in section.blocks -%}
 		{%- case block.type -%}
