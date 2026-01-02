@@ -138,8 +138,8 @@
 			{% if section.settings.show_share_buttons %}
 				{% include 'share-buttons', design: design %}
 			{% endif %}
-			<div style="padding:20px">
-				{% if product.metafields.custom.cancellation != blank %}
+			{% if product.metafields.custom.cancellation != blank %}
+			<div style="padding:20px 10px">
 					<p style="font-size:18px; font-weight:600">Cancellation</p>
 					{% comment %} <div class="{{ description_class }}">Cancellation</div> {% endcomment %}
 					{% assign description_class = "product-description rte" %}
@@ -149,8 +149,9 @@
 					{% endif %}
 				
 					<div class="{{ description_class }}">{{ product.metafields.custom.cancellation }}</div>
-				{% endif %}
-			</div>
+				</div>
+				<hr/>
+			{% endif %}
 		{% endform %}
 	{% else %}
 		<div
