@@ -10,32 +10,10 @@
 	{%- comment -%}
 		Description variables
 	{%- endcomment -%}
-	{%- assign description_show = drawers.settings.show_field -%}
-	{%- assign description_toggle_text = drawers.settings.description_toggle_text -%}
-	{%- assign description_drawer_title = drawers.settings.description_drawer_title -%}
-	{%- assign show_description = false -%}
-	{%- if description_show
-		and description_toggle_text != blank
-		and product.description != blank
-		and description_drawer_title != blank
-	-%}
-		{%- assign show_description = true -%}
-	{%- endif -%}
+	{%- assign field_show = drawers.settings.show_field -%}
+	{%- assign field_toggle_text = drawers.settings.field_toggle_text -%}
+	{%- assign drawer_title = drawers.settings.field_drawer_title -%}
 
-	{%- comment -%}
-		Shipping & Returns variables
-	{%- endcomment -%}
-	{%- assign shipping_and_returns = drawers.settings.shipping_and_returns -%}
-	{%- assign shipping_and_returns_toggle_text = drawers.settings.shipping_and_returns_toggle_text -%}
-	{%- assign shipping_and_returns_drawer_title = drawers.settings.shipping_and_returns_drawer_title | default: shipping_and_returns.title -%}
-	{%- assign show_shipping_and_returns = false -%}
-
-	{%- if shipping_and_returns != blank
-		and shipping_and_returns.content != blank
-		and shipping_and_returns_toggle_text != blank
-	-%}
-		{%- assign show_shipping_and_returns = true -%}
-	{%- endif -%}
 
 	{%- comment -%}
 		Custom drawer 1 variables
