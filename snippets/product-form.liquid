@@ -320,6 +320,19 @@
 					<hr/>
 				</div>
 			{% endif %}
+			{% if product.custom.who_is_this_workshop_for != blank %}
+				<div style="padding:20px 0px">
+					<p style="font-size:18px; font-weight:600">Voor wie is deze workshop</p>
+					{% assign description_class = "product-description rte" %}
+				
+					{% if design == 'alternate' %}
+						{% assign description_class = "product-description-new rte-new" %}
+					{% endif %}
+				
+					<div class="{{ description_class }}">{{ product.custom.who_is_this_workshop_for }}</div>
+					<hr/>
+				</div>
+			{% endif %}
 		{% endform %}
 	{% else %}
 		<div
