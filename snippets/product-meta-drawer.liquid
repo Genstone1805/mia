@@ -1,6 +1,7 @@
 {% comment %} {% assign drawers.id = section_id | replace: '_', '' | downcase %} {% endcomment %}
 
 {%- assign drawers = blocks | where: 'type', 'meta_panel' | first -%}
+{%- assign show_meta = drawers.settings.show_meta -%}
 
 {% style %}
   .block-slide-panel-{{ drawers.id }} {
@@ -114,6 +115,7 @@
   }
 {% endstyle %}
 
+{% if show_meta %}
 <slide-panel-{{ drawers.id }} class="block-slide-panel-{{ drawers.id }}" {{ section.shopify_attributes }}>
   <button class="block-slide-panel-toggle-{{ drawers.id }}" aria-label="Open panel" aria-expanded="false">
     {{ section.settings.button_text }}
@@ -136,6 +138,7 @@
     </div>
   </div>
 </slide-panel-{{ drawers.id }}>
+{% endif %}
 
 
 <script>
