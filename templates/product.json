@@ -81,14 +81,29 @@
             "custom_drawer_text_1": ""
           }
         },
-        "meta_drawers_7RUpUB": {
-          "type": "meta_drawers",
+        "meta_panel_HaHYji": {
+          "type": "meta_panel",
           "settings": {
-            "show_field": true,
-            "field_toggle_text": "Meta Field Name",
-            "field_drawer_title": "Meta Field Name",
-            "custom_drawer_title_1": "Drawer heading",
-            "custom_drawer_text_1": ""
+            "button_text": "Open panel",
+            "button_font_size": 16,
+            "button_border_radius": 4,
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_background_color": "#ffffff",
+            "button_hover_text_color": "#000000",
+            "button_hover_border_color": "#000000",
+            "panel_title": "Panel title",
+            "panel_content": "<p>Add your content here. This panel slides in from the right when you click the toggle button.</p>",
+            "panel_width": 400,
+            "panel_width_mobile": 300,
+            "panel_title_size": 24,
+            "panel_background_color": "#ffffff",
+            "panel_text_color": "#000000",
+            "panel_border_color": "#e6e6e6",
+            "overlay_color": "#000000",
+            "overlay_opacity": 50,
+            "desktop_width_percent": 100
           }
         }
       },
@@ -102,7 +117,7 @@
         "notify_me",
         "add_to_cart",
         "drawers",
-        "meta_drawers_7RUpUB"
+        "meta_panel_HaHYji"
       ],
       "settings": {
         "is_lazy": true,
@@ -196,7 +211,7 @@
             "panel_title_size": 24,
             "panel_background_color": "#ffffff",
             "panel_text_color": "#000000",
-            "panel_border_color": "#E6E6E6",
+            "panel_border_color": "#e6e6e6",
             "overlay_color": "#000000",
             "overlay_opacity": 50,
             "desktop_width_percent": 100
