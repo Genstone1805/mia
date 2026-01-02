@@ -1,5 +1,7 @@
 {% assign block_id = section_id | replace: '_', '' | downcase %}
 
+{%- assign drawers = blocks | where: 'type', 'meta_panel' | first -%}
+
 {% style %}
   .block-slide-panel-{{ block_id }} {
     display: block;
