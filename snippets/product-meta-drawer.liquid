@@ -117,9 +117,9 @@
 
 {% if show_meta %}
 <section class="block-slide-panel-{{ drawers.id }}" {{ drawers.shopify_attributes }}>
-  <button class="block-slide-panel-toggle-{{ drawers.id }}" aria-label="Open panel" aria-expanded="false">
+  {% comment %} <button class="block-slide-panel-toggle-{{ drawers.id }}" aria-label="Open panel" aria-expanded="false">
     {{ drawers.settings.button_text }}
-  </button>
+  </button> {% endcomment %}
 
   <div class="block-slide-panel-overlay-{{ drawers.id }}"></div>
 
