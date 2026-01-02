@@ -134,7 +134,8 @@
 						{% render block %}
 				{% endcase %}
 			{% endfor %}
-			<div>Hello</div>
+			
+			{% render "product-meta-drawer", blocks:blocks %}
 
 			{% if section.settings.show_share_buttons %}
 				{% include 'share-buttons', design: design %}
