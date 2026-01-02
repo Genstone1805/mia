@@ -125,6 +125,99 @@
         "grid": 1
       }
     },
+    "text_section_iGRzTR": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>OP STAP MET SEGER EN STULL - GLAZUURWORKSHOP VOOR GEVORDERDEN<strong>22 en 23 september 2025 van 09h30 tot 16h00 (theorie en praktijk)30 september 2025 van 19h00 tot 22h00 (bespreking stalen)</strong></h3><p>Heb je al een basiskennis over glazuren? Zijn begrippen zoals glasvormer, stabilisator en smeltpuntverlager of flux je niet totaal vreemd? Volgde je al ergens een basis glazuurcursus of las je mijn boek maar heb je zin in meer? Dan is deze meerdaagse workshop met veel theorie maar ook praktijk in de vorm van een persoonlijk glazuurproject zeker iets voor jou! </p><p>​</p><p>Tijdens de eerste dag leer je alles over de Segerformule of UMF.</p><p>Wat is deze formule, waarom is ze nuttig en vooral, hoe bereken je die Seger formule nu eigenlijk. Tegenwoordig wordt ze ons kant en klaar aangereikt op websites zoals Glazy.org maar toch is het nuttig om het minstens één keertje zelf gedaan te hebben. Op deze manier weet je waar die getallen vandaan komen en kan je ze veel beter interpreteren en begrijpen. Je krijgt alle uitleg die je nodig hebt en dan gaan we zelf aan de slag met oefeningen. Wees gerust, je mag een rekenmachine gebruiken </p><p>Na de middag gaan we praktisch aan de slag met jullie eigen glazuurprojecten. Die leg je me op voorhand uit via een invulformulier dat ik je toestuur. Op die manier kan ik me voorbereiden om jouw glazuurproject vorm te geven. Indien je geen eigen project hebt werk je samen met iemand anders. </p><p>​</p><p>Op de tweede dag bekijken, analyseren en verbeteren we jouw eigen glazuurrecepten aan de hand van Glazy.org. We onderzoeken onder andere de Stull map. Dat is het grafiekje dat je op Glazy kan zien maar waar je misschien niet exact van weet wat het weergeeft en daar brengen we dus verandering in. We bekijken silica/alumina en flux ratio’s en leren wat die betekenen.</p><p>Met de opgedane theorie gaan we dieper in op glazuurstabiliteit en matte en glanzende glazuren. We gebruiken de software om de eigen recepten te verbeteren, althans in theorie. Daarna gaan we praktisch verder aan de slag en werken we verder aan onze projecten met de opgedane theoretische kennis. </p><p> </p><p>De stalen zelf worden nadien gebakken en besproken. We bekijken mekaars stalen en bespreken eventuele verbeterpunten zodat je er zelf thuis verder mee aan de slag kan. </p><p>​</p><p><strong>Wie:</strong></p><p>Deze intensieve cursus is geschikt voor iedereen die reeds ervaring heeft met glazuurtheorie. Je kent de basiscomponenten van een glazuur zoals glasvormer, stabilisator en smeltpuntverlager of flux. Je hoort het niet in Keulen donderen bij grondstoffen zoals kwarts en veldspaat. Je volgde al een glazuurcursus of verdiepte jezelf online en in boeken. Je hebt zin om te experimenteren, je kan goed zelfstandig werken en \"out of the box\" denken.</p><p>​</p><p>De cursus gaat door voor maximum 10 deelnemers. Er is persoonlijke begeleiding voor ieders glazuurproject. Je kan alleen of in groepjes werken. Dit hangt ook af van het aantal ingediende projecten. </p><p>​</p><p><strong>Waar en wanneer:</strong></p><p>22 en 23 september 2025 van 09h30 tot 16h00 (theorie en praktijk)</p><p>30 september 2025 van 19h00 tot 22h00 (bespreking stalen)</p><h3>SOGO glazuurfabriek - Leeuwlantstraat 118 - 2100 Deurne</h3><h3>​</h3><p><strong>Prijs: </strong></p><p><strong>350 euro </strong>voor de workshop. Alle materialen (grondstoffen, potjes, handschoenen, testtegels, ...), voorbereiding van de projecten en het bakken van de stalen zijn inbegrepen.</p><p>Het cursusmateriaal wordt digitaal ter beschikking gesteld in PDF formaat. De stalen krijg je mee naar huis. </p><p>​</p><p><strong>Meebrengen: </strong>​</p><ul><li>notitieboekje</li><li>laptop of tablet</li><li>rekenmachine</li><li>lunch </li><li>testtegels in eigen steengoedklei (optioneel, ik stel eveneens testtegels ter beschikking in witte steengoedklei)</li></ul><p>​</p><p><strong>Inschrijven: </strong></p><p>Ben je ook enthousiast? Inschrijven via de <a href=\"https://www.sogokeramiek.com/product-page/op-stap-met-seger-en-stull-glazuurworkshop-voor-gevorderden\" target=\"_blank\"><span style=\"text-decoration:underline\">webshop</span></a>!</p><p>​</p><p><strong>Annulatie:</strong></p><p>Mocht je toch verhinderd zijn, dan kan je annuleren tot een maand voor aanvang van de cursus. Het inschrijvingsgeld wordt dan terugbetaald met vermindering van 20 euro administratieve kosten. </p><p>Indien je minder dan twee weken voor de cursus annuleert wordt het inschrijvingsgeld niet terugbetaald tenzij je zelf een plaatsvervanger kan vinden of er mensen op de wachtlijst jouw plekje kunnen innemen. Indien dat het geval is, wordt het inschrijvingsgeld ook terugbetaald met vermindering van 20 euro administratieve kosten. </p><p>​</p><p><a href=\"https://www.sogokeramiek.com/product-page/op-stap-met-seger-en-stull-glazuurworkshop-voor-gevorderden\" target=\"_blank\">Inschrijven</a></p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "",
+        "show_less_text": "",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_kR3TGP": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_wmHJVj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20201209_085601347_PORTRAIT_2_v2.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_wmHJVj"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_cpnYrf": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>INTENSIEVE DRIEDAAGSE SERIEDRAAIEN <strong>Voorlopig bied ik geen workshops pottendraaien aan</strong></h3><p>In deze driedaagse gaan we ons volop toeleggen op het draaien van series. We proberen, elk op ons eigen tempo en niveau, nagenoeg identieke potten te draaien. Dat kunnen schaaltjes of tassen zijn maar ook vaasjes of dekselpotjes. Alles kan en mag. Ik stel voor iedereen de beste tools ter beschikking zoals bats en professionele meetmaatjes van Julius Handmade (zie foto) zodat je alle troeven in handen hebt om perfecte series te maken. Borden maken we niet, die krijgen we niet droog op de korte tijd van de workshop. <a href=\"https://www.sogokeramiek.com/product-page/tweedaagse-borden-draaien-oktober\" target=\"_blank\"><span style=\"text-decoration:underline\">Check hiervoor mijn andere workshop \"Borden draaien\". </span></a></p><p>Er worden maximum 10 cursisten toegelaten dus de begeleiding is erg individueel en iedereen krijgt de kans om te leren op zijn eigen tempo. </p><p>​​</p><p><strong>Wie:</strong></p><p>In deze cursus is ervaring aan de draaischijf noodzakelijk. Je moet vlot kunnen centreren en optrekken om te kunnen deelnemen.</p><p>​</p><p><strong>Waar en wanneer: </strong></p><p>Voorlopig bied ik geen workshops pottendraaien aan.</p><h3>​</h3><p><strong>Prijs:</strong> </p><p><strong>335 euro</strong> voor de driedaagse workshop. </p><p>Witte steengoedklei en biscuitbak zijn inbegrepen in de prijs van de cursus.</p><p>Kwalitatief draai en afdraai gerief alsook bats en meetmaatjes worden voorzien voor de cursisten maar je kan uiteraard ook je eigen spullen meenemen. </p><p>Ook de professionele meetmaatjes van <a href=\"http://www.juliushandmade.be/\" target=\"_blank\"><span style=\"text-decoration:underline\">Julius Handmade</span></a> worden aangeboden met een mooie en exclusieve korting!! </p><p>Koekjes, water, koffie en thee wordt voorzien. </p><p>Glazuren van de potten is niet inbegrepen en wordt ook niet voorzien. Mocht je geen eigen atelier hebben kunnen we zeker afspreken om jouw potten toch af te werken. </p><p>​</p><p><strong>Meenemen: </strong></p><ul><li>schort</li><li>2 handdoeken die vuil mogen worden</li><li>slechte kleren en schoenen aandoen (alle vlekken kunnen eruit)</li><li>korte nagels</li><li>eigen bats indien gewenst (optioneel, alles wordt voorzien)</li><li>lunch</li></ul><p>​</p><p><strong>Inschrijven:</strong></p><p>Ben je ook enthousiast? Inschrijven  op de wachtlijst kan via de <a href=\"https://www.sogokeramiek.com/product-page/seriedraaien-driedaagse\" target=\"_blank\"><span style=\"text-decoration:underline\">webshop</span></a>!</p><p>Check zeker ook de digitale workshop <a href=\"https://cursist-courses.plugandpay.nl/r?id=ULbfe98Q\" target=\"_blank\"><span style=\"text-decoration:underline\">\"Seriedraaien\"</span></a> van de Cursist als je denkt dat een videoworkshop iets voor jou is.</p><p> </p><p><strong>Annulatie: </strong></p><p>Mocht je toch verhinderd zijn kan je de cursus annuleren tot op een maand voor de cursus. Ik betaal het cursusgeld terug verminderd met 20 euro administratie kosten. </p><p>Indien je minder dan een maand voor de cursus annuleert wordt het cursusgeld niet terugbetaald tenzij je zelf een plaatsvervanger kan vinden of er mensen op de wachtlijst jouw plekje kunnen innemen. Indien dat het geval is betaal ik het cursusgeld terug verminderd met 20 euro administratie kosten. </p><p>​</p><p><a href=\"https://www.sogokeramiek.com/product-page/seriedraaien-driedaagse\" target=\"_blank\">Inschrijven</a></p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "",
+        "show_less_text": "",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
+    "picture_grid_agQych": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_qwH4TM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SK_SOGO_OKT22_34.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_qwH4TM"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_BfbpFW": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>MEERDAAGSE DRAAIEN VOOR BEGINNERS EN SEMI-GEVORDERDEN<strong>Voorlopig bied ik geen workshops pottendraaien aan</strong></h3><p>Altijd al zin gehad om te proeven van het prachtige pottenbakkersambacht dan is deze cursus iets voor jou! Tijdens deze meerdaagse wordt je ondergedompeld worden in de wereld van klei. Dit is de ideale manier om snel veel bij te leren en vooruit te gaan! </p><p>Deze workshop richt zich op mensen die nog nooit klei hebben gedraaid op de draaischijf of mensen die al enige ervaring hebben maar nog veel moeten leren. We leren klei kneden, recycleren, centreren en optrekken tot vormen zoals vaasjes, tasjes en kommetjes. Er wordt na de driedaagse ook een glazuurmoment voorzien waarin gebakken potjes afgewerkt worden met een laagje glazuur. De glazuren bij KomMoi worden volledig gemaakt en onderhouden door SOGO keramiek! Daarna krijgen de potten hun finale bak op 1220°C en kunnen ze schitteren op jouw tafel! </p><p>Er worden maximum 10 cursisten toegelaten dus de begeleiding is erg individueel en iedereen krijgt de kans om te leren op zijn eigen tempo. </p><p>​</p><p><strong>Wie:</strong></p><p>Volstrekte beginners zonder enige ervaring zijn welkom. Ook mensen die al wat gedraaid hebben maar hun techniek nog willen bijschaven kunnen perfect aansluiten. Alles wordt stap voor stap uitgelegd en herhaald. Ieder werkt op zijn eigen tempo. </p><p>​</p><p><strong>Waar en wanneer: </strong></p><p>Voorlopig bied ik geen workshops pottendraaien aan.</p><h3> ​​</h3><p><strong>Prijs:</strong> </p><p><strong>329 euro</strong> voor de driedaagse workshop en apart glazuurmoment. </p><p>Witte steengoedklei is inbegrepen. Biscuitbak (de eerste stook waarin klei verandert in keramiek) is inbegrepen. Glazuurles is inbegrepen. Kosten voor glazuurbak van afgewerkte stukken worden apart verrekend met Kom Moi op basis van gewicht. Je kiest zelf wat je wilt bijhouden en laat bakken. De glazuren bij KomMoi worden volledig gemaakt en onderhouden door SOGO keramiek. Er is keuze uit 11 prachtige kleuren!</p><p>Draai en afdraai gerief wordt voorzien voor alle cursisten. </p><p>Koekjes, water, koffie en thee zijn inbegrepen. </p><p>​</p><p><strong>Meenemen: </strong></p><ul><li>schort</li><li>2 handdoeken die vuil mogen worden</li><li>vod</li><li>slechte kleren en schoenen aandoen (alle vlekken kunnen eruit)</li><li>korte nagels</li><li>lunch </li></ul><p>​</p><p><strong>Inschrijven:</strong></p><p>Ben je ook enthousiast? Inschrijven op de wachtlijst kan via de <a href=\"https://www.sogokeramiek.com/product-page/draai-driedaagse-voor-beginners-en-semi-gevorderden\" target=\"_blank\"><span style=\"text-decoration:underline\">webshop</span></a>!</p><p> </p><p><strong>Annulatie: </strong></p><p>Mocht je toch verhinderd zijn kan je de cursus annuleren tot op een maand voor de cursus. Ik betaal het cursusgeld terug verminderd met 20 euro administratie kosten. </p><p>Indien je minder dan een maand voor de cursus annuleert wordt het cursusgeld niet terugbetaald tenzij je zelf een plaatsvervanger kan vinden of er mensen op de wachtlijst jouw plekje kunnen innemen. Indien dat het geval is betaal ik het cursusgeld terug verminderd met 20 euro administratie kosten. </p><p>​</p><p><a href=\"https://www.sogokeramiek.com/product-page/draai-driedaagse-voor-beginners-en-semi-gevorderden\" target=\"_blank\">Inschrijven</a></p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "",
+        "show_less_text": "",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
     "default-page": {
       "type": "default-page-template",
       "disabled": true,
@@ -143,6 +236,11 @@
     "picture_grid_T7Hqbt",
     "text_section_3mTiQp",
     "picture_grid_hG7Fyw",
+    "text_section_iGRzTR",
+    "picture_grid_kR3TGP",
+    "text_section_cpnYrf",
+    "picture_grid_agQych",
+    "text_section_BfbpFW",
     "default-page"
   ]
 }
