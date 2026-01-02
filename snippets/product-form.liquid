@@ -229,16 +229,16 @@
 					<hr/>
 				</div>
 			{% endif %}
-			{% if product.custom.dimensions != blank %}
+			{% if product.custom.usage != blank %}
 				<div style="padding:20px 0px">
-					<p style="font-size:18px; font-weight:600">Afmetingen</p>
+					<p style="font-size:18px; font-weight:600">Gebruik</p>
 					{% assign description_class = "product-description rte" %}
 				
 					{% if design == 'alternate' %}
 						{% assign description_class = "product-description-new rte-new" %}
 					{% endif %}
 				
-					<div class="{{ description_class }}">{{ product.custom.dimensions }}</div>
+					<div class="{{ description_class }}">{{ product.custom.usage }}</div>
 					<hr/>
 				</div>
 			{% endif %}
