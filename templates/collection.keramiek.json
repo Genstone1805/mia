@@ -1,1 +1,63 @@
-{"sections":{"plp-template":{"type":"collection-template","disabled":true,"settings":{"show_breadcrumbs":true,"show_img":false,"show_description":false,"enable_product_cards_indent":false,"show_color_swatch_in_filters":false,"show_grid_selector":false,"filters_type":"drawer","paginate_by":20,"paginate_by_basic_grid":16,"pagination_type":"pagination","grid_view":"big_card","full_width_grid":false,"offset_top_desktop":35,"offset_bottom_desktop":60,"offset_top_mobile":25,"offset_bottom_mobile":0}},"image_with_text_LXypq6":{"type":"image-with-text","name":"Image with text","settings":{"image_position":"left","text_alignment":"left","first_desktop_image":"shopify:\/\/shop_images\/imgi_21_8d1e89_2c8ba415bb914274beaf8b115759665b_mv2.jpg","heading":"Keramiek","subheading":"","text_content":"<p>Looking for ceramics? I work almost exclusively to order. Feel free to browse <a href=\"https:\/\/www.sogokeramiek.com\/galerij\" target=\"_blank\"><span style=\"text-decoration:underline\">my gallery<\/span><\/a> or <a href=\"http:\/\/www.instagram.com\/sogokeramiek\" target=\"_blank\"><span style=\"text-decoration:underline\">Instagram account<\/span><\/a> . See something you like? Great! Send me a message, and we'll discuss exactly what you're looking for. Keep in mind that I love custom work. Larger, smaller, or with a personal touch? If your idea aligns with my style, anything is possible. Glazing is my passion. There are countless color options. I have plenty of samples in my studio that you're welcome to view. I'll then be happy to prepare a custom quote for you. Afterward, I'll start processing your order as soon as possible. I'll clearly state the delivery time in the quote.<\/p>","button_label":"Yes, I am interested in SOGO ceramics","button_aria_label":"","button_url":"shopify:\/\/pages\/contact","button_style":"primary","is_show_border_top":false,"is_show_border_bottom":false,"border_color":"#e6e6e6","full_width":true,"offset_top_desktop":0,"offset_bottom_desktop":0,"offset_top_mobile":0,"offset_bottom_mobile":60}}},"order":["plp-template","image_with_text_LXypq6"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "plp-template": {
+      "type": "collection-template",
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_img": false,
+        "show_description": false,
+        "enable_product_cards_indent": false,
+        "show_color_swatch_in_filters": false,
+        "show_grid_selector": false,
+        "filters_type": "drawer",
+        "paginate_by": 20,
+        "paginate_by_basic_grid": 16,
+        "pagination_type": "pagination",
+        "grid_view": "big_card",
+        "full_width_grid": false,
+        "offset_top_desktop": 35,
+        "offset_bottom_desktop": 60,
+        "offset_top_mobile": 25,
+        "offset_bottom_mobile": 0
+      }
+    },
+    "image_with_text_LXypq6": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "left",
+        "first_desktop_image": "shopify://shop_images/imgi_21_8d1e89_2c8ba415bb914274beaf8b115759665b_mv2.jpg",
+        "heading": "Keramiek",
+        "subheading": "",
+        "text_content": "<p>Ben je op zoek naar keramiek? Ik werk bijna uitsluitend op bestelling. Je snuistert best even <a href=\"/pages/gallery\" target=\"_blank\" title=\"Gallery\"><span style=\"text-decoration:underline\">in mijn galerij</span></a> of op mijn <a href=\"http://www.instagram.com/sogokeramiek\" target=\"_blank\"><span style=\"text-decoration:underline\">Instagram account</span></a>. Je ziet iets dat je leuk vindt? Top. Stuur me een bericht en we bekijken samen wat je exact zoekt. Weet dat ik graag op maat werk. Groter, kleiner of met een persoonlijke touch? Als jouw idee binnen mijn stijl valt kan er heel veel. Glazuren is mijn grote passie. Er zijn ontzettend veel mogelijkheden qua kleuren. Ik heb veel stalen in mijn atelier die je steeds kan komen bekijken. Vervolgens maak ik graag een offerte op maat. Nadien begin ik zo snel mogelijk met je bestelling. De levertermijn communiceer ik duidelijk in de offerte.</p>",
+        "button_label": "Ja ik heb interesse in SOGO keramiek",
+        "button_aria_label": "",
+        "button_url": "shopify://pages/contact",
+        "button_style": "primary",
+        "is_show_border_top": false,
+        "is_show_border_bottom": false,
+        "border_color": "#e6e6e6",
+        "full_width": true,
+        "offset_top_desktop": 0,
+        "offset_bottom_desktop": 0,
+        "offset_top_mobile": 0,
+        "offset_bottom_mobile": 60
+      }
+    }
+  },
+  "order": [
+    "plp-template",
+    "image_with_text_LXypq6"
+  ]
+}
