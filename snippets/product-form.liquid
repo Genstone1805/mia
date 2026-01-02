@@ -141,7 +141,6 @@
 			{% if product.metafields.custom.cancellation != blank %}
 				<div style="padding:20px 0px">
 					<p style="font-size:18px; font-weight:600">Annulatie</p>
-					{% comment %} <div class="{{ description_class }}">Cancellation</div> {% endcomment %}
 					{% assign description_class = "product-description rte" %}
 				
 					{% if design == 'alternate' %}
@@ -152,17 +151,16 @@
 					<hr/>
 				</div>
 			{% endif %}
-			{% if product.metafields.custom.cancellation != blank %}
+			{% if product.metafields.custom.about_author != blank %}
 				<div style="padding:20px 0px">
-					<p style="font-size:18px; font-weight:600">Cancellation</p>
-					{% comment %} <div class="{{ description_class }}">Cancellation</div> {% endcomment %}
+					<p style="font-size:18px; font-weight:600">Iets over de auteur</p>
 					{% assign description_class = "product-description rte" %}
 				
 					{% if design == 'alternate' %}
 						{% assign description_class = "product-description-new rte-new" %}
 					{% endif %}
 				
-					<div class="{{ description_class }}">{{ product.metafields.custom.cancellation }}</div>
+					<div class="{{ description_class }}">{{ product.metafields.custom.about_author }}</div>
 					<hr/>
 				</div>
 			{% endif %}
