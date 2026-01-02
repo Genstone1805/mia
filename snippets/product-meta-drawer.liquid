@@ -1,14 +1,14 @@
-{% comment %} {% assign drawer.id = section_id | replace: '_', '' | downcase %} {% endcomment %}
+{% comment %} {% assign drawers.id = section_id | replace: '_', '' | downcase %} {% endcomment %}
 
 {%- assign drawers = blocks | where: 'type', 'meta_panel' | first -%}
 
 {% style %}
-  .block-slide-panel-{{ drawer.id }} {
+  .block-slide-panel-{{ drawers.id }} {
     display: block;
     width: 100%;
   }
 
-  .block-slide-panel-toggle-{{ drawer.id }} {
+  .block-slide-panel-toggle-{{ drawers.id }} {
     padding: 15px 30px;
     background-color: {{ section.settings.button_background_color }};
     color: {{ section.settings.button_text_color }};
@@ -19,13 +19,13 @@
     transition: all 0.3s ease;
   }
 
-  .block-slide-panel-toggle-{{ drawer.id }}:hover {
+  .block-slide-panel-toggle-{{ drawers.id }}:hover {
     background-color: {{ section.settings.button_hover_background_color }};
     color: {{ section.settings.button_hover_text_color }};
     border-color: {{ section.settings.button_hover_border_color }};
   }
 
-  .block-slide-panel-overlay-{{ drawer.id }} {
+  .block-slide-panel-overlay-{{ drawers.id }} {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,12 +38,12 @@
     z-index: 999;
   }
 
-  .block-slide-panel-overlay-{{ drawer.id }}.active {
+  .block-slide-panel-overlay-{{ drawers.id }}.active {
     opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
     visibility: visible;
   }
 
-  .block-slide-panel-content-{{ drawer.id }} {
+  .block-slide-panel-content-{{ drawers.id }} {
     position: fixed;
     top: 0;
     right: 0;
@@ -58,11 +58,11 @@
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .block-slide-panel-content-{{ drawer.id }}.active {
+  .block-slide-panel-content-{{ drawers.id }}.active {
     transform: translateX(0);
   }
 
-  .block-slide-panel-header-{{ drawer.id }} {
+  .block-slide-panel-header-{{ drawers.id }} {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,13 +70,13 @@
     border-bottom: 1px solid {{ section.settings.panel_border_color }};
   }
 
-  .block-slide-panel-title-{{ drawer.id }} {
+  .block-slide-panel-title-{{ drawers.id }} {
     font-size: {{ section.settings.panel_title_size }}px;
     color: {{ section.settings.panel_text_color }};
     margin: 0;
   }
 
-  .block-slide-panel-close-{{ drawer.id }} {
+  .block-slide-panel-close-{{ drawers.id }} {
     background: none;
     border: none;
     cursor: pointer;
@@ -88,51 +88,99 @@
     transition: opacity 0.3s ease;
   }
 
-  .block-slide-panel-close-{{ drawer.id }}:hover {
+  .block-slide-panel-close-{{ drawers.id }}:hover {
     opacity: 0.7;
   }
 
-  .block-slide-panel-close-{{ drawer.id }} svg {
+  .block-slide-panel-close-{{ drawers.id }} svg {
     width: 24px;
     height: 24px;
   }
 
-  .block-slide-panel-body-{{ drawer.id }} {
+  .block-slide-panel-body-{{ drawers.id }} {
     padding: 20px;
     color: {{ section.settings.panel_text_color }};
   }
 
-  .block-slide-panel-body-{{ drawer.id }} p {
+  .block-slide-panel-body-{{ drawers.id }} p {
     margin: 0 0 15px;
     line-height: 1.6;
   }
 
   @media screen and (max-width: 749px) {
-    .block-slide-panel-content-{{ drawer.id }} {
+    .block-slide-panel-content-{{ drawers.id }} {
       width: {{ section.settings.panel_width_mobile }}px;
     }
   }
 {% endstyle %}
 
-<slide-panel-{{ drawer.id }} class="block-slide-panel-{{ drawer.id }}" {{ section.shopify_attributes }}>
-  <button class="block-slide-panel-toggle-{{ drawer.id }}" aria-label="Open panel" aria-expanded="false">
+<slide-panel-{{ drawers.id }} class="block-slide-panel-{{ drawers.id }}" {{ section.shopify_attributes }}>
+  <button class="block-slide-panel-toggle-{{ drawers.id }}" aria-label="Open panel" aria-expanded="false">
     {{ section.settings.button_text }}
   </button>
 
-  <div class="block-slide-panel-overlay-{{ drawer.id }}"></div>
+  <div class="block-slide-panel-overlay-{{ drawers.id }}"></div>
 
-  <div class="block-slide-panel-content-{{ drawer.id }}">
-    <div class="block-slide-panel-header-{{ drawer.id }}">
-      <h2 class="block-slide-panel-title-{{ drawer.id }}">{{ section.settings.panel_title }}</h2>
-      <button class="block-slide-panel-close-{{ drawer.id }}" aria-label="Close panel">
+  <div class="block-slide-panel-content-{{ drawers.id }}">
+    <div class="block-slide-panel-header-{{ drawers.id }}">
+      <h2 class="block-slide-panel-title-{{ drawers.id }}">{{ section.settings.panel_title }}</h2>
+      <button class="block-slide-panel-close-{{ drawers.id }}" aria-label="Close panel">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
     </div>
-    <div class="block-slide-panel-body-{{ drawer.id }}">
+    <div class="block-slide-panel-body-{{ drawers.id }}">
       {{ section.settings.panel_content }}
     </div>
   </div>
-</slide-panel-{{ drawer.id }}>
+</slide-panel-{{ drawers.id }}>
+
+
+<script>
+  (function() {
+    class SlidePanel{{ drawers.id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.toggleButton = this.querySelector('.block-slide-panel-toggle-{{ drawers.id }}');
+        this.overlay = this.querySelector('.block-slide-panel-overlay-{{ drawers.id }}');
+        this.panel = this.querySelector('.block-slide-panel-content-{{ drawers.id }}');
+        this.closeButton = this.querySelector('.block-slide-panel-close-{{ drawers.id }}');
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.toggleButton.addEventListener('click', () => this.openPanel());
+        this.closeButton.addEventListener('click', () => this.closePanel());
+        this.overlay.addEventListener('click', () => this.closePanel());
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.panel.classList.contains('active')) {
+            this.closePanel();
+          }
+        });
+      }
+
+      openPanel() {
+        this.overlay.classList.add('active');
+        this.panel.classList.add('active');
+        this.toggleButton.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      closePanel() {
+        this.overlay.classList.remove('active');
+        this.panel.classList.remove('active');
+        this.toggleButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    }
+
+    customElements.define('slide-panel-{{ drawers.id }}', SlidePanel{{ drawers.id }});
+  })();
+</script>
