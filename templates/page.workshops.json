@@ -329,6 +329,43 @@
         "offset_bottom_mobile": 60
       }
     },
+    "picture_grid_FamQhN": {
+      "type": "picture-grid",
+      "blocks": {
+        "image_gjd4ej": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20220703_081331922_PORTRAIT_2.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_gjd4ej"
+      ],
+      "name": "Page Image Grid",
+      "settings": {
+        "grid": 1
+      }
+    },
+    "text_section_UTeRBX": {
+      "type": "text-section",
+      "name": "Rich text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "text_content": "<h3>LAVABO DRAAIEN VOOR (SEMI)-GEVORDERDEN<strong>Voorlopig bied ik geen workshops pottendraaien aan. </strong></h3><p>Ik draai op regelmatige basis lavabo's in verschillende vormen voor een creatieve bouwonderneming. Lavabo's draaien is, afhankelijk van de gekozen vorm, uitdagend op verschillende vlakken. Je gebruikt al snel een groot gewicht aan klei en dus is er veel massa om te centreren en op te trekken. De curve moet goed zitten, de binnenkant is liefst perfect gedraaid (of bijgewerkt :p) en het gat moet netjes afgemeten worden. Ook het glazuren van zo'n groot ding is niet altijd eenvoudig. Ik laat je graag de mogelijkheden zien tijdens deze workshop. </p><p>​</p><p><strong>Wie:</strong></p><p>Om deze workshop te volgen moet je best wel wat draaiervaring hebben. Centreren moet vlot gaan. Je hoeft niet noodzakelijk 5kg te kunnen centreren maar je moet al wel minstens met 2 kg klei gedraaid hebben. Afhankelijk van je niveau bepalen we de vorm en de grootte van de lavabo.</p><p>​</p><p><strong>Waar en wanneer: </strong></p><h3>Voorlopig bied ik geen workshops pottendraaien aan. </h3><p>​​</p><p><strong>Prijs:</strong> </p><p><strong>169 euro</strong></p><p>Witte steengoedklei is inbegrepen. Biscuitbak (de eerste stook waarin klei verandert in keramiek) van één lavabo is inbegrepen. <a href=\"https://www.sogokeramiek.com/product-page/glazuurmoment\" target=\"_blank\"><span style=\"text-decoration:underline\">Glazuurles is niet inbegrepen maar apart inschrijven kan wel indien gewenst.</span></a> Kosten voor glazuurbak van de afgewerkte waskom worden apart verrekend met Kom Moi op basis van gewicht. Je kiest zelf wat je wilt bijhouden voor je laat bakken. Extra stuks die afgedraaid worden mogen ongebakken mee naar huis genomen worden.</p><p>De glazuren bij KomMoi worden volledig gemaakt en onderhouden door SOGO keramiek. Er is keuze uit 11 prachtige kleuren!</p><p>Draai en afdraai gerief wordt voorzien voor alle cursisten. </p><p>Koekjes, water, koffie en thee zijn inbegrepen. </p><p>​</p><p><strong>Meenemen: </strong></p><ul><li>schort</li><li>2 handdoeken die vuil mogen worden</li><li>vod</li><li>slechte kleren en schoenen aandoen (alle vlekken kunnen eruit)</li><li>korte nagels</li><li>lunch </li></ul><p>​</p><p><strong>Inschrijven:</strong></p><p>Ben je ook enthousiast? Inschrijven via de <a href=\"https://www.sogokeramiek.com/product-page/lavabo-draaien\" target=\"_blank\"><span style=\"text-decoration:underline\">webshop</span></a>!</p><p> </p><p><strong>Annulatie: </strong></p><p>Mocht je toch verhinderd zijn kan je de cursus annuleren tot op een maand voor de cursus. Ik betaal het cursusgeld terug verminderd met 20 euro administratie kosten. </p><p>Indien je minder dan een maand voor de cursus annuleert wordt het cursusgeld niet terugbetaald tenzij je zelf een plaatsvervanger kan vinden of er mensen op de wachtlijst jouw plekje kunnen innemen. Indien dat het geval is betaal ik het cursusgeld terug verminderd met 20 euro administratie kosten. </p><p>​</p><p><a href=\"https://www.sogokeramiek.com/product-page/lavabo-draaien\" target=\"_blank\">Inschrijven</a></p>",
+        "text_alignment": "left",
+        "section_alignment": "center",
+        "enable_read_more": false,
+        "read_more_text": "",
+        "show_less_text": "",
+        "full_width": false,
+        "offset_top_desktop": 100,
+        "offset_bottom_desktop": 100,
+        "offset_top_mobile": 60,
+        "offset_bottom_mobile": 60
+      }
+    },
     "default-page": {
       "type": "default-page-template",
       "disabled": true,
@@ -358,6 +395,8 @@
     "text_section_ARQqGy",
     "picture_grid_Hdy68m",
     "text_section_eiRNrK",
+    "picture_grid_FamQhN",
+    "text_section_UTeRBX",
     "default-page"
   ]
 }
