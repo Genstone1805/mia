@@ -60,6 +60,7 @@
 			class_container: 'product-description-drawer',
 			class_body: 'rte-product-drawer rte-product-drawer--description'
 		-%}
+		{%- include 'product-meta-drawer', blocks: section.blocks, section_id:section.id -%}
 	{%- endcapture -%}
 
 	{%- capture shipping_and_returns -%}
