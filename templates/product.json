@@ -87,7 +87,7 @@
             "show_description": true,
             "description_toggle_text": "DESCRIPTION",
             "description_drawer_title": "Description",
-            "shipping_and_returns": "",
+            "shipping_and_returns": "about",
             "shipping_and_returns_toggle_text": "SHIPPING & RETURNS",
             "shipping_and_returns_drawer_title": "Shipping and returns",
             "custom_drawer_title_1": "Drawer heading",
