@@ -10,10 +10,32 @@
 	{%- comment -%}
 		Description variables
 	{%- endcomment -%}
-	{%- assign field_show = drawers.settings.show_field -%}
-	{%- assign field_toggle_text = drawers.settings.field_toggle_text -%}
-	{%- assign drawer_title = drawers.settings.field_drawer_title -%}
+	{%- assign description_show = drawers.settings.show_field -%}
+	{%- assign description_toggle_text = drawers.settings.field_toggle_text -%}
+	{%- assign description_drawer_title = drawers.settings.field_drawer_title -%}
+	{%- assign show_description = false -%}
+	{%- if description_show
+		and description_toggle_text != blank
+		and product.description != blank
+		and description_drawer_title != blank
+	-%}
+		{%- assign show_description = true -%}
+	{%- endif -%}
 
+	{%- comment -%}
+		Shipping & Returns variables
+	{%- endcomment -%}
+	{%- assign shipping_and_returns = drawers.settings.shipping_and_returns -%}
+	{%- assign shipping_and_returns_toggle_text = drawers.settings.shipping_and_returns_toggle_text -%}
+	{%- assign shipping_and_returns_drawer_title = drawers.settings.shipping_and_returns_drawer_title | default: shipping_and_returns.title -%}
+	{%- assign show_shipping_and_returns = false -%}
+
+	{%- if shipping_and_returns != blank
+		and shipping_and_returns.content != blank
+		and shipping_and_returns_toggle_text != blank
+	-%}
+		{%- assign show_shipping_and_returns = true -%}
+	{%- endif -%}
 
 	{%- comment -%}
 		Custom drawer 1 variables
@@ -75,5 +97,24 @@
 		{%- if show_custom_drawer_1 -%}
 			{{- custom_drawer_1 -}}
 		{%- endif -%}
+	{%- endif -%}
+{%- endif -%}
+
+{%- if options != nil -%}
+	{%- assign size_guide_page = product.metafields.size_guide.page.value -%}
+
+	{%- if size_guide_page != blank and size_guide_page.content != blank -%}
+		{% assign toggle_id = 'productSizeGuideDrawer-' | append: section.id %}
+		{% assign size_guide_page_content = size_guide_page.content | replace: '<img', '<img loading="lazy"'%}
+
+		{% include 'product-form-drawer',
+			title: options.settings.size_guide_title,
+			content: size_guide_page_content,
+			toggle_id: toggle_id,
+			class_container: 'product-size-guide-drawer',
+			tab_general_name: options.settings.size_guide_tab_general_name,
+			tab_model_name: options.settings.size_guide_tab_model_name,
+			full_width_mode: true
+		%}
 	{%- endif -%}
 {%- endif -%}
