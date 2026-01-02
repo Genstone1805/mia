@@ -116,7 +116,7 @@
 {% endstyle %}
 
 {% if show_meta %}
-<slide-panel-{{ drawers.id }} class="block-slide-panel-{{ drawers.id }}" {{ section.shopify_attributes }}>
+<section class="block-slide-panel-{{ drawers.id }}" {{ section.shopify_attributes }}>
   <button class="block-slide-panel-toggle-{{ drawers.id }}" aria-label="Open panel" aria-expanded="false">
     {{ section.settings.button_text }}
   </button>
@@ -137,7 +137,7 @@
       {{ section.settings.panel_content }}
     </div>
   </div>
-</slide-panel-{{ drawers.id }}>
+</section>
 {% endif %}
 
 
