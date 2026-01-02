@@ -216,16 +216,29 @@
 					<hr/>
 				</div>
 			{% endif %}
-			{% if product.custom.stoking != blank %}
+			{% if product.custom.dimensions != blank %}
 				<div style="padding:20px 0px">
-					<p style="font-size:18px; font-weight:600">Stoken</p>
+					<p style="font-size:18px; font-weight:600">Afmetingen</p>
 					{% assign description_class = "product-description rte" %}
 				
 					{% if design == 'alternate' %}
 						{% assign description_class = "product-description-new rte-new" %}
 					{% endif %}
 				
-					<div class="{{ description_class }}">{{ product.custom.stoking }}</div>
+					<div class="{{ description_class }}">{{ product.custom.dimensions }}</div>
+					<hr/>
+				</div>
+			{% endif %}
+			{% if product.custom.dimensions != blank %}
+				<div style="padding:20px 0px">
+					<p style="font-size:18px; font-weight:600">Afmetingen</p>
+					{% assign description_class = "product-description rte" %}
+				
+					{% if design == 'alternate' %}
+						{% assign description_class = "product-description-new rte-new" %}
+					{% endif %}
+				
+					<div class="{{ description_class }}">{{ product.custom.dimensions }}</div>
 					<hr/>
 				</div>
 			{% endif %}
