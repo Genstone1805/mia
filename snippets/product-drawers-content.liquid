@@ -49,7 +49,7 @@
 		{%- assign show_custom_drawer_1 = true -%}
 	{% endif %}
 
-	{% comment %} {%- capture description -%}
+	{%- capture description -%}
 		{% assign toggle_id = 'descriptionDrawer-' | append: section.id %}
 		{% assign product_description = product.description | replace: '<img', '<img loading="lazy"'%}
 
@@ -60,7 +60,7 @@
 			class_container: 'product-description-drawer',
 			class_body: 'rte-product-drawer rte-product-drawer--description'
 		-%}
-	{%- endcapture -%} {% endcomment %}
+	{%- endcapture -%}
 
 	{%- capture shipping_and_returns -%}
 		{% assign toggle_id = 'shippingAndReturnsDrawer-' | append: section.id %}
