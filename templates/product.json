@@ -80,6 +80,14 @@
             "custom_drawer_title_1": "Drawer heading",
             "custom_drawer_text_1": ""
           }
+        },
+        "meta_drawers_7RUpUB": {
+          "type": "meta_drawers",
+          "settings": {
+            "show_field": true,
+            "field_toggle_text": "Meta Field Name",
+            "field_drawer_title": "Meta Field Name"
+          }
         }
       },
       "block_order": [
@@ -91,7 +99,8 @@
         "price",
         "notify_me",
         "add_to_cart",
-        "drawers"
+        "drawers",
+        "meta_drawers_7RUpUB"
       ],
       "settings": {
         "is_lazy": true,
