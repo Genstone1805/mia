@@ -268,6 +268,19 @@
 					<hr/>
 				</div>
 			{% endif %}
+			{% if product.custom.safety_information != blank %}
+				<div style="padding:20px 0px">
+					<p style="font-size:18px; font-weight:600">Belangrijke veiligheidsinformatie</p>
+					{% assign description_class = "product-description rte" %}
+				
+					{% if design == 'alternate' %}
+						{% assign description_class = "product-description-new rte-new" %}
+					{% endif %}
+				
+					<div class="{{ description_class }}">{{ product.custom.safety_information }}</div>
+					<hr/>
+				</div>
+			{% endif %}
 		{% endform %}
 	{% else %}
 		<div
