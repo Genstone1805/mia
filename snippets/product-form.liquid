@@ -139,14 +139,14 @@
 				{% include 'share-buttons', design: design %}
 			{% endif %}
 			<div style="padding:20px">
-				{% if product.description != blank %}
+				{% if product.metafields.custom.cancellation != blank %}
 					{% assign description_class = "product-description rte" %}
 				
 					{% if design == 'alternate' %}
 						{% assign description_class = "product-description-new rte-new" %}
 					{% endif %}
 				
-					<div class="{{ description_class }}">{{ product.description }}</div>
+					<div class="{{ description_class }}">{{ product.metafields.custom.cancellation }}</div>
 				{% endif %}
 			</div>
 		{% endform %}
