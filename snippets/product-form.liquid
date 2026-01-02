@@ -177,6 +177,32 @@
 					<hr/>
 				</div>
 			{% endif %}
+			{% if product.custom.additional_info != blank %}
+				<div style="padding:20px 0px">
+					<p style="font-size:18px; font-weight:600">Extra info, FAQ en video-instructies</p>
+					{% assign description_class = "product-description rte" %}
+				
+					{% if design == 'alternate' %}
+						{% assign description_class = "product-description-new rte-new" %}
+					{% endif %}
+				
+					<div class="{{ description_class }}">{{ product.custom.additional_info }}</div>
+					<hr/>
+				</div>
+			{% endif %}
+			{% if product.custom.additional_info != blank %}
+				<div style="padding:20px 0px">
+					<p style="font-size:18px; font-weight:600">Extra info, FAQ en video-instructies</p>
+					{% assign description_class = "product-description rte" %}
+				
+					{% if design == 'alternate' %}
+						{% assign description_class = "product-description-new rte-new" %}
+					{% endif %}
+				
+					<div class="{{ description_class }}">{{ product.custom.additional_info }}</div>
+					<hr/>
+				</div>
+			{% endif %}
 		{% endform %}
 	{% else %}
 		<div
