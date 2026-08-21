@@ -1,6 +1,23 @@
-{%
-  render 'radio-fields',
-  instruction:"Als je een glazuur een tijdje niet gebruikt kan het, vooral onder invloed van temperatuurschommelingen, een beetje kristalliseren. Deze kristallen kan je herkennen als korreltjes of steentjes in het glazuur. Zeef het glazuur en vang de korreltjes op. Schraap ze uit de zeef en doe ze in een klein potje. Vul het met weinig heet water. De korreltjes zullen oplossen. Voeg deze oplossing opnieuw bij het glazuur. ",
-  field_id:"unpackedSogoPebbleBrushSoluteNoInstruction",
-  section_id:{{section_id }}
-%}
+{% render 'radio-fields', instruction: "Als je een glazuur een tijdje niet gebruikt kan het, vooral onder invloed van temperatuurschommelingen, een beetje kristalliseren. Deze kristallen kan je herkennen als korreltjes of steentjes in het glazuur. Zeef het glazuur en vang de korreltjes op. Schraap ze uit de zeef en doe ze in een klein potje. Vul het met weinig heet water. De korreltjes zullen oplossen. Voeg deze oplossing opnieuw bij het glazuur. ", field_id: "unpackedSogoPebbleBrushSoluteNoInstruction", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Als je een glazuur een tijdje niet gebruikt kan het, vooral onder invloed van temperatuurschommelingen, een beetje kristalliseren. Deze kristallen kan je herkennen als korreltjes of steentjes in het glazuur. Zeef het glazuur en vang de korreltjes op. Schraap ze uit de zeef en doe ze in een klein potje. Vul het met weinig heet water. De korreltjes zullen oplossen. Voeg deze oplossing opnieuw bij het glazuur. ",
+      field_id:"unpackedSogoPebbleBrushSoluteNoInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Als je een glazuur een tijdje niet
+    gebruikt kan het, vooral onder invloed van temperatuurschommelingen, een beetje
+    kristalliseren. Deze kristallen kan je herkennen als korreltjes of steentjes in
+    het glazuur. Zeef het glazuur en vang de korreltjes op. Schraap ze uit de zeef
+    en doe ze in een klein potje. Vul het met weinig heet water. De korreltjes zullen
+    oplossen. Voeg deze oplossing opnieuw bij het glazuur. ", field_id: "unpackedSogoPebbleBrushSoluteNoInstruction",
+    section_id: section_id %}'
+  position: 0..535
+{% endcomment %}

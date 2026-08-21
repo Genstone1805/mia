@@ -1,37 +1,84 @@
-{%
-  render 'radio-fields',
-  title:"Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?",
-  field_id:"unpackedSogoRunnyMixtureSolute",
-  required: true,
-  field_name:"unbacked_sogo_Runny_brush_solute",
-  field_values:"
+{% render 'radio-fields', title: "Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?", field_id: "unpackedSogoRunnyMixtureSolute", required: true, field_name: "unbacked_sogo_Runny_brush_solute", field_values: "
   unpackedSogoRunnyMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteViscosity3,
   unpackedSogoRunnyMixtureSoluteNo|Neen|unpackedSogoRunnyMixtureSoluteNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
 {% comment %} Viscosity {% endcomment %}
-{% render 'viscosity-mixture3', section_id:{{section_id }} %}
+{% render 'viscosity-mixture3', section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoRunnyMixtureSoluteNoInstruction",
-  instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+{% render 'radio-fields', field_id: "unpackedSogoRunnyMixtureSoluteNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
 
   Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
 
-  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
-  section_id:{{section_id }}
-%}
+  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoRunnyMixtureSoluteGravityNoInstruction",
-  instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+{% render 'radio-fields', field_id: "unpackedSogoRunnyMixtureSoluteGravityNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
 
   Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
 
-  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
-  section_id:{{section_id }}
-%}
+  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?",
+      field_id:"unpackedSogoRunnyMixtureSolute",
+      required: true,
+      field_name:"unbacked_sogo_Runny_brush_solute",
+      field_values:"
+      unpackedSogoRunnyMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteViscosity3,
+      unpackedSogoRunnyMixtureSoluteNo|Neen|unpackedSogoRunnyMixtureSoluteNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?", field_id: "unpackedSogoRunnyMixtureSolute", required: true, field_name: "unbacked_sogo_Runny_brush_solute", field_values: "
+      unpackedSogoRunnyMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteViscosity3,
+      unpackedSogoRunnyMixtureSoluteNo|Neen|unpackedSogoRunnyMixtureSoluteNoInstruction
+      ", section_id: section_id %}
+  position: 0..425
+- from: "{% render 'viscosity-mixture3', section_id:{{section_id }} %}"
+  to: "{% render 'viscosity-mixture3', section_id: section_id %}"
+  position: 468..525
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoRunnyMixtureSoluteNoInstruction",
+      instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "unpackedSogoRunnyMixtureSoluteNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ", section_id: section_id %}
+  position: 527..1202
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoRunnyMixtureSoluteGravityNoInstruction",
+      instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "unpackedSogoRunnyMixtureSoluteGravityNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ", section_id: section_id %}
+  position: 1204..1886
+{% endcomment %}

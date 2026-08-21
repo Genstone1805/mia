@@ -374,58 +374,34 @@
       </div>
 
       {% comment %} Option Initialization {% endcomment %}
-      {%
-        render 'radio-fields',
-        title:section.settings.conditional_section_title,
-        field_id:"problemType",
-        required: true,
-        field_name:"problem_type",
-        field_values:"
+      {% render 'radio-fields', title: section.settings.conditional_section_title, field_id: "problemType", required: true, field_name: "problem_type", field_values: "
         unpackedSogoProblem|een nog niet gebakken SOGO glazuur|unpackedSogoProblemType,
         backedSogoProblem|een gebakken glazuurresultaat van een SOGO glazuur|backedSogoProblemType,
         nonSogoProblem|een niet-SOGO glazuur|nonSogoProblemInstruction,
         something_else|iets anders'
-        ",
-        section_id:{{section_id }}
-      %}
+        ", section_id: section_id %}
 
       {% comment %} unpackedSogoProblem {% endcomment %}
 
-      {%
-        render 'radio-fields',
-        title:"Gaat het over",
-        field_id:"unpackedSogoProblemType",
-        required: true,
-        field_name:"unbacked_sogo",
-        field_values:"
+      {% render 'radio-fields', title: "Gaat het over", field_id: "unpackedSogoProblemType", required: true, field_name: "unbacked_sogo", field_values: "
         unpackedSogoBrush|een kwastglazuur|unpackedSogoBrushProblem,
         unpackedSogoWithWater|een glazuur aangemaakt met water om te gieten en te dompelen|unpackedSogoWithWaterProblem,
         unpackedSogoPowder|een glazuurpoeder (nog niet gemengd),
         unpackedSogoElse|iets anders
-        ",
-        section_id:{{section_id }}
-      %}
+        ", section_id: section_id %}
 
-      {%
-        render 'radio-fields',
-        title:"Het glazuur",
-        field_id:"backedSogoProblemType",
-        required: true,
-        field_name:"backed_sogo",
-        field_values:"
+      {% render 'radio-fields', title: "Het glazuur", field_id: "backedSogoProblemType", required: true, field_name: "backed_sogo", field_values: "
         backedDropped|is afgedropen|backedDroppedInstruction,
         backedNotColored|heeft niet de verwachte kleur|backedNotColoredInstruction,
         backedMatte|is mat terwijl het glanzend moest zijn|backedMatteInstruction,
         backedCrawled|is op bepaalde plaatsen weggekropen (crawling)|backedCrawledInstruction,
         backedShowsPinpricks|vertoont speldenprikken en scherpe gaatjes/kratertjes in het oppervlak|backedShowsPinpricksProblem
-        ",
-        section_id:{{section_id }}
-      %}
+        ", section_id: section_id %}
 
-      {% render 'powder-problem', section_id:{{section_id }} %}
-      {% render 'mixed-problem', section_id:{{section_id }} %}
-      {% render 'brush-problem', section_id:{{section_id }} %}
-      {% render 'instructions', section_id:{{section_id }} %}
+      {% render 'powder-problem', section_id: section_id %}
+      {% render 'mixed-problem', section_id: section_id %}
+      {% render 'brush-problem', section_id: section_id %}
+      {% render 'instructions', section_id: section_id %}
 
       <div class="custom-glaze-support-form__row-{{ section_id }}">
         <div class="custom-glaze-support-form__field-group-{{ section_id }}">
@@ -1066,3 +1042,93 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+            render 'radio-fields',
+            title:section.settings.conditional_section_title,
+            field_id:"problemType",
+            required: true,
+            field_name:"problem_type",
+            field_values:"
+            unpackedSogoProblem|een nog niet gebakken SOGO glazuur|unpackedSogoProblemType,
+            backedSogoProblem|een gebakken glazuurresultaat van een SOGO glazuur|backedSogoProblemType,
+            nonSogoProblem|een niet-SOGO glazuur|nonSogoProblemInstruction,
+            something_else|iets anders'
+            ",
+            section_id:{{section_id }}
+          %}
+  to: |-
+    {% render 'radio-fields', title: section.settings.conditional_section_title, field_id: "problemType", required: true, field_name: "problem_type", field_values: "
+            unpackedSogoProblem|een nog niet gebakken SOGO glazuur|unpackedSogoProblemType,
+            backedSogoProblem|een gebakken glazuurresultaat van een SOGO glazuur|backedSogoProblemType,
+            nonSogoProblem|een niet-SOGO glazuur|nonSogoProblemInstruction,
+            something_else|iets anders'
+            ", section_id: section_id %}
+  position: 11274..11768
+- from: |-
+    {%
+            render 'radio-fields',
+            title:"Gaat het over",
+            field_id:"unpackedSogoProblemType",
+            required: true,
+            field_name:"unbacked_sogo",
+            field_values:"
+            unpackedSogoBrush|een kwastglazuur|unpackedSogoBrushProblem,
+            unpackedSogoWithWater|een glazuur aangemaakt met water om te gieten en te dompelen|unpackedSogoWithWaterProblem,
+            unpackedSogoPowder|een glazuurpoeder (nog niet gemengd),
+            unpackedSogoElse|iets anders
+            ",
+            section_id:{{section_id }}
+          %}
+  to: |-
+    {% render 'radio-fields', title: "Gaat het over", field_id: "unpackedSogoProblemType", required: true, field_name: "unbacked_sogo", field_values: "
+            unpackedSogoBrush|een kwastglazuur|unpackedSogoBrushProblem,
+            unpackedSogoWithWater|een glazuur aangemaakt met water om te gieten en te dompelen|unpackedSogoWithWaterProblem,
+            unpackedSogoPowder|een glazuurpoeder (nog niet gemengd),
+            unpackedSogoElse|iets anders
+            ", section_id: section_id %}
+  position: 11834..12310
+- from: |-
+    {%
+            render 'radio-fields',
+            title:"Het glazuur",
+            field_id:"backedSogoProblemType",
+            required: true,
+            field_name:"backed_sogo",
+            field_values:"
+            backedDropped|is afgedropen|backedDroppedInstruction,
+            backedNotColored|heeft niet de verwachte kleur|backedNotColoredInstruction,
+            backedMatte|is mat terwijl het glanzend moest zijn|backedMatteInstruction,
+            backedCrawled|is op bepaalde plaatsen weggekropen (crawling)|backedCrawledInstruction,
+            backedShowsPinpricks|vertoont speldenprikken en scherpe gaatjes/kratertjes in het oppervlak|backedShowsPinpricksProblem
+            ",
+            section_id:{{section_id }}
+          %}
+  to: |-
+    {% render 'radio-fields', title: "Het glazuur", field_id: "backedSogoProblemType", required: true, field_name: "backed_sogo", field_values: "
+            backedDropped|is afgedropen|backedDroppedInstruction,
+            backedNotColored|heeft niet de verwachte kleur|backedNotColoredInstruction,
+            backedMatte|is mat terwijl het glanzend moest zijn|backedMatteInstruction,
+            backedCrawled|is op bepaalde plaatsen weggekropen (crawling)|backedCrawledInstruction,
+            backedShowsPinpricks|vertoont speldenprikken en scherpe gaatjes/kratertjes in het oppervlak|backedShowsPinpricksProblem
+            ", section_id: section_id %}
+  position: 12318..12948
+- from: "{% render 'powder-problem', section_id:{{section_id }} %}"
+  to: "{% render 'powder-problem', section_id: section_id %}"
+  position: 12956..13009
+- from: "{% render 'mixed-problem', section_id:{{section_id }} %}"
+  to: "{% render 'mixed-problem', section_id: section_id %}"
+  position: 13016..13068
+- from: "{% render 'brush-problem', section_id:{{section_id }} %}"
+  to: "{% render 'brush-problem', section_id: section_id %}"
+  position: 13075..13127
+- from: "{% render 'instructions', section_id:{{section_id }} %}"
+  to: "{% render 'instructions', section_id: section_id %}"
+  position: 13134..13185
+{% endcomment %}

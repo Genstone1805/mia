@@ -1,53 +1,116 @@
 {% comment %} unpackedSogoBrushSolute {% endcomment %}
 
-{%
-  render 'radio-fields',
-  title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
-  field_id:"unpackedSogoRunnyBrushSolute",
-  required: true,
-  field_name:"unbacked_sogo_runny_brush_solute",
-  field_values:"
+{% render 'radio-fields', title: "Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?", field_id: "unpackedSogoRunnyBrushSolute", required: true, field_name: "unbacked_sogo_runny_brush_solute", field_values: "
   unpackedSogoBrushRunnySoluteYes|Ja|unpackedSogoRunnyBrushGravityYes,
   unpackedSogoBrushRunnySoluteNo|Neen|unpackedSogoRunnyBrushSoluteNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  title:"Heb je het soortelijk gewicht al eens gemeten?",
-  field_id:"unpackedSogoRunnyBrushGravityYes",
-  required: true,
-  field_name:"unbacked_sogo_runny_brush_gravity",
-  field_values:"
+{% render 'radio-fields', title: "Heb je het soortelijk gewicht al eens gemeten?", field_id: "unpackedSogoRunnyBrushGravityYes", required: true, field_name: "unbacked_sogo_runny_brush_gravity", field_values: "
   unpackedSogoBrushRunnyYesMatchesGravity|Ja, het komt overeen met de verpakking|unpackedSogoRunnyBrushYesGravityMatchesInstruction,
   unpackedSogoBrushRunnyYesLowerGravity|Ja, maar het is lager dan op de verpakking|unpackedSogoRunnyBrushYesGravityLowerInstruction,
   unpackedSogoBrushRunnyNoGravity|Neen|unpackedSogoRunnyBrushNoGravityInstruction
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
-  field_id:"unpackedSogoRunnyBrushSoluteNoInstruction",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Verdunde pehatine is slechts beperkt houdbaar. Het kan zijn werking verliezen als het lang staat. Jouw glazuur kan te lopend geworden zijn omdat de pehatine bedorven is. Voeg een scheutje onverdunde pehatine toe aan het glazuur om het opnieuw dikker te maken.",
-  field_id:"unpackedSogoRunnyBrushYesGravityMatchesInstruction",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Als het soortelijk gewicht van jouw kwastglazuur lager is dan die aangegeven op de verpakking zit er te veel verdunde pehatineoplossing bij het glazuur. Je moet dan een beetje pehatinewater wegnemen van het glazuur (met een spuitje bijvoorbeeld). Roer het glazuur opnieuw op en controleer het soortelijk gewicht tot het overeenkomt met dat op de verpakking.",
-  field_id:"unpackedSogoRunnyBrushYesGravityLowerInstruction",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Meet het soortelijk gewicht en vergelijk het met dat op de verpakking. Ga naar de vorige vraag en pas jouw antwoord aan.",
-  field_id:"unpackedSogoRunnyBrushNoGravityInstruction",
-  section_id:{{section_id }}
-%}
+{% render 'radio-fields', instruction: "Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.", field_id: "unpackedSogoRunnyBrushSoluteNoInstruction", section_id: section_id %}
+{% render 'radio-fields', instruction: "Verdunde pehatine is slechts beperkt houdbaar. Het kan zijn werking verliezen als het lang staat. Jouw glazuur kan te lopend geworden zijn omdat de pehatine bedorven is. Voeg een scheutje onverdunde pehatine toe aan het glazuur om het opnieuw dikker te maken.", field_id: "unpackedSogoRunnyBrushYesGravityMatchesInstruction", section_id: section_id %}
+{% render 'radio-fields', instruction: "Als het soortelijk gewicht van jouw kwastglazuur lager is dan die aangegeven op de verpakking zit er te veel verdunde pehatineoplossing bij het glazuur. Je moet dan een beetje pehatinewater wegnemen van het glazuur (met een spuitje bijvoorbeeld). Roer het glazuur opnieuw op en controleer het soortelijk gewicht tot het overeenkomt met dat op de verpakking.", field_id: "unpackedSogoRunnyBrushYesGravityLowerInstruction", section_id: section_id %}
+{% render 'radio-fields', instruction: "Meet het soortelijk gewicht en vergelijk het met dat op de verpakking. Ga naar de vorige vraag en pas jouw antwoord aan.", field_id: "unpackedSogoRunnyBrushNoGravityInstruction", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
+      field_id:"unpackedSogoRunnyBrushSolute",
+      required: true,
+      field_name:"unbacked_sogo_runny_brush_solute",
+      field_values:"
+      unpackedSogoBrushRunnySoluteYes|Ja|unpackedSogoRunnyBrushGravityYes,
+      unpackedSogoBrushRunnySoluteNo|Neen|unpackedSogoRunnyBrushSoluteNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?", field_id: "unpackedSogoRunnyBrushSolute", required: true, field_name: "unbacked_sogo_runny_brush_solute", field_values: "
+      unpackedSogoBrushRunnySoluteYes|Ja|unpackedSogoRunnyBrushGravityYes,
+      unpackedSogoBrushRunnySoluteNo|Neen|unpackedSogoRunnyBrushSoluteNoInstruction
+      ", section_id: section_id %}
+  position: 56..488
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je het soortelijk gewicht al eens gemeten?",
+      field_id:"unpackedSogoRunnyBrushGravityYes",
+      required: true,
+      field_name:"unbacked_sogo_runny_brush_gravity",
+      field_values:"
+      unpackedSogoBrushRunnyYesMatchesGravity|Ja, het komt overeen met de verpakking|unpackedSogoRunnyBrushYesGravityMatchesInstruction,
+      unpackedSogoBrushRunnyYesLowerGravity|Ja, maar het is lager dan op de verpakking|unpackedSogoRunnyBrushYesGravityLowerInstruction,
+      unpackedSogoBrushRunnyNoGravity|Neen|unpackedSogoRunnyBrushNoGravityInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je het soortelijk gewicht al eens gemeten?", field_id: "unpackedSogoRunnyBrushGravityYes", required: true, field_name: "unbacked_sogo_runny_brush_gravity", field_values: "
+      unpackedSogoBrushRunnyYesMatchesGravity|Ja, het komt overeen met de verpakking|unpackedSogoRunnyBrushYesGravityMatchesInstruction,
+      unpackedSogoBrushRunnyYesLowerGravity|Ja, maar het is lager dan op de verpakking|unpackedSogoRunnyBrushYesGravityLowerInstruction,
+      unpackedSogoBrushRunnyNoGravity|Neen|unpackedSogoRunnyBrushNoGravityInstruction
+      ", section_id: section_id %}
+  position: 490..1078
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
+      field_id:"unpackedSogoRunnyBrushSoluteNoInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Maak jouw kwastglazuur aan volgens
+    de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat
+    ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.", field_id:
+    "unpackedSogoRunnyBrushSoluteNoInstruction", section_id: section_id %}'
+  position: 1080..1388
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Verdunde pehatine is slechts beperkt houdbaar. Het kan zijn werking verliezen als het lang staat. Jouw glazuur kan te lopend geworden zijn omdat de pehatine bedorven is. Voeg een scheutje onverdunde pehatine toe aan het glazuur om het opnieuw dikker te maken.",
+      field_id:"unpackedSogoRunnyBrushYesGravityMatchesInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Verdunde pehatine is slechts beperkt
+    houdbaar. Het kan zijn werking verliezen als het lang staat. Jouw glazuur kan
+    te lopend geworden zijn omdat de pehatine bedorven is. Voeg een scheutje onverdunde
+    pehatine toe aan het glazuur om het opnieuw dikker te maken.", field_id: "unpackedSogoRunnyBrushYesGravityMatchesInstruction",
+    section_id: section_id %}'
+  position: 1389..1780
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Als het soortelijk gewicht van jouw kwastglazuur lager is dan die aangegeven op de verpakking zit er te veel verdunde pehatineoplossing bij het glazuur. Je moet dan een beetje pehatinewater wegnemen van het glazuur (met een spuitje bijvoorbeeld). Roer het glazuur opnieuw op en controleer het soortelijk gewicht tot het overeenkomt met dat op de verpakking.",
+      field_id:"unpackedSogoRunnyBrushYesGravityLowerInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Als het soortelijk gewicht van jouw
+    kwastglazuur lager is dan die aangegeven op de verpakking zit er te veel verdunde
+    pehatineoplossing bij het glazuur. Je moet dan een beetje pehatinewater wegnemen
+    van het glazuur (met een spuitje bijvoorbeeld). Roer het glazuur opnieuw op en
+    controleer het soortelijk gewicht tot het overeenkomt met dat op de verpakking.",
+    field_id: "unpackedSogoRunnyBrushYesGravityLowerInstruction", section_id: section_id
+    %}'
+  position: 1781..2268
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Meet het soortelijk gewicht en vergelijk het met dat op de verpakking. Ga naar de vorige vraag en pas jouw antwoord aan.",
+      field_id:"unpackedSogoRunnyBrushNoGravityInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Meet het soortelijk gewicht en vergelijk
+    het met dat op de verpakking. Ga naar de vorige vraag en pas jouw antwoord aan.",
+    field_id: "unpackedSogoRunnyBrushNoGravityInstruction", section_id: section_id
+    %}'
+  position: 2269..2513
+{% endcomment %}

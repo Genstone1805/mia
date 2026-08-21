@@ -1,26 +1,60 @@
 {% comment %} unpackedSogoBrushSolute {% endcomment %}
 
-{%
-  render 'radio-fields',
-  title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
-  field_id:"unpackedSogoThickBrushSolute",
-  required: true,
-  field_name:"unbacked_sogo_thick_brush_solute",
-  field_values:"
+{% render 'radio-fields', title: "Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?", field_id: "unpackedSogoThickBrushSolute", required: true, field_name: "unbacked_sogo_thick_brush_solute", field_values: "
   unpackedSogoThickBrushSoluteYes|Ja|unpackedSogoThickBrushSoluteYesInstruction,
   unpackedSogoThickBrushSoluteNo|Neen|unpackedSogoThickBrushSoluteNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Als je het kwastglazuur te dik vindt om handig mee te werken mag je gerust een scheutje verdunde pehatineoplossing toevoegen tot het weer vloeibaar genoeg is om te kwasten. Mogelijk moet je het aantal gekwaste lagen wel even opnieuw bekijken. Misschien moet je een laagje extra kwasten om genoeg dekking te krijgen en de juiste kleur.",
-  field_id:"unpackedSogoThickBrushSoluteYesInstruction",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
-  field_id:"unpackedSogoThickBrushSoluteNoInstruction",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
+{% render 'radio-fields', instruction: "Als je het kwastglazuur te dik vindt om handig mee te werken mag je gerust een scheutje verdunde pehatineoplossing toevoegen tot het weer vloeibaar genoeg is om te kwasten. Mogelijk moet je het aantal gekwaste lagen wel even opnieuw bekijken. Misschien moet je een laagje extra kwasten om genoeg dekking te krijgen en de juiste kleur.", field_id: "unpackedSogoThickBrushSoluteYesInstruction", section_id: section_id %}
+{% render 'radio-fields', instruction: "Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.", field_id: "unpackedSogoThickBrushSoluteNoInstruction", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
+      field_id:"unpackedSogoThickBrushSolute",
+      required: true,
+      field_name:"unbacked_sogo_thick_brush_solute",
+      field_values:"
+      unpackedSogoThickBrushSoluteYes|Ja|unpackedSogoThickBrushSoluteYesInstruction,
+      unpackedSogoThickBrushSoluteNo|Neen|unpackedSogoThickBrushSoluteNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?", field_id: "unpackedSogoThickBrushSolute", required: true, field_name: "unbacked_sogo_thick_brush_solute", field_values: "
+      unpackedSogoThickBrushSoluteYes|Ja|unpackedSogoThickBrushSoluteYesInstruction,
+      unpackedSogoThickBrushSoluteNo|Neen|unpackedSogoThickBrushSoluteNoInstruction
+      ", section_id: section_id %}
+  position: 56..498
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Als je het kwastglazuur te dik vindt om handig mee te werken mag je gerust een scheutje verdunde pehatineoplossing toevoegen tot het weer vloeibaar genoeg is om te kwasten. Mogelijk moet je het aantal gekwaste lagen wel even opnieuw bekijken. Misschien moet je een laagje extra kwasten om genoeg dekking te krijgen en de juiste kleur.",
+      field_id:"unpackedSogoThickBrushSoluteYesInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Als je het kwastglazuur te dik vindt
+    om handig mee te werken mag je gerust een scheutje verdunde pehatineoplossing
+    toevoegen tot het weer vloeibaar genoeg is om te kwasten. Mogelijk moet je het
+    aantal gekwaste lagen wel even opnieuw bekijken. Misschien moet je een laagje
+    extra kwasten om genoeg dekking te krijgen en de juiste kleur.", field_id: "unpackedSogoThickBrushSoluteYesInstruction",
+    section_id: section_id %}'
+  position: 499..957
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
+      field_id:"unpackedSogoThickBrushSoluteNoInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Maak jouw kwastglazuur aan volgens
+    de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat
+    ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.", field_id:
+    "unpackedSogoThickBrushSoluteNoInstruction", section_id: section_id %}'
+  position: 958..1266
+{% endcomment %}

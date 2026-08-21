@@ -1,26 +1,60 @@
 {% comment %} unpackedSogoBrushSolute {% endcomment %}
 
-{%
-  render 'radio-fields',
-  title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
-  field_id:"unpackedSogoHardBrushSolute",
-  required: true,
-  field_name:"unbacked_sogo_Hard_brush_solute",
-  field_values:"
+{% render 'radio-fields', title: "Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?", field_id: "unpackedSogoHardBrushSolute", required: true, field_name: "unbacked_sogo_Hard_brush_solute", field_values: "
   unpackedSogoHardBrushSoluteYes|Ja|unpackedSogoHardBrushSoluteYesInstruction,
   unpackedSogoHardBrushSoluteNo|Neen|unpackedSogoHardBrushSoluteNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Pehatine is slechts beperkt houdbaar. Mogelijk heeft het zijn werking verloren. Schraap het glazuur los van de bodem van het potje met een afdraailus. Voeg wat nieuwe verdunde pehatineoplossing toe en mix alles grondig. Zeef het glazuur. Controleer het soortelijk gewicht. Zorg dat dit overeen komt met dat op de verpakking. ",
-  field_id:"unpackedSogoHardBrushSoluteYesInstruction",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
-  field_id:"unpackedSogoHardBrushSoluteNoInstruction",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
+{% render 'radio-fields', instruction: "Pehatine is slechts beperkt houdbaar. Mogelijk heeft het zijn werking verloren. Schraap het glazuur los van de bodem van het potje met een afdraailus. Voeg wat nieuwe verdunde pehatineoplossing toe en mix alles grondig. Zeef het glazuur. Controleer het soortelijk gewicht. Zorg dat dit overeen komt met dat op de verpakking. ", field_id: "unpackedSogoHardBrushSoluteYesInstruction", section_id: section_id %}
+{% render 'radio-fields', instruction: "Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.", field_id: "unpackedSogoHardBrushSoluteNoInstruction", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?",
+      field_id:"unpackedSogoHardBrushSolute",
+      required: true,
+      field_name:"unbacked_sogo_Hard_brush_solute",
+      field_values:"
+      unpackedSogoHardBrushSoluteYes|Ja|unpackedSogoHardBrushSoluteYesInstruction,
+      unpackedSogoHardBrushSoluteNo|Neen|unpackedSogoHardBrushSoluteNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je het glazuur aangemaakt met verdunde pehatine volgens de instructies op de verpakking?", field_id: "unpackedSogoHardBrushSolute", required: true, field_name: "unbacked_sogo_Hard_brush_solute", field_values: "
+      unpackedSogoHardBrushSoluteYes|Ja|unpackedSogoHardBrushSoluteYesInstruction,
+      unpackedSogoHardBrushSoluteNo|Neen|unpackedSogoHardBrushSoluteNoInstruction
+      ", section_id: section_id %}
+  position: 56..492
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Pehatine is slechts beperkt houdbaar. Mogelijk heeft het zijn werking verloren. Schraap het glazuur los van de bodem van het potje met een afdraailus. Voeg wat nieuwe verdunde pehatineoplossing toe en mix alles grondig. Zeef het glazuur. Controleer het soortelijk gewicht. Zorg dat dit overeen komt met dat op de verpakking. ",
+      field_id:"unpackedSogoHardBrushSoluteYesInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Pehatine is slechts beperkt houdbaar.
+    Mogelijk heeft het zijn werking verloren. Schraap het glazuur los van de bodem
+    van het potje met een afdraailus. Voeg wat nieuwe verdunde pehatineoplossing toe
+    en mix alles grondig. Zeef het glazuur. Controleer het soortelijk gewicht. Zorg
+    dat dit overeen komt met dat op de verpakking. ", field_id: "unpackedSogoHardBrushSoluteYesInstruction",
+    section_id: section_id %}'
+  position: 493..941
+- from: |-
+    {%
+      render 'radio-fields',
+      instruction:"Maak jouw kwastglazuur aan volgens de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.",
+      field_id:"unpackedSogoHardBrushSoluteNoInstruction",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', instruction: "Maak jouw kwastglazuur aan volgens
+    de instructies op de verpakking. Ben je de verpakking kwijt? Het etiket staat
+    ook als afbeelding bij het glazuur op de webshop. Neem zeker een kijkje.", field_id:
+    "unpackedSogoHardBrushSoluteNoInstruction", section_id: section_id %}'
+  position: 942..1249
+{% endcomment %}

@@ -1,64 +1,136 @@
-{%
-  render 'radio-fields',
-  title:"Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?",
-  field_id:"unpackedSogoThickMixtureSolute",
-  required: true,
-  field_name:"unbacked_sogo_thick_brush_solute",
-  field_values:"
+{% render 'radio-fields', title: "Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?", field_id: "unpackedSogoThickMixtureSolute", required: true, field_name: "unbacked_sogo_thick_brush_solute", field_values: "
   unpackedSogoThickMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteYesUsage,
   unpackedSogoThickMixtureSoluteNo|Neen|unpackedSogoThickMixtureSoluteNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
-{%
-  render 'radio-fields',
-  title:"Heb je het glazuur al een tijd geleden aangemaakt en/of al veel gebruikt?",
-  field_id:"unpackedSogoThickMixtureSoluteYesUsage",
-  required: true,
-  field_name:"unbacked_sogo_thick_brush_solute_usage",
-  field_values:"
+  ", section_id: section_id %}
+{% render 'radio-fields', title: "Heb je het glazuur al een tijd geleden aangemaakt en/of al veel gebruikt?", field_id: "unpackedSogoThickMixtureSoluteYesUsage", required: true, field_name: "unbacked_sogo_thick_brush_solute_usage", field_values: "
   unpackedSogoThickMixtureSoluteYesLong|Ja, het staat er al wel een tijdje en/of het is al veel gebruikt|unpackedSogoThickMixtureSoluteGravity,
   unpackedSogoThickMixtureSoluteYesShort|Neen, het is amper of niet gebruikt en nog niet lang geleden aangemaakt.|unpackedSogoThickMixtureSoluteViscosity1
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
 {% comment %} Gravity {% endcomment %}
-{%
-  render 'radio-fields',
-  title:"Heb je het soortelijk gewicht nog eens opnieuw gemeten?",
-  field_id:"unpackedSogoThickMixtureSoluteGravity",
-  required: true,
-  field_name:"unbacked_sogo_thick_brush_solute_gravity",
-  field_values:"
+{% render 'radio-fields', title: "Heb je het soortelijk gewicht nog eens opnieuw gemeten?", field_id: "unpackedSogoThickMixtureSoluteGravity", required: true, field_name: "unbacked_sogo_thick_brush_solute_gravity", field_values: "
   unpackedSogoThickMixtureSoluteGravityYes|Ja, het is in orde|unpackedSogoThickMixtureSoluteViscosity2,
   unpackedSogoThickMixtureSoluteGravityNo|Neen|unpackedSogoThickMixtureSoluteGravityNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
 {% comment %} Viscosity {% endcomment %}
-{% render 'viscosity-mixture1', section_id:{{section_id }} %}
-{% render 'viscosity-mixture2', section_id:{{section_id }} %}
+{% render 'viscosity-mixture1', section_id: section_id %}
+{% render 'viscosity-mixture2', section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoThickMixtureSoluteNoInstruction",
-  instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+{% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
 
   Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
 
-  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
-  section_id:{{section_id }}
-%}
+  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoThickMixtureSoluteGravityNoInstruction",
-  instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+{% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteGravityNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
 
   Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
 
-  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop.",
-  section_id:{{section_id }}
-%}
+  Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop.", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?",
+      field_id:"unpackedSogoThickMixtureSolute",
+      required: true,
+      field_name:"unbacked_sogo_thick_brush_solute",
+      field_values:"
+      unpackedSogoThickMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteYesUsage,
+      unpackedSogoThickMixtureSoluteNo|Neen|unpackedSogoThickMixtureSoluteNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je de exacte hoeveelheid water zoals op de verpakking toegevoegd?", field_id: "unpackedSogoThickMixtureSolute", required: true, field_name: "unbacked_sogo_thick_brush_solute", field_values: "
+      unpackedSogoThickMixtureSoluteYes|Ja|unpackedSogoThickMixtureSoluteYesUsage,
+      unpackedSogoThickMixtureSoluteNo|Neen|unpackedSogoThickMixtureSoluteNoInstruction
+      ", section_id: section_id %}
+  position: 0..423
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je het glazuur al een tijd geleden aangemaakt en/of al veel gebruikt?",
+      field_id:"unpackedSogoThickMixtureSoluteYesUsage",
+      required: true,
+      field_name:"unbacked_sogo_thick_brush_solute_usage",
+      field_values:"
+      unpackedSogoThickMixtureSoluteYesLong|Ja, het staat er al wel een tijdje en/of het is al veel gebruikt|unpackedSogoThickMixtureSoluteGravity,
+      unpackedSogoThickMixtureSoluteYesShort|Neen, het is amper of niet gebruikt en nog niet lang geleden aangemaakt.|unpackedSogoThickMixtureSoluteViscosity1
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je het glazuur al een tijd geleden aangemaakt en/of al veel gebruikt?", field_id: "unpackedSogoThickMixtureSoluteYesUsage", required: true, field_name: "unbacked_sogo_thick_brush_solute_usage", field_values: "
+      unpackedSogoThickMixtureSoluteYesLong|Ja, het staat er al wel een tijdje en/of het is al veel gebruikt|unpackedSogoThickMixtureSoluteGravity,
+      unpackedSogoThickMixtureSoluteYesShort|Neen, het is amper of niet gebruikt en nog niet lang geleden aangemaakt.|unpackedSogoThickMixtureSoluteViscosity1
+      ", section_id: section_id %}
+  position: 424..1001
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je het soortelijk gewicht nog eens opnieuw gemeten?",
+      field_id:"unpackedSogoThickMixtureSoluteGravity",
+      required: true,
+      field_name:"unbacked_sogo_thick_brush_solute_gravity",
+      field_values:"
+      unpackedSogoThickMixtureSoluteGravityYes|Ja, het is in orde|unpackedSogoThickMixtureSoluteViscosity2,
+      unpackedSogoThickMixtureSoluteGravityNo|Neen|unpackedSogoThickMixtureSoluteGravityNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je het soortelijk gewicht nog eens opnieuw gemeten?", field_id: "unpackedSogoThickMixtureSoluteGravity", required: true, field_name: "unbacked_sogo_thick_brush_solute_gravity", field_values: "
+      unpackedSogoThickMixtureSoluteGravityYes|Ja, het is in orde|unpackedSogoThickMixtureSoluteViscosity2,
+      unpackedSogoThickMixtureSoluteGravityNo|Neen|unpackedSogoThickMixtureSoluteGravityNoInstruction
+      ", section_id: section_id %}
+  position: 1042..1505
+- from: "{% render 'viscosity-mixture1', section_id:{{section_id }} %}"
+  to: "{% render 'viscosity-mixture1', section_id: section_id %}"
+  position: 1548..1605
+- from: "{% render 'viscosity-mixture2', section_id:{{section_id }} %}"
+  to: "{% render 'viscosity-mixture2', section_id: section_id %}"
+  position: 1606..1663
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoThickMixtureSoluteNoInstruction",
+      instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop. ", section_id: section_id %}
+  position: 1665..2340
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoThickMixtureSoluteGravityNoInstruction",
+      instruction:"Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop.",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteGravityNoInstruction", instruction: "Meet het soortelijk gewicht van het glazuur. Als het te laag is in vergelijking met wat op de verpakking staat, wacht minstens 24 uur tot het glazuur bezonken is. Neem voorzichtig water weg met een spuitje en meet opnieuw. Voeg wat water toe of neem meer weg tot het soortelijk gewicht klopt.
+
+      Is het soortelijk gewicht te hoog? Voeg voorzichtig water toe tot het soortelijk gewicht overeenkomt met dat wat op het etiket vermeld staat.
+
+      Een afbeelding van het label en dus alle informatie, vind je ook terug bij het juiste glazuur op de webshop.", section_id: section_id %}
+  position: 2342..3023
+{% endcomment %}

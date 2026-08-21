@@ -1,10 +1,4 @@
-{%
-  render 'radio-fields',
-  title:"Het glazuur gemaakt met water",
-  field_id:"unpackedSogoWithWaterProblem",
-  required: true,
-  field_name:"mixed_sogo",
-  field_values:"
+{% render 'radio-fields', title: "Het glazuur gemaakt met water", field_id: "unpackedSogoWithWaterProblem", required: true, field_name: "mixed_sogo", field_values: "
   unpackedSogoMixedProblemThick|is te dik|unpackedSogoThickMixtureSolute,
   unpackedSogoMixedProblemRunny|is te lopend|unpackedSogoRunnyMixtureSolute,
   unpackedSogoMixedProblemHard|is steenhard geworden|unpackedSogoRunnyMixtureSoluteHardInstruction,
@@ -12,9 +6,43 @@
   unpackedSogoMixedProblemSurface|geeft na het glazuren een gebarsten oppervlak|unpackedSogoRunnyMixtureSoluteSurfaceInstruction,
   unpackedSogoMixedProblemGlazing|is zeer poederig na glazuren|unpackedSogoRunnyMixtureSoluteglazingInstruction,
   unpackedSogoMixedProblemElse|Er is iets anders mis
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
 {% render 'thick-mixture', section_id: section_id %}
 {% render 'runny-mixture', section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Het glazuur gemaakt met water",
+      field_id:"unpackedSogoWithWaterProblem",
+      required: true,
+      field_name:"mixed_sogo",
+      field_values:"
+      unpackedSogoMixedProblemThick|is te dik|unpackedSogoThickMixtureSolute,
+      unpackedSogoMixedProblemRunny|is te lopend|unpackedSogoRunnyMixtureSolute,
+      unpackedSogoMixedProblemHard|is steenhard geworden|unpackedSogoRunnyMixtureSoluteHardInstruction,
+      unpackedSogoMixedProblemPebbles|bevat korreltjes/steentjes|unpackedSogoRunnyMixtureSolutePebbleInstruction,
+      unpackedSogoMixedProblemSurface|geeft na het glazuren een gebarsten oppervlak|unpackedSogoRunnyMixtureSoluteSurfaceInstruction,
+      unpackedSogoMixedProblemGlazing|is zeer poederig na glazuren|unpackedSogoRunnyMixtureSoluteglazingInstruction,
+      unpackedSogoMixedProblemElse|Er is iets anders mis
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Het glazuur gemaakt met water", field_id: "unpackedSogoWithWaterProblem", required: true, field_name: "mixed_sogo", field_values: "
+      unpackedSogoMixedProblemThick|is te dik|unpackedSogoThickMixtureSolute,
+      unpackedSogoMixedProblemRunny|is te lopend|unpackedSogoRunnyMixtureSolute,
+      unpackedSogoMixedProblemHard|is steenhard geworden|unpackedSogoRunnyMixtureSoluteHardInstruction,
+      unpackedSogoMixedProblemPebbles|bevat korreltjes/steentjes|unpackedSogoRunnyMixtureSolutePebbleInstruction,
+      unpackedSogoMixedProblemSurface|geeft na het glazuren een gebarsten oppervlak|unpackedSogoRunnyMixtureSoluteSurfaceInstruction,
+      unpackedSogoMixedProblemGlazing|is zeer poederig na glazuren|unpackedSogoRunnyMixtureSoluteglazingInstruction,
+      unpackedSogoMixedProblemElse|Er is iets anders mis
+      ", section_id: section_id %}
+  position: 0..853
+{% endcomment %}

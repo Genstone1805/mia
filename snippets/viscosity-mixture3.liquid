@@ -1,46 +1,106 @@
-{%
-  render 'radio-fields',
-  title:"Heb je de viscositeit gecontroleerd?",
-  field_id:"unpackedSogoThickMixtureSoluteViscosity3",
-  required: true,
-  field_name:"unbacked_sogo_thick_brush_solute_viscosity",
-  field_values:"
+{% render 'radio-fields', title: "Heb je de viscositeit gecontroleerd?", field_id: "unpackedSogoThickMixtureSoluteViscosity3", required: true, field_name: "unbacked_sogo_thick_brush_solute_viscosity", field_values: "
   unpackedSogoThickMixtureSoluteViscosityYesMatches3|Ja, met een viscositeitsmeter en deze komt overeen met de verpakking.|unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3,
   unpackedSogoThickMixtureSoluteViscosityYesHigher3|Ja, met een viscositeitsmeter en deze is lager dan wat op de verpakking staat.|unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3,
   unpackedSogoThickMixtureSoluteViscosityesDip3|Ja, met de vingerdipmethode|unpackedSogoThickMixtureSoluteViscosityesDipInstruction3,
   unpackedSogoThickMixtureSoluteViscosityNo3|Neen|unpackedSogoThickMixtureSoluteViscosityNoInstruction3
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3",
-  instruction:"Als je de viscositeit gecontroleerd hebt en de doorlooptijd komt overeen met de verpakking, dan is de dikte van het glazuur goed. Het glazuur is mogelijk redelijk vloeibaar maar met deze consistentie krijg je de vooropgestelde resultaten. Probeer het glazuur op deze manier te gebruiken. Ben je toch niet tevreden en ziet het resultaat er te dun uit? Probeer de contacttijd met de scherf dan wat langer te maken. ",
-  section_id:{{section_id }}
-%}
+{% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3", instruction: "Als je de viscositeit gecontroleerd hebt en de doorlooptijd komt overeen met de verpakking, dan is de dikte van het glazuur goed. Het glazuur is mogelijk redelijk vloeibaar maar met deze consistentie krijg je de vooropgestelde resultaten. Probeer het glazuur op deze manier te gebruiken. Ben je toch niet tevreden en ziet het resultaat er te dun uit? Probeer de contacttijd met de scherf dan wat langer te maken. ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3",
-  instruction:"De viscositeit is te laag. Voeg een gesatureerde oplossing van Epsom zout toe om het glazuur in te dikken. Meet opnieuw tot je de juiste doorlooptijd bereikt.",
-  section_id:{{section_id }}
-%}
+{% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3", instruction: "De viscositeit is te laag. Voeg een gesatureerde oplossing van Epsom zout toe om het glazuur in te dikken. Meet opnieuw tot je de juiste doorlooptijd bereikt.", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoThickMixtureSoluteViscosityesDipInstruction3",
-  instruction:"De vingerdipmethode geeft een eerste indicatie over de viscositeit maar vereist veel ervaring. Bovendien kunnen subtiele verschillen niet met deze methode opgespoord worden. Daarnaast zijn sommige SOGO glazuren beter als ze wat dikker zijn, andere zijn beter als ze dunner gemaakt worden.
+{% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteViscosityesDipInstruction3", instruction: "De vingerdipmethode geeft een eerste indicatie over de viscositeit maar vereist veel ervaring. Bovendien kunnen subtiele verschillen niet met deze methode opgespoord worden. Daarnaast zijn sommige SOGO glazuren beter als ze wat dikker zijn, andere zijn beter als ze dunner gemaakt worden.
 
   Meet de viscositeit dus met een doorstroombeker (te koop via de webshop) om zeker te zijn over de juiste dikte.
 
-  Je kan het glazuur altijd wat flocculeren met een gesatureerde oplossing van Epsom zout om het in te dikken. Let op: sommige SOGO glazuren moeten wat dunner zijn om de juiste kleur te bekomen.",
-  section_id:{{section_id }}
-%}
+  Je kan het glazuur altijd wat flocculeren met een gesatureerde oplossing van Epsom zout om het in te dikken. Let op: sommige SOGO glazuren moeten wat dunner zijn om de juiste kleur te bekomen.", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"unpackedSogoThickMixtureSoluteViscosityNoInstruction3",
-  instruction:"Meet de viscositeit met een doorstroombeker (viscositeitsmeter) en flocculeer het glazuur met Epsom zout indien nodig. Op deze manier bereik je de juiste viscositeit en zal je goede, reproduceerbare resultaten bekomen. ",
-  section_id:{{section_id }}
-%}
+{% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteViscosityNoInstruction3", instruction: "Meet de viscositeit met een doorstroombeker (viscositeitsmeter) en flocculeer het glazuur met Epsom zout indien nodig. Op deze manier bereik je de juiste viscositeit en zal je goede, reproduceerbare resultaten bekomen. ", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Heb je de viscositeit gecontroleerd?",
+      field_id:"unpackedSogoThickMixtureSoluteViscosity3",
+      required: true,
+      field_name:"unbacked_sogo_thick_brush_solute_viscosity",
+      field_values:"
+      unpackedSogoThickMixtureSoluteViscosityYesMatches3|Ja, met een viscositeitsmeter en deze komt overeen met de verpakking.|unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3,
+      unpackedSogoThickMixtureSoluteViscosityYesHigher3|Ja, met een viscositeitsmeter en deze is lager dan wat op de verpakking staat.|unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3,
+      unpackedSogoThickMixtureSoluteViscosityesDip3|Ja, met de vingerdipmethode|unpackedSogoThickMixtureSoluteViscosityesDipInstruction3,
+      unpackedSogoThickMixtureSoluteViscosityNo3|Neen|unpackedSogoThickMixtureSoluteViscosityNoInstruction3
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Heb je de viscositeit gecontroleerd?", field_id: "unpackedSogoThickMixtureSoluteViscosity3", required: true, field_name: "unbacked_sogo_thick_brush_solute_viscosity", field_values: "
+      unpackedSogoThickMixtureSoluteViscosityYesMatches3|Ja, met een viscositeitsmeter en deze komt overeen met de verpakking.|unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3,
+      unpackedSogoThickMixtureSoluteViscosityYesHigher3|Ja, met een viscositeitsmeter en deze is lager dan wat op de verpakking staat.|unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3,
+      unpackedSogoThickMixtureSoluteViscosityesDip3|Ja, met de vingerdipmethode|unpackedSogoThickMixtureSoluteViscosityesDipInstruction3,
+      unpackedSogoThickMixtureSoluteViscosityNo3|Neen|unpackedSogoThickMixtureSoluteViscosityNoInstruction3
+      ", section_id: section_id %}
+  position: 0..864
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3",
+      instruction:"Als je de viscositeit gecontroleerd hebt en de doorlooptijd komt overeen met de verpakking, dan is de dikte van het glazuur goed. Het glazuur is mogelijk redelijk vloeibaar maar met deze consistentie krijg je de vooropgestelde resultaten. Probeer het glazuur op deze manier te gebruiken. Ben je toch niet tevreden en ziet het resultaat er te dun uit? Probeer de contacttijd met de scherf dan wat langer te maken. ",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', field_id: "unpackedSogoThickMixtureSoluteViscosityYesMatchesInstruction3",
+    instruction: "Als je de viscositeit gecontroleerd hebt en de doorlooptijd komt
+    overeen met de verpakking, dan is de dikte van het glazuur goed. Het glazuur is
+    mogelijk redelijk vloeibaar maar met deze consistentie krijg je de vooropgestelde
+    resultaten. Probeer het glazuur op deze manier te gebruiken. Ben je toch niet
+    tevreden en ziet het resultaat er te dun uit? Probeer de contacttijd met de scherf
+    dan wat langer te maken. ", section_id: section_id %}'
+  position: 866..1422
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3",
+      instruction:"De viscositeit is te laag. Voeg een gesatureerde oplossing van Epsom zout toe om het glazuur in te dikken. Meet opnieuw tot je de juiste doorlooptijd bereikt.",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', field_id: "unpackedSogoThickMixtureSoluteViscosityYesHigherInstruction3",
+    instruction: "De viscositeit is te laag. Voeg een gesatureerde oplossing van Epsom
+    zout toe om het glazuur in te dikken. Meet opnieuw tot je de juiste doorlooptijd
+    bereikt.", section_id: section_id %}'
+  position: 1424..1724
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoThickMixtureSoluteViscosityesDipInstruction3",
+      instruction:"De vingerdipmethode geeft een eerste indicatie over de viscositeit maar vereist veel ervaring. Bovendien kunnen subtiele verschillen niet met deze methode opgespoord worden. Daarnaast zijn sommige SOGO glazuren beter als ze wat dikker zijn, andere zijn beter als ze dunner gemaakt worden.
+
+      Meet de viscositeit dus met een doorstroombeker (te koop via de webshop) om zeker te zijn over de juiste dikte.
+
+      Je kan het glazuur altijd wat flocculeren met een gesatureerde oplossing van Epsom zout om het in te dikken. Let op: sommige SOGO glazuren moeten wat dunner zijn om de juiste kleur te bekomen.",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "unpackedSogoThickMixtureSoluteViscosityesDipInstruction3", instruction: "De vingerdipmethode geeft een eerste indicatie over de viscositeit maar vereist veel ervaring. Bovendien kunnen subtiele verschillen niet met deze methode opgespoord worden. Daarnaast zijn sommige SOGO glazuren beter als ze wat dikker zijn, andere zijn beter als ze dunner gemaakt worden.
+
+      Meet de viscositeit dus met een doorstroombeker (te koop via de webshop) om zeker te zijn over de juiste dikte.
+
+      Je kan het glazuur altijd wat flocculeren met een gesatureerde oplossing van Epsom zout om het in te dikken. Let op: sommige SOGO glazuren moeten wat dunner zijn om de juiste kleur te bekomen.", section_id: section_id %}
+  position: 1726..2463
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"unpackedSogoThickMixtureSoluteViscosityNoInstruction3",
+      instruction:"Meet de viscositeit met een doorstroombeker (viscositeitsmeter) en flocculeer het glazuur met Epsom zout indien nodig. Op deze manier bereik je de juiste viscositeit en zal je goede, reproduceerbare resultaten bekomen. ",
+      section_id:{{section_id }}
+    %}
+  to: '{% render ''radio-fields'', field_id: "unpackedSogoThickMixtureSoluteViscosityNoInstruction3",
+    instruction: "Meet de viscositeit met een doorstroombeker (viscositeitsmeter)
+    en flocculeer het glazuur met Epsom zout indien nodig. Op deze manier bereik je
+    de juiste viscositeit en zal je goede, reproduceerbare resultaten bekomen. ",
+    section_id: section_id %}'
+  position: 2465..2819
+{% endcomment %}

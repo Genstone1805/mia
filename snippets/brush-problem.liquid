@@ -1,18 +1,10 @@
-{%
-  render 'radio-fields',
-  title:"Het kwastglazuur",
-  field_id:"unpackedSogoBrushProblem",
-  required: true,
-  field_name:"unbacked_sogo_brush",
-  field_values:"
+{% render 'radio-fields', title: "Het kwastglazuur", field_id: "unpackedSogoBrushProblem", required: true, field_name: "unbacked_sogo_brush", field_values: "
   unpackedSogoBrushProblemThick|is te dik|unpackedSogoThickBrushSolute,
   unpackedSogoBrushProblemRunny|is te lopend|unpackedSogoRunnyBrushSolute,
   unpackedSogoBrushProblemHard|is steenhard geworden|unpackedSogoHardBrushSolute,
   unpackedSogoBrushProblemPebbles|bevat korreltjes/steentjes|unpackedSogoPebbleBrushSoluteNoInstruction,
   unpackedSogoBrushProblemElse|Er is iets anders mis.
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
 {% render 'pebble-brush', section_id: section_id %}
 
@@ -21,3 +13,35 @@
 {% render 'runny-brush', section_id: section_id %}
 
 {% render 'thick-brush', section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Het kwastglazuur",
+      field_id:"unpackedSogoBrushProblem",
+      required: true,
+      field_name:"unbacked_sogo_brush",
+      field_values:"
+      unpackedSogoBrushProblemThick|is te dik|unpackedSogoThickBrushSolute,
+      unpackedSogoBrushProblemRunny|is te lopend|unpackedSogoRunnyBrushSolute,
+      unpackedSogoBrushProblemHard|is steenhard geworden|unpackedSogoHardBrushSolute,
+      unpackedSogoBrushProblemPebbles|bevat korreltjes/steentjes|unpackedSogoPebbleBrushSoluteNoInstruction,
+      unpackedSogoBrushProblemElse|Er is iets anders mis.
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Het kwastglazuur", field_id: "unpackedSogoBrushProblem", required: true, field_name: "unbacked_sogo_brush", field_values: "
+      unpackedSogoBrushProblemThick|is te dik|unpackedSogoThickBrushSolute,
+      unpackedSogoBrushProblemRunny|is te lopend|unpackedSogoRunnyBrushSolute,
+      unpackedSogoBrushProblemHard|is steenhard geworden|unpackedSogoHardBrushSolute,
+      unpackedSogoBrushProblemPebbles|bevat korreltjes/steentjes|unpackedSogoPebbleBrushSoluteNoInstruction,
+      unpackedSogoBrushProblemElse|Er is iets anders mis.
+      ", section_id: section_id %}
+  position: 0..576
+{% endcomment %}

@@ -1,53 +1,111 @@
-{%
-  render 'radio-fields',
-  title:"Jouw gebruikte klei is",
-  field_id:"backedShowsPinpricksProblem",
-  required: true,
-  field_name:"backed_shows_pinpricks",
-  field_values:"
+{% render 'radio-fields', title: "Jouw gebruikte klei is", field_id: "backedShowsPinpricksProblem", required: true, field_name: "backed_shows_pinpricks", field_values: "
   backedWhite|witbakkend|backedShowsPinpricksWhiteProblem,
-  backedColored|gekleurd (zwart grijs rood bruin ...)|backedColoredInstruction",
-  section_id:{{section_id }}
-%}
+  backedColored|gekleurd (zwart grijs rood bruin ...)|backedColoredInstruction", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  title:"Bevat jouw klei chamotte?",
-  field_id:"backedShowsPinpricksWhiteProblem",
-  required: true,
-  field_name:"backed_shows_pinpricks_white",
-  field_values:"
+{% render 'radio-fields', title: "Bevat jouw klei chamotte?", field_id: "backedShowsPinpricksWhiteProblem", required: true, field_name: "backed_shows_pinpricks_white", field_values: "
   backedWhiteYes|Ja|backedWhiteYesInstruction,
   backedColoredNo|Neen|backedColoredNoInstruction
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"backedWhiteYesInstruction",
-  instruction:"
+{% render 'radio-fields', field_id: "backedWhiteYesInstruction", instruction: "
   Chamotte in klei kan aanleiding geven tot speldenprikken. Een viskeus glazuur kan niet altijd goed in de kleine gaatjes en spleetjes hechten die aanwezig zijn in chamottehoudende klei. Er zit dan lucht verstopt in die groefjes en deze laat in sommige gevallen een gaatje achter in het glazuuroppervlak. Zorg ervoor dat je niet te veel sponst bij het afdraaien en het kleioppervlak mooi glad maakt met een rubberen lomer. Dit helpt aanzienlijk om chamottegerelateerde speldenprikken te voorkomen.
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"backedColoredNoInstruction",
-  instruction:"
+{% render 'radio-fields', field_id: "backedColoredNoInstruction", instruction: "
   Als het om een enkele speldenprik gaat zou een oneffenheid in het kleioppervlak aan de oorzaak kunnen liggen. Zit het ganse stuk onder de speldenprikken? Contacteer me, dan zoeken we naar de oorzaak. Speldenprikken zijn een zeer complex probleem.
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
 
-{%
-  render 'radio-fields',
-  field_id:"backedColoredInstruction",
-  instruction:"
+{% render 'radio-fields', field_id: "backedColoredInstruction", instruction: "
   Gekleurde klei bevat kleurende oxiden zoals onder andere ijzeroxide, mangaanoxide en/of kobaltoxide. Deze verliezen zuurstofatomen als ze hoog genoeg gestookt worden. Dit geeft gasvorming in een glazuur. Als het steengoedglazuur op dat moment al aan het stollen is (door afkoeling), kunnen deze gasbellen speldenprikken en kraters achterlaten.
 
   Een oplossing kan zijn om de biscuitbak traag en hoog genoeg (minstens 950°C maar hoger kan voordeel bieden) te doen.
-  ",
-  section_id:{{section_id }}
-%}
+  ", section_id: section_id %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Jouw gebruikte klei is",
+      field_id:"backedShowsPinpricksProblem",
+      required: true,
+      field_name:"backed_shows_pinpricks",
+      field_values:"
+      backedWhite|witbakkend|backedShowsPinpricksWhiteProblem,
+      backedColored|gekleurd (zwart grijs rood bruin ...)|backedColoredInstruction",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Jouw gebruikte klei is", field_id: "backedShowsPinpricksProblem", required: true, field_name: "backed_shows_pinpricks", field_values: "
+      backedWhite|witbakkend|backedShowsPinpricksWhiteProblem,
+      backedColored|gekleurd (zwart grijs rood bruin ...)|backedColoredInstruction", section_id: section_id %}
+  position: 0..335
+- from: |-
+    {%
+      render 'radio-fields',
+      title:"Bevat jouw klei chamotte?",
+      field_id:"backedShowsPinpricksWhiteProblem",
+      required: true,
+      field_name:"backed_shows_pinpricks_white",
+      field_values:"
+      backedWhiteYes|Ja|backedWhiteYesInstruction,
+      backedColoredNo|Neen|backedColoredNoInstruction
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', title: "Bevat jouw klei chamotte?", field_id: "backedShowsPinpricksWhiteProblem", required: true, field_name: "backed_shows_pinpricks_white", field_values: "
+      backedWhiteYes|Ja|backedWhiteYesInstruction,
+      backedColoredNo|Neen|backedColoredNoInstruction
+      ", section_id: section_id %}
+  position: 337..648
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"backedWhiteYesInstruction",
+      instruction:"
+      Chamotte in klei kan aanleiding geven tot speldenprikken. Een viskeus glazuur kan niet altijd goed in de kleine gaatjes en spleetjes hechten die aanwezig zijn in chamottehoudende klei. Er zit dan lucht verstopt in die groefjes en deze laat in sommige gevallen een gaatje achter in het glazuuroppervlak. Zorg ervoor dat je niet te veel sponst bij het afdraaien en het kleioppervlak mooi glad maakt met een rubberen lomer. Dit helpt aanzienlijk om chamottegerelateerde speldenprikken te voorkomen.
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "backedWhiteYesInstruction", instruction: "
+      Chamotte in klei kan aanleiding geven tot speldenprikken. Een viskeus glazuur kan niet altijd goed in de kleine gaatjes en spleetjes hechten die aanwezig zijn in chamottehoudende klei. Er zit dan lucht verstopt in die groefjes en deze laat in sommige gevallen een gaatje achter in het glazuuroppervlak. Zorg ervoor dat je niet te veel sponst bij het afdraaien en het kleioppervlak mooi glad maakt met een rubberen lomer. Dit helpt aanzienlijk om chamottegerelateerde speldenprikken te voorkomen.
+      ", section_id: section_id %}
+  position: 650..1258
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"backedColoredNoInstruction",
+      instruction:"
+      Als het om een enkele speldenprik gaat zou een oneffenheid in het kleioppervlak aan de oorzaak kunnen liggen. Zit het ganse stuk onder de speldenprikken? Contacteer me, dan zoeken we naar de oorzaak. Speldenprikken zijn een zeer complex probleem.
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "backedColoredNoInstruction", instruction: "
+      Als het om een enkele speldenprik gaat zou een oneffenheid in het kleioppervlak aan de oorzaak kunnen liggen. Zit het ganse stuk onder de speldenprikken? Contacteer me, dan zoeken we naar de oorzaak. Speldenprikken zijn een zeer complex probleem.
+      ", section_id: section_id %}
+  position: 1260..1620
+- from: |-
+    {%
+      render 'radio-fields',
+      field_id:"backedColoredInstruction",
+      instruction:"
+      Gekleurde klei bevat kleurende oxiden zoals onder andere ijzeroxide, mangaanoxide en/of kobaltoxide. Deze verliezen zuurstofatomen als ze hoog genoeg gestookt worden. Dit geeft gasvorming in een glazuur. Als het steengoedglazuur op dat moment al aan het stollen is (door afkoeling), kunnen deze gasbellen speldenprikken en kraters achterlaten.
+
+      Een oplossing kan zijn om de biscuitbak traag en hoog genoeg (minstens 950°C maar hoger kan voordeel bieden) te doen.
+      ",
+      section_id:{{section_id }}
+    %}
+  to: |-
+    {% render 'radio-fields', field_id: "backedColoredInstruction", instruction: "
+      Gekleurde klei bevat kleurende oxiden zoals onder andere ijzeroxide, mangaanoxide en/of kobaltoxide. Deze verliezen zuurstofatomen als ze hoog genoeg gestookt worden. Dit geeft gasvorming in een glazuur. Als het steengoedglazuur op dat moment al aan het stollen is (door afkoeling), kunnen deze gasbellen speldenprikken en kraters achterlaten.
+
+      Een oplossing kan zijn om de biscuitbak traag en hoog genoeg (minstens 950°C maar hoger kan voordeel bieden) te doen.
+      ", section_id: section_id %}
+  position: 1622..2198
+{% endcomment %}
